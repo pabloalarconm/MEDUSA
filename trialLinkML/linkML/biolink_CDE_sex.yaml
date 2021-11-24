@@ -1,4 +1,4 @@
-id: http://purl.org/ejp-rd/linkml/
+id: http://purl.org/ejp-rd/linkml/ 
 name: ejp
 description: |-
   --------------------- Birthdate schema of EJP CDE model -------------------------
@@ -49,6 +49,7 @@ classes:
     required: true
     slots:
       - is_realized_in
+      - type_patient
 
   process:
     name: Process
@@ -78,7 +79,9 @@ classes:
     exact_mappings: 
       - sio:SIO_000614
     required: true
-    range: birthdate uri
+    slots:
+      - type_sex
+      - type_sex_data
 
 ############ SLOTS  #############
 
@@ -143,6 +146,18 @@ slots:
     exact_mappings:
       - sio:SIO_000628
 
+  type_patient:
+    description: Patient role
+    range: obo:OBI_0000093
+
+  type_sex:
+    description: Sex ontological term
+    range: obo:NCIT_C28421
+
+  type_sex_data:
+    description: URI that represents sex patient information.
+    range: Sex_uri
+
   label:
     slot_uri: rdfs:label
     range: string
@@ -166,5 +181,16 @@ types:
     uri: xsd:string
     base: str
 
-  birthdate uri:
-    typeof: uriorcurie 
+############ ENUMS  #############
+
+enums:
+  Sex_uri:
+    permissible_values:
+      Female:
+        meaning: obo:NCIT_C20197
+      Male:
+        meaning: obo:NCIT_C16576
+      Unknown:
+        meaning: obo:NCIT_C124294
+      Undetermined:
+        meaning: obo:NCIT_C124294

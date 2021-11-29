@@ -1,0 +1,70 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix this: <https://w3id.org/duchenne-fdp/data/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/data/individual_uid_000002#Entity> a sio:object,
+        sio:person ;
+    sio:has-role <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#patientRole_diagnosis_date>,
+        <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#patientRole_symptom_onset> .
+
+<http://example.org/data/individual_uid_000002#ID> a sio:identifier ;
+    sio:denotes <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#patientRole_diagnosis_date>,
+        <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#patientRole_symptom_onset> ;
+    sio:has-value "uid_000002"^^xsd:string .
+
+<http://example.org/data/individual_uid_000002#Person> sio:has-attribute <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#age_at_onset_TypedAttributeNode>,
+        <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#disagnosis_date_TypedAttributeNode> .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#patientRole_diagnosis_date_process_Output> rdfs:label "Output Type: age at diagnosis" .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#patientRole_symptom_onset_process_Output> rdfs:label "Output Type: date of onset (in official CDE this is age of onset)" .
+
+<http://example.org/data/individual_uid_000002_process#process_longitudinal_information_gathering_process> sio:has-part <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_patientRole_diagnosis_date_process>,
+        <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_patientRole_symptom_onset_process> .
+
+<http://example.org/data/individual_uid_000002_process#process_patientRole_diagnosis_date_process> a sio:process .
+
+<http://example.org/data/individual_uid_000002_process#process_patientRole_symptom_onset_process> a sio:process .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#process_patientRole_diagnosis_date_process_Output> a obo:C251654,
+        sio:information-content-entity ;
+    sio:has-value "1996-06-23"^^xsd:date ;
+    sio:refers-to <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#disagnosis_date_TypedAttributeNode> .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#process_patientRole_symptom_onset_process_Output> a obo:NCIT_C251654,
+        sio:information-content-entity ;
+    sio:has-value "1995-06-23"^^xsd:date ;
+    sio:refers-to <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#age_at_onset_TypedAttributeNode> .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#age_at_onset_TypedAttributeNode> a obo:HP_0003674,
+        sio:attribute ;
+    rdfs:label "Attribute Type: Stage or date of onset" .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#disagnosis_date_TypedAttributeNode> a obo:NCIT_C156420,
+        sio:attribute ;
+    rdfs:label "Attribute Type: Stage or date of diagnosis" .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#patientRole_diagnosis_date> a obo:OBI_0000093,
+        sio:role ;
+    rdfs:label " Role: Diagnosis Date Patient" ;
+    sio:is-realized-in <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_patientRole_diagnosis_date_process> .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#patientRole_symptom_onset> a obo:OBI_0000093,
+        sio:role ;
+    rdfs:label " Role: Symptom Onset Patient" ;
+    sio:is-realized-in <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_patientRole_symptom_onset_process> .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_patientRole_diagnosis_date_process> a sio:SIO_001052,
+        sio:process ;
+    rdfs:label "Process: data collection - diagnosis date recording process" ;
+    sio:has-output <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#process_patientRole_diagnosis_date_process_Output> .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_patientRole_symptom_onset_process> a sio:SIO_001052,
+        sio:process ;
+    rdfs:label "Process: data collection - symptom onset date recording process" ;
+    sio:has-output <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#process_patientRole_symptom_onset_process_Output> .
+

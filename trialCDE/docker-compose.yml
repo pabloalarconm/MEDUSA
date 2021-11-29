@@ -1,7 +1,6 @@
 version: "3.0"
 services:
 
-
     yarrrml_transform:
         image: markw/yarrrml-parser-ejp:latest
         container_name: yarrrml_transform
@@ -9,7 +8,6 @@ services:
             - "3000:3000"
         volumes:
             - ./data:/data
-
 
     rdfizer:
         image: markw/sdmrdfizer_ejp:0.3.0

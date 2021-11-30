@@ -10,13 +10,13 @@ from os.path import isfile, join
 argv = sys.argv[1:]
 
 allfiles = [f for f in listdir(argv[0]) if isfile(join(argv[0], f))]
-print(allfiles)
+format_files = [ff for ff in allfiles if ff.endswith('.nt')]
+print(format_files)
 
 def get_filename(file):
     name_split = file.split(sep=".")
     name = name_split[0]
     filename = name + "." + "ttl"
-    print(filename)
     return(filename)
 
 

@@ -1,10 +1,12 @@
 #!ruby
 
+input_array = ARGV
+
 require "yarrrml-template-builder"
 
 $stderr.puts "this script will do an rdf transformation of the height.csv file, in the ./data folder using the yarrrml file in the ./config folder"
 $stderr.puts "you must already have the docker-compose up before running this script.  If you see failures, that is likely why :-)"
-datatype_tag = "patient_consent"  # the "tag" of your data
+datatype_tag = input_array[0]  # the "tag" of your data
 data_path_client = "./data"
 data_path_server = "/data"  # assumes you are running my docker image
 config_path_client = "./config"

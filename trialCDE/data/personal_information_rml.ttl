@@ -77,15 +77,15 @@
 :om_003 a rr:ObjectMap;
     rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_age";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_person_has_role_patientRole_age_000.
-:map_person_has_role_patientRole_age_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_entity_has_role_patientRole_age_000.
+:map_entity_has_role_patientRole_age_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "person_has_role_patientRole_age".
+    rdfs:label "entity_has_role_patientRole_age".
 :s_002 a rr:SubjectMap.
-:map_person_has_role_patientRole_age_000 rr:subjectMap :s_002.
-:s_002 rr:template "http://example.org/data/individual_{pid}#Person".
+:map_entity_has_role_patientRole_age_000 rr:subjectMap :s_002.
+:s_002 rr:template "http://example.org/data/individual_{pid}#Entity".
 :pom_004 a rr:PredicateObjectMap.
-:map_person_has_role_patientRole_age_000 rr:predicateObjectMap :pom_004.
+:map_entity_has_role_patientRole_age_000 rr:predicateObjectMap :pom_004.
 :pm_004 a rr:PredicateMap.
 :pom_004 rr:predicateMap :pm_004.
 :pm_004 rr:constant rdf:type.
@@ -94,16 +94,16 @@
     rr:constant "http://semanticscience.org/resource/person";
     rr:termType rr:IRI.
 :pom_005 a rr:PredicateObjectMap.
-:map_person_has_role_patientRole_age_000 rr:predicateObjectMap :pom_005.
+:map_entity_has_role_patientRole_age_000 rr:predicateObjectMap :pom_005.
 :pm_005 a rr:PredicateMap.
 :pom_005 rr:predicateMap :pm_005.
 :pm_005 rr:constant rdf:type.
 :pom_005 rr:objectMap :om_005.
 :om_005 a rr:ObjectMap;
-    rr:constant "http://semanticscience.org/resource/person";
+    rr:constant "http://semanticscience.org/resource/object";
     rr:termType rr:IRI.
 :pom_006 a rr:PredicateObjectMap.
-:map_person_has_role_patientRole_age_000 rr:predicateObjectMap :pom_006.
+:map_entity_has_role_patientRole_age_000 rr:predicateObjectMap :pom_006.
 :pm_006 a rr:PredicateMap.
 :pom_006 rr:predicateMap :pm_006.
 :pm_006 rr:constant sio:has-role.
@@ -197,15 +197,15 @@
 :om_013 a rr:ObjectMap;
     rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_sex";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_person_has_role_patientRole_sex_000.
-:map_person_has_role_patientRole_sex_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_entity_has_role_patientRole_sex_000.
+:map_entity_has_role_patientRole_sex_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "person_has_role_patientRole_sex".
+    rdfs:label "entity_has_role_patientRole_sex".
 :s_006 a rr:SubjectMap.
-:map_person_has_role_patientRole_sex_000 rr:subjectMap :s_006.
-:s_006 rr:template "http://example.org/data/individual_{pid}#Person".
+:map_entity_has_role_patientRole_sex_000 rr:subjectMap :s_006.
+:s_006 rr:template "http://example.org/data/individual_{pid}#Entity".
 :pom_014 a rr:PredicateObjectMap.
-:map_person_has_role_patientRole_sex_000 rr:predicateObjectMap :pom_014.
+:map_entity_has_role_patientRole_sex_000 rr:predicateObjectMap :pom_014.
 :pm_014 a rr:PredicateMap.
 :pom_014 rr:predicateMap :pm_014.
 :pm_014 rr:constant rdf:type.
@@ -214,16 +214,16 @@
     rr:constant "http://semanticscience.org/resource/person";
     rr:termType rr:IRI.
 :pom_015 a rr:PredicateObjectMap.
-:map_person_has_role_patientRole_sex_000 rr:predicateObjectMap :pom_015.
+:map_entity_has_role_patientRole_sex_000 rr:predicateObjectMap :pom_015.
 :pm_015 a rr:PredicateMap.
 :pom_015 rr:predicateMap :pm_015.
 :pm_015 rr:constant rdf:type.
 :pom_015 rr:objectMap :om_015.
 :om_015 a rr:ObjectMap;
-    rr:constant "http://semanticscience.org/resource/person";
+    rr:constant "http://semanticscience.org/resource/object";
     rr:termType rr:IRI.
 :pom_016 a rr:PredicateObjectMap.
-:map_person_has_role_patientRole_sex_000 rr:predicateObjectMap :pom_016.
+:map_entity_has_role_patientRole_sex_000 rr:predicateObjectMap :pom_016.
 :pm_016 a rr:PredicateMap.
 :pom_016 rr:predicateMap :pm_016.
 :pm_016 rr:constant sio:has-role.
@@ -280,17 +280,17 @@
 :pm_020 rr:constant sio:is-realized-in.
 :pom_020 rr:objectMap :om_020.
 :om_020 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#age_measuring_procedure";
+    rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#process_age_measuring_procedure";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_age_measuring_procedure_process_annotation_000.
-:map_age_measuring_procedure_process_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_age_measuring_procedure_process_annotation_000.
+:map_process_age_measuring_procedure_process_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "age_measuring_procedure_process_annotation".
+    rdfs:label "process_age_measuring_procedure_process_annotation".
 :s_009 a rr:SubjectMap.
-:map_age_measuring_procedure_process_annotation_000 rr:subjectMap :s_009.
-:s_009 rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#age_measuring_procedure".
+:map_process_age_measuring_procedure_process_annotation_000 rr:subjectMap :s_009.
+:s_009 rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#process_age_measuring_procedure".
 :pom_021 a rr:PredicateObjectMap.
-:map_age_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_021.
+:map_process_age_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_021.
 :pm_021 a rr:PredicateMap.
 :pom_021 rr:predicateMap :pm_021.
 :pm_021 rr:constant rdf:type.
@@ -299,7 +299,7 @@
     rr:constant "http://semanticscience.org/resource/process";
     rr:termType rr:IRI.
 :pom_022 a rr:PredicateObjectMap.
-:map_age_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_022.
+:map_process_age_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_022.
 :pm_022 a rr:PredicateMap.
 :pom_022 rr:predicateMap :pm_022.
 :pm_022 rr:constant rdf:type.
@@ -308,7 +308,7 @@
     rr:constant "http://semanticscience.org/resource/process";
     rr:termType rr:IRI.
 :pom_023 a rr:PredicateObjectMap.
-:map_age_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_023.
+:map_process_age_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_023.
 :pm_023 a rr:PredicateMap.
 :pom_023 rr:predicateMap :pm_023.
 :pm_023 rr:constant rdfs:label.
@@ -331,17 +331,17 @@
 :pm_024 rr:constant sio:is-realized-in.
 :pom_024 rr:objectMap :om_024.
 :om_024 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#sex_measuring_procedure";
+    rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#process_sex_measuring_procedure";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_sex_measuring_procedure_process_annotation_000.
-:map_sex_measuring_procedure_process_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_sex_measuring_procedure_process_annotation_000.
+:map_process_sex_measuring_procedure_process_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "sex_measuring_procedure_process_annotation".
+    rdfs:label "process_sex_measuring_procedure_process_annotation".
 :s_011 a rr:SubjectMap.
-:map_sex_measuring_procedure_process_annotation_000 rr:subjectMap :s_011.
-:s_011 rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#sex_measuring_procedure".
+:map_process_sex_measuring_procedure_process_annotation_000 rr:subjectMap :s_011.
+:s_011 rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#process_sex_measuring_procedure".
 :pom_025 a rr:PredicateObjectMap.
-:map_sex_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_025.
+:map_process_sex_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_025.
 :pm_025 a rr:PredicateMap.
 :pom_025 rr:predicateMap :pm_025.
 :pm_025 rr:constant rdf:type.
@@ -350,7 +350,7 @@
     rr:constant "http://semanticscience.org/resource/process";
     rr:termType rr:IRI.
 :pom_026 a rr:PredicateObjectMap.
-:map_sex_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_026.
+:map_process_sex_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_026.
 :pm_026 a rr:PredicateMap.
 :pom_026 rr:predicateMap :pm_026.
 :pm_026 rr:constant rdf:type.
@@ -359,7 +359,7 @@
     rr:constant "http://semanticscience.org/resource/process";
     rr:termType rr:IRI.
 :pom_027 a rr:PredicateObjectMap.
-:map_sex_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_027.
+:map_process_sex_measuring_procedure_process_annotation_000 rr:predicateObjectMap :pom_027.
 :pm_027 a rr:PredicateMap.
 :pom_027 rr:predicateMap :pm_027.
 :pm_027 rr:constant rdfs:label.
@@ -368,31 +368,31 @@
     rr:constant "Process: sex measuring process";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-:rules_000 void:exampleResource :map_age_measuring_procedure_process_has_output_000.
-:map_age_measuring_procedure_process_has_output_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_age_measuring_procedure_process_has_output_000.
+:map_process_age_measuring_procedure_process_has_output_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "age_measuring_procedure_process_has_output".
+    rdfs:label "process_age_measuring_procedure_process_has_output".
 :s_012 a rr:SubjectMap.
-:map_age_measuring_procedure_process_has_output_000 rr:subjectMap :s_012.
-:s_012 rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#age_measuring_procedure".
+:map_process_age_measuring_procedure_process_has_output_000 rr:subjectMap :s_012.
+:s_012 rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#process_age_measuring_procedure".
 :pom_028 a rr:PredicateObjectMap.
-:map_age_measuring_procedure_process_has_output_000 rr:predicateObjectMap :pom_028.
+:map_process_age_measuring_procedure_process_has_output_000 rr:predicateObjectMap :pom_028.
 :pm_028 a rr:PredicateMap.
 :pom_028 rr:predicateMap :pm_028.
 :pm_028 rr:constant sio:has-output.
 :pom_028 rr:objectMap :om_028.
 :om_028 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#age_measuring_procedure_Output";
+    rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_age_measuring_procedure_Output";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_age_measuring_procedure_Output_annotation_000.
-:map_age_measuring_procedure_Output_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_age_measuring_procedure_Output_annotation_000.
+:map_process_age_measuring_procedure_Output_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "age_measuring_procedure_Output_annotation".
+    rdfs:label "process_age_measuring_procedure_Output_annotation".
 :s_013 a rr:SubjectMap.
-:map_age_measuring_procedure_Output_annotation_000 rr:subjectMap :s_013.
-:s_013 rr:template "http://example.org/data/individual_{pid}_{uniqid}#age_measuring_procedure_Output".
+:map_process_age_measuring_procedure_Output_annotation_000 rr:subjectMap :s_013.
+:s_013 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_age_measuring_procedure_Output".
 :pom_029 a rr:PredicateObjectMap.
-:map_age_measuring_procedure_Output_annotation_000 rr:predicateObjectMap :pom_029.
+:map_process_age_measuring_procedure_Output_annotation_000 rr:predicateObjectMap :pom_029.
 :pm_029 a rr:PredicateMap.
 :pom_029 rr:predicateMap :pm_029.
 :pm_029 rr:constant rdf:type.
@@ -400,15 +400,15 @@
 :om_029 a rr:ObjectMap;
     rr:constant "http://semanticscience.org/resource/information-content-entity";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_age_measuring_procedure_Output_type_annotation_000.
-:map_age_measuring_procedure_Output_type_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_age_measuring_procedure_Output_type_annotation_000.
+:map_process_age_measuring_procedure_Output_type_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "age_measuring_procedure_Output_type_annotation".
+    rdfs:label "process_age_measuring_procedure_Output_type_annotation".
 :s_014 a rr:SubjectMap.
-:map_age_measuring_procedure_Output_type_annotation_000 rr:subjectMap :s_014.
-:s_014 rr:template "http://example.org/data/individual_{pid}_{uniqid}#age_measuring_procedure_Output".
+:map_process_age_measuring_procedure_Output_type_annotation_000 rr:subjectMap :s_014.
+:s_014 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_age_measuring_procedure_Output".
 :pom_030 a rr:PredicateObjectMap.
-:map_age_measuring_procedure_Output_type_annotation_000 rr:predicateObjectMap :pom_030.
+:map_process_age_measuring_procedure_Output_type_annotation_000 rr:predicateObjectMap :pom_030.
 :pm_030 a rr:PredicateMap.
 :pom_030 rr:predicateMap :pm_030.
 :pm_030 rr:constant rdf:type.
@@ -416,15 +416,15 @@
 :om_030 a rr:ObjectMap;
     rr:constant "http://semanticscience.org/resource/information-content-entity";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_age_measuring_procedure_Output_type_label_annotation_000.
-:map_age_measuring_procedure_Output_type_label_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_age_measuring_procedure_Output_type_label_annotation_000.
+:map_process_age_measuring_procedure_Output_type_label_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "age_measuring_procedure_Output_type_label_annotation".
+    rdfs:label "process_age_measuring_procedure_Output_type_label_annotation".
 :s_015 a rr:SubjectMap.
-:map_age_measuring_procedure_Output_type_label_annotation_000 rr:subjectMap :s_015.
+:map_process_age_measuring_procedure_Output_type_label_annotation_000 rr:subjectMap :s_015.
 :s_015 rr:template "http://example.org/data/individual_{pid}_{uniqid}#age_measuring_procedure_Output".
 :pom_031 a rr:PredicateObjectMap.
-:map_age_measuring_procedure_Output_type_label_annotation_000 rr:predicateObjectMap :pom_031.
+:map_process_age_measuring_procedure_Output_type_label_annotation_000 rr:predicateObjectMap :pom_031.
 :pm_031 a rr:PredicateMap.
 :pom_031 rr:predicateMap :pm_031.
 :pm_031 rr:constant rdfs:label.
@@ -433,15 +433,15 @@
     rr:constant "Output Type: Birth Date";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-:rules_000 void:exampleResource :map_age_measuring_procedure_Output_value_annotation_000.
-:map_age_measuring_procedure_Output_value_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_age_measuring_procedure_Output_value_annotation_000.
+:map_process_age_measuring_procedure_Output_value_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "age_measuring_procedure_Output_value_annotation".
+    rdfs:label "process_age_measuring_procedure_Output_value_annotation".
 :s_016 a rr:SubjectMap.
-:map_age_measuring_procedure_Output_value_annotation_000 rr:subjectMap :s_016.
-:s_016 rr:template "http://example.org/data/individual_{pid}_{uniqid}#age_measuring_procedure_Output".
+:map_process_age_measuring_procedure_Output_value_annotation_000 rr:subjectMap :s_016.
+:s_016 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_age_measuring_procedure_Output".
 :pom_032 a rr:PredicateObjectMap.
-:map_age_measuring_procedure_Output_value_annotation_000 rr:predicateObjectMap :pom_032.
+:map_process_age_measuring_procedure_Output_value_annotation_000 rr:predicateObjectMap :pom_032.
 :pm_032 a rr:PredicateMap.
 :pom_032 rr:predicateMap :pm_032.
 :pm_032 rr:constant sio:has-value.
@@ -450,31 +450,31 @@
     rml:reference "birthdate";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#date>.
-:rules_000 void:exampleResource :map_sex_measuring_procedure_process_has_output_000.
-:map_sex_measuring_procedure_process_has_output_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_sex_measuring_procedure_process_has_output_000.
+:map_process_sex_measuring_procedure_process_has_output_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "sex_measuring_procedure_process_has_output".
+    rdfs:label "process_sex_measuring_procedure_process_has_output".
 :s_017 a rr:SubjectMap.
-:map_sex_measuring_procedure_process_has_output_000 rr:subjectMap :s_017.
-:s_017 rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#sex_measuring_procedure".
+:map_process_sex_measuring_procedure_process_has_output_000 rr:subjectMap :s_017.
+:s_017 rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#process_sex_measuring_procedure".
 :pom_033 a rr:PredicateObjectMap.
-:map_sex_measuring_procedure_process_has_output_000 rr:predicateObjectMap :pom_033.
+:map_process_sex_measuring_procedure_process_has_output_000 rr:predicateObjectMap :pom_033.
 :pm_033 a rr:PredicateMap.
 :pom_033 rr:predicateMap :pm_033.
 :pm_033 rr:constant sio:has-output.
 :pom_033 rr:objectMap :om_033.
 :om_033 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#sex_measuring_procedure_Output";
+    rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_sex_measuring_procedure_Output";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_sex_measuring_procedure_Output_annotation_000.
-:map_sex_measuring_procedure_Output_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_sex_measuring_procedure_Output_annotation_000.
+:map_process_sex_measuring_procedure_Output_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "sex_measuring_procedure_Output_annotation".
+    rdfs:label "process_sex_measuring_procedure_Output_annotation".
 :s_018 a rr:SubjectMap.
-:map_sex_measuring_procedure_Output_annotation_000 rr:subjectMap :s_018.
-:s_018 rr:template "http://example.org/data/individual_{pid}_{uniqid}#sex_measuring_procedure_Output".
+:map_process_sex_measuring_procedure_Output_annotation_000 rr:subjectMap :s_018.
+:s_018 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_sex_measuring_procedure_Output".
 :pom_034 a rr:PredicateObjectMap.
-:map_sex_measuring_procedure_Output_annotation_000 rr:predicateObjectMap :pom_034.
+:map_process_sex_measuring_procedure_Output_annotation_000 rr:predicateObjectMap :pom_034.
 :pm_034 a rr:PredicateMap.
 :pom_034 rr:predicateMap :pm_034.
 :pm_034 rr:constant rdf:type.
@@ -482,15 +482,15 @@
 :om_034 a rr:ObjectMap;
     rr:constant "http://semanticscience.org/resource/information-content-entity";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_sex_measuring_procedure_Output_type_annotation_000.
-:map_sex_measuring_procedure_Output_type_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_sex_measuring_procedure_Output_type_annotation_000.
+:map_process_sex_measuring_procedure_Output_type_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "sex_measuring_procedure_Output_type_annotation".
+    rdfs:label "process_sex_measuring_procedure_Output_type_annotation".
 :s_019 a rr:SubjectMap.
-:map_sex_measuring_procedure_Output_type_annotation_000 rr:subjectMap :s_019.
-:s_019 rr:template "http://example.org/data/individual_{pid}_{uniqid}#sex_measuring_procedure_Output".
+:map_process_sex_measuring_procedure_Output_type_annotation_000 rr:subjectMap :s_019.
+:s_019 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_sex_measuring_procedure_Output".
 :pom_035 a rr:PredicateObjectMap.
-:map_sex_measuring_procedure_Output_type_annotation_000 rr:predicateObjectMap :pom_035.
+:map_process_sex_measuring_procedure_Output_type_annotation_000 rr:predicateObjectMap :pom_035.
 :pm_035 a rr:PredicateMap.
 :pom_035 rr:predicateMap :pm_035.
 :pm_035 rr:constant rdf:type.
@@ -498,15 +498,15 @@
 :om_035 a rr:ObjectMap;
     rr:constant "http://semanticscience.org/resource/information-content-entity";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_sex_measuring_procedure_Output_type_label_annotation_000.
-:map_sex_measuring_procedure_Output_type_label_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_sex_measuring_procedure_Output_type_label_annotation_000.
+:map_process_sex_measuring_procedure_Output_type_label_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "sex_measuring_procedure_Output_type_label_annotation".
+    rdfs:label "process_sex_measuring_procedure_Output_type_label_annotation".
 :s_020 a rr:SubjectMap.
-:map_sex_measuring_procedure_Output_type_label_annotation_000 rr:subjectMap :s_020.
+:map_process_sex_measuring_procedure_Output_type_label_annotation_000 rr:subjectMap :s_020.
 :s_020 rr:template "http://example.org/data/individual_{pid}_{uniqid}#sex_measuring_procedure_Output".
 :pom_036 a rr:PredicateObjectMap.
-:map_sex_measuring_procedure_Output_type_label_annotation_000 rr:predicateObjectMap :pom_036.
+:map_process_sex_measuring_procedure_Output_type_label_annotation_000 rr:predicateObjectMap :pom_036.
 :pm_036 a rr:PredicateMap.
 :pom_036 rr:predicateMap :pm_036.
 :pm_036 rr:constant rdfs:label.
@@ -515,15 +515,15 @@
     rr:template "Output Type: {sexLabel}";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-:rules_000 void:exampleResource :map_sex_measuring_procedure_Output_value_annotation_000.
-:map_sex_measuring_procedure_Output_value_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_process_sex_measuring_procedure_Output_value_annotation_000.
+:map_process_sex_measuring_procedure_Output_value_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "sex_measuring_procedure_Output_value_annotation".
+    rdfs:label "process_sex_measuring_procedure_Output_value_annotation".
 :s_021 a rr:SubjectMap.
-:map_sex_measuring_procedure_Output_value_annotation_000 rr:subjectMap :s_021.
-:s_021 rr:template "http://example.org/data/individual_{pid}_{uniqid}#sex_measuring_procedure_Output".
+:map_process_sex_measuring_procedure_Output_value_annotation_000 rr:subjectMap :s_021.
+:s_021 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_sex_measuring_procedure_Output".
 :pom_037 a rr:PredicateObjectMap.
-:map_sex_measuring_procedure_Output_value_annotation_000 rr:predicateObjectMap :pom_037.
+:map_process_sex_measuring_procedure_Output_value_annotation_000 rr:predicateObjectMap :pom_037.
 :pm_037 a rr:PredicateMap.
 :pom_037 rr:predicateMap :pm_037.
 :pm_037 rr:constant sio:has-value.
@@ -532,15 +532,15 @@
     rml:reference "sexLabel";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-:rules_000 void:exampleResource :map_inout_from_sex_measuring_procedure_refers_to_concepts_000.
-:map_inout_from_sex_measuring_procedure_refers_to_concepts_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_inout_from_process_sex_measuring_procedure_refers_to_concepts_000.
+:map_inout_from_process_sex_measuring_procedure_refers_to_concepts_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "inout_from_sex_measuring_procedure_refers_to_concepts".
+    rdfs:label "inout_from_process_sex_measuring_procedure_refers_to_concepts".
 :s_022 a rr:SubjectMap.
-:map_inout_from_sex_measuring_procedure_refers_to_concepts_000 rr:subjectMap :s_022.
-:s_022 rr:template "http://example.org/data/individual_{pid}_{uniqid}#sex_measuring_procedure_Output".
+:map_inout_from_process_sex_measuring_procedure_refers_to_concepts_000 rr:subjectMap :s_022.
+:s_022 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_sex_measuring_procedure_Output".
 :pom_038 a rr:PredicateObjectMap.
-:map_inout_from_sex_measuring_procedure_refers_to_concepts_000 rr:predicateObjectMap :pom_038.
+:map_inout_from_process_sex_measuring_procedure_refers_to_concepts_000 rr:predicateObjectMap :pom_038.
 :pm_038 a rr:PredicateMap.
 :pom_038 rr:predicateMap :pm_038.
 :pm_038 rr:constant sio:refers-to.
@@ -548,15 +548,15 @@
 :om_038 a rr:ObjectMap;
     rr:template "http://example.org/data/individual_{pid}_{uniqid}#sexAttribute_TypedAttributeNode";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_has_attribute_of_inout_from_sex_measuring_procedure_000.
-:map_has_attribute_of_inout_from_sex_measuring_procedure_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_has_attribute_of_inout_from_process_sex_measuring_procedure_000.
+:map_has_attribute_of_inout_from_process_sex_measuring_procedure_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "has_attribute_of_inout_from_sex_measuring_procedure".
+    rdfs:label "has_attribute_of_inout_from_process_sex_measuring_procedure".
 :s_023 a rr:SubjectMap.
-:map_has_attribute_of_inout_from_sex_measuring_procedure_000 rr:subjectMap :s_023.
+:map_has_attribute_of_inout_from_process_sex_measuring_procedure_000 rr:subjectMap :s_023.
 :s_023 rr:template "http://example.org/data/individual_{pid}#Person".
 :pom_039 a rr:PredicateObjectMap.
-:map_has_attribute_of_inout_from_sex_measuring_procedure_000 rr:predicateObjectMap :pom_039.
+:map_has_attribute_of_inout_from_process_sex_measuring_procedure_000 rr:predicateObjectMap :pom_039.
 :pm_039 a rr:PredicateMap.
 :pom_039 rr:predicateMap :pm_039.
 :pm_039 rr:constant sio:has-attribute.
@@ -564,15 +564,15 @@
 :om_039 a rr:ObjectMap;
     rr:template "http://example.org/data/individual_{pid}_{uniqid}#sexAttribute_TypedAttributeNode";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000.
-:map_inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000.
+:map_inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_type".
+    rdfs:label "inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_type".
 :s_024 a rr:SubjectMap.
-:map_inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000 rr:subjectMap :s_024.
+:map_inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000 rr:subjectMap :s_024.
 :s_024 rr:template "http://example.org/data/individual_{pid}_{uniqid}#sexAttribute_TypedAttributeNode".
 :pom_040 a rr:PredicateObjectMap.
-:map_inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000 rr:predicateObjectMap :pom_040.
+:map_inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000 rr:predicateObjectMap :pom_040.
 :pm_040 a rr:PredicateMap.
 :pom_040 rr:predicateMap :pm_040.
 :pm_040 rr:constant rdf:type.
@@ -581,7 +581,7 @@
     rr:constant "http://semanticscience.org/resource/attribute";
     rr:termType rr:IRI.
 :pom_041 a rr:PredicateObjectMap.
-:map_inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000 rr:predicateObjectMap :pom_041.
+:map_inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000 rr:predicateObjectMap :pom_041.
 :pm_041 a rr:PredicateMap.
 :pom_041 rr:predicateMap :pm_041.
 :pm_041 rr:constant rdf:type.
@@ -590,7 +590,7 @@
     rml:reference "sexURI";
     rr:termType rr:IRI.
 :pom_042 a rr:PredicateObjectMap.
-:map_inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000 rr:predicateObjectMap :pom_042.
+:map_inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_type_000 rr:predicateObjectMap :pom_042.
 :pm_042 a rr:PredicateMap.
 :pom_042 rr:predicateMap :pm_042.
 :pm_042 rr:constant rdf:type.
@@ -598,15 +598,15 @@
 :om_042 a rr:ObjectMap;
     rr:constant "http://purl.obolibrary.org/obo/NCIT_C28421";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_label_000.
-:map_inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_label_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_label_000.
+:map_inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_label_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_label".
+    rdfs:label "inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_label".
 :s_025 a rr:SubjectMap.
-:map_inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_label_000 rr:subjectMap :s_025.
+:map_inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_label_000 rr:subjectMap :s_025.
 :s_025 rr:template "http://example.org/data/individual_{pid}_{uniqid}#sexAttribute_TypedAttributeNode".
 :pom_043 a rr:PredicateObjectMap.
-:map_inout_from_sex_measuring_procedure_refers_to_concept_sexAttribute_label_000 rr:predicateObjectMap :pom_043.
+:map_inout_from_process_sex_measuring_procedure_refers_to_concept_sexAttribute_label_000 rr:predicateObjectMap :pom_043.
 :pm_043 a rr:PredicateMap.
 :pom_043 rr:predicateMap :pm_043.
 :pm_043 rr:constant rdfs:label.
@@ -615,15 +615,15 @@
     rr:template "Attribute Type: {sexLabel}";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-:rules_000 void:exampleResource :map_inout_from_age_measuring_procedure_refers_to_concepts_000.
-:map_inout_from_age_measuring_procedure_refers_to_concepts_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_inout_from_process_age_measuring_procedure_refers_to_concepts_000.
+:map_inout_from_process_age_measuring_procedure_refers_to_concepts_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "inout_from_age_measuring_procedure_refers_to_concepts".
+    rdfs:label "inout_from_process_age_measuring_procedure_refers_to_concepts".
 :s_026 a rr:SubjectMap.
-:map_inout_from_age_measuring_procedure_refers_to_concepts_000 rr:subjectMap :s_026.
-:s_026 rr:template "http://example.org/data/individual_{pid}_{uniqid}#age_measuring_procedure_Output".
+:map_inout_from_process_age_measuring_procedure_refers_to_concepts_000 rr:subjectMap :s_026.
+:s_026 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_age_measuring_procedure_Output".
 :pom_044 a rr:PredicateObjectMap.
-:map_inout_from_age_measuring_procedure_refers_to_concepts_000 rr:predicateObjectMap :pom_044.
+:map_inout_from_process_age_measuring_procedure_refers_to_concepts_000 rr:predicateObjectMap :pom_044.
 :pm_044 a rr:PredicateMap.
 :pom_044 rr:predicateMap :pm_044.
 :pm_044 rr:constant sio:refers-to.
@@ -631,15 +631,15 @@
 :om_044 a rr:ObjectMap;
     rr:template "http://example.org/data/individual_{pid}_{uniqid}#ageAttribute_TypedAttributeNode";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_has_attribute_of_inout_from_age_measuring_procedure_000.
-:map_has_attribute_of_inout_from_age_measuring_procedure_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_has_attribute_of_inout_from_process_age_measuring_procedure_000.
+:map_has_attribute_of_inout_from_process_age_measuring_procedure_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "has_attribute_of_inout_from_age_measuring_procedure".
+    rdfs:label "has_attribute_of_inout_from_process_age_measuring_procedure".
 :s_027 a rr:SubjectMap.
-:map_has_attribute_of_inout_from_age_measuring_procedure_000 rr:subjectMap :s_027.
+:map_has_attribute_of_inout_from_process_age_measuring_procedure_000 rr:subjectMap :s_027.
 :s_027 rr:template "http://example.org/data/individual_{pid}#Person".
 :pom_045 a rr:PredicateObjectMap.
-:map_has_attribute_of_inout_from_age_measuring_procedure_000 rr:predicateObjectMap :pom_045.
+:map_has_attribute_of_inout_from_process_age_measuring_procedure_000 rr:predicateObjectMap :pom_045.
 :pm_045 a rr:PredicateMap.
 :pom_045 rr:predicateMap :pm_045.
 :pm_045 rr:constant sio:has-attribute.
@@ -647,15 +647,15 @@
 :om_045 a rr:ObjectMap;
     rr:template "http://example.org/data/individual_{pid}_{uniqid}#ageAttribute_TypedAttributeNode";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_inout_from_age_measuring_procedure_refers_to_concept_ageAttribute_type_000.
-:map_inout_from_age_measuring_procedure_refers_to_concept_ageAttribute_type_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_inout_from_process_age_measuring_procedure_refers_to_concept_ageAttribute_type_000.
+:map_inout_from_process_age_measuring_procedure_refers_to_concept_ageAttribute_type_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "inout_from_age_measuring_procedure_refers_to_concept_ageAttribute_type".
+    rdfs:label "inout_from_process_age_measuring_procedure_refers_to_concept_ageAttribute_type".
 :s_028 a rr:SubjectMap.
-:map_inout_from_age_measuring_procedure_refers_to_concept_ageAttribute_type_000 rr:subjectMap :s_028.
+:map_inout_from_process_age_measuring_procedure_refers_to_concept_ageAttribute_type_000 rr:subjectMap :s_028.
 :s_028 rr:template "http://example.org/data/individual_{pid}_{uniqid}#ageAttribute_TypedAttributeNode".
 :pom_046 a rr:PredicateObjectMap.
-:map_inout_from_age_measuring_procedure_refers_to_concept_ageAttribute_type_000 rr:predicateObjectMap :pom_046.
+:map_inout_from_process_age_measuring_procedure_refers_to_concept_ageAttribute_type_000 rr:predicateObjectMap :pom_046.
 :pm_046 a rr:PredicateMap.
 :pom_046 rr:predicateMap :pm_046.
 :pm_046 rr:constant rdf:type.
@@ -664,7 +664,7 @@
     rr:constant "http://semanticscience.org/resource/attribute";
     rr:termType rr:IRI.
 :pom_047 a rr:PredicateObjectMap.
-:map_inout_from_age_measuring_procedure_refers_to_concept_ageAttribute_type_000 rr:predicateObjectMap :pom_047.
+:map_inout_from_process_age_measuring_procedure_refers_to_concept_ageAttribute_type_000 rr:predicateObjectMap :pom_047.
 :pm_047 a rr:PredicateMap.
 :pom_047 rr:predicateMap :pm_047.
 :pm_047 rr:constant rdf:type.
@@ -672,15 +672,15 @@
 :om_047 a rr:ObjectMap;
     rr:constant "http://purl.obolibrary.org/obo/NCIT_C68615";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_inout_from_age_measuring_procedure_refers_to_concept_ageAttribute_label_000.
-:map_inout_from_age_measuring_procedure_refers_to_concept_ageAttribute_label_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_inout_from_process_age_measuring_procedure_refers_to_concept_ageAttribute_label_000.
+:map_inout_from_process_age_measuring_procedure_refers_to_concept_ageAttribute_label_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "inout_from_age_measuring_procedure_refers_to_concept_ageAttribute_label".
+    rdfs:label "inout_from_process_age_measuring_procedure_refers_to_concept_ageAttribute_label".
 :s_029 a rr:SubjectMap.
-:map_inout_from_age_measuring_procedure_refers_to_concept_ageAttribute_label_000 rr:subjectMap :s_029.
+:map_inout_from_process_age_measuring_procedure_refers_to_concept_ageAttribute_label_000 rr:subjectMap :s_029.
 :s_029 rr:template "http://example.org/data/individual_{pid}_{uniqid}#ageAttribute_TypedAttributeNode".
 :pom_048 a rr:PredicateObjectMap.
-:map_inout_from_age_measuring_procedure_refers_to_concept_ageAttribute_label_000 rr:predicateObjectMap :pom_048.
+:map_inout_from_process_age_measuring_procedure_refers_to_concept_ageAttribute_label_000 rr:predicateObjectMap :pom_048.
 :pm_048 a rr:PredicateMap.
 :pom_048 rr:predicateMap :pm_048.
 :pm_048 rr:constant rdfs:label.

@@ -1,0 +1,44 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/data/individual_uid_000002#Entity> a sio:object,
+        sio:person ;
+    sio:has-role <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#patientRole> .
+
+<http://example.org/data/individual_uid_000002#ID> a sio:identifier ;
+    sio:denotes <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#patientRole> ;
+    sio:has-value "uid_000002"^^xsd:string .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#disability_assessment_test_Output> rdfs:label "Output Type: disability score" .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#process_disability_assessment_test_Output> a sio:information-content-entity ;
+    sio:has-value "12"^^xsd:string .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#process_question_answering_process_Output> a obo:NCIT_C17048,
+        sio:information-content-entity ;
+    rdfs:label "Process Input: information content entity - Type: Questionnaire" .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_disability_assessment_test> a obo:NCIT_C107391,
+        obo:NCIT_C20993,
+        sio:process ;
+    rdfs:label "Process: Edmonton Symptom Assessment System" ;
+    sio:has-end-time <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_disability_assessment_test_enddate_2019-11-12> ;
+    sio:has-input <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#process_question_answering_process_Output> ;
+    sio:has-output <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#process_disability_assessment_test_Output> ;
+    sio:has-start-time <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_disability_assessment_test_startdate_2019-11-12> .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_disability_assessment_test_enddate_2019-11-12> a sio:end-date ;
+    rdfs:label "End Date: 2019-11-12" ;
+    sio:has-value "2019-11-12"^^xsd:date .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_disability_assessment_test_startdate_2019-11-12> a sio:start-date ;
+    rdfs:label "Start Date: 2019-11-12" ;
+    sio:has-value "2019-11-12"^^xsd:date .
+
+<http://example.org/data/individual_uid_000002_2.02109231047221E%2B019#patientRole> a obo:OBI_0000093,
+        sio:role ;
+    rdfs:label " Role: Patient" ;
+    sio:is-realized-in <http://example.org/data/individual_uid_000002_2.02109231047221E%2B019_process#process_disability_assessment_test> .
+

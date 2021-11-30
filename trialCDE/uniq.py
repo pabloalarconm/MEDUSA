@@ -46,9 +46,6 @@ def uniqid(path_file):
     data.to_csv(path_file, sep="," , index=False)
 
 
-
-
-
 argv = sys.argv[1:]
 
 all_files = get_files(argv[0],"csv")

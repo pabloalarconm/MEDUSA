@@ -26,15 +26,15 @@
     rml:source "/data/phenotyping.csv";
     rml:iterator "$";
     rml:referenceFormulation ql:CSV.
-:rules_000 void:exampleResource :map_identifier_has_value_for_patientRole_phenotyping_000.
-:map_identifier_has_value_for_patientRole_phenotyping_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_identifier_has_value_for_thisPerson_patientRole_phenotyping_000.
+:map_identifier_has_value_for_thisPerson_patientRole_phenotyping_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "identifier_has_value_for_patientRole_phenotyping".
+    rdfs:label "identifier_has_value_for_thisPerson_patientRole_phenotyping".
 :s_000 a rr:SubjectMap.
-:map_identifier_has_value_for_patientRole_phenotyping_000 rr:subjectMap :s_000.
-:s_000 rr:template "http://example.org/data/individual_{pid}#ID".
+:map_identifier_has_value_for_thisPerson_patientRole_phenotyping_000 rr:subjectMap :s_000.
+:s_000 rr:template "http://example.org/data/individual_thisPerson_{pid}#ID".
 :pom_000 a rr:PredicateObjectMap.
-:map_identifier_has_value_for_patientRole_phenotyping_000 rr:predicateObjectMap :pom_000.
+:map_identifier_has_value_for_thisPerson_patientRole_phenotyping_000 rr:predicateObjectMap :pom_000.
 :pm_000 a rr:PredicateMap.
 :pom_000 rr:predicateMap :pm_000.
 :pm_000 rr:constant sio:has-value.
@@ -49,7 +49,7 @@
     rdfs:label "identifier_denotes_role_patientRole_phenotyping".
 :s_001 a rr:SubjectMap.
 :map_identifier_denotes_role_patientRole_phenotyping_000 rr:subjectMap :s_001.
-:s_001 rr:template "http://example.org/data/individual_{pid}#ID".
+:s_001 rr:template "http://example.org/data/individual_thisPerson_{pid}#ID".
 :pom_001 a rr:PredicateObjectMap.
 :map_identifier_denotes_role_patientRole_phenotyping_000 rr:predicateObjectMap :pom_001.
 :pm_001 a rr:PredicateMap.
@@ -75,7 +75,7 @@
 :pm_003 rr:constant sio:denotes.
 :pom_003 rr:objectMap :om_003.
 :om_003 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_phenotyping";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_phenotyping";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_entity_has_role_patientRole_phenotyping_000.
 :map_entity_has_role_patientRole_phenotyping_000 rml:logicalSource :source_000;
@@ -83,7 +83,7 @@
     rdfs:label "entity_has_role_patientRole_phenotyping".
 :s_002 a rr:SubjectMap.
 :map_entity_has_role_patientRole_phenotyping_000 rr:subjectMap :s_002.
-:s_002 rr:template "http://example.org/data/individual_{pid}#Entity".
+:s_002 rr:template "http://example.org/data/individual_thisPerson_{pid}#Person".
 :pom_004 a rr:PredicateObjectMap.
 :map_entity_has_role_patientRole_phenotyping_000 rr:predicateObjectMap :pom_004.
 :pm_004 a rr:PredicateMap.
@@ -109,7 +109,7 @@
 :pm_006 rr:constant sio:has-role.
 :pom_006 rr:objectMap :om_006.
 :om_006 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_phenotyping";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_phenotyping";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_patientRole_phenotyping_annotation_000.
 :map_patientRole_phenotyping_annotation_000 rml:logicalSource :source_000;
@@ -117,7 +117,7 @@
     rdfs:label "patientRole_phenotyping_annotation".
 :s_003 a rr:SubjectMap.
 :map_patientRole_phenotyping_annotation_000 rr:subjectMap :s_003.
-:s_003 rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_phenotyping".
+:s_003 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_phenotyping".
 :pom_007 a rr:PredicateObjectMap.
 :map_patientRole_phenotyping_annotation_000 rr:predicateObjectMap :pom_007.
 :pm_007 a rr:PredicateMap.
@@ -301,15 +301,15 @@
     rr:template "End Date: {date}";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
-:rules_000 void:exampleResource :map_16380141607401688_process_custom_annotation_000.
-:map_16380141607401688_process_custom_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_16382584953291514_process_custom_annotation_000.
+:map_16382584953291514_process_custom_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "16380141607401688_process_custom_annotation".
+    rdfs:label "16382584953291514_process_custom_annotation".
 :s_010 a rr:SubjectMap.
-:map_16380141607401688_process_custom_annotation_000 rr:subjectMap :s_010.
+:map_16382584953291514_process_custom_annotation_000 rr:subjectMap :s_010.
 :s_010 rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#process_patientRole_phenotyping_process".
 :pom_022 a rr:PredicateObjectMap.
-:map_16380141607401688_process_custom_annotation_000 rr:predicateObjectMap :pom_022.
+:map_16382584953291514_process_custom_annotation_000 rr:predicateObjectMap :pom_022.
 :pm_022 a rr:PredicateMap.
 :pom_022 rr:predicateMap :pm_022.
 :pm_022 rr:constant rdf:type.
@@ -317,15 +317,15 @@
 :om_022 a rr:ObjectMap;
     rr:constant "http://purl.obolibrary.org/obo/NCIT_C16205";
     rr:termType rr:IRI.
-:rules_000 void:exampleResource :map_16380141607401838_process_custom_annotation_000.
-:map_16380141607401838_process_custom_annotation_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_16382584953291667_process_custom_annotation_000.
+:map_16382584953291667_process_custom_annotation_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "16380141607401838_process_custom_annotation".
+    rdfs:label "16382584953291667_process_custom_annotation".
 :s_011 a rr:SubjectMap.
-:map_16380141607401838_process_custom_annotation_000 rr:subjectMap :s_011.
+:map_16382584953291667_process_custom_annotation_000 rr:subjectMap :s_011.
 :s_011 rr:template "http://example.org/data/individual_{pid}_{uniqid}_process#process_patientRole_phenotyping_process".
 :pom_023 a rr:PredicateObjectMap.
-:map_16380141607401838_process_custom_annotation_000 rr:predicateObjectMap :pom_023.
+:map_16382584953291667_process_custom_annotation_000 rr:predicateObjectMap :pom_023.
 :pm_023 a rr:PredicateMap.
 :pom_023 rr:predicateMap :pm_023.
 :pm_023 rr:constant rdf:type.
@@ -419,7 +419,7 @@
     rdfs:label "process_patientRole_phenotyping_process_Output_type_label_annotation".
 :s_017 a rr:SubjectMap.
 :map_process_patientRole_phenotyping_process_Output_type_label_annotation_000 rr:subjectMap :s_017.
-:s_017 rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_phenotyping_process_Output".
+:s_017 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_patientRole_phenotyping_process_Output".
 :pom_029 a rr:PredicateObjectMap.
 :map_process_patientRole_phenotyping_process_Output_type_label_annotation_000 rr:predicateObjectMap :pom_029.
 :pm_029 a rr:PredicateMap.
@@ -436,7 +436,7 @@
     rdfs:label "inout_from_process_patientRole_phenotyping_process_refers_to_concepts".
 :s_018 a rr:SubjectMap.
 :map_inout_from_process_patientRole_phenotyping_process_refers_to_concepts_000 rr:subjectMap :s_018.
-:s_018 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_patientRole_phenotyping_process_Output".
+:s_018 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#process_patientRole_phenotyping_process_Output".
 :pom_030 a rr:PredicateObjectMap.
 :map_inout_from_process_patientRole_phenotyping_process_refers_to_concepts_000 rr:predicateObjectMap :pom_030.
 :pm_030 a rr:PredicateMap.
@@ -444,7 +444,7 @@
 :pm_030 rr:constant sio:refers-to.
 :pom_030 rr:objectMap :om_030.
 :om_030 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#phenotyping_attribute_TypedAttributeNode";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#phenotyping_attribute_TypedAttributeNode";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_has_attribute_of_inout_from_process_patientRole_phenotyping_process_000.
 :map_has_attribute_of_inout_from_process_patientRole_phenotyping_process_000 rml:logicalSource :source_000;
@@ -452,7 +452,7 @@
     rdfs:label "has_attribute_of_inout_from_process_patientRole_phenotyping_process".
 :s_019 a rr:SubjectMap.
 :map_has_attribute_of_inout_from_process_patientRole_phenotyping_process_000 rr:subjectMap :s_019.
-:s_019 rr:template "http://example.org/data/individual_{pid}#Person".
+:s_019 rr:template "http://example.org/data/individual_thisPerson_{pid}#Person".
 :pom_031 a rr:PredicateObjectMap.
 :map_has_attribute_of_inout_from_process_patientRole_phenotyping_process_000 rr:predicateObjectMap :pom_031.
 :pm_031 a rr:PredicateMap.
@@ -460,7 +460,7 @@
 :pm_031 rr:constant sio:has-attribute.
 :pom_031 rr:objectMap :om_031.
 :om_031 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#phenotyping_attribute_TypedAttributeNode";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#phenotyping_attribute_TypedAttributeNode";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_inout_from_process_patientRole_phenotyping_process_refers_to_concept_phenotyping_attribute_type_000.
 :map_inout_from_process_patientRole_phenotyping_process_refers_to_concept_phenotyping_attribute_type_000 rml:logicalSource :source_000;
@@ -468,7 +468,7 @@
     rdfs:label "inout_from_process_patientRole_phenotyping_process_refers_to_concept_phenotyping_attribute_type".
 :s_020 a rr:SubjectMap.
 :map_inout_from_process_patientRole_phenotyping_process_refers_to_concept_phenotyping_attribute_type_000 rr:subjectMap :s_020.
-:s_020 rr:template "http://example.org/data/individual_{pid}_{uniqid}#phenotyping_attribute_TypedAttributeNode".
+:s_020 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#phenotyping_attribute_TypedAttributeNode".
 :pom_032 a rr:PredicateObjectMap.
 :map_inout_from_process_patientRole_phenotyping_process_refers_to_concept_phenotyping_attribute_type_000 rr:predicateObjectMap :pom_032.
 :pm_032 a rr:PredicateMap.
@@ -502,7 +502,7 @@
     rdfs:label "inout_from_process_patientRole_phenotyping_process_refers_to_concept_phenotyping_attribute_label".
 :s_021 a rr:SubjectMap.
 :map_inout_from_process_patientRole_phenotyping_process_refers_to_concept_phenotyping_attribute_label_000 rr:subjectMap :s_021.
-:s_021 rr:template "http://example.org/data/individual_{pid}_{uniqid}#phenotyping_attribute_TypedAttributeNode".
+:s_021 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#phenotyping_attribute_TypedAttributeNode".
 :pom_035 a rr:PredicateObjectMap.
 :map_inout_from_process_patientRole_phenotyping_process_refers_to_concept_phenotyping_attribute_label_000 rr:predicateObjectMap :pom_035.
 :pm_035 a rr:PredicateMap.

@@ -1,2 +1,2 @@
-,pid,uniqid,onset_uri,onset_date,diagnosis_uri,diagnosis_date
-1,uid_000002,2.02109231047221E+019,http://purl.obolibrary.org/obo/NCIT_C251654,1995-06-23,http://purl.obolibrary.org/obo/C251654,1996-06-23
+pid,uniqid,onset_uri,onset_date,diagnosis_uri,diagnosis_date
+uid_000008,20211001110703686812,http://purl.obolibrary.org/obo/NCIT_C251654,1998-06-08,http://purl.obolibrary.org/obo/HP_0003674,

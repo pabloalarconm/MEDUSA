@@ -1,2 +1,2 @@
-,pid,uniqid,test_uri,test_name,test_date,score
-1,uid_000002,2.02109231047221E+019,http://purl.obolibrary.org/obo/NCIT_C107391,Edmonton Symptom Assessment System,2019-11-12,12
+pid,uniqid,test_uri,test_name,test_date,score
+uid_000002,20211001110703673490,http://purl.obolibrary.org/obo/NCIT_C107391,Edmonton Symptom Assessment System,2019-11-12,12

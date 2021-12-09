@@ -26,15 +26,15 @@
     rml:source "/data/diagnosis.csv";
     rml:iterator "$";
     rml:referenceFormulation ql:CSV.
-:rules_000 void:exampleResource :map_identifier_has_value_for_patientRole_diagnosis_000.
-:map_identifier_has_value_for_patientRole_diagnosis_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_identifier_has_value_for_thisPerson_patientRole_diagnosis_000.
+:map_identifier_has_value_for_thisPerson_patientRole_diagnosis_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "identifier_has_value_for_patientRole_diagnosis".
+    rdfs:label "identifier_has_value_for_thisPerson_patientRole_diagnosis".
 :s_000 a rr:SubjectMap.
-:map_identifier_has_value_for_patientRole_diagnosis_000 rr:subjectMap :s_000.
-:s_000 rr:template "http://example.org/data/individual_{pid}#ID".
+:map_identifier_has_value_for_thisPerson_patientRole_diagnosis_000 rr:subjectMap :s_000.
+:s_000 rr:template "http://example.org/data/individual_thisPerson_{pid}#ID".
 :pom_000 a rr:PredicateObjectMap.
-:map_identifier_has_value_for_patientRole_diagnosis_000 rr:predicateObjectMap :pom_000.
+:map_identifier_has_value_for_thisPerson_patientRole_diagnosis_000 rr:predicateObjectMap :pom_000.
 :pm_000 a rr:PredicateMap.
 :pom_000 rr:predicateMap :pm_000.
 :pm_000 rr:constant sio:has-value.
@@ -49,7 +49,7 @@
     rdfs:label "identifier_denotes_role_patientRole_diagnosis".
 :s_001 a rr:SubjectMap.
 :map_identifier_denotes_role_patientRole_diagnosis_000 rr:subjectMap :s_001.
-:s_001 rr:template "http://example.org/data/individual_{pid}#ID".
+:s_001 rr:template "http://example.org/data/individual_thisPerson_{pid}#ID".
 :pom_001 a rr:PredicateObjectMap.
 :map_identifier_denotes_role_patientRole_diagnosis_000 rr:predicateObjectMap :pom_001.
 :pm_001 a rr:PredicateMap.
@@ -75,7 +75,7 @@
 :pm_003 rr:constant sio:denotes.
 :pom_003 rr:objectMap :om_003.
 :om_003 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_diagnosis";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_diagnosis";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_entity_has_role_patientRole_diagnosis_000.
 :map_entity_has_role_patientRole_diagnosis_000 rml:logicalSource :source_000;
@@ -83,7 +83,7 @@
     rdfs:label "entity_has_role_patientRole_diagnosis".
 :s_002 a rr:SubjectMap.
 :map_entity_has_role_patientRole_diagnosis_000 rr:subjectMap :s_002.
-:s_002 rr:template "http://example.org/data/individual_{pid}#Entity".
+:s_002 rr:template "http://example.org/data/individual_thisPerson_{pid}#Person".
 :pom_004 a rr:PredicateObjectMap.
 :map_entity_has_role_patientRole_diagnosis_000 rr:predicateObjectMap :pom_004.
 :pm_004 a rr:PredicateMap.
@@ -109,7 +109,7 @@
 :pm_006 rr:constant sio:has-role.
 :pom_006 rr:objectMap :om_006.
 :om_006 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_diagnosis";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_diagnosis";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_patientRole_diagnosis_annotation_000.
 :map_patientRole_diagnosis_annotation_000 rml:logicalSource :source_000;
@@ -117,7 +117,7 @@
     rdfs:label "patientRole_diagnosis_annotation".
 :s_003 a rr:SubjectMap.
 :map_patientRole_diagnosis_annotation_000 rr:subjectMap :s_003.
-:s_003 rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_diagnosis".
+:s_003 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_diagnosis".
 :pom_007 a rr:PredicateObjectMap.
 :map_patientRole_diagnosis_annotation_000 rr:predicateObjectMap :pom_007.
 :pm_007 a rr:PredicateMap.
@@ -387,7 +387,7 @@
     rdfs:label "process_medical_diagnosis_Output_type_label_annotation".
 :s_015 a rr:SubjectMap.
 :map_process_medical_diagnosis_Output_type_label_annotation_000 rr:subjectMap :s_015.
-:s_015 rr:template "http://example.org/data/individual_{pid}_{uniqid}#medical_diagnosis_Output".
+:s_015 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_medical_diagnosis_Output".
 :pom_027 a rr:PredicateObjectMap.
 :map_process_medical_diagnosis_Output_type_label_annotation_000 rr:predicateObjectMap :pom_027.
 :pm_027 a rr:PredicateMap.
@@ -421,7 +421,7 @@
     rdfs:label "inout_from_process_medical_diagnosis_refers_to_concepts".
 :s_017 a rr:SubjectMap.
 :map_inout_from_process_medical_diagnosis_refers_to_concepts_000 rr:subjectMap :s_017.
-:s_017 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_medical_diagnosis_Output".
+:s_017 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#process_medical_diagnosis_Output".
 :pom_029 a rr:PredicateObjectMap.
 :map_inout_from_process_medical_diagnosis_refers_to_concepts_000 rr:predicateObjectMap :pom_029.
 :pm_029 a rr:PredicateMap.
@@ -429,7 +429,7 @@
 :pm_029 rr:constant sio:refers-to.
 :pom_029 rr:objectMap :om_029.
 :om_029 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#medical_diagnosis_attribute_TypedAttributeNode";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#medical_diagnosis_attribute_TypedAttributeNode";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_has_attribute_of_inout_from_process_medical_diagnosis_000.
 :map_has_attribute_of_inout_from_process_medical_diagnosis_000 rml:logicalSource :source_000;
@@ -437,7 +437,7 @@
     rdfs:label "has_attribute_of_inout_from_process_medical_diagnosis".
 :s_018 a rr:SubjectMap.
 :map_has_attribute_of_inout_from_process_medical_diagnosis_000 rr:subjectMap :s_018.
-:s_018 rr:template "http://example.org/data/individual_{pid}#Person".
+:s_018 rr:template "http://example.org/data/individual_thisPerson_{pid}#Person".
 :pom_030 a rr:PredicateObjectMap.
 :map_has_attribute_of_inout_from_process_medical_diagnosis_000 rr:predicateObjectMap :pom_030.
 :pm_030 a rr:PredicateMap.
@@ -445,7 +445,7 @@
 :pm_030 rr:constant sio:has-attribute.
 :pom_030 rr:objectMap :om_030.
 :om_030 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#medical_diagnosis_attribute_TypedAttributeNode";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#medical_diagnosis_attribute_TypedAttributeNode";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_inout_from_process_medical_diagnosis_refers_to_concept_medical_diagnosis_attribute_type_000.
 :map_inout_from_process_medical_diagnosis_refers_to_concept_medical_diagnosis_attribute_type_000 rml:logicalSource :source_000;
@@ -453,7 +453,7 @@
     rdfs:label "inout_from_process_medical_diagnosis_refers_to_concept_medical_diagnosis_attribute_type".
 :s_019 a rr:SubjectMap.
 :map_inout_from_process_medical_diagnosis_refers_to_concept_medical_diagnosis_attribute_type_000 rr:subjectMap :s_019.
-:s_019 rr:template "http://example.org/data/individual_{pid}_{uniqid}#medical_diagnosis_attribute_TypedAttributeNode".
+:s_019 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#medical_diagnosis_attribute_TypedAttributeNode".
 :pom_031 a rr:PredicateObjectMap.
 :map_inout_from_process_medical_diagnosis_refers_to_concept_medical_diagnosis_attribute_type_000 rr:predicateObjectMap :pom_031.
 :pm_031 a rr:PredicateMap.
@@ -478,7 +478,7 @@
     rdfs:label "inout_from_process_medical_diagnosis_refers_to_concept_medical_diagnosis_attribute_label".
 :s_020 a rr:SubjectMap.
 :map_inout_from_process_medical_diagnosis_refers_to_concept_medical_diagnosis_attribute_label_000 rr:subjectMap :s_020.
-:s_020 rr:template "http://example.org/data/individual_{pid}_{uniqid}#medical_diagnosis_attribute_TypedAttributeNode".
+:s_020 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#medical_diagnosis_attribute_TypedAttributeNode".
 :pom_033 a rr:PredicateObjectMap.
 :map_inout_from_process_medical_diagnosis_refers_to_concept_medical_diagnosis_attribute_label_000 rr:predicateObjectMap :pom_033.
 :pm_033 a rr:PredicateMap.

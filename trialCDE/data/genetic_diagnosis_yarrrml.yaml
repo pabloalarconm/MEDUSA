@@ -10,11 +10,11 @@ prefixes:
   ndfrt: http://purl.bioontology.org/ontology/NDFRT/
   edam: http://purl.bioontology.org/ontology/EDAM/
   ordo: http://www.orpha.net/ORDO/
-  this: "|||BASE|||"
+  this: "http://example.org/data/"
 sources:
   cde_genetic_diagnosis-source:
-    access: "|||DATA|||"
-    referenceFormulation: "|||FORMULATION|||"
+    access: "/data/genetic_diagnosis.csv"
+    referenceFormulation: "csv"
     iterator: "$"
 mappings:
   identifier_has_value_for_patientRole_genetic_diagnosis:

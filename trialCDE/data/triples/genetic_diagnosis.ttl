@@ -1,0 +1,78 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix this: <http://example.org/data/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/data/individual_uid_000002#ID> a sio:identifier ;
+    sio:denotes <http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis> ;
+    sio:has-value "uid_000002"^^xsd:string .
+
+<http://example.org/data/individual_uid_000002#Person> a sio:object,
+        sio:person ;
+    sio:has-attribute <https://identifiers.org/HGNC:12698>,
+        <https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/>,
+        <https://www.omim.org/entry/192977> ;
+    sio:has-role <http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis> .
+
+<http://example.org/data/individual_uid_000002_process#longitudinal_information_gathering_process_diseaseX> sio:has-part <http://example.org/data/individual_uid_000002_20211001110703671188_process#patientRole_genetic_diagnosis_process_hgnc>,
+        <http://example.org/data/individual_uid_000002_20211001110703671188_process#patientRole_genetic_diagnosis_process_hgvs>,
+        <http://example.org/data/individual_uid_000002_20211001110703671188_process#patientRole_genetic_diagnosis_process_omim> .
+
+<http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis_process_hgnc_Output> a sio:SIO_001381,
+        sio:information-content-entity ;
+    rdfs:label "Output Type: HGNC genome sequence variant" ;
+    sio:has-value "Value: https://identifiers.org/HGNC:12698"^^xsd:string ;
+    sio:refers-to <https://identifiers.org/HGNC:12698> .
+
+<http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis_process_hgvs_Output> a sio:SIO_001388,
+        sio:information-content-entity ;
+    rdfs:label "Output Type: measurement-value" ;
+    sio:has-value "Value: NM_004006.3:c.4375C>T"^^xsd:string ;
+    sio:refers-to <https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> .
+
+<http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis_process_omim_Output> a sio:SIO_001381,
+        sio:information-content-entity ;
+    rdfs:label "Output Type: OMIM genome sequence variant" ;
+    sio:has-value "Value: https://www.omim.org/entry/192977"^^xsd:string ;
+    sio:refers-to <https://www.omim.org/entry/192977> .
+
+<http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis> a obo:OBI_0000093,
+        sio:role ;
+    rdfs:label " Role: Genetic Diagnosis Patient" ;
+    sio:is-realized-in <http://example.org/data/individual_uid_000002_20211001110703671188_process#patientRole_genetic_diagnosis_process_hgnc>,
+        <http://example.org/data/individual_uid_000002_20211001110703671188_process#patientRole_genetic_diagnosis_process_hgvs>,
+        <http://example.org/data/individual_uid_000002_20211001110703671188_process#patientRole_genetic_diagnosis_process_omim> .
+
+<http://example.org/data/individual_uid_000002_20211001110703671188_process#patientRole_genetic_diagnosis_process_hgnc> a obo:NCIT_C15709,
+        sio:process ;
+    rdfs:label "Process: genetic testing HGNC" ;
+    sio:has-output <http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis_process_hgnc_Output> .
+
+<http://example.org/data/individual_uid_000002_20211001110703671188_process#patientRole_genetic_diagnosis_process_hgvs> a obo:NCIT_C15709,
+        sio:process ;
+    rdfs:label "Process: genetic testing HGVS" ;
+    sio:has-output <http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis_process_hgvs_Output> .
+
+<http://example.org/data/individual_uid_000002_20211001110703671188_process#patientRole_genetic_diagnosis_process_omim> a obo:NCIT_C15709,
+        sio:process ;
+    rdfs:label "Process: genetic testing OMIM" ;
+    sio:has-output <http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis_process_omim_Output> .
+
+<https://identifiers.org/HGNC:12698> a <http://edamontology.org/data_2298>,
+        sio:SIO_000015,
+        sio:attribute ;
+    rdfs:label "Attribute Type: https://identifiers.org/HGNC:12698" .
+
+<https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> a obo:NCIT_C171178,
+        sio:SIO_000015,
+        sio:attribute ;
+    rdfs:label "Attribute Type: NM_004006.3:c.4375C>T" .
+
+<https://www.omim.org/entry/192977> a <http://edamontology.org/data_1153>,
+        sio:SIO_000015,
+        sio:attribute ;
+    rdfs:label "Attribute Type: https://www.omim.org/entry/192977" .
+

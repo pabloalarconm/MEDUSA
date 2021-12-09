@@ -1,56 +1,59 @@
 @prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sio: <http://semanticscience.org/resource/> .
+@prefix this: <http://example.org/data/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/data/individual_uid_000008#Entity> a sio:object,
-        sio:person ;
-    sio:has-role <http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#patientRole_status> .
-
-<http://example.org/data/individual_uid_000008#ID> a sio:identifier ;
-    sio:denotes <http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#patientRole_status> ;
+<http://example.org/data/individual_thisPerson_uid_000008#ID> a sio:identifier ;
+    sio:denotes <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#patientRole_status> ;
     sio:has-value "uid_000008"^^xsd:string .
 
-<http://example.org/data/individual_uid_000008#Person> sio:has-attribute <http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#death_information_TypedAttributeNode>,
-        <http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#status_attribute_TypedAttributeNode> .
+<http://example.org/data/individual_thisPerson_uid_000008#Person> a sio:object,
+        sio:person ;
+    sio:has-attribute <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#death_information_TypedAttributeNode>,
+        <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#status_attribute_TypedAttributeNode> ;
+    sio:has-role <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#patientRole_status> .
 
-<http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#patient_death_information_Output> rdfs:label "Output Type: patient death information" .
+<http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#process_patient_death_information_Output> sio:refers-to <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#death_information_TypedAttributeNode> .
 
-<http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#patient_status_Output> rdfs:label "Output Type: dead" .
+<http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#process_patient_status_Output> sio:refers-to <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#status_attribute_TypedAttributeNode> .
 
-<http://example.org/data/individual_uid_000008_process#process_longitudinal_information_gathering_process_diseaseX> sio:has-part <http://example.org/data/individual_uid_000008_2.02109231047221E%2B019_process#process_patient_status> .
+<http://example.org/data/individual_uid_000008_20211001110703662534#patientRole_status> sio:is-realized-in <http://example.org/data/individual_uid_000008_20211001110703662534_process#process_patient_death_information>,
+        <http://example.org/data/individual_uid_000008_20211001110703662534_process#process_patient_status> .
+
+<http://example.org/data/individual_uid_000008_process#process_longitudinal_information_gathering_process_diseaseX> sio:has-part <http://example.org/data/individual_uid_000008_20211001110703662534_process#process_patient_status> .
 
 <http://example.org/data/individual_uid_000008_process#process_patient_status> a sio:process .
 
-<http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#process_patient_death_information_Output> a sio:information-content-entity ;
-    sio:has-value "2010-06-08"^^xsd:date ;
-    sio:refers-to <http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#death_information_TypedAttributeNode> .
+<http://example.org/data/individual_uid_000008_20211001110703662534#process_patient_death_information_Output> a sio:information-content-entity ;
+    rdfs:label "Output Type: patient death information" ;
+    sio:has-value "2010-06-08"^^xsd:date .
 
-<http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#process_patient_status_Output> a sio:information-content-entity ;
-    sio:has-value "dead"^^xsd:string ;
-    sio:refers-to <http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#status_attribute_TypedAttributeNode> .
+<http://example.org/data/individual_uid_000008_20211001110703662534#process_patient_status_Output> a sio:information-content-entity ;
+    rdfs:label "Output Type: dead" ;
+    sio:has-value "dead"^^xsd:string .
 
-<http://example.org/data/individual_uid_000008_2.02109231047221E%2B019_process#process_patient_death_information> a sio:SIO_001052,
+<http://example.org/data/individual_uid_000008_20211001110703662534_process#process_patient_death_information> a sio:SIO_001052,
         sio:process ;
     rdfs:label "Process: death information recording process" ;
-    sio:has-output <http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#process_patient_death_information_Output> .
+    sio:has-output <http://example.org/data/individual_uid_000008_20211001110703662534#process_patient_death_information_Output> .
 
-<http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#death_information_TypedAttributeNode> a obo:NCIT_C70810,
+<http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#death_information_TypedAttributeNode> a obo:NCIT_C70810,
         sio:attribute ;
     rdfs:label "Attribute Type: Date of death" .
 
-<http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#patientRole_status> a obo:OBI_0000093,
+<http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#patientRole_status> a obo:OBI_0000093,
         sio:role ;
-    rdfs:label " Role: Patient for status recording" ;
-    sio:is-realized-in <http://example.org/data/individual_uid_000008_2.02109231047221E%2B019_process#process_patient_death_information>,
-        <http://example.org/data/individual_uid_000008_2.02109231047221E%2B019_process#process_patient_status> .
+    rdfs:label " Role: Patient for status recording" .
 
-<http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#status_attribute_TypedAttributeNode> a sio:SIO_010059,
+<http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#status_attribute_TypedAttributeNode> a sio:SIO_010059,
         sio:attribute ;
     rdfs:label "Attribute Type: Patient status" .
 
-<http://example.org/data/individual_uid_000008_2.02109231047221E%2B019_process#process_patient_status> a sio:SIO_001052,
+<http://example.org/data/individual_uid_000008_20211001110703662534_process#process_patient_status> a sio:SIO_001052,
         sio:process ;
     rdfs:label "Process: status recording process" ;
-    sio:has-output <http://example.org/data/individual_uid_000008_2.02109231047221E%2B019#process_patient_status_Output> .
+    sio:has-output <http://example.org/data/individual_uid_000008_20211001110703662534#process_patient_status_Output> .
 

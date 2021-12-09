@@ -1,2 +1,2 @@
-,pid,uniqid,hgvs_variant,omim_number,hgnc_code
-5,uid_000006,2.02109231047221E+019,NM_004006.3:c.4375C>T,192977,HGNC:12698
+pid,uniqid,clinvar_uri,omim_uri,hgnc_uri,hgvs_string,
+uid_000002,20211001110703671188,https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/,https://www.omim.org/entry/192977,https://identifiers.org/HGNC:12698,NM_004006.3:c.4375C>T,

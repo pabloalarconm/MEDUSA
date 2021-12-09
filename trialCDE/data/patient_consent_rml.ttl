@@ -26,15 +26,15 @@
     rml:source "/data/patient_consent.csv";
     rml:iterator "$";
     rml:referenceFormulation ql:CSV.
-:rules_000 void:exampleResource :map_identifier_has_value_for_patientRole_consent_000.
-:map_identifier_has_value_for_patientRole_consent_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_identifier_has_value_for_thisPerson_patientRole_consent_000.
+:map_identifier_has_value_for_thisPerson_patientRole_consent_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "identifier_has_value_for_patientRole_consent".
+    rdfs:label "identifier_has_value_for_thisPerson_patientRole_consent".
 :s_000 a rr:SubjectMap.
-:map_identifier_has_value_for_patientRole_consent_000 rr:subjectMap :s_000.
-:s_000 rr:template "http://example.org/data/individual_{pid}#ID".
+:map_identifier_has_value_for_thisPerson_patientRole_consent_000 rr:subjectMap :s_000.
+:s_000 rr:template "http://example.org/data/individual_thisPerson_{pid}#ID".
 :pom_000 a rr:PredicateObjectMap.
-:map_identifier_has_value_for_patientRole_consent_000 rr:predicateObjectMap :pom_000.
+:map_identifier_has_value_for_thisPerson_patientRole_consent_000 rr:predicateObjectMap :pom_000.
 :pm_000 a rr:PredicateMap.
 :pom_000 rr:predicateMap :pm_000.
 :pm_000 rr:constant sio:has-value.
@@ -49,7 +49,7 @@
     rdfs:label "identifier_denotes_role_patientRole_consent".
 :s_001 a rr:SubjectMap.
 :map_identifier_denotes_role_patientRole_consent_000 rr:subjectMap :s_001.
-:s_001 rr:template "http://example.org/data/individual_{pid}#ID".
+:s_001 rr:template "http://example.org/data/individual_thisPerson_{pid}#ID".
 :pom_001 a rr:PredicateObjectMap.
 :map_identifier_denotes_role_patientRole_consent_000 rr:predicateObjectMap :pom_001.
 :pm_001 a rr:PredicateMap.
@@ -75,7 +75,7 @@
 :pm_003 rr:constant sio:denotes.
 :pom_003 rr:objectMap :om_003.
 :om_003 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_consent";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_consent";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_entity_has_role_patientRole_consent_000.
 :map_entity_has_role_patientRole_consent_000 rml:logicalSource :source_000;
@@ -83,7 +83,7 @@
     rdfs:label "entity_has_role_patientRole_consent".
 :s_002 a rr:SubjectMap.
 :map_entity_has_role_patientRole_consent_000 rr:subjectMap :s_002.
-:s_002 rr:template "http://example.org/data/individual_{pid}#Entity".
+:s_002 rr:template "http://example.org/data/individual_thisPerson_{pid}#Person".
 :pom_004 a rr:PredicateObjectMap.
 :map_entity_has_role_patientRole_consent_000 rr:predicateObjectMap :pom_004.
 :pm_004 a rr:PredicateMap.
@@ -109,7 +109,7 @@
 :pm_006 rr:constant sio:has-role.
 :pom_006 rr:objectMap :om_006.
 :om_006 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_consent";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_consent";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_patientRole_consent_annotation_000.
 :map_patientRole_consent_annotation_000 rml:logicalSource :source_000;
@@ -117,7 +117,7 @@
     rdfs:label "patientRole_consent_annotation".
 :s_003 a rr:SubjectMap.
 :map_patientRole_consent_annotation_000 rr:subjectMap :s_003.
-:s_003 rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_consent".
+:s_003 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_consent".
 :pom_007 a rr:PredicateObjectMap.
 :map_patientRole_consent_annotation_000 rr:predicateObjectMap :pom_007.
 :pm_007 a rr:PredicateMap.
@@ -423,7 +423,7 @@
     rdfs:label "process_patient_consenting_Output_type_label_annotation".
 :s_016 a rr:SubjectMap.
 :map_process_patient_consenting_Output_type_label_annotation_000 rr:subjectMap :s_016.
-:s_016 rr:template "http://example.org/data/individual_{pid}_{uniqid}#patient_consenting_Output".
+:s_016 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_patient_consenting_Output".
 :pom_030 a rr:PredicateObjectMap.
 :map_process_patient_consenting_Output_type_label_annotation_000 rr:predicateObjectMap :pom_030.
 :pm_030 a rr:PredicateMap.
@@ -457,7 +457,7 @@
     rdfs:label "inout_from_process_patient_consenting_refers_to_concepts".
 :s_018 a rr:SubjectMap.
 :map_inout_from_process_patient_consenting_refers_to_concepts_000 rr:subjectMap :s_018.
-:s_018 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_patient_consenting_Output".
+:s_018 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#process_patient_consenting_Output".
 :pom_032 a rr:PredicateObjectMap.
 :map_inout_from_process_patient_consenting_refers_to_concepts_000 rr:predicateObjectMap :pom_032.
 :pm_032 a rr:PredicateMap.
@@ -465,7 +465,7 @@
 :pm_032 rr:constant sio:refers-to.
 :pom_032 rr:objectMap :om_032.
 :om_032 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#consent_attribute_TypedAttributeNode";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#consent_attribute_TypedAttributeNode";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_has_attribute_of_inout_from_process_patient_consenting_000.
 :map_has_attribute_of_inout_from_process_patient_consenting_000 rml:logicalSource :source_000;
@@ -473,7 +473,7 @@
     rdfs:label "has_attribute_of_inout_from_process_patient_consenting".
 :s_019 a rr:SubjectMap.
 :map_has_attribute_of_inout_from_process_patient_consenting_000 rr:subjectMap :s_019.
-:s_019 rr:template "http://example.org/data/individual_{pid}#Person".
+:s_019 rr:template "http://example.org/data/individual_thisPerson_{pid}#Entity".
 :pom_033 a rr:PredicateObjectMap.
 :map_has_attribute_of_inout_from_process_patient_consenting_000 rr:predicateObjectMap :pom_033.
 :pm_033 a rr:PredicateMap.
@@ -481,7 +481,7 @@
 :pm_033 rr:constant sio:has-attribute.
 :pom_033 rr:objectMap :om_033.
 :om_033 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#consent_attribute_TypedAttributeNode";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#consent_attribute_TypedAttributeNode";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_inout_from_process_patient_consenting_refers_to_concept_consent_attribute_type_000.
 :map_inout_from_process_patient_consenting_refers_to_concept_consent_attribute_type_000 rml:logicalSource :source_000;
@@ -489,7 +489,7 @@
     rdfs:label "inout_from_process_patient_consenting_refers_to_concept_consent_attribute_type".
 :s_020 a rr:SubjectMap.
 :map_inout_from_process_patient_consenting_refers_to_concept_consent_attribute_type_000 rr:subjectMap :s_020.
-:s_020 rr:template "http://example.org/data/individual_{pid}_{uniqid}#consent_attribute_TypedAttributeNode".
+:s_020 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#consent_attribute_TypedAttributeNode".
 :pom_034 a rr:PredicateObjectMap.
 :map_inout_from_process_patient_consenting_refers_to_concept_consent_attribute_type_000 rr:predicateObjectMap :pom_034.
 :pm_034 a rr:PredicateMap.
@@ -514,7 +514,7 @@
     rdfs:label "inout_from_process_patient_consenting_refers_to_concept_consent_attribute_label".
 :s_021 a rr:SubjectMap.
 :map_inout_from_process_patient_consenting_refers_to_concept_consent_attribute_label_000 rr:subjectMap :s_021.
-:s_021 rr:template "http://example.org/data/individual_{pid}_{uniqid}#consent_attribute_TypedAttributeNode".
+:s_021 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#consent_attribute_TypedAttributeNode".
 :pom_036 a rr:PredicateObjectMap.
 :map_inout_from_process_patient_consenting_refers_to_concept_consent_attribute_label_000 rr:predicateObjectMap :pom_036.
 :pm_036 a rr:PredicateMap.

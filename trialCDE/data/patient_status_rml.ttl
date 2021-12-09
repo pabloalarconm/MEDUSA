@@ -26,15 +26,15 @@
     rml:source "/data/patient_status.csv";
     rml:iterator "$";
     rml:referenceFormulation ql:CSV.
-:rules_000 void:exampleResource :map_identifier_has_value_for_patientRole_status_000.
-:map_identifier_has_value_for_patientRole_status_000 rml:logicalSource :source_000;
+:rules_000 void:exampleResource :map_identifier_has_value_for_thisPerson_patientRole_status_000.
+:map_identifier_has_value_for_thisPerson_patientRole_status_000 rml:logicalSource :source_000;
     a rr:TriplesMap;
-    rdfs:label "identifier_has_value_for_patientRole_status".
+    rdfs:label "identifier_has_value_for_thisPerson_patientRole_status".
 :s_000 a rr:SubjectMap.
-:map_identifier_has_value_for_patientRole_status_000 rr:subjectMap :s_000.
-:s_000 rr:template "http://example.org/data/individual_{pid}#ID".
+:map_identifier_has_value_for_thisPerson_patientRole_status_000 rr:subjectMap :s_000.
+:s_000 rr:template "http://example.org/data/individual_thisPerson_{pid}#ID".
 :pom_000 a rr:PredicateObjectMap.
-:map_identifier_has_value_for_patientRole_status_000 rr:predicateObjectMap :pom_000.
+:map_identifier_has_value_for_thisPerson_patientRole_status_000 rr:predicateObjectMap :pom_000.
 :pm_000 a rr:PredicateMap.
 :pom_000 rr:predicateMap :pm_000.
 :pm_000 rr:constant sio:has-value.
@@ -49,7 +49,7 @@
     rdfs:label "identifier_denotes_role_patientRole_status".
 :s_001 a rr:SubjectMap.
 :map_identifier_denotes_role_patientRole_status_000 rr:subjectMap :s_001.
-:s_001 rr:template "http://example.org/data/individual_{pid}#ID".
+:s_001 rr:template "http://example.org/data/individual_thisPerson_{pid}#ID".
 :pom_001 a rr:PredicateObjectMap.
 :map_identifier_denotes_role_patientRole_status_000 rr:predicateObjectMap :pom_001.
 :pm_001 a rr:PredicateMap.
@@ -75,7 +75,7 @@
 :pm_003 rr:constant sio:denotes.
 :pom_003 rr:objectMap :om_003.
 :om_003 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_status";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_status";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_entity_has_role_patientRole_status_000.
 :map_entity_has_role_patientRole_status_000 rml:logicalSource :source_000;
@@ -83,7 +83,7 @@
     rdfs:label "entity_has_role_patientRole_status".
 :s_002 a rr:SubjectMap.
 :map_entity_has_role_patientRole_status_000 rr:subjectMap :s_002.
-:s_002 rr:template "http://example.org/data/individual_{pid}#Entity".
+:s_002 rr:template "http://example.org/data/individual_thisPerson_{pid}#Person".
 :pom_004 a rr:PredicateObjectMap.
 :map_entity_has_role_patientRole_status_000 rr:predicateObjectMap :pom_004.
 :pm_004 a rr:PredicateMap.
@@ -109,7 +109,7 @@
 :pm_006 rr:constant sio:has-role.
 :pom_006 rr:objectMap :om_006.
 :om_006 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_status";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_status";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_patientRole_status_annotation_000.
 :map_patientRole_status_annotation_000 rml:logicalSource :source_000;
@@ -117,7 +117,7 @@
     rdfs:label "patientRole_status_annotation".
 :s_003 a rr:SubjectMap.
 :map_patientRole_status_annotation_000 rr:subjectMap :s_003.
-:s_003 rr:template "http://example.org/data/individual_{pid}_{uniqid}#patientRole_status".
+:s_003 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#patientRole_status".
 :pom_007 a rr:PredicateObjectMap.
 :map_patientRole_status_annotation_000 rr:predicateObjectMap :pom_007.
 :pm_007 a rr:PredicateMap.
@@ -334,7 +334,7 @@
     rdfs:label "process_patient_status_Output_type_label_annotation".
 :s_013 a rr:SubjectMap.
 :map_process_patient_status_Output_type_label_annotation_000 rr:subjectMap :s_013.
-:s_013 rr:template "http://example.org/data/individual_{pid}_{uniqid}#patient_status_Output".
+:s_013 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_patient_status_Output".
 :pom_023 a rr:PredicateObjectMap.
 :map_process_patient_status_Output_type_label_annotation_000 rr:predicateObjectMap :pom_023.
 :pm_023 a rr:PredicateMap.
@@ -368,7 +368,7 @@
     rdfs:label "inout_from_process_patient_status_refers_to_concepts".
 :s_015 a rr:SubjectMap.
 :map_inout_from_process_patient_status_refers_to_concepts_000 rr:subjectMap :s_015.
-:s_015 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_patient_status_Output".
+:s_015 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#process_patient_status_Output".
 :pom_025 a rr:PredicateObjectMap.
 :map_inout_from_process_patient_status_refers_to_concepts_000 rr:predicateObjectMap :pom_025.
 :pm_025 a rr:PredicateMap.
@@ -376,7 +376,7 @@
 :pm_025 rr:constant sio:refers-to.
 :pom_025 rr:objectMap :om_025.
 :om_025 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#status_attribute_TypedAttributeNode";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#status_attribute_TypedAttributeNode";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_has_attribute_of_inout_from_process_patient_status_000.
 :map_has_attribute_of_inout_from_process_patient_status_000 rml:logicalSource :source_000;
@@ -384,7 +384,7 @@
     rdfs:label "has_attribute_of_inout_from_process_patient_status".
 :s_016 a rr:SubjectMap.
 :map_has_attribute_of_inout_from_process_patient_status_000 rr:subjectMap :s_016.
-:s_016 rr:template "http://example.org/data/individual_{pid}#Person".
+:s_016 rr:template "http://example.org/data/individual_thisPerson_{pid}#Person".
 :pom_026 a rr:PredicateObjectMap.
 :map_has_attribute_of_inout_from_process_patient_status_000 rr:predicateObjectMap :pom_026.
 :pm_026 a rr:PredicateMap.
@@ -392,7 +392,7 @@
 :pm_026 rr:constant sio:has-attribute.
 :pom_026 rr:objectMap :om_026.
 :om_026 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#status_attribute_TypedAttributeNode";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#status_attribute_TypedAttributeNode";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_inout_from_process_patient_status_refers_to_concept_status_attribute_type_000.
 :map_inout_from_process_patient_status_refers_to_concept_status_attribute_type_000 rml:logicalSource :source_000;
@@ -400,7 +400,7 @@
     rdfs:label "inout_from_process_patient_status_refers_to_concept_status_attribute_type".
 :s_017 a rr:SubjectMap.
 :map_inout_from_process_patient_status_refers_to_concept_status_attribute_type_000 rr:subjectMap :s_017.
-:s_017 rr:template "http://example.org/data/individual_{pid}_{uniqid}#status_attribute_TypedAttributeNode".
+:s_017 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#status_attribute_TypedAttributeNode".
 :pom_027 a rr:PredicateObjectMap.
 :map_inout_from_process_patient_status_refers_to_concept_status_attribute_type_000 rr:predicateObjectMap :pom_027.
 :pm_027 a rr:PredicateMap.
@@ -425,7 +425,7 @@
     rdfs:label "inout_from_process_patient_status_refers_to_concept_status_attribute_label".
 :s_018 a rr:SubjectMap.
 :map_inout_from_process_patient_status_refers_to_concept_status_attribute_label_000 rr:subjectMap :s_018.
-:s_018 rr:template "http://example.org/data/individual_{pid}_{uniqid}#status_attribute_TypedAttributeNode".
+:s_018 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#status_attribute_TypedAttributeNode".
 :pom_029 a rr:PredicateObjectMap.
 :map_inout_from_process_patient_status_refers_to_concept_status_attribute_label_000 rr:predicateObjectMap :pom_029.
 :pm_029 a rr:PredicateMap.
@@ -490,7 +490,7 @@
     rdfs:label "process_patient_death_information_Output_type_label_annotation".
 :s_022 a rr:SubjectMap.
 :map_process_patient_death_information_Output_type_label_annotation_000 rr:subjectMap :s_022.
-:s_022 rr:template "http://example.org/data/individual_{pid}_{uniqid}#patient_death_information_Output".
+:s_022 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_patient_death_information_Output".
 :pom_033 a rr:PredicateObjectMap.
 :map_process_patient_death_information_Output_type_label_annotation_000 rr:predicateObjectMap :pom_033.
 :pm_033 a rr:PredicateMap.
@@ -524,7 +524,7 @@
     rdfs:label "inout_from_process_patient_death_information_refers_to_concepts".
 :s_024 a rr:SubjectMap.
 :map_inout_from_process_patient_death_information_refers_to_concepts_000 rr:subjectMap :s_024.
-:s_024 rr:template "http://example.org/data/individual_{pid}_{uniqid}#process_patient_death_information_Output".
+:s_024 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#process_patient_death_information_Output".
 :pom_035 a rr:PredicateObjectMap.
 :map_inout_from_process_patient_death_information_refers_to_concepts_000 rr:predicateObjectMap :pom_035.
 :pm_035 a rr:PredicateMap.
@@ -532,7 +532,7 @@
 :pm_035 rr:constant sio:refers-to.
 :pom_035 rr:objectMap :om_035.
 :om_035 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#death_information_TypedAttributeNode";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#death_information_TypedAttributeNode";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_has_attribute_of_inout_from_process_patient_death_information_000.
 :map_has_attribute_of_inout_from_process_patient_death_information_000 rml:logicalSource :source_000;
@@ -540,7 +540,7 @@
     rdfs:label "has_attribute_of_inout_from_process_patient_death_information".
 :s_025 a rr:SubjectMap.
 :map_has_attribute_of_inout_from_process_patient_death_information_000 rr:subjectMap :s_025.
-:s_025 rr:template "http://example.org/data/individual_{pid}#Person".
+:s_025 rr:template "http://example.org/data/individual_thisPerson_{pid}#Person".
 :pom_036 a rr:PredicateObjectMap.
 :map_has_attribute_of_inout_from_process_patient_death_information_000 rr:predicateObjectMap :pom_036.
 :pm_036 a rr:PredicateMap.
@@ -548,7 +548,7 @@
 :pm_036 rr:constant sio:has-attribute.
 :pom_036 rr:objectMap :om_036.
 :om_036 a rr:ObjectMap;
-    rr:template "http://example.org/data/individual_{pid}_{uniqid}#death_information_TypedAttributeNode";
+    rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#death_information_TypedAttributeNode";
     rr:termType rr:IRI.
 :rules_000 void:exampleResource :map_inout_from_process_patient_death_information_refers_to_concept_death_information_type_000.
 :map_inout_from_process_patient_death_information_refers_to_concept_death_information_type_000 rml:logicalSource :source_000;
@@ -556,7 +556,7 @@
     rdfs:label "inout_from_process_patient_death_information_refers_to_concept_death_information_type".
 :s_026 a rr:SubjectMap.
 :map_inout_from_process_patient_death_information_refers_to_concept_death_information_type_000 rr:subjectMap :s_026.
-:s_026 rr:template "http://example.org/data/individual_{pid}_{uniqid}#death_information_TypedAttributeNode".
+:s_026 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#death_information_TypedAttributeNode".
 :pom_037 a rr:PredicateObjectMap.
 :map_inout_from_process_patient_death_information_refers_to_concept_death_information_type_000 rr:predicateObjectMap :pom_037.
 :pm_037 a rr:PredicateMap.
@@ -581,7 +581,7 @@
     rdfs:label "inout_from_process_patient_death_information_refers_to_concept_death_information_label".
 :s_027 a rr:SubjectMap.
 :map_inout_from_process_patient_death_information_refers_to_concept_death_information_label_000 rr:subjectMap :s_027.
-:s_027 rr:template "http://example.org/data/individual_{pid}_{uniqid}#death_information_TypedAttributeNode".
+:s_027 rr:template "http://example.org/data/individual_thisPerson_{pid}_{uniqid}#death_information_TypedAttributeNode".
 :pom_039 a rr:PredicateObjectMap.
 :map_inout_from_process_patient_death_information_refers_to_concept_death_information_label_000 rr:predicateObjectMap :pom_039.
 :pm_039 a rr:PredicateMap.

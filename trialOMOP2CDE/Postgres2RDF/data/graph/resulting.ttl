@@ -6,3 +6,56 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://example.org/data/individual_1#patientRole_age> sio:is-realized-in <http://example.org/data/individual_1_process#process_age_measuring_procedure> .
+
+<http://example.org/data/individual_1#patientRole_sex> sio:is-realized-in <http://example.org/data/individual_1_process#process_sex_measuring_procedure> .
+
+<http://example.org/data/individual_thisPerson_1#ID> a sio:identifier ;
+    sio:denotes <http://example.org/data/individual_thisPerson_1#patientRole_age>,
+        <http://example.org/data/individual_thisPerson_1#patientRole_sex> ;
+    sio:has-value "1"^^xsd:string .
+
+<http://example.org/data/individual_thisPerson_1#Person> a sio:object,
+        sio:person ;
+    sio:has-attribute <http://example.org/data/individual_thisPerson_1#ageAttribute_TypedAttributeNode>,
+        <http://example.org/data/individual_thisPerson_1#sexAttribute_TypedAttributeNode> ;
+    sio:has-role <http://example.org/data/individual_thisPerson_1#patientRole_age>,
+        <http://example.org/data/individual_thisPerson_1#patientRole_sex> .
+
+<http://example.org/data/individual_thisPerson_1#process_age_measuring_procedure_Output> sio:refers-to <http://example.org/data/individual_thisPerson_1#ageAttribute_TypedAttributeNode> .
+
+<http://example.org/data/individual_thisPerson_1#process_sex_measuring_procedure_Output> sio:refers-to <http://example.org/data/individual_thisPerson_1#sexAttribute_TypedAttributeNode> .
+
+<http://example.org/data/individual_1#process_age_measuring_procedure_Output> a sio:information-content-entity ;
+    rdfs:label "Output Type: Birth Date" ;
+    sio:has-value "2002-08-11"^^xsd:date .
+
+<http://example.org/data/individual_1#process_sex_measuring_procedure_Output> a sio:information-content-entity ;
+    rdfs:label "Output Type: 8532" ;
+    sio:has-value "8532"^^xsd:string .
+
+<http://example.org/data/individual_1_process#process_age_measuring_procedure> a sio:process ;
+    rdfs:label "Process: age measuring process" ;
+    sio:has-output <http://example.org/data/individual_1#process_age_measuring_procedure_Output> .
+
+<http://example.org/data/individual_1_process#process_sex_measuring_procedure> a sio:process ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:has-output <http://example.org/data/individual_1#process_sex_measuring_procedure_Output> .
+
+<http://example.org/data/individual_thisPerson_1#ageAttribute_TypedAttributeNode> a obo:NCIT_C68615,
+        sio:attribute ;
+    rdfs:label "Attribute Type: Birth Date" .
+
+<http://example.org/data/individual_thisPerson_1#patientRole_age> a obo:OBI_0000093,
+        sio:role ;
+    rdfs:label " Role: Patient for age assessment" .
+
+<http://example.org/data/individual_thisPerson_1#patientRole_sex> a obo:OBI_0000093,
+        sio:role ;
+    rdfs:label " Role: Patient For Gender Assessment" .
+
+<http://example.org/data/individual_thisPerson_1#sexAttribute_TypedAttributeNode> a <file:///home/pablo/Desktop/EJPRD/MEDUSA/trialOMOP2CDE/Postgres2RDF/data/graph/http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCIT_C16576>,
+        obo:NCIT_C28421,
+        sio:attribute ;
+    rdfs:label "Attribute Type: 8532" .
+

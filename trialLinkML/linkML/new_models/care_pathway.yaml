@@ -1,7 +1,7 @@
-id: http://purl.org/ejp-rd/cde/v1/example-rdf/
+id: http://purl.org/ejp-rd/linkml/ 
 name: ejp
 description: |-
-  --------------------- Birthdate schema of EJP CDE model -------------------------
+  --------------------- Care Pathway schema of EJP CDE model -------------------------
 imports:
   - linkml:types
 prefixes:
@@ -14,11 +14,13 @@ prefixes:
   obo: http://purl.obolibrary.org/obo/
   xsd: http://www.w3.org/2001/XMLSchema#
 
-default_prefix: ejp
-default_range: string
+############ CLASSES ############
 
 classes:
-  Identifier:
+  
+  ############### UPPPER CLASSES #####################
+
+  identifier:
     name: Identifier
     description: >-
       Identifier used to relate Entity and its Role.
@@ -26,9 +28,9 @@ classes:
     required: true
     slots:
      - denotes
-     - has_value
+     - has value
 
-  Entity:
+  entity:
     name: Entity
     description: >-
       Identified Entity that personalized a Role.
@@ -36,134 +38,148 @@ classes:
     required: true
     slots:
       - has role
-      - has_attribute
+      - has attribute
 
-  Role:
+  role:
     name: Role
     description: >-
       Role associated to an Entity into a certain process.
-    class_uri: sio:SIO_000016 
+    class_uri: sio:SIO_000016
     required: true
     slots:
-      - is_realized_in
-      - type_patient
-      - label 
+      - is realized in
 
-  Process:
+  process:
     name: Process
     description: >-
       The process where the entity is envolved by a certain role to measure a certain output.
     class_uri: sio:SIO_000006
     required: true
     slots:
-      - has_output
-      - label
+      - has output
 
-  Output:
+  output:
     name: Output
     description: >-
       Output measure in a certain process associated to a certain Attribute
     class_uri: sio:SIO_000015
     required: true
     slots:
-      - refers_to
-      - has_value_birthdate
-      - label
+      - refers to
 
-  Attribute:
+  attribute:
     name: Attribute  
     description: >-
       Attribute represented as quality related to the output of a measurement of a certain entity.
     class_uri: sio:SIO_000614
     required: true
-    slots:
-     - label
-     - type_birthdate
 
+    ############### INHERITED CLASSES #####################
+
+
+  first contact patient:
+    is_a: role
+    name: Patient Role
+    class_uri: obo:OBI_0000093
+    required: true
+    slot_usage:
+      is realized in:
+        range: first contact with specialized center process
+
+
+  first contact with specialized center process:
+    is_a: process
+    name: First contact with specialized center process
+    class_uri: obo:NCIT_C159705
+    required: true
+    slot_usage:
+      has output:
+        range: birthdate output
+    slots:
+      - has start time
+      - has end time
+  
+  start date:
+    name: Start Date
+    class_uri: sio:SIO_000031
+    slots:
+      - has value date
+
+  end date:
+    name: End Date
+    class_uri: sio:SIO_000032
+    slots:
+      - has value date
+
+
+############ SLOTS  #############
 
 slots:
 
-  has_value:
+  has value:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
+    range: string
+    multivalued: false
     slot_uri: sio:SIO_000300
-    multivalue: false
-    range: Date
 
-  has_value_birthdate:
+  has value date:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
+    range: date
+    multivalued: false
     slot_uri: sio:SIO_000300
-    multivalue: false
-    range: String
-
+    
   denotes:
     description: >-
       denotes is a relation between an entity and what it is a sign or indication of, or what specifically means.
-    slot_uri: sio:SIO_000020
     multivalue: false
+    range: role
+    slot_uri: sio:SIO_000020
 
-  has_role:
+  has role:
     description: >-
       has role is a relation between an entity and a role that it bears.
+    range: role
     slot_uri: sio:SIO_000228
+  
+  has start time:
+    slot_uri: sio:SIO_000680
+    range: start date
 
-  has_attribute:
-    description: >-
-      has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.
-    slot_uri: sio:SIO_000008
+  has end time:
+    slot_uri: sio:SIO_000681
+    range: end date
 
-  is_realized_in:
+  is realized in:
     description: >-
       the role of a patient is realized in medical examination.
+    range: process
     slot_uri: sio:SIO_000356
-
-  has_output:
-    description: >-
-      has output is a relation between an process and an entity, where the entity is present at the end of the process.
-    slot_uri: sio:SIO_000229
-
-  refers_to:
-    description: >-
-      refers to is a relation between one entity and the entity that it makes reference to.
-    slot_uri: sio:SIO_000628
 
   label:
     slot_uri: rdfs:label
-    range: String
+    range: string
 
-  type_birthdate:
+  name:
+    aliases: [ 'label', 'title' ]
+    description: >-
+      A human-readable name or title.
+    range: string
+    slot_uri: rdfs:label
+
+  type healthcare activity:
     slot_uri: rdf:type
-    range: Birthdate
-  
+    range: obo:NCIT_C16205
+
+
+############ TYPES  #############
+
 types:
 
-  Date:
-    name: Date
-    typeof: date
-    uri: xsd:datetime
-
-  PatientRole:
-    name: PatientRole
-    typeof: uriorcurie
-    description: >-
-      A role which inheres in a person and is realized by the process of being under the care of a physician or health care provider
-    uri: obo:OBI_0000093
-
-  Birthdate:
-    name: Birthdate
-    typeof: uriorcurie
-    description: >-
-      The calendar date on which a person was born.
-    uri: obo:NCIT_C68615
-
-  String:
+  string:
     uri: xsd:string
-    base: str 
+    base: str
 
-
-
-  
-
-
-
+  date:
+    uri: xsd:datetime 

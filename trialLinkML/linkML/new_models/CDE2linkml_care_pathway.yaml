@@ -1,9 +1,9 @@
-id: http://purl.org/ejp-rd/linkml/
+id: http://purl.org/ejp-rd/linkml/ 
 name: ejp
 description: |-
-  --------------------- Diagnosis schema of EJP CDE model -------------------------
-imports:
-  - linkml:types
+  --------------------- Care Pathway schema of EJP CDE model -------------------------
+# imports:
+#   - linkml:types
 prefixes:
   ejp: http://purl.org/ejp-rd/cde/v1/example-rdf/
   linkml: https://w3id.org/linkml/
@@ -17,79 +17,97 @@ prefixes:
 ############ CLASSES ############
 
 classes:
+  
+  ############### UPPPER CLASSES #####################
 
   identifier:
-    name: Identifier
+    name: identifier
     description: >-
       Identifier used to relate Entity and its Role.
     class_uri: sio:SIO_000115
-    required: true
     slots:
      - denotes
      - has value
 
   entity:
-    name: Entity
+    name: entity
     description: >-
       Identified Entity that personalized a Role.
     class_uri: sio:SIO_000498
-    required: true
     slots:
       - has role
-      - has attribute
+      #- has attribute
 
   role:
-    name: Role
+    name: role
     description: >-
       Role associated to an Entity into a certain process.
     class_uri: sio:SIO_000016
-    required: true
     slots:
       - is realized in
-      - type patient
 
   process:
-    name: Process
+    name: process
     description: >-
       The process where the entity is envolved by a certain role to measure a certain output.
-    class_uri: sio:SIO_000006 # sio:SIO_001001
-    required: true
+    class_uri: sio:SIO_000006
+
+
+
+
+    ############### INHERITED CLASSES #####################
+
+  patient identifier:
+    name: patient identifier
+    is_a: identifier
+    class_uri: sio:SIO_000115
+    slot_usage:
+      denotes:
+        slot_uri: sio:SIO_000020
+        range: first contact patient
+
+
+  person:
+    name: person
+    is_a: entity
+    class_uri: sio:SIO_000498
+    slot_usage:
+      has role sex:
+        slot_uri: sio:SIO_000228
+        range: first contact patient
+
+
+  first contact patient:
+    is_a: role
+    name: first contact patient
+    class_uri: obo:OBI_0000093
+    slot_usage:
+      is realized in:
+        range: first contact with specialized center process
+    # slots:
+    #   - type healthcare activity
+
+
+  first contact with specialized center process:
+    is_a: process
+    name: first contact with specialized center process
+    class_uri: obo:NCIT_C159705
     slots:
-      - has output
       - has start time
       - has end time
-
-  output:
-    name: Output
-    description: >-
-      Output measure in a certain process associated to a certain Attribute
-    class_uri: sio:SIO_000015
-    required: true
-    slots:
-      - refers to
-      - type diagnostic opinion
-
-  attribute:
-    name: Attribute  
-    description: >-
-      Attribute represented as quality related to the output of a measurement of a certain entity.
-    class_uri: sio:SIO_000614
-    required: true
-    slots:
-      - type ordo
-      - has value
-
+  
   start date:
-    name: Start Date
+    name: start date
     class_uri: sio:SIO_000031
     slots:
       - has value date
 
   end date:
-    name: End Date
+    name: end date
     class_uri: sio:SIO_000032
     slots:
       - has value date
+
 
 ############ SLOTS  #############
 
@@ -99,20 +117,17 @@ slots:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: string
-    multivalued: false
     slot_uri: sio:SIO_000300
 
   has value date:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: date
-    multivalued: false
     slot_uri: sio:SIO_000300
     
   denotes:
     description: >-
       denotes is a relation between an entity and what it is a sign or indication of, or what specifically means.
-    multivalue: false
     range: role
     slot_uri: sio:SIO_000020
 
@@ -121,12 +136,14 @@ slots:
       has role is a relation between an entity and a role that it bears.
     range: role
     slot_uri: sio:SIO_000228
+  
+  has start time:
+    slot_uri: sio:SIO_000680
+    range: start date
 
-  has attribute:
-    description: >-
-      has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.
-    range: attribute
-    slot_uri: sio:SIO_000008
+  has end time:
+    slot_uri: sio:SIO_000681
+    range: end date
 
   is realized in:
     description: >-
@@ -134,42 +151,21 @@ slots:
     range: process
     slot_uri: sio:SIO_000356
 
-  has output:
-    description: >-
-      has output is a relation between an process and an entity, where the entity is present at the end of the process.
-    range: output
-    slot_uri: sio:SIO_000229
-
-  refers to:
-    description: >-
-      refers to is a relation between one entity and the entity that it makes reference to.
-    range: attribute 
-    slot_uri: sio:SIO_000628
-
   label:
     slot_uri: rdfs:label
     range: string
 
   name:
-    aliases: ['label', 'title']
+    aliases: [ 'label', 'title' ]
     description: >-
       A human-readable name or title.
     range: string
     slot_uri: rdfs:label
-  
-  type patient:
-    slot_uri: rdf:type
-    range: obo:OBI_0000093
 
-  type ordo:
-    range: iri
-    slot_uri: rdf:type  
-    # values_from:
-    #   - NCBITaxon
+  # type healthcare activity:
+  #   slot_uri: rdf:type
+  #   range: obo:NCIT_C16205
 
-  type diagnostic opinion:
-    range: sio:SIO_001003
-    slot_uri: rdf:type
 
 ############ TYPES  #############
 
@@ -180,7 +176,5 @@ types:
     base: str
 
   date:
-    uri: xsd:datetime 
-
-  iri:
-    uri: xsd:anyURI
+    uri: xsd:datetime
+    typeof: string

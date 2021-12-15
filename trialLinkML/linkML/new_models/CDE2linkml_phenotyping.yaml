@@ -1,9 +1,9 @@
 id: http://purl.org/ejp-rd/linkml/ 
 name: ejp
 description: |-
-  --------------------- Sex schema of EJP CDE model -------------------------
-imports:
-  - linkml:types
+  --------------------- Personal Information schema of EJP CDE model -------------------------
+# imports:
+#   - linkml:types
 prefixes:
   ejp: http://purl.org/ejp-rd/cde/v1/example-rdf/
   linkml: https://w3id.org/linkml/
@@ -13,150 +13,215 @@ prefixes:
   sio: http://semanticscience.org/resource/
   obo: http://purl.obolibrary.org/obo/
   xsd: http://www.w3.org/2001/XMLSchema#
+  hpo: http://purl.obolibrary.org/obo/HP_
+
 
 ############ CLASSES ############
 
 classes:
+  
+  ############### UPPPER CLASSES #####################
 
   identifier:
-    name: Identifier
+    name: identifier
     description: >-
       Identifier used to relate Entity and its Role.
-    exact_mappings: 
-      - sio:SIO_000115
-    required: true
+    class_uri: sio:SIO_000115
     slots:
      - denotes
-     - has_value
+     - has value
 
   entity:
-    name: Entity
+    name: entity
     description: >-
       Identified Entity that personalized a Role.
-    exact_mappings: 
-      - sio:SIO_000498
-    required: true
+    class_uri: sio:SIO_000498
     slots:
       - has role
-      - has_attribute
+      - has attribute
 
   role:
-    name: Role
+    name: role
     description: >-
       Role associated to an Entity into a certain process.
-    exact_mappings: 
-      - sio:SIO_000016 
-    required: true
+    class_uri: sio:SIO_000016
     slots:
-      - is_realized_in
-      - type_patient
+      - is realized in
 
   process:
-    name: Process
+    name: process
     description: >-
       The process where the entity is envolved by a certain role to measure a certain output.
-    exact_mappings: 
-      - sio:SIO_000006
-    required: true
+    class_uri: sio:SIO_000006
     slots:
-      - has_output
+      - has output
 
   output:
-    name: Output
+    name: output
     description: >-
       Output measure in a certain process associated to a certain Attribute
-    exact_mappings: 
-      - sio:SIO_000015
-    required: true
+    class_uri: sio:SIO_000015
     slots:
-      - refers_to
-      - has value date
+      - refers to
 
-  attribute node:
-    name: Attribute  
+  attribute:
+    name: attribute  
     description: >-
       Attribute represented as quality related to the output of a measurement of a certain entity.
-    exact_mappings: 
-      - sio:SIO_000614
-    required: true
-    slots:
-      - type_sex
-      - type_sex_data
+    class_uri: sio:SIO_000614
 
-############ SLOTS  #############
+    ############### INHERITED CLASSES #####################
+
+
+         ###### Phenotype ########
+
+  patient identifier:
+    name: patient identifier
+    is_a: identifier
+    class_uri: sio:SIO_000115
+    slot_usage:
+      denotes:
+        slot_uri: sio:SIO_000020
+        range: phenotyping patient role
+
+  person:
+    name: person
+    is_a: entity
+    class_uri: sio:SIO_000498
+    slot_usage:
+      has role:
+        slot_uri: sio:SIO_000228
+        range: phenotyping patient role
+      has attribute: 
+        range: phenotypic attribute
+        slot_uri: sio:SIO_000008
+
+
+  phenotyping patient role:
+    is_a: role
+    name: phenotyping patient role
+    class_uri: obo:OBI_0000093
+    slot_usage:
+      is realized in:
+        range: comparative phenotypic assessment
+
+
+  comparative phenotypic assessment:
+    is_a: process
+    name: comparative phenotypic assessment
+    class_uri: obo:OBI_0001546
+    slot_usage:
+      has output:
+        range: phenotypic output
+    slots:
+      - has start time
+      - has end time
+      # - type healthcare activity
+      # - type diagnostic procedure
+
+  phenotypic output:
+    is_a: output
+    name: phenotypic output
+    class_uri: obo:NCIT_C102741
+    slot_usage:
+      refers to:
+        range: phenotypic attribute
+
+  phenotypic attribute:
+    is_a: attribute
+    name: phenotypic attribute  
+    class_uri: sio:SIO_010056
+    slots:
+      - type hpo
+
+  start date:
+    name: start date
+    class_uri: sio:SIO_000031
+    slots:
+      - has value date
+
+  end date:
+    name: end date
+    class_uri: sio:SIO_000032
+    slots:
+      - has value date
+
+   
+############  SLOTS  #############
 
 slots:
 
-  has value id:
+  has value:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: string
-    multivalued: false
-    exact_mappings:
-      - sio:SIO_000300
+    slot_uri: sio:SIO_000300
 
   has value date:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: date
-    multivalued: false
-    exact_mappings:
-      - sio:SIO_000300
+    slot_uri: sio:SIO_000300
     
   denotes:
     description: >-
       denotes is a relation between an entity and what it is a sign or indication of, or what specifically means.
-    multivalue: false
     range: role
-    exact_mappings:
-      - sio:SIO_000020
+    slot_uri: sio:SIO_000020
 
-  has_role:
+  has role:
     description: >-
       has role is a relation between an entity and a role that it bears.
     range: role
-    exact_mappings: 
-       - sio:SIO_000228
+    slot_uri: sio:SIO_000228
 
-  has_attribute:
+  has attribute:
     description: >-
       has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.
-    range: attribute node
-    exact_mappings:
-      - sio:SIO_000008
+    range: attribute
+    slot_uri: sio:SIO_000008
 
-  is_realized_in:
+  is realized in:
     description: >-
       the role of a patient is realized in medical examination.
     range: process
-    exact_mappings:
-      - sio:SIO_000356
+    slot_uri: sio:SIO_000356
 
-  has_output:
+  has output:
     description: >-
       has output is a relation between an process and an entity, where the entity is present at the end of the process.
     range: output
-    exact_mappings:
-      - sio:SIO_000229
+    slot_uri: sio:SIO_000229
 
-  refers_to:
+  refers to:
     description: >-
       refers to is a relation between one entity and the entity that it makes reference to.
-    range: attribute node
-    exact_mappings:
-      - sio:SIO_000628
+    range: attribute
+    slot_uri: sio:SIO_000628
 
-  type_patient:
-    description: Patient role
-    range: obo:OBI_0000093
+  type hpo:
+    slot_uri: rdf:type  
+    values_from:
+      - hpo
 
-  type_sex:
-    description: Sex ontological term
-    range: obo:NCIT_C28421
+  # type healthcare activity:
+  #   slot_uri: rdf:type
+  #   exact_mappings:
+  #     - obo:NCIT_C16205
 
-  type_sex_data:
-    description: URI that represents sex patient information.
-    range: Sex_uri
+  # type diagnostic procedure:
+  #   slot_uri: rdf:type
+  #   exact_mappings:
+  #     - obo:NCIT_C16205
+
+
+  has start time:
+    slot_uri: sio:SIO_000680
+    range: start date
+
+  has end time:
+    slot_uri: sio:SIO_000681
+    range: end date
 
   label:
     slot_uri: rdfs:label
@@ -173,9 +238,9 @@ slots:
 ############ TYPES  #############
 
 types:
-
   date:
     uri: xsd:datetime 
+    typeof: string
 
   string:
     uri: xsd:string
@@ -184,7 +249,7 @@ types:
 ############ ENUMS  #############
 
 enums:
-  Sex_uri:
+  sex uri:
     permissible_values:
       Female:
         meaning: obo:NCIT_C20197

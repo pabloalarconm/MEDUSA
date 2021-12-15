@@ -2,8 +2,8 @@ id: http://purl.org/ejp-rd/linkml/
 name: ejp
 description: |-
   --------------------- Personal Information schema of EJP CDE model -------------------------
-imports:
-  - linkml:types
+# imports:
+#   - linkml:types
 prefixes:
   ejp: http://purl.org/ejp-rd/cde/v1/example-rdf/
   linkml: https://w3id.org/linkml/
@@ -14,6 +14,7 @@ prefixes:
   obo: http://purl.obolibrary.org/obo/
   xsd: http://www.w3.org/2001/XMLSchema#
 
+
 ############ CLASSES ############
 
 classes:
@@ -21,138 +22,124 @@ classes:
   ############### UPPPER CLASSES #####################
 
   identifier:
-    name: Identifier
+    name: identifier
     description: >-
       Identifier used to relate Entity and its Role.
     class_uri: sio:SIO_000115
-    required: true
     slots:
      - denotes
      - has value
 
   entity:
-    name: Entity
+    name: entity
     description: >-
       Identified Entity that personalized a Role.
     class_uri: sio:SIO_000498
-    required: true
     slots:
       - has role
-      - has attribute
 
   role:
-    name: Role
+    name: role
     description: >-
       Role associated to an Entity into a certain process.
     class_uri: sio:SIO_000016
-    required: true
     slots:
       - is realized in
 
   process:
-    name: Process
+    name: process
     description: >-
       The process where the entity is envolved by a certain role to measure a certain output.
     class_uri: sio:SIO_000006
-    required: true
     slots:
       - has output
+      - has input
 
   output:
-    name: Output
+    name: output
     description: >-
       Output measure in a certain process associated to a certain Attribute
     class_uri: sio:SIO_000015
-    required: true
-    slots:
-      - refers to
 
-  attribute:
-    name: Attribute  
+
+  input:
+    name: input
     description: >-
-      Attribute represented as quality related to the output of a measurement of a certain entity.
-    class_uri: sio:SIO_000614
-    required: true
+      Input measure in a certain process associated to a certain Attribute
+    class_uri: sio:SIO_000015
 
     ############### INHERITED CLASSES #####################
 
 
-      ########## Status ###########
+         ###### Disability ########
 
-  patient for status recording:
+  patient identifier:
+    name: patient identifier
+    is_a: identifier
+    class_uri: sio:SIO_000115
+    slot_usage:
+      denotes:
+        slot_uri: sio:SIO_000020
+        range: disability patient role
+
+
+  person:
+    name: person
+    is_a: entity
+    class_uri: sio:SIO_000498
+    slot_usage:
+      has role:
+        slot_uri: sio:SIO_000228
+        range: disability patient role
+
+  disability patient role:
     is_a: role
-    name: Patient Role
+    name: disability patient role
     class_uri: obo:OBI_0000093
-    required: true
     slot_usage:
-      is realized in status:
-        slot_uri: sio:SIO_000356
-        range: status recording process
-      is realized in death information:
-        slot_uri: sio:SIO_000356
-        range: death information recording process
+      is realized in:
+        range: disability assessment process
 
-
-  status recording process:
+  disability assessment process:
     is_a: process
-    name: Status recording process
-    class_uri: sio:SIO_001052
-    required: true
+    name: disability assessment process
+    class_uri: obo:OBI_0000810 
     slot_usage:
+      has input:
+        range: disability input
       has output:
-        range: output status
+        range: disability output
+    slots:
+      - has start time
+      - has end time
+#      - type disability process
 
+  disability input:
+    is_a: input
+    name: disability input
+    class_uri: obo:NCIT_C17048
 
-  status output:
+  disability output:
     is_a: output
-    name: Status output 
+    name: disability output
     class_uri: sio:SIO_000015
-    required: true
-    slot_usage:
-      refers to:
-        range: status attribute
     slots:
       - has value
 
-  status attribute:
-    is_a: attribute
-    name: status attribute  
-    class_uri: sio:SIO_000614
-    required: true
-    slots:
-      - type status
-
-    ########## Death information ###########
-    
-
-  death information measuring process:
-    is_a: process
-    name: Death information measuring process
-    class_uri: sio:SIO_001052
-    required: true
-    slot_usage:
-      has output:
-        range: death information output
-
-  death information output:
-    is_a: output
-    name: Death informationoutput
-    class_uri: sio:SIO_000015
-    required: true
-    slot_usage:
-    refers to:
-      range: death information attribute
+  start date:
+    name: start date
+    class_uri: sio:SIO_000031
     slots:
       - has value date
 
-  death information attribute:
-    is_a: attribute
-    name: Sex attribute
-    class_uri: obo:NCIT_C70810
-    required: true
+  end date:
+    name: end date
+    class_uri: sio:SIO_000032
+    slots:
+      - has value date
 
-
-############ SLOTS  #############
+   
+############  SLOTS  #############
 
 slots:
 
@@ -160,20 +147,17 @@ slots:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: string
-    multivalued: false
     slot_uri: sio:SIO_000300
 
   has value date:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: date
-    multivalued: false
     slot_uri: sio:SIO_000300
     
   denotes:
     description: >-
       denotes is a relation between an entity and what it is a sign or indication of, or what specifically means.
-    multivalue: false
     range: role
     slot_uri: sio:SIO_000020
 
@@ -182,12 +166,6 @@ slots:
       has role is a relation between an entity and a role that it bears.
     range: role
     slot_uri: sio:SIO_000228
-
-  has attribute:
-    description: >-
-      has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.
-    range: attribute
-    slot_uri: sio:SIO_000008
 
   is realized in:
     description: >-
@@ -201,11 +179,17 @@ slots:
     range: output
     slot_uri: sio:SIO_000229
 
-  refers to:
-    description: >-
-      refers to is a relation between one entity and the entity that it makes reference to.
-    range: attribute 
-    slot_uri: sio:SIO_000628
+  has input:
+    range: input
+    slot_uri: sio:SIO_000230
+
+  has start time:
+    slot_uri: sio:SIO_000680
+    range: start date
+
+  has end time:
+    slot_uri: sio:SIO_000681
+    range: end date
 
   label:
     slot_uri: rdfs:label
@@ -218,33 +202,19 @@ slots:
     range: string
     slot_uri: rdfs:label
 
-  type status:
-    range: status uri
-    slot_uri: rdf:type
-
+  # type disability process:
+  #   slot_uri: rdf:type
+  #   values_from:
+  #     - obo
 
 
 ############ TYPES  #############
 
 types:
+  date:
+    uri: xsd:datetime 
+    typeof: string
 
   string:
     uri: xsd:string
     base: str
-
-  date:
-    uri: xsd:datetime 
-
-############ ENUMS  #############
-
-enums:
-  status uri:
-    permissible_values:
-      Dead:
-        meaning: sio:SIO_010059
-      Alive:
-        meaning: sio:SIO_010058
-      Lost to Follow Up:
-        meaning: obo:NCIT_C70740
-      Refusal to Participate:
-        meaning: obo:NCIT_C124784

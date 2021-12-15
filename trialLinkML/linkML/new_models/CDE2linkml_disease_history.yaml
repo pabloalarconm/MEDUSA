@@ -2,8 +2,8 @@ id: http://purl.org/ejp-rd/linkml/
 name: ejp
 description: |-
   --------------------- Personal Information schema of EJP CDE model -------------------------
-imports:
-  - linkml:types
+# imports:
+#   - linkml:types
 prefixes:
   ejp: http://purl.org/ejp-rd/cde/v1/example-rdf/
   linkml: https://w3id.org/linkml/
@@ -17,126 +17,183 @@ prefixes:
 ############ CLASSES ############
 
 classes:
+  
+  ############### UPPPER CLASSES #####################
 
   identifier:
-    name: Identifier
+    name: identifier
     description: >-
       Identifier used to relate Entity and its Role.
     class_uri: sio:SIO_000115
-    required: true
     slots:
      - denotes
      - has value
 
   entity:
-    name: Entity
+    name: entity
     description: >-
       Identified Entity that personalized a Role.
     class_uri: sio:SIO_000498
-    required: true
     slots:
       - has role
       - has attribute
 
-  role sex:
-    name: Role
+  role:
+    name: role
     description: >-
       Role associated to an Entity into a certain process.
-    class_uri: sio:SIO_000016 # obo:OBI_0000093
-    required: true
+    class_uri: sio:SIO_000016
     slots:
       - is realized in
-      - type patient
 
-  process sex:
-    name: Process
+  process:
+    name: process
     description: >-
       The process where the entity is envolved by a certain role to measure a certain output.
     class_uri: sio:SIO_000006
-    required: true
     slots:
       - has output
 
-  output sex:
-    name: Output
+  output:
+    name: output
     description: >-
       Output measure in a certain process associated to a certain Attribute
     class_uri: sio:SIO_000015
-    required: true
     slots:
       - refers to
-      - has value date
 
-  attribute sex:
-    name: Attribute  
+  attribute:
+    name: attribute  
     description: >-
       Attribute represented as quality related to the output of a measurement of a certain entity.
     class_uri: sio:SIO_000614
-    required: true
-    slots:
-      - type sex
-      - type sex data
 
-  role birthdate:
-    name: Role
-    description: >-
-      Role associated to an Entity into a certain process.
-    class_uri: sio:SIO_000016 # obo:OBI_0000093
-    required: true
-    slots:
-      - is realized in
-      - type patient
+    ############### INHERITED CLASSES #####################
 
-  process birthdate:
-    name: Process
-    description: >-
-      The process where the entity is envolved by a certain role to measure a certain output.
-    class_uri: sio:SIO_000006
-    required: true
-    slots:
-      - has output
 
-  output birthdate:
-    name: Output
-    description: >-
-      Output measure in a certain process associated to a certain Attribute
+  patient identifier:
+    name: patient identifier
+    is_a: identifier
+    class_uri: sio:SIO_000115
+    slot_usage:
+      denotes symptom:
+        slot_uri: sio:SIO_000020
+        range: symptom onset patient role
+      denotes diagnosis:
+        slot_uri: sio:SIO_000020
+        range: diagnosis date patient role
+
+  person:
+    name: person
+    is_a: entity
+    class_uri: sio:SIO_000498
+    slot_usage:
+      has role symptom:
+        slot_uri: sio:SIO_000228
+        range: symptom onset patient role
+      has role diagnosis:
+        slot_uri: sio:SIO_000228
+        range: diagnosis date patient role
+      has attribute symptom: 
+        range: symptom onset attribute
+        slot_uri: sio:SIO_000008
+      has attribute diagnosis:
+        range: age diagnosis attribute
+        slot_uri: sio:SIO_000008
+
+
+         ###### Symptom onset ########
+
+  symptom onset patient role:
+    is_a: role
+    name: symptom onset patient role
+    class_uri: obo:OBI_0000093
+    slot_usage:
+      is realized in:
+        range: symptom onset recording process
+
+
+  symptom onset recording process:
+    is_a: process
+    name: symptom onset recording process
+    class_uri: sio:SIO_001052
+    slot_usage:
+      has output:
+        range: symptom onset output
+
+
+  symptom onset output:
+    is_a: output
+    name: symptom onset output
     class_uri: sio:SIO_000015
-    required: true
+    slot_usage:
+      refers to:
+        range: symptom onset attribute
     slots:
-      - refers to
       - has value date
+      - type onset
 
-  attribute birthdate:
-    name: Attribute  
-    description: >-
-      Attribute represented as quality related to the output of a measurement of a certain entity.
-    class_uri: sio:SIO_000614
-    required: true
+  symptom onset attribute:
+    is_a: attribute
+    name: symptom onset attribute  
+    class_uri: obo:NCIT_C25279
+
+    ########## Diagnosis date ###########
+
+  diagnosis date patient role:
+    is_a: role
+    name: diagnosis date patient role
+    class_uri: obo:OBI_0000093
+    slot_usage:
+      is realized in:
+        range: diagnosis date recording process     
+
+
+  diagnosis date recording process:
+    is_a: process
+    name: diagnosis date recording process
+    class_uri: sio:SIO_001052
+    slot_usage:
+      has output:
+        range: age diagnosis output
+
+  age diagnosis output:
+    is_a: output
+    name: age diagnosis output
+    class_uri: sio:SIO_000015
+    slot_usage:
+      refers to:
+        range: age diagnosis attribute
     slots:
-      - type birthdate
+      - has value
+      - type age diagnosis
+
+  age diagnosis attribute:
+    is_a: attribute
+    name: age diagnosis attribute
+    class_uri: obo:NCIT_C156420
+    slots:
+      - type onset
 
 ############ SLOTS  #############
 
 slots:
 
-  has value id:
+  has value:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: string
-    multivalued: false
     slot_uri: sio:SIO_000300
 
   has value date:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: date
-    multivalued: false
     slot_uri: sio:SIO_000300
     
   denotes:
     description: >-
       denotes is a relation between an entity and what it is a sign or indication of, or what specifically means.
-    multivalue: false
     range: role
     slot_uri: sio:SIO_000020
 
@@ -149,7 +206,7 @@ slots:
   has attribute:
     description: >-
       has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.
-    range: attribute node
+    range: attribute
     slot_uri: sio:SIO_000008
 
   is realized in:
@@ -167,26 +224,16 @@ slots:
   refers to:
     description: >-
       refers to is a relation between one entity and the entity that it makes reference to.
-    range: attribute node
+    range: attribute
     slot_uri: sio:SIO_000628
 
-  type patient:
+  type onset:
     slot_uri: rdf:type
-    range: obo:OBI_0000093
+    range: onset
 
-  type sex:
-    description: Sex ontological term
+  type age diagnosis:
     slot_uri: rdf:type
-    range: obo:NCIT_C28421
-
-  type sex data:
-    description: URI that represents sex patient information.
-    slot_uri: rdf:type
-    range: sex_uri
-  
-  type birthdate:
-    slot_uri: rdf:type
-    range: obo:NCIT_C68615
+    range: diagnosis uri
 
   label:
     slot_uri: rdfs:label
@@ -205,6 +252,7 @@ slots:
 types:
   date:
     uri: xsd:datetime 
+    typeof: string
 
   string:
     uri: xsd:string
@@ -213,13 +261,28 @@ types:
 ############ ENUMS  #############
 
 enums:
-  sex_uri:
+  onset:
     permissible_values:
-      Female:
-        meaning: obo:NCIT_C20197
-      Male:
-        meaning: obo:NCIT_C16576
-      Unknown:
-        meaning: obo:NCIT_C124294
+      Pediatric onset:
+        meaning: obo:HP_0410280 
+      Congenital onset:
+        meaning: obo:HP_0003577 
+      Antenatal onset:
+        meaning: obo:HP_0030674
+      Neonatal onset:
+        meaning: obo:HP_0003623
       Undetermined:
         meaning: obo:NCIT_C124294
+      Date:
+        meaning: obo:NCIT_C25164
+
+  diagnosis uri:
+    permissible_values:
+      Prenatal:
+        meaning: obo:NCIT_C81318
+      Postnatal:
+        meaning: obo:NCIT_C81317 
+      Undetermined:
+        meaning: obo:NCIT_C124294
+      Date:
+        meaning: obo:NCIT_C25164

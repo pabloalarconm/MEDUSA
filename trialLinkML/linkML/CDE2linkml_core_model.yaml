@@ -1,7 +1,8 @@
-id: http://purl.org/ejp-rd/linkml/
+id: http://purl.org/ejp-rd/cde/v1/example-rdf/
 name: ejp
 description: |-
-  --------------------- Core model schema of EJP CDE model -------------------------
+  --------------------EJP CDE core model --------------------------
+
 imports:
   - linkml:types
 prefixes:
@@ -14,141 +15,161 @@ prefixes:
   obo: http://purl.obolibrary.org/obo/
   xsd: http://www.w3.org/2001/XMLSchema#
 
-############ CLASSES ############
+default_prefix: ejp
+default_range: string
 
 classes:
-
   identifier:
-    name: Identifier
+    name: identifier
     description: >-
       Identifier used to relate Entity and its Role.
-    exact_mappings: 
-      - sio:SIO_000115
-    required: true
+    class_uri: sio:SIO_000115
     slots:
      - denotes
      - has_value
 
   entity:
-    name: Entity
+    name: entity
     description: >-
       Identified Entity that personalized a Role.
-    exact_mappings: 
-      - sio:SIO_000498
-    required: true
+    class_uri: sio:SIO_000498
     slots:
-      - has role
+      - has_role
       - has_attribute
 
   role:
-    name: Role
+    name: role
     description: >-
       Role associated to an Entity into a certain process.
-    exact_mappings: 
-      - sio:SIO_000016 
-    required: true
+    class_uri: sio:SIO_000016
     slots:
       - is_realized_in
+      - label
 
   process:
-    name: Process
+    name: process
     description: >-
       The process where the entity is envolved by a certain role to measure a certain output.
-    exact_mappings: 
-      - sio:SIO_000006
-    required: true
+    class_uri: sio:SIO_000006
     slots:
       - has_output
+      - has_start_time
+      - has_end_time
+      - label
 
   output:
-    name: Output
+    name: output
     description: >-
       Output measure in a certain process associated to a certain Attribute
-    exact_mappings: 
-      - sio:SIO_000015
-    required: true
+    class_uri: sio:SIO_000015
     slots:
       - refers_to
+      - has_value
+      - label
 
-  attribute node:
-    name: Attribute  
+  attribute:
+    name: attribute
     description: >-
-      Attribute represented as quality related to the output of a measurement of a certain entity.
-    exact_mappings: 
-      - sio:SIO_000614
-    required: true
+      Attribute represented as quiality related to the output of a measurement of a certain entity.
+    class_uri: sio:SIO_000614
+    slots:
+     - label
 
-############ SLOTS  #############
+  startdate:
+    name: startdate
+    description: >-
+      Startdate used to determine the beginning of the process measurement
+    class_uri: sio:SIO_000614
+    slots:
+      - has_value_date
+
+  enddate:
+    name: enddate
+    description: >-
+      Startdate used to determine the end of the process measurement
+    class_uri: sio:SIO_000614
+    slots:
+      - has_value_date
+
 
 slots:
 
-  has value id:
+  has_value:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
-    range: string
-    multivalued: false
-    exact_mappings:
-      - sio:SIO_000300
-    
+    slot_uri: sio:SIO_000300
+    range: String
+
+  has_value_date:
+    description: >-
+      A relation between a informational entity and its actual value (numeric, date, text, etc).
+    slot_uri: sio:SIO_000300
+    range: Date
+
   denotes:
     description: >-
       denotes is a relation between an entity and what it is a sign or indication of, or what specifically means.
-    multivalue: false
+    slot_uri: sio:SIO_000020
     range: role
-    exact_mappings:
-      - sio:SIO_000020
 
   has_role:
     description: >-
       has role is a relation between an entity and a role that it bears.
+    slot_uri: sio:SIO_000228
     range: role
-    exact_mappings: 
-       - sio:SIO_000228
 
   has_attribute:
     description: >-
       has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.
-    range: attribute node
-    exact_mappings:
-      - sio:SIO_000008
+    slot_uri: sio:SIO_000008
+    range: attribute
 
   is_realized_in:
     description: >-
       the role of a patient is realized in medical examination.
+    slot_uri: sio:SIO_000356
     range: process
-    exact_mappings:
-      - sio:SIO_000356
 
   has_output:
     description: >-
       has output is a relation between an process and an entity, where the entity is present at the end of the process.
+    slot_uri: sio:SIO_000229
     range: output
-    exact_mappings:
-      - sio:SIO_000229
 
   refers_to:
     description: >-
       refers to is a relation between one entity and the entity that it makes reference to.
-    range: attribute node
-    exact_mappings:
-      - sio:SIO_000628
+    slot_uri: sio:SIO_000628
+    range: attribute
+
+  has_start_time:
+    slot_uri: sio:SIO_000680
+    range: startdate
+
+  has_end_time:
+    slot_uri: sio:SIO_000681
+    range: enddate
 
   label:
     slot_uri: rdfs:label
-    range: string
+    range: String
 
-  name:
-    aliases: [ 'label', 'title' ]
-    description: >-
-      A human-readable name or title.
-    range: string
-    slot_uri: rdfs:label
-
-
-############ TYPES  #############
 
 types:
 
-  string:
+  Date:
+    typeof: date
+    name: Date
+    uri: xsd:datetime  # ISO 8601
+  
+  String:
+    name: String
     uri: xsd:string
-    base: str
+    base: str 
+
+
+
+  
+
+
+

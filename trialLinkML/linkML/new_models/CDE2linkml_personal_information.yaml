@@ -1,9 +1,9 @@
-id: http://purl.org/ejp-rd/linkml/
+id: http://purl.org/ejp-rd/linkml/ 
 name: ejp
 description: |-
-  --------------------- Patient Status schema of EJP CDE model -------------------------
-imports:
-  - linkml:types
+  --------------------- Personal Information schema of EJP CDE model -------------------------
+# imports:
+#   - linkml:types
 prefixes:
   ejp: http://purl.org/ejp-rd/cde/v1/example-rdf/
   linkml: https://w3id.org/linkml/
@@ -17,92 +17,162 @@ prefixes:
 ############ CLASSES ############
 
 classes:
+  
+  ############### UPPPER CLASSES #####################
 
   identifier:
-    name: Identifier
+    name: identifier
     description: >-
       Identifier used to relate Entity and its Role.
     class_uri: sio:SIO_000115
-    required: true
     slots:
      - denotes
      - has value
 
   entity:
-    name: Entity
+    name: entity
     description: >-
       Identified Entity that personalized a Role.
     class_uri: sio:SIO_000498
-    required: true
     slots:
       - has role
       - has attribute
 
   role:
-    name: Role
+    name: role
     description: >-
       Role associated to an Entity into a certain process.
-    class_uri: sio:SIO_000016 # obo:OBI_0000093
-    required: true
+    class_uri: sio:SIO_000016
     slots:
       - is realized in
-      - type patient
 
-  process status:
-    name: Process
+  process:
+    name: process
     description: >-
       The process where the entity is envolved by a certain role to measure a certain output.
-    class_uri: sio:SIO_000006 # sio:SIO_001052
-    required: true
+    class_uri: sio:SIO_000006
     slots:
       - has output
 
-  output status:
-    name: Output
+  output:
+    name: output
     description: >-
       Output measure in a certain process associated to a certain Attribute
     class_uri: sio:SIO_000015
-    required: true
     slots:
       - refers to
+
+  attribute:
+    name: attribute  
+    description: >-
+      Attribute represented as quality related to the output of a measurement of a certain entity.
+    class_uri: sio:SIO_000614
+
+    ############### INHERITED CLASSES #####################
+
+
+  patient identifier:
+    name: patient identifier
+    is_a: identifier
+    class_uri: sio:SIO_000115
+    slot_usage:
+      denotes sex:
+        slot_uri: sio:SIO_000020
+        range: patient for gender assessment
+      denotes birthdate:
+        slot_uri: sio:SIO_000020
+        range: patient for age assessment
+
+  person:
+    name: person
+    is_a: entity
+    class_uri: sio:SIO_000498
+    slot_usage:
+      has role sex:
+        slot_uri: sio:SIO_000228
+        range: patient for gender assessment
+      has role birthdate:
+        slot_uri: sio:SIO_000228
+        range: patient for age assessment
+      has attribute sex: 
+        range: sex attribute
+        slot_uri: sio:SIO_000008
+      has attribute birthdate:
+        range: birthdate attribute
+        slot_uri: sio:SIO_000008
+
+
+         ###### Birthdate ########
+
+  patient for age assessment:
+    is_a: role
+    name: patient for age assessment
+    class_uri: obo:OBI_0000093
+    slot_usage:
+      is realized in:
+        range: age measuring process
+
+
+  age measuring process:
+    is_a: process
+    name: age measuring process
+    class_uri: sio:SIO_000006
+    slot_usage:
+      has output:
+        range: birthdate output
+
+
+  birthdate output:
+    is_a: output
+    name: birthdate output
+    class_uri: sio:SIO_000015
+    slot_usage:
+      refers to:
+        range: birthdate attribute
+    slots:
       - has value date
 
-  attribute status:
-    name: Attribute  
-    description: >-
-      Attribute represented as quality related to the output of a measurement of a certain entity.
+  birthdate attribute:
+    is_a: attribute
+    name: birthdate attribute  
     class_uri: sio:SIO_000614
-    required: true
-    slots:
-      - type status
 
-  process death information:
-    name: Process
-    description: >-
-      The process where the entity is envolved by a certain role to measure a certain output.
-    class_uri: sio:SIO_000006 # sio:SIO_001052
-    required: true
-    slots:
-      - has output
+    ########## Sex ###########
 
-  output death information:
-    name: Output
-    description: >-
-      Output measure in a certain process associated to a certain Attribute
+
+  patient for gender assessment:
+    is_a: role
+    name: patient for gender assessment
+    class_uri: obo:OBI_0000093
+    slot_usage:
+      is realized in:
+        range: sex measuring process     
+
+
+  sex measuring process:
+    is_a: process
+    name: sex measuring process
+    class_uri: sio:SIO_000006
+    slot_usage:
+      has output:
+        range: sex output
+
+  sex output:
+    is_a: output
+    name: sex output
     class_uri: sio:SIO_000015
-    required: true
+    slot_usage:
+      refers to:
+        range: sex attribute
     slots:
-      - refers to
       - has value
 
-  attribute death information:
-    name: Attribute  
-    description: >-
-      Attribute represented as quality related to the output of a measurement of a certain entity.
-    class_uri: sio:SIO_000614
-    required: true
+  sex attribute:
+    is_a: attribute
+    name: sex attribute
+    class_uri: obo:NCIT_C28421
     slots:
-      - type date death
+      - type sex uri
 
 ############ SLOTS  #############
 
@@ -112,20 +182,17 @@ slots:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: string
-    multivalued: false
     slot_uri: sio:SIO_000300
 
   has value date:
     description: >-
       A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: date
-    multivalued: false
     slot_uri: sio:SIO_000300
     
   denotes:
     description: >-
       denotes is a relation between an entity and what it is a sign or indication of, or what specifically means.
-    multivalue: false
     range: role
     slot_uri: sio:SIO_000020
 
@@ -156,8 +223,12 @@ slots:
   refers to:
     description: >-
       refers to is a relation between one entity and the entity that it makes reference to.
-    range: attribute 
+    range: attribute
     slot_uri: sio:SIO_000628
+
+  type sex uri:
+    slot_uri: rdf:type
+    range: sex uri
 
   label:
     slot_uri: rdfs:label
@@ -169,42 +240,29 @@ slots:
       A human-readable name or title.
     range: string
     slot_uri: rdfs:label
-  
-  type patient:
-    slot_uri: rdf:type
-    range: obo:OBI_0000093
-
-  type status:
-    range: status uri
-    slot_uri: rdf:type
-
-  type date death:
-    range: obo:NCIT_C70810
-    slot_uri: rdf:type
-
 
 
 ############ TYPES  #############
 
 types:
+  date:
+    uri: xsd:datetime 
+    typeof: string
 
   string:
     uri: xsd:string
     base: str
 
-  date:
-    uri: xsd:datetime 
-
 ############ ENUMS  #############
 
 enums:
-  status uri:
+  sex uri:
     permissible_values:
-      Dead:
-        meaning: sio:SIO_010059
-      Alive:
-        meaning: sio:SIO_010058
-      Lost to Follow Up:
-        meaning: obo:NCIT_C70740
-      Refusal to Participate:
-        meaning: obo:NCIT_C124784
+      Female:
+        meaning: obo:NCIT_C20197
+      Male:
+        meaning: obo:NCIT_C16576
+      Unknown:
+        meaning: obo:NCIT_C124294
+      Undetermined:
+        meaning: obo:NCIT_C124294

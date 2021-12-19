@@ -1,0 +1,166 @@
+id: http://purl.org/ejp-rd/
+name: ejp
+description: |-
+  --------------------- Gender Information schema of EJP CDE model -------------------------
+imports:
+  - linkml:types
+prefixes:
+  ejp: http://purl.org/ejp-rd/
+  linkml: https://w3id.org/linkml/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sio: http://semanticscience.org/resource/
+  obo: http://purl.obolibrary.org/obo/
+  biolink: https://w3id.org/biolink/vocab/
+
+
+############ CLASSES ############
+
+classes:
+  
+  ############### UPPPER CLASSES #####################
+
+  Identifier:
+    class_uri: sio:SIO_000115
+    slots:
+     - denotes
+
+  Entity:
+    class_uri: sio:SIO_000498
+    slots:
+      - has role
+      - has attribute
+
+  Role:
+    class_uri: sio:SIO_000016
+    slots:
+      - is realized in
+
+  Process:
+    class_uri: sio:SIO_000006
+    slots:
+      - has output
+
+  Output:
+    class_uri: sio:SIO_000015
+    slots:
+      - refers to
+
+  Attribute:
+    class_uri: sio:SIO_000614
+
+    ############### INHERITED CLASSES #####################
+
+
+  PatientIdentifier:
+    is_a: Identifier
+    class_uri: sio:SIO_000115
+    slot_usage:
+      denotes:
+        slot_uri: sio:SIO_000020
+        range: PatientForGenderAssessment
+    attributes:
+      id:
+        slot_uri: sio:SIO_000300
+        range: string
+
+  Person:
+    is_a: Entity
+    class_uri: sio:SIO_000498
+    slot_usage:
+      has role:
+        slot_uri: sio:SIO_000228
+        range: PatientForGenderAssessment
+      has attribute: 
+        range: GenderAttribute
+        slot_uri: sio:SIO_000008
+
+  PatientForGenderAssessment:
+    is_a: Role
+    class_uri: obo:OBI_0000093
+    slot_usage:
+      is realized in:
+        range: GenderMeasuringProcess     
+
+
+  GenderMeasuringProcess:
+    is_a: Process
+    class_uri: sio:SIO_000006
+    slot_usage:
+      has output:
+        range: GenderOutput
+
+  GenderOutput:
+    is_a: Output
+    class_uri: sio:SIO_000015
+    slot_usage:
+      refers to:
+        range: GenderAttribute
+    attributes:
+      valueGender:
+        slot_uri: sio:SIO_000300
+        range: GenderLabelType
+
+  GenderAttribute:
+    is_a: Attribute
+    class_uri: obo:NCIT_C28421
+    attributes:
+      typeGender:
+        slot_uri: rdf:type
+        range: GenderURIType
+    exact_mappings:
+      - biolink:Attribute
+
+############ SLOTS  #############
+
+slots: 
+
+  denotes:
+    range: Role
+    slot_uri: sio:SIO_000020
+
+  has role:
+    range: Role
+    slot_uri: sio:SIO_000228
+
+  has attribute:
+    range: Attribute
+    slot_uri: sio:SIO_000008
+
+  is realized in:
+    range: Process
+    slot_uri: sio:SIO_000356
+
+  has output:
+    range: Output
+    slot_uri: sio:SIO_000229
+
+  refers to:
+    range: Attribute
+    slot_uri: sio:SIO_000628
+
+
+############ TYPES  #############
+
+## imported from linkML
+
+############ ENUMS  #############
+
+enums:
+  GenderLabelType:
+    permissible_values:
+      Female:
+      Male:
+      Unknown:
+      Undetermined:
+
+  GenderURIType:
+    permissible_values:
+      Female:
+        meaning: obo:NCIT_C20197 ## Female
+      Male:
+        meaning: obo:NCIT_C16576 ## Male
+      Unknown:
+        meaning: obo:NCIT_C124294 ## Unknown
+      Undetermined:
+        meaning: obo:NCIT_C124294 ## Undetermined

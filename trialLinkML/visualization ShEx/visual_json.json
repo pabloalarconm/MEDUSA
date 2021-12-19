@@ -1,0 +1,255 @@
+{
+    "$defs": {
+       "AgeMeasuringProcess": {
+          "additionalProperties": false,
+          "description": "",
+          "properties": {
+             "has_output": {
+                "$ref": "#/$defs/BirthdateOutput"
+             }
+          },
+          "required": [],
+          "title": "AgeMeasuringProcess",
+          "type": "object"
+       },
+       "Attribute": {
+          "additionalProperties": false,
+          "description": "Attribute represented as quality related to the output of a measurement of a certain entity.",
+          "properties": {},
+          "required": [],
+          "title": "Attribute",
+          "type": "object"
+       },
+       "BirthdateAttribute": {
+          "additionalProperties": false,
+          "description": "",
+          "properties": {},
+          "required": [],
+          "title": "BirthdateAttribute",
+          "type": "object"
+       },
+       "BirthdateOutput": {
+          "additionalProperties": false,
+          "description": "",
+          "properties": {
+             "has_value_date": {
+                "description": "A relation between a informational entity and its actual value (numeric, date, text, etc).",
+                "type": "string"
+             },
+             "refers_to": {
+                "$ref": "#/$defs/BirthdateAttribute"
+             }
+          },
+          "required": [],
+          "title": "BirthdateOutput",
+          "type": "object"
+       },
+       "Entity": {
+          "additionalProperties": false,
+          "description": "Identified Entity that personalized a Role.",
+          "properties": {
+             "has_attribute": {
+                "$ref": "#/$defs/Attribute",
+                "description": "has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type."
+             },
+             "has_role": {
+                "$ref": "#/$defs/Role",
+                "description": "has role is a relation between an entity and a role that it bears."
+             }
+          },
+          "required": [],
+          "title": "Entity",
+          "type": "object"
+       },
+       "Identifier": {
+          "additionalProperties": false,
+          "description": "Identifier used to relate Entity and its Role.",
+          "properties": {
+             "denotes": {
+                "$ref": "#/$defs/Role",
+                "description": "denotes is a relation between an entity and what it is a sign or indication of, or what specifically means."
+             },
+             "has_value": {
+                "description": "A relation between a informational entity and its actual value (numeric, date, text, etc).",
+                "type": "string"
+             }
+          },
+          "required": [],
+          "title": "Identifier",
+          "type": "object"
+       },
+       "Output": {
+          "additionalProperties": false,
+          "description": "Output measure in a certain process associated to a certain Attribute",
+          "properties": {
+             "refers_to": {
+                "$ref": "#/$defs/Attribute",
+                "description": "refers to is a relation between one entity and the entity that it makes reference to."
+             }
+          },
+          "required": [],
+          "title": "Output",
+          "type": "object"
+       },
+       "PatientForAgeAssessment": {
+          "additionalProperties": false,
+          "description": "",
+          "properties": {
+             "is_realized_in": {
+                "$ref": "#/$defs/AgeMeasuringProcess"
+             }
+          },
+          "required": [],
+          "title": "PatientForAgeAssessment",
+          "type": "object"
+       },
+       "PatientForGenderAssessment": {
+          "additionalProperties": false,
+          "description": "",
+          "properties": {
+             "is_realized_in": {
+                "$ref": "#/$defs/SexMeasuringProcess"
+             }
+          },
+          "required": [],
+          "title": "PatientForGenderAssessment",
+          "type": "object"
+       },
+       "PatientIdentifier": {
+          "additionalProperties": false,
+          "description": "",
+          "properties": {
+             "denotes": {
+                "$ref": "#/$defs/Role",
+                "description": "denotes is a relation between an entity and what it is a sign or indication of, or what specifically means."
+             },
+             "denotes_birthdate": {
+                "$ref": "#/$defs/PatientForAgeAssessment"
+             },
+             "denotes_sex": {
+                "$ref": "#/$defs/PatientForGenderAssessment"
+             },
+             "has_value": {
+                "description": "A relation between a informational entity and its actual value (numeric, date, text, etc).",
+                "type": "string"
+             }
+          },
+          "required": [],
+          "title": "PatientIdentifier",
+          "type": "object"
+       },
+       "Person": {
+          "additionalProperties": false,
+          "description": "",
+          "properties": {
+             "has_attribute": {
+                "$ref": "#/$defs/Attribute",
+                "description": "has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type."
+             },
+             "has_attribute_birthdate": {
+                "$ref": "#/$defs/BirthdateAttribute"
+             },
+             "has_attribute_sex": {
+                "$ref": "#/$defs/SexAttribute"
+             },
+             "has_role": {
+                "$ref": "#/$defs/Role",
+                "description": "has role is a relation between an entity and a role that it bears."
+             },
+             "has_role_birthdate": {
+                "$ref": "#/$defs/PatientForAgeAssessment"
+             },
+             "has_role_sex": {
+                "$ref": "#/$defs/PatientForGenderAssessment"
+             }
+          },
+          "required": [],
+          "title": "Person",
+          "type": "object"
+       },
+       "Process": {
+          "additionalProperties": false,
+          "description": "The process where the entity is envolved by a certain role to measure a certain output.",
+          "properties": {
+             "has_output": {
+                "$ref": "#/$defs/Output",
+                "description": "has output is a relation between an process and an entity, where the entity is present at the end of the process."
+             }
+          },
+          "required": [],
+          "title": "Process",
+          "type": "object"
+       },
+       "Role": {
+          "additionalProperties": false,
+          "description": "Role associated to an Entity into a certain process.",
+          "properties": {
+             "is_realized_in": {
+                "$ref": "#/$defs/Process",
+                "description": "the role of a patient is realized in medical examination."
+             }
+          },
+          "required": [],
+          "title": "Role",
+          "type": "object"
+       },
+       "SexAttribute": {
+          "additionalProperties": false,
+          "description": "",
+          "properties": {
+             "type_sex_uri": {
+                "$ref": "#/$defs/SexUri"
+             }
+          },
+          "required": [],
+          "title": "SexAttribute",
+          "type": "object"
+       },
+       "SexMeasuringProcess": {
+          "additionalProperties": false,
+          "description": "",
+          "properties": {
+             "has_output": {
+                "$ref": "#/$defs/SexOutput"
+             }
+          },
+          "required": [],
+          "title": "SexMeasuringProcess",
+          "type": "object"
+       },
+       "SexOutput": {
+          "additionalProperties": false,
+          "description": "",
+          "properties": {
+             "has_value": {
+                "description": "A relation between a informational entity and its actual value (numeric, date, text, etc).",
+                "type": "string"
+             },
+             "refers_to": {
+                "$ref": "#/$defs/SexAttribute"
+             }
+          },
+          "required": [],
+          "title": "SexOutput",
+          "type": "object"
+       },
+       "SexUri": {
+          "description": "",
+          "enum": [
+             "Female",
+             "Male",
+             "Unknown",
+             "Undetermined"
+          ],
+          "title": "SexUri",
+          "type": "string"
+       }
+    },
+    "$id": "http://purl.org/ejp-rd/linkml/",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": true,
+    "properties": {},
+    "title": "ejp",
+    "type": "object"
+ }
+ 

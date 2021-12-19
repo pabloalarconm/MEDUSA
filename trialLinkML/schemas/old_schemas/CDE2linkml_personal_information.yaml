@@ -179,50 +179,34 @@ classes:
 slots:
 
   has value:
-    description: >-
-      A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: string
     slot_uri: sio:SIO_000300
 
   has value date:
-    description: >-
-      A relation between a informational entity and its actual value (numeric, date, text, etc).
     range: date
     slot_uri: sio:SIO_000300
     
   denotes:
-    description: >-
-      denotes is a relation between an entity and what it is a sign or indication of, or what specifically means.
     range: role
     slot_uri: sio:SIO_000020
 
   has role:
-    description: >-
-      has role is a relation between an entity and a role that it bears.
     range: role
     slot_uri: sio:SIO_000228
 
   has attribute:
-    description: >-
-      has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.
     range: attribute
     slot_uri: sio:SIO_000008
 
   is realized in:
-    description: >-
-      the role of a patient is realized in medical examination.
     range: process
     slot_uri: sio:SIO_000356
 
   has output:
-    description: >-
-      has output is a relation between an process and an entity, where the entity is present at the end of the process.
     range: output
     slot_uri: sio:SIO_000229
 
   refers to:
-    description: >-
-      refers to is a relation between one entity and the entity that it makes reference to.
     range: attribute
     slot_uri: sio:SIO_000628
 
@@ -236,8 +220,6 @@ slots:
 
   name:
     aliases: [ 'label', 'title' ]
-    description: >-
-      A human-readable name or title.
     range: string
     slot_uri: rdfs:label
 
@@ -247,11 +229,12 @@ slots:
 types:
   date:
     uri: xsd:datetime 
-    typeof: string
+    base: date
 
   string:
     uri: xsd:string
     base: str
+
 
 ############ ENUMS  #############
 

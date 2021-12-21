@@ -1,0 +1,82 @@
+id: http://purl.org/ejp-rd/
+name: ejp
+description: |-
+  --------------------- Core model schema of EJP CDE model -------------------------
+# imports:
+#   - linkml:types
+
+prefixes:
+  ejp: http://purl.org/ejp-rd/
+  linkml: https://w3id.org/linkml/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sio: http://semanticscience.org/resource/
+
+
+############ CLASSES ############
+
+classes:
+  
+  ############### UPPPER CLASSES #####################
+
+  identifier_m:
+    class_uri: sio:SIO_000115
+    slots:
+     - denotes
+
+  Entity:
+    class_uri: sio:SIO_000498
+    slots:
+      - has role
+      - has attribute
+
+  Role:
+    class_uri: sio:SIO_000016
+    slots:
+      - is realized in
+
+  Process:
+    class_uri: sio:SIO_000006
+    slots:
+      - has output
+
+  Output:
+    class_uri: sio:SIO_000015
+    slots:
+      - refers to
+
+  Attribute:
+    class_uri: sio:SIO_000614
+
+
+
+
+############ SLOTS  #############
+
+slots: 
+
+  denotes:
+    range: Role
+    slot_uri: sio:SIO_000020
+
+  has role:
+    range: Role
+    slot_uri: sio:SIO_000228
+
+  has attribute:
+    range: Attribute
+    slot_uri: sio:SIO_000008
+
+  is realized in:
+    range: Process
+    slot_uri: sio:SIO_000356
+
+  has output:
+    range: Output
+    slot_uri: sio:SIO_000229
+
+  refers to:
+    range: Attribute
+    slot_uri: sio:SIO_000628
+
+

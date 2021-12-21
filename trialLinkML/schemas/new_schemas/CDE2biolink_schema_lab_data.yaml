@@ -1,0 +1,213 @@
+id: http://purl.org/ejp-rd/
+name: ejp
+description: |-
+  --------------------- LaboratoryData Information schema of EJP CDE model -------------------------
+imports:
+  - linkml:types
+  - biolink
+
+prefixes:
+  ejp: http://purl.org/ejp-rd/
+  linkml: https://w3id.org/linkml/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sio: http://semanticscience.org/resource/
+  obo: http://purl.obolibrary.org/obo/
+  biolink: https://w3id.org/biolink/vocab/
+  dxdoi: https://dx.doi.org/
+
+default_range: string
+
+
+############ CLASSES ############
+
+classes:
+  
+  ############### SIO UPPPER CLASSES #####################
+
+  Identifier:
+    class_uri: sio:SIO_000115
+    slots:
+     - denotes
+
+  Entity:
+    class_uri: sio:SIO_000498
+    slots:
+      - has_role
+      - has_attribute
+
+  Role:
+    class_uri: sio:SIO_000016
+    slots:
+      - is_realized_in
+
+  Process:
+    class_uri: sio:SIO_000006
+    slots:
+      - has_output
+      - has_input
+
+  Output:
+    class_uri: sio:SIO_000015
+    slots:
+      - refers_to
+
+  Input:
+    class_uri: sio:SIO_000015
+
+  StartDate:
+    class_uri: sio:SIO_000031
+
+  EndDate:
+    class_uri: sio:SIO_000032
+
+  Attribute:
+    class_uri: sio:SIO_000614
+
+    ############### INHERITED CLASSES (some of them from Biolink model) #####################
+
+  PatientIdentifier:
+    is_a: Identifier
+    class_uri: sio:SIO_000115
+    attributes:
+      has_value:
+        slot_uri: sio:SIO_000300
+        range: string
+    slot_usage:
+      denotes:
+        slot_uri: sio:SIO_000020
+        range: PatientForLaboratoryDataAssessment
+
+  Person:
+    is_a: case # biolink class from biolink-model
+    class_uri: sio:SIO_000498
+    slot_usage:
+      has_role:
+        range: PatientForLaboratoryDataAssessment
+
+  PatientForLaboratoryDataAssessment:
+    is_a: Role
+    class_uri: obo:OBI_0000093
+    slot_usage:
+      is_realized_in:
+        range: LaboratoryDataMeasuringProcess     
+
+  LaboratoryDataMeasuringProcess:
+    is_a: biological process # biolink class from biolink-model
+    class_uri: sio:SIO_000006
+    slot_usage:
+      has_output:
+        range: LaboratoryDataOutput
+      has_input:
+        range: LaboratoryDataInput
+      has_target:
+        range: LaboratoryDataTarget
+        slot_uri: sio:SIO_000291
+      consforms_to:
+        range: LaboratoryDataProtocol
+        slot_uri: sio:CHEMINF_000047
+      has_start_time:
+        range: LaboratoryDataStartDate
+      has_end_time:
+        range: LaboratoryDataEndDate
+
+  LaboratoryDataOutput:
+    is_a: quantity value # biolink class from biolink-model
+    class_uri: sio:SIO_000015
+    attributes:
+      has_value_data:
+        slot_uri: sio:SIO_000300
+        range: float
+      has_unit:
+        slot_uri: sio:SIO_000221
+        range: LaboratoryDataUnit
+
+  LaboratoryDataUnit:
+    is_a: unit # biolink class from biolink-model
+    attributes:
+      TypeUnit:
+        slot_uri: rdf:type
+        range: OboType
+    
+  LaboratoryDataInput:
+    is_a: gross anatomical structure # biolink class from biolink-model
+    class_uri: sio:SIO_000015
+    attributes:
+      TypeInput:
+        range: OboType
+
+  LaboratoryDataTarget:
+    is_a: material sample # biolink class from biolink-model
+    class_uri: sio:SIO_000015
+    attributes:
+      TypeTarget:
+        range: OboType
+
+  LaboratoryDataProtocol:
+    class_uri: obo:NCIT_C42651
+    id_prefixes:
+      - dxdoi
+
+  LaboratoryDataStartDate:
+    is_a: StartDate
+    class_uri: sio:SIO_000031
+    attributes:
+      has_value_start:
+        range: date
+
+  LaboratoryDataEndDate:
+    is_a: EndDate
+    class_uri: sio:SIO_000032
+    attributes:
+      has_value_end:
+        range: date
+
+
+############ SLOTS  #############
+
+slots: 
+
+  denotes:
+    range: Role
+    slot_uri: sio:SIO_000020
+
+  has_role:
+    range: Role
+    slot_uri: sio:SIO_000228
+
+  has_attribute:
+    range: Attribute
+    slot_uri: sio:SIO_000008
+
+  is_realized_in:
+    range: Process
+    slot_uri: sio:SIO_000356
+
+  has_output:
+    range: Output
+    slot_uri: sio:SIO_000229
+
+  has_start_time:
+    slot_uri: sio:SIO_000680
+    range: StartDate
+
+  has_end_time:
+    slot_uri: sio:SIO_000681
+    range: EndDate
+
+  has_input:
+    range: Input
+    slot_uri: sio:SIO_000230
+
+  refers_to:
+    range: Attribute
+    slot_uri: sio:SIO_000628
+
+
+############ TYPES  #############
+
+types:
+  OboType:
+    typeof: uriorcurie
+    id_prefixes:
+      - obo

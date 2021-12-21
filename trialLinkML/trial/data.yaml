@@ -13,15 +13,47 @@
 #   - id: ROR:1
 #     full_name: Justice League
 
-persons:
-  - id: ORCID:1234
-    full_name: Clark Kent
-    age: 32
-    phone: 555-555-5555
-  - id: ORCID:4567
-    full_name: Lois Lane
-    age: 33
+# persons:
+#   - id: ORCID:1234
+#     full_name: Clark Kent
+#     age: 32
+#     phone: 555-555-5555
+#   - id: ORCID:4567
+#     full_name: Lois Lane
+#     age: 33
 
-# has_value: Female
+
+# denotes:
+#   has_value: Female
+#   refers_to:
+#     has_value_gender: Female
+
+# fill_output:
+#   has_value: Female
+#   refers_to:
+# fill_attribute:
+#   has_value_gender: Female
+# denotes:
+#   - has_value: Female
 # refers_to:
 #   - has_value_gender: Female
+
+
+# fill_identifier:
+#   id: Patient001
+#   denotes:
+# fill_entity:
+#   has_role:
+#   has_attribute:
+# fill_role:
+#   is_realized_in:
+# fill_process:
+#   label: Process
+#   has_output:
+# fill_output:
+#   valueSex: Female
+#   refers_to:
+# fill_attribute:
+#   typeSex: Female
+
+# valueSex: Female

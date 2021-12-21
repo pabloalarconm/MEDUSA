@@ -21,24 +21,52 @@ default_range: string
 
 classes:
 
+  Identifier:
+    class_uri: sio:SIO_000115
+    attributes:
+      # has_value_id:
+      #   range: string
+      #   slot_uri: sio:SIO_000300
+      denotes:
+        #multivalued: true
+        #inlined_as_list: true
+        range: Output
+        slot_uri: sio:SIO_000020
+
   Output:
     class_uri: sio:SIO_000015
     attributes:
       has_value:
-        multivalued: true
-        inlined_as_list: true
+        #ultivalued: true
+        # inlined_as_list: true
+        slot_uri: sio:SIO_000300
         range: string
       refers_to:
-        multivalued: true
-        inlined_as_list: true
+        #multivalued: true
+        # inlined_as_list: true
         range: Attribute
+        slot_uri: sio:SIO_000628
 
 
   Attribute:
     class_uri: sio:SIO_000614
     attributes:
       has_value_gender:
+        multivalued:
+        slot_uri: sio:SIO_000300
         range: GenderType
+
+
+  # Container:
+  #   attributes:
+  #     fill_output:
+  #       range: Output
+  #       multivalued: true
+  #       #inlined_as_list: true
+  #     fill_attribute:
+  #       range: Attribute
+  #       multivalued: true
+  #       inlined_as_list: true
 
 
 enums:

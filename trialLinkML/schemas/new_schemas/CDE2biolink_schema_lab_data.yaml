@@ -46,6 +46,8 @@ classes:
     slots:
       - has_output
       - has_input
+      - has_start_time
+      - has_end_time
 
   Output:
     class_uri: sio:SIO_000015
@@ -71,6 +73,7 @@ classes:
     class_uri: sio:SIO_000115
     attributes:
       has_value:
+        is_a: id # biolink slot from biolink-model
         slot_uri: sio:SIO_000300
         range: string
     slot_usage:
@@ -116,18 +119,19 @@ classes:
     class_uri: sio:SIO_000015
     attributes:
       has_value_data:
+        is_a: has numeric value # biolink slot from biolink-model
         slot_uri: sio:SIO_000300
         range: float
+    slot_usage:
       has_unit:
         slot_uri: sio:SIO_000221
         range: LaboratoryDataUnit
 
   LaboratoryDataUnit:
-    is_a: unit # biolink class from biolink-model
     attributes:
       TypeUnit:
         slot_uri: rdf:type
-        range: OboType
+        range: unit # biolink types from biolink-model
     
   LaboratoryDataInput:
     is_a: gross anatomical structure # biolink class from biolink-model

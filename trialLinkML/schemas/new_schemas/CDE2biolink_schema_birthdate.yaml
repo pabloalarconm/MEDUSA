@@ -63,7 +63,8 @@ classes:
       denotes:
         range: PatientForBirthdateAssessment
     attributes:
-      id:
+      has_value:
+        is_a: id # biolink slot from biolink-model
         slot_uri: sio:SIO_000300
         range: string
 

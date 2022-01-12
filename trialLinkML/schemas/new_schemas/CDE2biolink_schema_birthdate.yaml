@@ -92,7 +92,7 @@ classes:
         range: BirthdateOutput
 
   BirthdateOutput:
-    is_a: Output
+    is_a: information content entity
     class_uri: sio:SIO_000015
     slot_usage:
       refers_to:

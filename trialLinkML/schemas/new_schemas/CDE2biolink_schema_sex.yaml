@@ -60,7 +60,7 @@ classes:
     class_uri: sio:SIO_000115
     attributes:
       has_value:
-        is_a: id # biolink slot from biolink-model
+        #is_a: id # biolink slot from biolink-model
         slot_uri: sio:SIO_000300
         range: string
     slot_usage:
@@ -71,7 +71,7 @@ classes:
   Person:
     is_a: case # biolink class from biolink-model
     class_uri: sio:SIO_000498
-    attributes:
+    slot_usage:
       has_role:
         slot_uri: sio:SIO_000228
         range: PatientForSexAssessment
@@ -82,13 +82,13 @@ classes:
   PatientForSexAssessment:
     is_a: Role
     class_uri: obo:OBI_0000093
-    attributes:
+    slot_usage:
       is_realized_in:
         slot_uri: sio:SIO_000356
         range: SexMeasuringProcess     
 
   SexMeasuringProcess:
-    is_a: biological process # biolink class from biolink-model
+    is_a: procedure # biolink class from biolink-model
     class_uri: sio:SIO_000006
     attributes:
       has_output:
@@ -96,12 +96,13 @@ classes:
         slot_uri: sio:SIO_000229
 
   SexOutput:
-    is_a: Output
+    is_a: information content entity
     class_uri: sio:SIO_000015
     attributes:
       valueSex:
         slot_uri: sio:SIO_000300
         range: SexLabelType
+    slot_usage:
       refers_to:
         range: SexAttribute
         slot_uri: sio:SIO_000628
@@ -120,27 +121,33 @@ classes:
 slots: 
 
   denotes:
+    description: denotes is a relation between an entity and what it is a sign or indication of, or what specifically means.
     range: Role
     slot_uri: sio:SIO_000020
 
   has_role:
+    description: has role is a relation between an entity and a role that it bears.
     range: Role
     slot_uri: sio:SIO_000228
 
   has_attribute:
-    range: attribute
+    description: has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.
+    range: Attribute
     slot_uri: sio:SIO_000008
 
   is_realized_in:
+    description: the role of a patient is realized in medical examination
     range: Process
     slot_uri: sio:SIO_000356
 
   has_output:
+    description: has output is a relation between an process and an entity, where the entity is present at the end of the process.
     range: Output
     slot_uri: sio:SIO_000229
 
   refers_to:
-    range: attribute
+    description: refers to is a relation between one entity and the entity that it makes reference to.
+    range: Attribute
     slot_uri: sio:SIO_000628
 
 ############ TYPES  #############

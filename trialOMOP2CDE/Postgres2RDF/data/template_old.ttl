@@ -1,0 +1,34 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix sio: <http://semanticscience.org/resource/>.
+@base <http://example.com/base/> .
+
+
+
+<TriplesMap1> a rr:TriplesMap;
+
+rml:logicalSource [
+rml:source <#DB_source>;
+rr:sqlVersion rr:SQL2008;
+#rml:referenceFormulation ql:CSV;
+rml:query "SELECT * FROM personal"
+];
+
+rr:subjectMap [
+rr:template "http://example.com/person/{person_id}";
+rr:class sio:SIO_000498
+];
+
+rr:predicateObjectMap [
+rr:predicate sio:SIO_000300;
+rr:objectMap [rml:reference "person_id"]
+].
+
+<#DB_source> a d2rq:Database;
+d2rq:jdbcDSN "jdbc:postgresql://localhost/postgres";
+d2rq:jdbcDriver "org.postgresql.Driver";
+d2rq:username "postgres";
+d2rq:password "glucosamina6" .

@@ -1,0 +1,64 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix this: <http://example.org/data/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/data/individual_thisPerson_uid_000007#Entity> a sio:object,
+        sio:person,
+        <https://w3id.org/biolink/vocab/Case> ;
+    sio:has-attribute <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#ageAttribute_TypedAttributeNode>,
+        <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#sexAttribute_TypedAttributeNode> ;
+    sio:has-role <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_age>,
+        <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_sex> .
+
+<http://example.org/data/individual_thisPerson_uid_000007#ID> a sio:identifier ;
+    sio:denotes <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_age>,
+        <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_sex> ;
+    sio:has-value "uid_000007"^^xsd:string .
+
+<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#process_age_measuring_procedure_Output> a sio:information-content-entity,
+        <https://w3id.org/biolink/vocab/InformationContentEntity> ;
+    rdfs:label "Output Type: Birth Date" ;
+    sio:has-value "1991-02-12"^^xsd:date ;
+    sio:refers-to <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#ageAttribute_TypedAttributeNode> .
+
+<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#process_sex_measuring_procedure_Output> a sio:information-content-entity,
+        <https://w3id.org/biolink/vocab/InformationContentEntity> ;
+    rdfs:label "Output Type: Female" ;
+    sio:has-value "Female"^^xsd:string ;
+    sio:refers-to <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#sexAttribute_TypedAttributeNode> .
+
+<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534_process#process_age_measuring_procedure> a sio:process,
+        <https://w3id.org/biolink/vocab/Process> ;
+    rdfs:label "Process: age measuring process" ;
+    sio:has-output <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#process_age_measuring_procedure_Output> .
+
+<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534_process#process_sex_measuring_procedure> a sio:process,
+        <https://w3id.org/biolink/vocab/Process> ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:has-output <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#process_sex_measuring_procedure_Output> .
+
+<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#ageAttribute_TypedAttributeNode> a obo:NCIT_C68615,
+        sio:attribute,
+        <https://w3id.org/biolink/vocab/Attribute> ;
+    rdfs:label "Attribute Type: Birth Date" .
+
+<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_age> a obo:OBI_0000093,
+        sio:role ;
+    rdfs:label " Role: Patient for age assessment" ;
+    sio:is-realized-in <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534_process#process_age_measuring_procedure> .
+
+<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_sex> a obo:OBI_0000093,
+        sio:role ;
+    rdfs:label " Role: Patient For Gender Assessment" ;
+    sio:is-realized-in <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534_process#process_sex_measuring_procedure> .
+
+<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#sexAttribute_TypedAttributeNode> a obo:NCIT_C16576,
+        obo:NCIT_C28421,
+        sio:attribute,
+        <https://w3id.org/biolink/vocab/BiologicalSex> ;
+    rdfs:label "Attribute Type: Female" .
+

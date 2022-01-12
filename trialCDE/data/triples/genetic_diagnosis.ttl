@@ -24,19 +24,19 @@
 <http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis_process_hgnc_Output> a sio:SIO_001381,
         sio:information-content-entity ;
     rdfs:label "Output Type: HGNC genome sequence variant" ;
-    sio:has-value "Value: https://identifiers.org/HGNC:12698"^^xsd:string ;
+    sio:has-value "https://identifiers.org/HGNC:12698"^^xsd:string ;
     sio:refers-to <https://identifiers.org/HGNC:12698> .
 
 <http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis_process_hgvs_Output> a sio:SIO_001388,
         sio:information-content-entity ;
     rdfs:label "Output Type: measurement-value" ;
-    sio:has-value "Value: NM_004006.3:c.4375C>T"^^xsd:string ;
+    sio:has-value "NM_004006.3:c.4375C>T"^^xsd:string ;
     sio:refers-to <https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> .
 
 <http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis_process_omim_Output> a sio:SIO_001381,
         sio:information-content-entity ;
     rdfs:label "Output Type: OMIM genome sequence variant" ;
-    sio:has-value "Value: https://www.omim.org/entry/192977"^^xsd:string ;
+    sio:has-value "https://www.omim.org/entry/192977"^^xsd:string ;
     sio:refers-to <https://www.omim.org/entry/192977> .
 
 <http://example.org/data/individual_uid_000002_20211001110703671188#patientRole_genetic_diagnosis> a obo:OBI_0000093,

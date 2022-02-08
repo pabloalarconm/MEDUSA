@@ -1,0 +1,47 @@
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Process> <http://semanticscience.org/resource/SIO_000680> <http://example.org/data/0_20220202093016612071#Lab_measurement_Startdate>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Startdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C107391>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: Quantitation".
+<http://example.org/data/0_20220202093016612071#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Process> <http://semanticscience.org/resource/SIO_000681> <http://example.org/data/0_20220202093016612071#Lab_measurement_Enddate>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.org/data/0_20220202093016612071#Lab_measurement_Attribute>.
+<https://dx.doi.org/10.17504/protocols.io.abc1234> <http://www.w3.org/2000/01/rdf-schema#label> "Protocol: Fake protolcol used to create this test".
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Startdate> <http://semanticscience.org/resource/SIO_000300> "1994-05-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.org/data/0_20220202093016612071#Lab_measurement_Output>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Output> <http://www.w3.org/2000/01/rdf-schema#comment> "ADPKD clinical measurements of blood pressure and serum creatine"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C32141>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/UO_0000272>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/InformationContentEntity>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/0_20220202093016612071#Lab_measurement_Process>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Input> <http://www.w3.org/2000/01/rdf-schema#label> "Input type: Arm".
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Output> <http://semanticscience.org/resource/SIO_000221> <http://example.org/data/0_20220202093016612071#Lab_measurement_Unit>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Attribute>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Target> <http://www.w3.org/2000/01/rdf-schema#label> "Target type: Systolic Blood Pressure".
+<http://example.org/data/0_20220202093016612071#Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/0_20220202093016612071#Lab_measurement_Role>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Procedure>.
+<http://example.org/data/0_20220202093016612071#Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/0_20220202093016612071#Lab_measurement_Attribute>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Enddate> <http://semanticscience.org/resource/SIO_000300> "1994-05-09"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/data/0_20220202093016612071#ID> <http://semanticscience.org/resource/SIO_000020> <http://example.org/data/0_20220202093016612071#Lab_measurement_Role>.
+<https://dx.doi.org/10.17504/protocols.io.abc1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C42651>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Process> <http://semanticscience.org/resource/SIO_000291> <http://example.org/data/0_20220202093016612071#Lab_measurement_Target>.
+<http://example.org/data/0_20220202093016612071#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Case>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/InformationContentEntity>.
+<http://example.org/data/0_20220202093016612071#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Process> <http://semanticscience.org/resource/SIO_000339> <https://dx.doi.org/10.17504/protocols.io.abc1234>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Enddate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000032>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Target type: millimetres of mercury (mmHg)".
+<https://dx.doi.org/10.17504/protocols.io.abc1234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output type: Measurement value".
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Output> <http://semanticscience.org/resource/SIO_000300> "150.95"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C48937>.
+<http://example.org/data/0_20220202093016612071#ID> <http://semanticscience.org/resource/SIO_000300> "0"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role: Patient".
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Enddate> <http://www.w3.org/2000/01/rdf-schema#label> "Enddate: 1994-05-09".
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Process> <http://semanticscience.org/resource/SIO_000230> <http://example.org/data/0_20220202093016612071#Lab_measurement_Input>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C25298>.
+<http://example.org/data/0_20220202093016612071#Lab_measurement_Startdate> <http://www.w3.org/2000/01/rdf-schema#label> "Startdate: 1994-05-09".

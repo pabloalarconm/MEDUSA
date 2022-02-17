@@ -1,0 +1,428 @@
+mapping:
+  20220216115113359057_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Undiagnosed_Role
+      predicate: sio:SIO_000020
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#ID
+  20220216115113359072_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Undiagnosed_Role
+      predicate: sio:SIO_000228
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Entity
+  20220216115113359077_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Undiagnosed_Attribute
+      predicate: sio:SIO_000008
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Entity
+  20220216115113359081_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Undiagnosed_Process
+      predicate: sio:SIO_000356
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Role
+  20220216115113359084_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Undiagnosed_Startdate
+      predicate: sio:SIO_000680
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Process
+  20220216115113359089_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Undiagnosed_Enddate
+      predicate: sio:SIO_000681
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Process
+  20220216115113359093_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Undiagnosed_Output
+      predicate: sio:SIO_000229
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Process
+  20220216115113359096_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Phenotype_Input
+      predicate: sio:SIO_000230
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Process
+  20220216115113359099_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Genotype_Input
+      predicate: sio:SIO_000230
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Process
+  20220216115113359103_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Undiagnosed_Attribute
+      predicate: sio:SIO_000628
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Output
+  20220216115113359106_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Phenotype_Attribute
+      predicate: sio:SIO_000628
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Phenotype_Input
+  20220216115113359112_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Genotype_Attribute
+      predicate: sio:SIO_000628
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Genotype_Input
+  20220216115113359116_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000115
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#ID
+  20220216115113359121_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000498
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Entity
+  20220216115113359125_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000016
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Role
+  20220216115113359128_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: obo:OBI_0000093
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Role
+  20220216115113359131_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Process
+  20220216115113359135_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_001001
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Process
+  20220216115113359138_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000031
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Startdate
+  20220216115113359142_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000032
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Enddate
+  20220216115113359145_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Output
+  20220216115113359149_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Attribute
+  20220216115113359154_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: obo:NCIT_C113725
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Attribute
+  20220216115113359158_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Phenotype_Input
+  20220216115113359161_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Phenotype_Attribute
+  20220216115113359165_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(hp_uri)
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Phenotype_Attribute
+  20220216115113359168_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Genotype_Input
+  20220216115113359171_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_001388
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Genotype_Input
+  20220216115113359175_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Genotype_Attribute
+  20220216115113359179_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(clinvar_uri)
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Genotype_Attribute
+  20220216115113359182_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Role: Undiagnosed patient'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Role
+  20220216115113359186_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Process: Medical diagnosis'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Process
+  20220216115113359190_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Startdate: $(date)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Startdate
+  20220216115113359193_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Enddate: $(date)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Enddate
+  20220216115113359196_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: Undiagnosed label'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Output
+  20220216115113359199_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: Undiagnosed'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Attribute
+  20220216115113359204_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Input type: HP_Phenotype'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Phenotype_Input
+  20220216115113359207_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: $(hp_label)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Phenotype_Attribute
+  20220216115113359210_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Input type: HGVS_Genotype'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Genotype_Input
+  20220216115113359213_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: $(hgvs_string)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Genotype_Attribute
+  20220216115113359216_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: $(pid)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#ID
+  20220216115113359220_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:date
+        value: $(date)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Startdate
+  20220216115113359223_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:date
+        value: $(date)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Enddate
+  20220216115113359227_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: Undiagnosed
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Undiagnosed_Output
+  20220216115113359232_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: $(hp_label)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Phenotype_Input
+  20220216115113359235_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: $(hgvs_string)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Genotype_Input
+prefixes:
+  obo: http://purl.obolibrary.org/obo/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sio: http://semanticscience.org/resource/
+  this: 'http://example.org/data/'
+  xsd: http://www.w3.org/2001/XMLSchema#
+sources:
+  source_cde_test:
+    access: '/data/undiagnosed.csv'
+    iterator: $
+    referenceFormulation: 'csv'
+

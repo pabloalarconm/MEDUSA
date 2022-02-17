@@ -3,54 +3,45 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/data/individual_thisPerson_uid_000008#ID> a sio:identifier ;
-    sio:denotes <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#patientRole_status> ;
-    sio:has-value "uid_000008"^^xsd:string .
+<http://example.org/data/uid_000008_20220202093016584182#Entity> a sio:SIO_000498 ;
+    sio:SIO_000008 <http://example.org/data/uid_000008_20220202093016584182#Death_information_Attribute>,
+        <http://example.org/data/uid_000008_20220202093016584182#Status_Attribute> ;
+    sio:SIO_000228 <http://example.org/data/uid_000008_20220202093016584182#Status_Role> .
 
-<http://example.org/data/individual_thisPerson_uid_000008#Person> a sio:object,
-        sio:person ;
-    sio:has-attribute <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#death_information_TypedAttributeNode>,
-        <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#status_attribute_TypedAttributeNode> ;
-    sio:has-role <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#patientRole_status> .
+<http://example.org/data/uid_000008_20220202093016584182#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/uid_000008_20220202093016584182#Status_Role> ;
+    sio:SIO_000300 "uid_000008"^^xsd:string .
 
-<http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#process_patient_death_information_Output> sio:refers-to <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#death_information_TypedAttributeNode> .
+<http://example.org/data/uid_000008_20220202093016584182#Death_information_Output> a sio:SIO_000015 ;
+    rdfs:label "Output type: Patient death information)" ;
+    sio:SIO_000300 "2010-06-08"^^xsd:date ;
+    sio:SIO_000628 <http://example.org/data/uid_000008_20220202093016584182#Death_information_Attribute> .
 
-<http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#process_patient_status_Output> sio:refers-to <http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#status_attribute_TypedAttributeNode> .
+<http://example.org/data/uid_000008_20220202093016584182#Death_information_Process> a sio:SIO_000006 ;
+    rdfs:label "Process: Death information recording process" ;
+    sio:SIO_000229 <http://example.org/data/uid_000008_20220202093016584182#Death_information_Output> .
 
-<http://example.org/data/individual_uid_000008_20211001110703662534#patientRole_status> sio:is-realized-in <http://example.org/data/individual_uid_000008_20211001110703662534_process#process_patient_death_information>,
-        <http://example.org/data/individual_uid_000008_20211001110703662534_process#process_patient_status> .
+<http://example.org/data/uid_000008_20220202093016584182#Status_Output> a sio:SIO_000015 ;
+    rdfs:label "Output type: dead" ;
+    sio:SIO_000300 "dead"^^xsd:string ;
+    sio:SIO_000628 <http://example.org/data/uid_000008_20220202093016584182#Status_Attribute> .
 
-<http://example.org/data/individual_uid_000008_process#process_longitudinal_information_gathering_process_diseaseX> sio:has-part <http://example.org/data/individual_uid_000008_20211001110703662534_process#process_patient_status> .
+<http://example.org/data/uid_000008_20220202093016584182#Status_Process> a sio:SIO_000006,
+        sio:SIO_001052 ;
+    rdfs:label "Process: Status recording process" ;
+    sio:SIO_000229 <http://example.org/data/uid_000008_20220202093016584182#Status_Output> .
 
-<http://example.org/data/individual_uid_000008_process#process_patient_status> a sio:process .
+<http://example.org/data/uid_000008_20220202093016584182#Death_information_Attribute> a obo:NCIT_C70810,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Date of death" .
 
-<http://example.org/data/individual_uid_000008_20211001110703662534#process_patient_death_information_Output> a sio:information-content-entity ;
-    rdfs:label "Output Type: patient death information" ;
-    sio:has-value "2010-06-08"^^xsd:date .
+<http://example.org/data/uid_000008_20220202093016584182#Status_Attribute> a sio:SIO_000614,
+        sio:SIO_010059 ;
+    rdfs:label "Attribute type: dead" .
 
-<http://example.org/data/individual_uid_000008_20211001110703662534#process_patient_status_Output> a sio:information-content-entity ;
-    rdfs:label "Output Type: dead" ;
-    sio:has-value "dead"^^xsd:string .
-
-<http://example.org/data/individual_uid_000008_20211001110703662534_process#process_patient_death_information> a sio:SIO_001052,
-        sio:process ;
-    rdfs:label "Process: death information recording process" ;
-    sio:has-output <http://example.org/data/individual_uid_000008_20211001110703662534#process_patient_death_information_Output> .
-
-<http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#death_information_TypedAttributeNode> a obo:NCIT_C70810,
-        sio:attribute ;
-    rdfs:label "Attribute Type: Date of death" .
-
-<http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#patientRole_status> a obo:OBI_0000093,
-        sio:role ;
-    rdfs:label " Role: Patient for status recording" .
-
-<http://example.org/data/individual_thisPerson_uid_000008_20211001110703662534#status_attribute_TypedAttributeNode> a sio:SIO_010059,
-        sio:attribute ;
-    rdfs:label "Attribute Type: Patient status" .
-
-<http://example.org/data/individual_uid_000008_20211001110703662534_process#process_patient_status> a sio:SIO_001052,
-        sio:process ;
-    rdfs:label "Process: status recording process" ;
-    sio:has-output <http://example.org/data/individual_uid_000008_20211001110703662534#process_patient_status_Output> .
+<http://example.org/data/uid_000008_20220202093016584182#Status_Role> a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for status recording" ;
+    sio:SIO_000356 <http://example.org/data/uid_000008_20220202093016584182#Death_information_Process>,
+        <http://example.org/data/uid_000008_20220202093016584182#Status_Process> .
 

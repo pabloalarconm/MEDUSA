@@ -3,56 +3,51 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/data/individual_thisPerson_uid_000007#ID> a sio:identifier ;
-    sio:denotes <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_age>,
-        <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_sex> ;
-    sio:has-value "uid_000007"^^xsd:string .
+<http://example.org/data/uid_000007_20220202093016751911#Entity> a sio:SIO_000498 ;
+    sio:SIO_000008 <http://example.org/data/uid_000007_20220202093016751911#Birthdate_Attribute>,
+        <http://example.org/data/uid_000007_20220202093016751911#Sex_Attribute> ;
+    sio:SIO_000228 <http://example.org/data/uid_000007_20220202093016751911#Birthdate_Role>,
+        <http://example.org/data/uid_000007_20220202093016751911#Sex_Role> .
 
-<http://example.org/data/individual_thisPerson_uid_000007#Person> a sio:object,
-        sio:person ;
-    sio:has-attribute <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#ageAttribute_TypedAttributeNode>,
-        <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#sexAttribute_TypedAttributeNode> ;
-    sio:has-role <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_age>,
-        <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_sex> .
+<http://example.org/data/uid_000007_20220202093016751911#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/uid_000007_20220202093016751911#Birthdate_Role>,
+        <http://example.org/data/uid_000007_20220202093016751911#Sex_Role> ;
+    sio:SIO_000300 "uid_000007"^^xsd:string .
 
-<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#process_age_measuring_procedure_Output> sio:refers-to <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#ageAttribute_TypedAttributeNode> .
+<http://example.org/data/uid_000007_20220202093016751911#Birthdate_Output> a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1991-02-12"^^xsd:date,
+        "Female"^^xsd:string ;
+    sio:SIO_000628 <http://example.org/data/uid_000007_20220202093016751911#Birthdate_Attribute> .
 
-<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#process_sex_measuring_procedure_Output> sio:refers-to <http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#sexAttribute_TypedAttributeNode> .
-
-<http://example.org/data/individual_uid_000007_20211001110703675534#patientRole_age> sio:is-realized-in <http://example.org/data/individual_uid_000007_20211001110703675534_process#process_age_measuring_procedure> .
-
-<http://example.org/data/individual_uid_000007_20211001110703675534#patientRole_sex> sio:is-realized-in <http://example.org/data/individual_uid_000007_20211001110703675534_process#process_sex_measuring_procedure> .
-
-<http://example.org/data/individual_uid_000007_20211001110703675534#process_age_measuring_procedure_Output> a sio:information-content-entity ;
-    rdfs:label "Output Type: Birth Date" ;
-    sio:has-value "1991-02-12"^^xsd:date .
-
-<http://example.org/data/individual_uid_000007_20211001110703675534#process_sex_measuring_procedure_Output> a sio:information-content-entity ;
-    rdfs:label "Output Type: Female" ;
-    sio:has-value "Female"^^xsd:string .
-
-<http://example.org/data/individual_uid_000007_20211001110703675534_process#process_age_measuring_procedure> a sio:process ;
+<http://example.org/data/uid_000007_20220202093016751911#Birthdate_Process> a sio:SIO_000006 ;
     rdfs:label "Process: age measuring process" ;
-    sio:has-output <http://example.org/data/individual_uid_000007_20211001110703675534#process_age_measuring_procedure_Output> .
+    sio:SIO_000229 <http://example.org/data/uid_000007_20220202093016751911#Birthdate_Output> .
 
-<http://example.org/data/individual_uid_000007_20211001110703675534_process#process_sex_measuring_procedure> a sio:process ;
+<http://example.org/data/uid_000007_20220202093016751911#Sex_Output> a sio:SIO_000015 ;
+    rdfs:label "Output type: Female" ;
+    sio:SIO_000628 <http://example.org/data/uid_000007_20220202093016751911#Sex_Attribute> .
+
+<http://example.org/data/uid_000007_20220202093016751911#Sex_Process> a sio:SIO_000006 ;
     rdfs:label "Process: sex measuring process" ;
-    sio:has-output <http://example.org/data/individual_uid_000007_20211001110703675534#process_sex_measuring_procedure_Output> .
+    sio:SIO_000229 <http://example.org/data/uid_000007_20220202093016751911#Sex_Output> .
 
-<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#ageAttribute_TypedAttributeNode> a obo:NCIT_C68615,
-        sio:attribute ;
-    rdfs:label "Attribute Type: Birth Date" .
+<http://example.org/data/uid_000007_20220202093016751911#Birthdate_Attribute> a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date)" .
 
-<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_age> a obo:OBI_0000093,
-        sio:role ;
-    rdfs:label " Role: Patient for age assessment" .
+<http://example.org/data/uid_000007_20220202093016751911#Birthdate_Role> a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 <http://example.org/data/uid_000007_20220202093016751911#Birthdate_Process> .
 
-<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#patientRole_sex> a obo:OBI_0000093,
-        sio:role ;
-    rdfs:label " Role: Patient For Gender Assessment" .
-
-<http://example.org/data/individual_thisPerson_uid_000007_20211001110703675534#sexAttribute_TypedAttributeNode> a obo:NCIT_C16576,
+<http://example.org/data/uid_000007_20220202093016751911#Sex_Attribute> a obo:NCIT_C16576,
         obo:NCIT_C28421,
-        sio:attribute ;
-    rdfs:label "Attribute Type: Female" .
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Female" .
+
+<http://example.org/data/uid_000007_20220202093016751911#Sex_Role> a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 <http://example.org/data/uid_000007_20220202093016751911#Sex_Process> .
 

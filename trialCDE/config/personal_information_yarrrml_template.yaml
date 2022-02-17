@@ -1,5 +1,5 @@
 mapping:
-  20220201163412802776_source_cde_test:
+  20220216115111339622_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -8,7 +8,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#ID
-  20220201163412802789_source_cde_test:
+  20220216115111339636_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -17,7 +17,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Entity
-  20220201163412802794_source_cde_test:
+  20220216115111339641_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -26,7 +26,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Entity
-  20220201163412802798_source_cde_test:
+  20220216115111339645_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -35,7 +35,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Role
-  20220201163412802802_source_cde_test:
+  20220216115111339648_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -44,7 +44,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Process
-  20220201163412802808_source_cde_test:
+  20220216115111339654_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -53,7 +53,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Output
-  20220201163412802812_source_cde_test:
+  20220216115111339659_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -62,7 +62,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#ID
-  20220201163412802816_source_cde_test:
+  20220216115111339663_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -71,7 +71,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Entity
-  20220201163412802820_source_cde_test:
+  20220216115111339667_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -80,7 +80,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Entity
-  20220201163412802823_source_cde_test:
+  20220216115111339670_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -89,7 +89,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Role
-  20220201163412802827_source_cde_test:
+  20220216115111339673_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -98,7 +98,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Process
-  20220201163412802830_source_cde_test:
+  20220216115111339677_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -107,7 +107,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Output
-  20220201163412802834_source_cde_test:
+  20220216115111339680_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -116,7 +116,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#ID
-  20220201163412802838_source_cde_test:
+  20220216115111339685_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -125,7 +125,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Entity
-  20220201163412802842_source_cde_test:
+  20220216115111339688_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -134,7 +134,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Role
-  20220201163412802845_source_cde_test:
+  20220216115111339692_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -143,7 +143,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Role
-  20220201163412802849_source_cde_test:
+  20220216115111339696_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -152,7 +152,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Process
-  20220201163412802852_source_cde_test:
+  20220216115111339700_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -161,7 +161,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Output
-  20220201163412802857_source_cde_test:
+  20220216115111339703_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -170,7 +170,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Attribute
-  20220201163412802861_source_cde_test:
+  20220216115111339706_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -179,7 +179,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Attribute
-  20220201163412802864_source_cde_test:
+  20220216115111339710_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -188,7 +188,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Role
-  20220201163412802869_source_cde_test:
+  20220216115111339714_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -197,7 +197,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Role
-  20220201163412802873_source_cde_test:
+  20220216115111339718_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -206,7 +206,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Process
-  20220201163412802876_source_cde_test:
+  20220216115111339721_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -215,7 +215,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Output
-  20220201163412802880_source_cde_test:
+  20220216115111339725_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -224,7 +224,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Attribute
-  20220201163412802883_source_cde_test:
+  20220216115111339728_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -233,7 +233,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Attribute
-  20220201163412802886_source_cde_test:
+  20220216115111339731_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -242,7 +242,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Attribute
-  20220201163412802890_source_cde_test:
+  20220216115111339741_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -251,7 +251,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Role
-  20220201163412802894_source_cde_test:
+  20220216115111339745_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -260,7 +260,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Process
-  20220201163412802899_source_cde_test:
+  20220216115111339749_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -269,7 +269,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Output
-  20220201163412802903_source_cde_test:
+  20220216115111339753_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -278,7 +278,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Birthdate_Attribute
-  20220201163412802906_source_cde_test:
+  20220216115111339756_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -287,7 +287,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Role
-  20220201163412802909_source_cde_test:
+  20220216115111339759_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -296,7 +296,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Process
-  20220201163412802913_source_cde_test:
+  20220216115111339763_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -305,7 +305,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Output
-  20220201163412802916_source_cde_test:
+  20220216115111339766_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -314,7 +314,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Sex_Attribute
-  20220201163412802919_source_cde_test:
+  20220216115111339769_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -323,11 +323,20 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#ID
-  20220201163412802924_source_cde_test:
+  20220216115111339773_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date
-        value: $(datetime)
+        value: $(birthdate)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Birthdate_Output
+  20220216115111339777_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: $(sexLabel)
       predicate: sio:SIO_000300
     sources:
     - source_cde_test

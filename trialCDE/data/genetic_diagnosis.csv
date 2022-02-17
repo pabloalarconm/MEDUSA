@@ -1,2 +1,2 @@
-pid,uniqid,clinvar_uri,omim_uri,hgnc_uri,hgvs_string,Unnamed: 6
-uid_000002,20220202093016749267,https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/,https://www.omim.org/entry/192977,https://identifiers.org/HGNC:12698,NM_004006.3:c.4375C>T,
+pid,uniqid,clinvar_uri,omim_uri,hgnc_uri,hgvs_string
+20220202093016749267,20220216165608166844,https://www.omim.org/entry/192977,https://identifiers.org/HGNC:12698,NM_004006.3:c.4375C>T,

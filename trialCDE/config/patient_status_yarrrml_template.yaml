@@ -1,5 +1,5 @@
 mapping:
-  20220201163413091754_source_cde_test:
+  20220216115111629008_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -8,7 +8,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#ID
-  20220201163413091770_source_cde_test:
+  20220216115111629023_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -17,7 +17,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Entity
-  20220201163413091774_source_cde_test:
+  20220216115111629027_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -26,7 +26,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Entity
-  20220201163413091778_source_cde_test:
+  20220216115111629031_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -35,7 +35,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Role
-  20220201163413091782_source_cde_test:
+  20220216115111629035_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -44,7 +44,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Process
-  20220201163413091788_source_cde_test:
+  20220216115111629040_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -53,7 +53,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Output
-  20220201163413091792_source_cde_test:
+  20220216115111629044_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -62,7 +62,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Entity
-  20220201163413091797_source_cde_test:
+  20220216115111629048_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -71,7 +71,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Role
-  20220201163413091801_source_cde_test:
+  20220216115111629052_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -80,7 +80,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Death_information_Process
-  20220201163413091804_source_cde_test:
+  20220216115111629055_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -89,7 +89,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Death_information_Output
-  20220201163413091808_source_cde_test:
+  20220216115111629059_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -98,7 +98,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#ID
-  20220201163413091812_source_cde_test:
+  20220216115111629062_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -107,7 +107,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Entity
-  20220201163413091816_source_cde_test:
+  20220216115111629066_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -116,7 +116,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Role
-  20220201163413091821_source_cde_test:
+  20220216115111629071_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -125,7 +125,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Role
-  20220201163413091824_source_cde_test:
+  20220216115111629075_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -134,7 +134,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Process
-  20220201163413091828_source_cde_test:
+  20220216115111629078_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -143,7 +143,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Process
-  20220201163413091832_source_cde_test:
+  20220216115111629082_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -152,7 +152,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Output
-  20220201163413091837_source_cde_test:
+  20220216115111629085_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -161,7 +161,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Attribute
-  20220201163413091841_source_cde_test:
+  20220216115111629090_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -170,7 +170,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Attribute
-  20220201163413091845_source_cde_test:
+  20220216115111629093_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -179,7 +179,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Death_information_Process
-  20220201163413091848_source_cde_test:
+  20220216115111629097_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -188,7 +188,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Death_information_Output
-  20220201163413091853_source_cde_test:
+  20220216115111629101_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -197,7 +197,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Death_information_Attribute
-  20220201163413091857_source_cde_test:
+  20220216115111629105_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -206,7 +206,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Death_information_Attribute
-  20220201163413091861_source_cde_test:
+  20220216115111629108_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -215,7 +215,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Role
-  20220201163413091864_source_cde_test:
+  20220216115111629112_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -224,7 +224,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Process
-  20220201163413091868_source_cde_test:
+  20220216115111629115_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -233,7 +233,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Output
-  20220201163413091871_source_cde_test:
+  20220216115111629118_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -242,7 +242,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Attribute
-  20220201163413091875_source_cde_test:
+  20220216115111629122_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -251,7 +251,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Death_information_Process
-  20220201163413091879_source_cde_test:
+  20220216115111629126_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -260,7 +260,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Death_information_Output
-  20220201163413091884_source_cde_test:
+  20220216115111629130_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -269,7 +269,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Death_information_Attribute
-  20220201163413091888_source_cde_test:
+  20220216115111629134_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -278,16 +278,16 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#ID
-  20220201163413091891_source_cde_test:
+  20220216115111629138_source_cde_test:
     predicateobject:
     - objects:
-        datatype: xsd:date
-        value: $(date)
+        datatype: xsd:string
+        value: $(status_label)
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)#Status_Output
-  20220201163413091895_source_cde_test:
+  20220216115111629141_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date

@@ -1,0 +1,46 @@
+<http://example.org/data/0_20220202092339806749#Age_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016>.
+<http://example.org/data/0_20220202092339806749#Age_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/0_20220202092339806749#Age_Process>.
+<http://example.org/data/0_20220202092339806749#Sex_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093>.
+<http://example.org/data/0_20220202092339806749#ID> <http://semanticscience.org/resource/SIO_000020> <http://example.org/data/0_20220202092339806749#Sex_Role>.
+<http://example.org/data/0_20220202092339806749#Age_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093>.
+<http://example.org/data/0_20220202092339806749#Age_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C25150>.
+<http://example.org/data/0_20220202092339806749#Age_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Attribute>.
+<http://example.org/data/0_20220202092339806749#Sex_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Procedure>.
+<http://example.org/data/0_20220202092339806749#Sex_Output> <http://semanticscience.org/resource/SIO_000300> "Female"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/0_20220202092339806749#Age_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.org/data/0_20220202092339806749#Age_Output>.
+<http://example.org/data/0_20220202092339806749#Sex_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
+<http://example.org/data/0_20220202092339806749#Age_Output> <http://semanticscience.org/resource/SIO_000300> "61.3"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://example.org/data/0_20220202092339806749#Entity> <http://semanticscience.org/resource/SIO_000008> <http://example.org/data/0_20220202092339806749#Sex_Attribute>.
+<http://example.org/data/0_20220202092339806749#Sex_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/0_20220202092339806749#Sex_Process>.
+<http://example.org/data/0_20220202092339806749#ID> <http://semanticscience.org/resource/SIO_000300> "0"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/0_20220202092339806749#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115>.
+<http://example.org/data/0_20220202092339806749#Age_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
+<http://example.org/data/0_20220202092339806749#Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/0_20220202092339806749#Sex_Role>.
+<http://example.org/data/0_20220202092339806749#ID> <http://semanticscience.org/resource/SIO_000020> <http://example.org/data/0_20220202092339806749#Age_Role>.
+<http://example.org/data/0_20220202092339806749#Sex_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C16576>.
+<http://example.org/data/0_20220202092339806749#Entity> <http://semanticscience.org/resource/SIO_000008> <http://example.org/data/0_20220202092339806749#Age_Attribute>.
+<http://example.org/data/0_20220202092339806749#Sex_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role: Patient for gender assessment".
+<http://example.org/data/0_20220202092339806749#Sex_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/BiologicalSex>.
+<http://example.org/data/0_20220202092339806749#Age_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute type: Age".
+<http://example.org/data/0_20220202092339806749#Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/0_20220202092339806749#Age_Role>.
+<http://example.org/data/0_20220202092339806749#Sex_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016>.
+<http://example.org/data/0_20220202092339806749#Age_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Procedure>.
+<http://example.org/data/0_20220202092339806749#Age_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/0_20220202092339806749#Age_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.org/data/0_20220202092339806749#Age_Attribute>.
+<http://example.org/data/0_20220202092339806749#Sex_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.org/data/0_20220202092339806749#Sex_Attribute>.
+<http://example.org/data/0_20220202092339806749#Sex_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C28421>.
+<http://example.org/data/0_20220202092339806749#Sex_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute type: Female".
+<http://example.org/data/0_20220202092339806749#Sex_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
+<http://example.org/data/0_20220202092339806749#Age_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: age measuring process".
+<http://example.org/data/0_20220202092339806749#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Case>.
+<http://example.org/data/0_20220202092339806749#Age_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output type: Age".
+<http://example.org/data/0_20220202092339806749#Age_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role: Patient for age assessment".
+<http://example.org/data/0_20220202092339806749#Age_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/InformationContentEntity>.
+<http://example.org/data/0_20220202092339806749#Sex_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/0_20220202092339806749#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498>.
+<http://example.org/data/0_20220202092339806749#Sex_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: sex measuring process".
+<http://example.org/data/0_20220202092339806749#Sex_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/InformationContentEntity>.
+<http://example.org/data/0_20220202092339806749#Sex_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Attribute>.
+<http://example.org/data/0_20220202092339806749#Sex_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output type: Female".
+<http://example.org/data/0_20220202092339806749#Sex_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.org/data/0_20220202092339806749#Sex_Output>.
+<http://example.org/data/0_20220202092339806749#Age_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.

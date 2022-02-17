@@ -1,237 +1,266 @@
----
+mapping:
+  20220216115114224845_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Disability_Role
+      predicate: sio:SIO_000020
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#ID
+  20220216115114224859_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Disability_Role
+      predicate: sio:SIO_000228
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Entity
+  20220216115114224864_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Disability_Process
+      predicate: sio:SIO_000356
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Role
+  20220216115114224867_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Disability_Startdate
+      predicate: sio:SIO_000680
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Process
+  20220216115114224871_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Disability_Enddate
+      predicate: sio:SIO_000681
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Process
+  20220216115114224875_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Disability_Output
+      predicate: sio:SIO_000229
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Process
+  20220216115114224880_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Disability_Input
+      predicate: sio:SIO_000230
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Process
+  20220216115114224884_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000115
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#ID
+  20220216115114224887_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000498
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Entity
+  20220216115114224890_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000016
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Role
+  20220216115114224896_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: obo:OBI_0000093
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Role
+  20220216115114224900_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Process
+  20220216115114224903_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(test_uri)
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Process
+  20220216115114224907_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: obo:NCIT_C107391
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Startdate
+  20220216115114224911_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000032
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Enddate
+  20220216115114224915_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Output
+  20220216115114224918_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Input
+  20220216115114224921_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: obo:NCIT_C17048
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Input
+  20220216115114224925_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Role: Patient'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Role
+  20220216115114224928_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Process: $(test_name)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Process
+  20220216115114224932_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Startdate: $(test_date)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Startdate
+  20220216115114224937_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Enddate: $(test_date)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Enddate
+  20220216115114224940_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: Disability score'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Output
+  20220216115114224944_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Input type: Questionnaire'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Input
+  20220216115114224947_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: $(pid)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#ID
+  20220216115114224950_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:date
+        value: $(test_date)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Startdate
+  20220216115114224953_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:date
+        value: $(test_date)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Enddate
+  20220216115114224956_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: $(score)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Disability_Output
 prefixes:
+  obo: http://purl.obolibrary.org/obo/
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
-  ex: https://ejp-rd.eu/ids/
-  obo: http://purl.obolibrary.org/obo/
   sio: http://semanticscience.org/resource/
-  vocab: https://ejp-rd.eu/vocab/
-  pico: https://data.cochrane.org/ontologies/pico/
-  ndfrt: http://purl.bioontology.org/ontology/NDFRT/
-  edam: http://purl.bioontology.org/ontology/EDAM/
-  ordo: http://www.orpha.net/ORDO/
-  this: "http://example.org/data/"
+  this: 'http://example.org/data/'
+  xsd: http://www.w3.org/2001/XMLSchema#
 sources:
-  questions-source:
-    access: "/data/disability.csv"
-    referenceFormulation: "csv"
-    iterator: "$"
-mappings:
-  identifier_has_value_for_thisPerson_patientRole:
-    sources:
-    - questions-source
-    s: this:individual_thisPerson_$(pid)#ID
-    po:
-    - predicates: http://semanticscience.org/resource/has-value
-      objects:
-        value: "$(pid)"
-        datatype: xsd:string
-  identifier_denotes_role_patientRole:
-    sources:
-    - questions-source
-    s: this:individual_thisPerson_$(pid)#ID
-    po:
-    - predicates: a
-      objects:
-        value: http://semanticscience.org/resource/identifier
-        type: iri
-    - predicates: a
-      objects:
-        value: http://semanticscience.org/resource/identifier
-        type: iri
-    - predicates: http://semanticscience.org/resource/denotes
-      objects:
-        value: this:individual_thisPerson_$(pid)_$(uniqid)#patientRole
-        type: iri
-  entity_has_role_patientRole:
-    sources:
-    - questions-source
-    s: this:individual_thisPerson_$(pid)#Person
-    po:
-    - predicates: a
-      objects:
-        value: http://semanticscience.org/resource/person
-        type: iri
-    - predicates: a
-      objects:
-        value: http://semanticscience.org/resource/object
-        type: iri
-    - predicates: http://semanticscience.org/resource/has-role
-      objects:
-        value: this:individual_thisPerson_$(pid)_$(uniqid)#patientRole
-        type: iri
-  patientRole_annotation:
-    sources:
-    - questions-source
-    s: this:individual_thisPerson_$(pid)_$(uniqid)#patientRole
-    po:
-    - predicates: a
-      objects:
-        value: http://purl.obolibrary.org/obo/OBI_0000093
-        type: iri
-    - predicates: a
-      objects:
-        value: http://semanticscience.org/resource/role
-        type: iri
-    - predicates: rdfs:label
-      objects:
-        value: " Role: Patient"
-        datatype: xsd:string
-  patientRole_realized_disability_assessment_test:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)#patientRole
-    po:
-    - predicates: http://semanticscience.org/resource/is-realized-in
-      objects:
-        value: this:individual_$(pid)_$(uniqid)_process#process_disability_assessment_test
-        type: iri
-  process_disability_assessment_test_process_annotation:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)_process#process_disability_assessment_test
-    po:
-    - predicates: rdf:type
-      objects:
-        value: http://semanticscience.org/resource/process
-        type: iri
-    - predicates: rdf:type
-      objects:
-        value: "$(test_uri)"
-        type: iri
-    - predicates: rdfs:label
-      objects:
-        value: 'Process: $(test_name)'
-        datatype: xsd:string
-  process_disability_assessment_test_process_annotation_start:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)_process#process_disability_assessment_test
-    po:
-    - predicates: http://semanticscience.org/resource/has-start-time
-      objects:
-        value: this:individual_$(pid)_$(uniqid)_process#process_disability_assessment_test_startdate_$(test_date)
-        type: iri
-  process_disability_assessment_test_process_annotation_start_value:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)_process#process_disability_assessment_test_startdate_$(test_date)
-    po:
-    - predicates: http://semanticscience.org/resource/has-value
-      objects:
-        value: "$(test_date)"
-        datatype: xsd:date
-    - predicates: rdf:type
-      objects:
-        value: http://semanticscience.org/resource/start-date
-        type: iri
-    - predicates: rdfs:label
-      objects:
-        value: 'Start Date: $(test_date)'
-        datatype: xsd:string
-  process_disability_assessment_test_process_annotation_end:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)_process#process_disability_assessment_test
-    po:
-    - predicates: http://semanticscience.org/resource/has-end-time
-      objects:
-        value: this:individual_$(pid)_$(uniqid)_process#process_disability_assessment_test_enddate_$(test_date)
-        type: iri
-  process_disability_assessment_test_process_annotation_end_value:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)_process#process_disability_assessment_test_enddate_$(test_date)
-    po:
-    - predicates: http://semanticscience.org/resource/has-value
-      objects:
-        value: "$(test_date)"
-        datatype: xsd:date
-    - predicates: rdf:type
-      objects:
-        value: http://semanticscience.org/resource/end-date
-        type: iri
-    - predicates: rdfs:label
-      objects:
-        value: 'End Date: $(test_date)'
-        datatype: xsd:string
-  16382584961751902_process_custom_annotation:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)_process#process_disability_assessment_test
-    po:
-    - predicates: rdf:type
-      objects:
-        value: http://purl.obolibrary.org/obo/NCIT_C20993
-        type: iri
-  process_disability_assessment_test_process_has_output:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)_process#process_disability_assessment_test
-    po:
-    - predicates: http://semanticscience.org/resource/has-output
-      objects:
-        value: this:individual_$(pid)_$(uniqid)#process_disability_assessment_test_Output
-        type: iri
-  process_disability_assessment_test_Output_annotation:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)#process_disability_assessment_test_Output
-    po:
-    - predicates: rdf:type
-      objects:
-        value: http://semanticscience.org/resource/information-content-entity
-        type: iri
-  process_disability_assessment_test_Output_type_annotation:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)#process_disability_assessment_test_Output
-    po:
-    - predicates: rdf:type
-      objects:
-        value: http://semanticscience.org/resource/information-content-entity
-        type: iri
-  process_disability_assessment_test_Output_type_label_annotation:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)#process_disability_assessment_test_Output
-    po:
-    - predicates: rdfs:label
-      objects:
-        value: 'Output Type: disability score'
-        datatype: xsd:string
-  process_disability_assessment_test_Output_value_annotation:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)#process_disability_assessment_test_Output
-    po:
-    - predicates: http://semanticscience.org/resource/has-value
-      objects:
-        value: "$(score)"
-        datatype: xsd:string
-  process_disability_assessment_test_has_input_Questionnaire:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)_process#process_disability_assessment_test
-    po:
-    - predicates: http://semanticscience.org/resource/has-input
-      objects:
-        value: this:individual_$(pid)_$(uniqid)#process_question_answering_process_Output
-        type: iri
-  process_disability_assessment_test_has_input_Questionnaire_annotation:
-    sources:
-    - questions-source
-    s: this:individual_$(pid)_$(uniqid)#process_question_answering_process_Output
-    po:
-    - predicates: rdf:type
-      objects:
-        value: http://semanticscience.org/resource/information-content-entity
-        type: iri
-    - predicates: rdf:type
-      objects:
-        value: http://purl.obolibrary.org/obo/NCIT_C17048
-        type: iri
-    - predicates: rdfs:label
-      objects:
-        value: 'Process Input: information content entity - Type: Questionnaire'
-        datatype: xsd:string
+  source_cde_test:
+    access: '/data/disability.csv'
+    iterator: $
+    referenceFormulation: 'csv'
+

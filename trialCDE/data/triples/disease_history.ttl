@@ -3,65 +3,54 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/data/individual_thisPerson_uid_000008#ID> a sio:identifier ;
-    sio:denotes <http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#patientRole_diagnosis_date>,
-        <http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#patientRole_symptom_onset> ;
-    sio:has-value "uid_000008"^^xsd:string .
+<http://example.org/data/uid_000008_20220202093016759049#Entity> a sio:SIO_000498 ;
+    sio:SIO_000008 <http://example.org/data/uid_000008_20220202093016759049#Diagnosis_date_Attribute>,
+        <http://example.org/data/uid_000008_20220202093016759049#Symptom_onset_Attribute> ;
+    sio:SIO_000228 <http://example.org/data/uid_000008_20220202093016759049#Diagnosis_date_Role>,
+        <http://example.org/data/uid_000008_20220202093016759049#Symptom_onset_Role> .
 
-<http://example.org/data/individual_thisPerson_uid_000008#Person> a sio:object,
-        sio:person ;
-    sio:has-attribute <http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#age_at_onset_TypedAttributeNode>,
-        <http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#disagnosis_date_TypedAttributeNode> ;
-    sio:has-role <http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#patientRole_diagnosis_date>,
-        <http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#patientRole_symptom_onset> .
+<http://example.org/data/uid_000008_20220202093016759049#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/uid_000008_20220202093016759049#Diagnosis_date_Role>,
+        <http://example.org/data/uid_000008_20220202093016759049#Symptom_onset_Role> ;
+    sio:SIO_000300 "uid_000008"^^xsd:string .
 
-<http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#process_patientRole_diagnosis_date_process_Output> sio:refers-to <http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#disagnosis_date_TypedAttributeNode> .
+<http://example.org/data/uid_000008_20220202093016759049#Diagnosis_date_Output> a obo:NCIT_C25164,
+        sio:SIO_000015 ;
+    rdfs:label "Output type: Age at diagnosis" ;
+    sio:SIO_000300 "1999-06-08"^^xsd:date ;
+    sio:SIO_000628 <http://example.org/data/uid_000008_20220202093016759049#Diagnosis_date_Attribute> .
 
-<http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#process_patientRole_symptom_onset_process_Output> sio:refers-to <http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#age_at_onset_TypedAttributeNode> .
+<http://example.org/data/uid_000008_20220202093016759049#Diagnosis_date_Process> a sio:SIO_000006,
+        sio:SIO_001052 ;
+    rdfs:label "Process: Diagnosis date recording process" ;
+    sio:SIO_000229 <http://example.org/data/uid_000008_20220202093016759049#Diagnosis_date_Output> .
 
-<http://example.org/data/individual_uid_000008_20211001110703686812#patientRole_diagnosis_date> sio:is-realized-in <http://example.org/data/individual_uid_000008_20211001110703686812_process#process_patientRole_diagnosis_date_process> .
+<http://example.org/data/uid_000008_20220202093016759049#Symptom_onset_Output> a obo:NCIT_C25164,
+        sio:SIO_000015 ;
+    rdfs:label "Output type: Date of onset" ;
+    sio:SIO_000300 "1998-06-08"^^xsd:date ;
+    sio:SIO_000628 <http://example.org/data/uid_000008_20220202093016759049#Symptom_onset_Attribute> .
 
-<http://example.org/data/individual_uid_000008_20211001110703686812#patientRole_symptom_onset> sio:is-realized-in <http://example.org/data/individual_uid_000008_20211001110703686812_process#process_patientRole_symptom_onset_process> .
+<http://example.org/data/uid_000008_20220202093016759049#Symptom_onset_Process> a sio:SIO_000006,
+        sio:SIO_001052 ;
+    rdfs:label "Process: Symptom onset date recording process" ;
+    sio:SIO_000229 <http://example.org/data/uid_000008_20220202093016759049#Symptom_onset_Output> .
 
-<http://example.org/data/individual_uid_000008_process#process_longitudinal_information_gathering_process> sio:has-part <http://example.org/data/individual_uid_000008_20211001110703686812_process#process_patientRole_diagnosis_date_process>,
-        <http://example.org/data/individual_uid_000008_20211001110703686812_process#process_patientRole_symptom_onset_process> .
+<http://example.org/data/uid_000008_20220202093016759049#Diagnosis_date_Attribute> a obo:NCIT_C156420,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Stage or date of diagnosis" .
 
-<http://example.org/data/individual_uid_000008_process#process_patientRole_diagnosis_date_process> a sio:process .
+<http://example.org/data/uid_000008_20220202093016759049#Diagnosis_date_Role> a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis date patient" ;
+    sio:SIO_000356 <http://example.org/data/uid_000008_20220202093016759049#Diagnosis_date_Process> .
 
-<http://example.org/data/individual_uid_000008_process#process_patientRole_symptom_onset_process> a sio:process .
+<http://example.org/data/uid_000008_20220202093016759049#Symptom_onset_Attribute> a obo:NCIT_C25279,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Stage or date of onset)" .
 
-<http://example.org/data/individual_uid_000008_20211001110703686812#process_patientRole_diagnosis_date_process_Output> a obo:HP_0003674,
-        sio:information-content-entity ;
-    rdfs:label "Output Type: age at diagnosis" .
-
-<http://example.org/data/individual_uid_000008_20211001110703686812#process_patientRole_symptom_onset_process_Output> a obo:NCIT_C251654,
-        sio:information-content-entity ;
-    rdfs:label "Output Type: date of onset (in official CDE this is age of onset)" ;
-    sio:has-value "1998-06-08"^^xsd:date .
-
-<http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#age_at_onset_TypedAttributeNode> a obo:HP_0003674,
-        sio:attribute ;
-    rdfs:label "Attribute Type: Stage or date of onset" .
-
-<http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#disagnosis_date_TypedAttributeNode> a obo:NCIT_C156420,
-        sio:attribute ;
-    rdfs:label "Attribute Type: Stage or date of diagnosis" .
-
-<http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#patientRole_diagnosis_date> a obo:OBI_0000093,
-        sio:role ;
-    rdfs:label " Role: Diagnosis Date Patient" .
-
-<http://example.org/data/individual_thisPerson_uid_000008_20211001110703686812#patientRole_symptom_onset> a obo:OBI_0000093,
-        sio:role ;
-    rdfs:label " Role: Symptom Onset Patient" .
-
-<http://example.org/data/individual_uid_000008_20211001110703686812_process#process_patientRole_diagnosis_date_process> a sio:SIO_001052,
-        sio:process ;
-    rdfs:label "Process: data collection - diagnosis date recording process" ;
-    sio:has-output <http://example.org/data/individual_uid_000008_20211001110703686812#process_patientRole_diagnosis_date_process_Output> .
-
-<http://example.org/data/individual_uid_000008_20211001110703686812_process#process_patientRole_symptom_onset_process> a sio:SIO_001052,
-        sio:process ;
-    rdfs:label "Process: data collection - symptom onset date recording process" ;
-    sio:has-output <http://example.org/data/individual_uid_000008_20211001110703686812#process_patientRole_symptom_onset_process_Output> .
+<http://example.org/data/uid_000008_20220202093016759049#Symptom_onset_Role> a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Symptom onset patient" ;
+    sio:SIO_000356 <http://example.org/data/uid_000008_20220202093016759049#Symptom_onset_Process> .
 

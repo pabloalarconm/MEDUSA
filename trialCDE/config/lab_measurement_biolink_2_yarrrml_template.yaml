@@ -1,0 +1,456 @@
+mapping:
+  20220216143007091243_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Lab_measurement_Role
+      predicate: sio:SIO_000020
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#ID
+  20220216143007091258_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Lab_measurement_Role
+      predicate: sio:SIO_000228
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Entity
+  20220216143007091262_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Lab_measurement_Attribute
+      predicate: sio:SIO_000008
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Entity
+  20220216143007091266_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Lab_measurement_Process
+      predicate: sio:SIO_000356
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Role
+  20220216143007091270_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Lab_measurement_Startdate
+      predicate: sio:SIO_000680
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Process
+  20220216143007091275_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Lab_measurement_Enddate
+      predicate: sio:SIO_000681
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Process
+  20220216143007091279_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Lab_measurement_Output
+      predicate: sio:SIO_000229
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Process
+  20220216143007091282_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Lab_measurement_Input
+      predicate: sio:SIO_000230
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Process
+  20220216143007091286_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Lab_measurement_Target
+      predicate: sio:SIO_000291
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Process
+  20220216143007091298_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(protocolURI)
+      predicate: sio:SIO_000339
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Process
+  20220216143007091302_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Lab_measurement_Attribute
+      predicate: sio:SIO_000628
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Output
+  20220216143007091305_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#Lab_measurement_Unit
+      predicate: sio:SIO_000221
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Output
+  20220216143007091309_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000115
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#ID
+  20220216143007091313_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000498
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Entity
+  20220216143007091317_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000016
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Role
+  20220216143007091321_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: obo:OBI_0000093
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Role
+  20220216143007091324_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Process
+  20220216143007091328_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(processURI)
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Process
+  20220216143007091331_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000031
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Startdate
+  20220216143007091336_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000032
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Enddate
+  20220216143007091339_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Output
+  20220216143007091344_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Input
+  20220216143007091347_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(material_tested)
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Input
+  20220216143007091351_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Target
+  20220216143007091355_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(target)
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Target
+  20220216143007091358_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: $(protocolURI)
+  20220216143007091361_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: obo:NCIT_C42651
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: $(protocolURI)
+  20220216143007091365_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(unitURI)
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Unit
+  20220216143007091368_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Attribute
+  20220216143007091373_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: biolink:Case
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Entity
+  20220216143007091378_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: biolink:Procedure
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Process
+  20220216143007091381_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: biolink:InformationContentEntity
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Input
+  20220216143007091385_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: biolink:InformationContentEntity
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Output
+  20220216143007091388_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: biolink:Attribute
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Attribute
+  20220216143007091392_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Role: Patient'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Role
+  20220216143007091395_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Process: $(processLabel)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Process
+  20220216143007091399_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Startdate: $(date)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Startdate
+  20220216143007091403_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Enddate: $(date)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Enddate
+  20220216143007091406_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: Measurement value'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Output
+  20220216143007091409_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: $(comments)
+      predicate: rdfs:comment
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Output
+  20220216143007091414_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Input type: $(material_tested_label)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Input
+  20220216143007091417_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Target type: $(target_label)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Target
+  20220216143007091420_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Protocol: $(protocolLabel)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: $(protocolURI)
+  20220216143007091424_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Target type: $(unitLabel)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Unit
+  20220216143007091428_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: Lab measurement attribute
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Attribute
+  20220216143007091432_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: $(pid)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#ID
+  20220216143007091435_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:date
+        value: $(date)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Startdate
+  20220216143007091438_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:date
+        value: $(date)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Enddate
+  20220216143007091442_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:float
+        value: $(value)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Lab_measurement_Output
+prefixes:
+  biolink: https://w3id.org/biolink/vocab/
+  obo: http://purl.obolibrary.org/obo/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sio: http://semanticscience.org/resource/
+  this: '|||BASE|||'
+  xsd: http://www.w3.org/2001/XMLSchema#
+sources:
+  source_cde_test:
+    access: '|||DATA|||'
+    iterator: $
+    referenceFormulation: '|||FORMULATION|||'
+

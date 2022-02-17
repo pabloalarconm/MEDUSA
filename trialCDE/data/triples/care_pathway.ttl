@@ -3,36 +3,30 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/data/individual_thisPerson_uid_000007#ID> a sio:identifier ;
-    sio:denotes <http://example.org/data/individual_thisPerson_uid_000007_20211001110703677672#patientRole_care_pathway_first_contact> ;
-    sio:has-value "uid_000007"^^xsd:string .
+<http://example.org/data/uid_000007_20220202093016753079#Entity> a sio:SIO_000498 ;
+    sio:SIO_000228 <http://example.org/data/uid_000007_20220202093016753079#Care_pathway_Role> .
 
-<http://example.org/data/individual_thisPerson_uid_000007#Person> a sio:object,
-        sio:person ;
-    sio:has-role <http://example.org/data/individual_thisPerson_uid_000007_20211001110703677672#patientRole_care_pathway_first_contact> .
+<http://example.org/data/uid_000007_20220202093016753079#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/uid_000007_20220202093016753079#Care_pathway_Role> ;
+    sio:SIO_000300 "uid_000007"^^xsd:string .
 
-<http://example.org/data/individual_uid_000007_20211001110703677672#patientRole_care_pathway_first_contact> sio:is-realized-in <http://example.org/data/individual_uid_000007_20211001110703677672_process#process_patientRole_care_pathway_first_contact_process> .
+<http://example.org/data/uid_000007_20220202093016753079#Care_pathway_Enddate> a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1991-02-12" ;
+    sio:SIO_000300 "1991-02-12"^^xsd:date .
 
-<http://example.org/data/individual_uid_000007_process#process_longitudinal_information_gathering_process_diseaseX> sio:has-part <http://example.org/data/individual_uid_000007_20211001110703677672_process#process_patientRole_care_pathway_first_contact_process> .
-
-<http://example.org/data/individual_uid_000007_process#process_patientRole_care_pathway_first_contact_process> a sio:process .
-
-<http://example.org/data/individual_uid_000007_20211001110703677672_process#process_patientRole_care_pathway_first_contact_process_enddate_1991-02-12> a sio:end-date ;
-    rdfs:label "End Date: 1991-02-12" ;
-    sio:has-value "1991-02-12"^^xsd:date .
-
-<http://example.org/data/individual_uid_000007_20211001110703677672_process#process_patientRole_care_pathway_first_contact_process_startdate_1991-02-12> a sio:start-date ;
-    rdfs:label "Start Date: 1991-02-12" ;
-    sio:has-value "1991-02-12"^^xsd:date .
-
-<http://example.org/data/individual_thisPerson_uid_000007_20211001110703677672#patientRole_care_pathway_first_contact> a obo:OBI_0000093,
-        sio:role ;
-    rdfs:label " Role: First Contact Patient" .
-
-<http://example.org/data/individual_uid_000007_20211001110703677672_process#process_patientRole_care_pathway_first_contact_process> a obo:NCIT_C159705,
+<http://example.org/data/uid_000007_20220202093016753079#Care_pathway_Process> a obo:NCIT_C159705,
         obo:NCIT_C16205,
-        sio:process ;
-    rdfs:label "Process: first contact with specialized center" ;
-    sio:has-end-time <http://example.org/data/individual_uid_000007_20211001110703677672_process#process_patientRole_care_pathway_first_contact_process_enddate_1991-02-12> ;
-    sio:has-start-time <http://example.org/data/individual_uid_000007_20211001110703677672_process#process_patientRole_care_pathway_first_contact_process_startdate_1991-02-12> .
+        sio:SIO_000006 ;
+    rdfs:label "Process: First contact with specialized center" ;
+    sio:SIO_000680 <http://example.org/data/uid_000007_20220202093016753079#Care_pathway_Startdate> ;
+    sio:SIO_000681 <http://example.org/data/uid_000007_20220202093016753079#Care_pathway_Enddate> .
+
+<http://example.org/data/uid_000007_20220202093016753079#Care_pathway_Startdate> a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1991-02-12" ;
+    sio:SIO_000300 "1991-02-12"^^xsd:date .
+
+<http://example.org/data/uid_000007_20220202093016753079#Care_pathway_Role> a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: First contact patient" ;
+    sio:SIO_000356 <http://example.org/data/uid_000007_20220202093016753079#Care_pathway_Process> .
 

@@ -1,0 +1,61 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/data/0_20220202092339806749#Entity> a sio:SIO_000498,
+        <https://w3id.org/biolink/vocab/Case> ;
+    sio:SIO_000008 <http://example.org/data/0_20220202092339806749#Age_Attribute>,
+        <http://example.org/data/0_20220202092339806749#Sex_Attribute> ;
+    sio:SIO_000228 <http://example.org/data/0_20220202092339806749#Age_Role>,
+        <http://example.org/data/0_20220202092339806749#Sex_Role> .
+
+<http://example.org/data/0_20220202092339806749#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/0_20220202092339806749#Age_Role>,
+        <http://example.org/data/0_20220202092339806749#Sex_Role> ;
+    sio:SIO_000300 "0"^^xsd:string .
+
+<http://example.org/data/0_20220202092339806749#Age_Output> a sio:SIO_000015,
+        <https://w3id.org/biolink/vocab/InformationContentEntity> ;
+    rdfs:label "Output type: Age" ;
+    sio:SIO_000300 "61.3"^^xsd:float ;
+    sio:SIO_000628 <http://example.org/data/0_20220202092339806749#Age_Attribute> .
+
+<http://example.org/data/0_20220202092339806749#Age_Process> a sio:SIO_000006,
+        <https://w3id.org/biolink/vocab/Procedure> ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 <http://example.org/data/0_20220202092339806749#Age_Output> .
+
+<http://example.org/data/0_20220202092339806749#Sex_Output> a sio:SIO_000015,
+        <https://w3id.org/biolink/vocab/InformationContentEntity> ;
+    rdfs:label "Output type: Female" ;
+    sio:SIO_000300 "Female"^^xsd:string ;
+    sio:SIO_000628 <http://example.org/data/0_20220202092339806749#Sex_Attribute> .
+
+<http://example.org/data/0_20220202092339806749#Sex_Process> a sio:SIO_000006,
+        <https://w3id.org/biolink/vocab/Procedure> ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 <http://example.org/data/0_20220202092339806749#Sex_Output> .
+
+<http://example.org/data/0_20220202092339806749#Age_Attribute> a obo:NCIT_C25150,
+        sio:SIO_000614,
+        <https://w3id.org/biolink/vocab/Attribute> ;
+    rdfs:label "Attribute type: Age" .
+
+<http://example.org/data/0_20220202092339806749#Age_Role> a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 <http://example.org/data/0_20220202092339806749#Age_Process> .
+
+<http://example.org/data/0_20220202092339806749#Sex_Attribute> a obo:NCIT_C16576,
+        obo:NCIT_C28421,
+        sio:SIO_000614,
+        <https://w3id.org/biolink/vocab/Attribute>,
+        <https://w3id.org/biolink/vocab/BiologicalSex> ;
+    rdfs:label "Attribute type: Female" .
+
+<http://example.org/data/0_20220202092339806749#Sex_Role> a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 <http://example.org/data/0_20220202092339806749#Sex_Process> .
+

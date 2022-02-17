@@ -1,0 +1,63 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/data/uid_000002_20220202093016756204#Entity> a sio:SIO_000498 ;
+    sio:SIO_000008 <http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Attribute> ;
+    sio:SIO_000228 <http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Role> .
+
+<http://example.org/data/uid_000002_20220202093016756204#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Role> ;
+    sio:SIO_000300 "uid_000002"^^xsd:string .
+
+<http://example.org/data/uid_000002_20220202093016756204#Genotype_Attribute> a sio:SIO_000614,
+        <https://identifiers.org/clinvar:4886> ;
+    rdfs:label "Attribute type: NM_003977.4(AIP):c.40C>T (p.Gln14Ter)" .
+
+<http://example.org/data/uid_000002_20220202093016756204#Genotype_Input> a sio:SIO_000015,
+        sio:SIO_001388 ;
+    rdfs:label "Input type: HGVS_Genotype" ;
+    sio:SIO_000300 "NM_003977.4(AIP):c.40C>T (p.Gln14Ter)"^^xsd:string ;
+    sio:SIO_000628 <http://example.org/data/uid_000002_20220202093016756204#Genotype_Attribute> .
+
+<http://example.org/data/uid_000002_20220202093016756204#Phenotype_Attribute> a obo:HP_0001324,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Muscle Weakness" .
+
+<http://example.org/data/uid_000002_20220202093016756204#Phenotype_Input> a sio:SIO_000015 ;
+    rdfs:label "Input type: HP_Phenotype" ;
+    sio:SIO_000300 "Muscle Weakness"^^xsd:string ;
+    sio:SIO_000628 <http://example.org/data/uid_000002_20220202093016756204#Phenotype_Attribute> .
+
+<http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Enddate> a sio:SIO_000032 ;
+    rdfs:label "Enddate: 2012-05-24" ;
+    sio:SIO_000300 "2012-05-24"^^xsd:date .
+
+<http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Output> a sio:SIO_000015 ;
+    rdfs:label "Output type: Undiagnosed label" ;
+    sio:SIO_000300 "Undiagnosed" ;
+    sio:SIO_000628 <http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Attribute> .
+
+<http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Process> a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 <http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Output> ;
+    sio:SIO_000230 <http://example.org/data/uid_000002_20220202093016756204#Genotype_Input>,
+        <http://example.org/data/uid_000002_20220202093016756204#Phenotype_Input> ;
+    sio:SIO_000680 <http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Startdate> ;
+    sio:SIO_000681 <http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Enddate> .
+
+<http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Startdate> a sio:SIO_000031 ;
+    rdfs:label "Startdate: 2012-05-24" ;
+    sio:SIO_000300 "2012-05-24"^^xsd:date .
+
+<http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Attribute> a obo:NCIT_C113725,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Undiagnosed" .
+
+<http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Role> a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Undiagnosed patient" ;
+    sio:SIO_000356 <http://example.org/data/uid_000002_20220202093016756204#Undiagnosed_Process> .
+

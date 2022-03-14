@@ -1,0 +1,61 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/data/12345_20220228150020438865#Entity> a sio:SIO_000498 ;
+    sio:SIO_000008 <http://example.org/data/12345_20220228150020438865#Lab_measurement_Attribute> ;
+    sio:SIO_000228 <http://example.org/data/12345_20220228150020438865#Lab_measurement_Role> .
+
+<http://example.org/data/12345_20220228150020438865#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/12345_20220228150020438865#Lab_measurement_Role> ;
+    sio:SIO_000300 "12345"^^xsd:string .
+
+<http://example.org/data/12345_20220228150020438865#Lab_measurement_Enddate> a sio:SIO_000032 ;
+    rdfs:label "Enddate: 2019-02-28" ;
+    sio:SIO_000300 "2019-02-28"^^xsd:date .
+
+<http://example.org/data/12345_20220228150020438865#Lab_measurement_Input> a obo:NCIT_C12434,
+        sio:SIO_000015 ;
+    rdfs:label "Input type: blood" .
+
+<http://example.org/data/12345_20220228150020438865#Lab_measurement_Output> a sio:SIO_000015 ;
+    rdfs:label "Output type: Measurement value" ;
+    sio:SIO_000221 <http://example.org/data/12345_20220228150020438865#Lab_measurement_Unit> ;
+    sio:SIO_000300 "13.0"^^xsd:float ;
+    sio:SIO_000628 <http://example.org/data/12345_20220228150020438865#Lab_measurement_Attribute> ;
+    rdfs:comment "blood collected early morning"^^xsd:string .
+
+<http://example.org/data/12345_20220228150020438865#Lab_measurement_Process> a obo:NCIT_C48937,
+        sio:SIO_000006 ;
+    rdfs:label "Process: Quantitation" ;
+    sio:SIO_000229 <http://example.org/data/12345_20220228150020438865#Lab_measurement_Output> ;
+    sio:SIO_000230 <http://example.org/data/12345_20220228150020438865#Lab_measurement_Input> ;
+    sio:SIO_000291 <http://example.org/data/12345_20220228150020438865#Lab_measurement_Target> ;
+    sio:SIO_000339 <https://dx.doi.org/10.17504/protocols.io.yy3fxyn> ;
+    sio:SIO_000680 <http://example.org/data/12345_20220228150020438865#Lab_measurement_Startdate> ;
+    sio:SIO_000681 <http://example.org/data/12345_20220228150020438865#Lab_measurement_Enddate> .
+
+<http://example.org/data/12345_20220228150020438865#Lab_measurement_Startdate> a sio:SIO_000031 ;
+    rdfs:label "Startdate: 2019-02-28" ;
+    sio:SIO_000300 "2019-02-28"^^xsd:date .
+
+<http://example.org/data/12345_20220228150020438865#Lab_measurement_Target> a obo:NCIT_C16676,
+        sio:SIO_000015 ;
+    rdfs:label "Target type: hemoglobin" .
+
+<http://example.org/data/12345_20220228150020438865#Lab_measurement_Unit> a obo:UO_0000208 ;
+    rdfs:label "Target type: grams per decilitre" .
+
+<https://dx.doi.org/10.17504/protocols.io.yy3fxyn> a obo:NCIT_C42651,
+        sio:SIO_000015 ;
+    rdfs:label "Protocol: LUMC 2021 Haemioglobin Smythe et al." .
+
+<http://example.org/data/12345_20220228150020438865#Lab_measurement_Attribute> a sio:SIO_000614 ;
+    rdfs:label "Lab measurement attribute" .
+
+<http://example.org/data/12345_20220228150020438865#Lab_measurement_Role> a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient" ;
+    sio:SIO_000356 <http://example.org/data/12345_20220228150020438865#Lab_measurement_Process> .
+

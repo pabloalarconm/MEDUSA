@@ -3,45 +3,45 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/data/uid_000008_20220202093016584182#Entity> a sio:SIO_000498 ;
-    sio:SIO_000008 <http://example.org/data/uid_000008_20220202093016584182#Death_information_Attribute>,
-        <http://example.org/data/uid_000008_20220202093016584182#Status_Attribute> ;
-    sio:SIO_000228 <http://example.org/data/uid_000008_20220202093016584182#Status_Role> .
+<http://example.org/data/uid_000008_20220228150020388353#Entity> a sio:SIO_000498 ;
+    sio:SIO_000008 <http://example.org/data/uid_000008_20220228150020388353#Death_information_Attribute>,
+        <http://example.org/data/uid_000008_20220228150020388353#Status_Attribute> ;
+    sio:SIO_000228 <http://example.org/data/uid_000008_20220228150020388353#Status_Role> .
 
-<http://example.org/data/uid_000008_20220202093016584182#ID> a sio:SIO_000115 ;
-    sio:SIO_000020 <http://example.org/data/uid_000008_20220202093016584182#Status_Role> ;
+<http://example.org/data/uid_000008_20220228150020388353#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/uid_000008_20220228150020388353#Status_Role> ;
     sio:SIO_000300 "uid_000008"^^xsd:string .
 
-<http://example.org/data/uid_000008_20220202093016584182#Death_information_Output> a sio:SIO_000015 ;
+<http://example.org/data/uid_000008_20220228150020388353#Death_information_Output> a sio:SIO_000015 ;
     rdfs:label "Output type: Patient death information)" ;
     sio:SIO_000300 "2010-06-08"^^xsd:date ;
-    sio:SIO_000628 <http://example.org/data/uid_000008_20220202093016584182#Death_information_Attribute> .
+    sio:SIO_000628 <http://example.org/data/uid_000008_20220228150020388353#Death_information_Attribute> .
 
-<http://example.org/data/uid_000008_20220202093016584182#Death_information_Process> a sio:SIO_000006 ;
+<http://example.org/data/uid_000008_20220228150020388353#Death_information_Process> a sio:SIO_000006 ;
     rdfs:label "Process: Death information recording process" ;
-    sio:SIO_000229 <http://example.org/data/uid_000008_20220202093016584182#Death_information_Output> .
+    sio:SIO_000229 <http://example.org/data/uid_000008_20220228150020388353#Death_information_Output> .
 
-<http://example.org/data/uid_000008_20220202093016584182#Status_Output> a sio:SIO_000015 ;
+<http://example.org/data/uid_000008_20220228150020388353#Status_Output> a sio:SIO_000015 ;
     rdfs:label "Output type: dead" ;
     sio:SIO_000300 "dead"^^xsd:string ;
-    sio:SIO_000628 <http://example.org/data/uid_000008_20220202093016584182#Status_Attribute> .
+    sio:SIO_000628 <http://example.org/data/uid_000008_20220228150020388353#Status_Attribute> .
 
-<http://example.org/data/uid_000008_20220202093016584182#Status_Process> a sio:SIO_000006,
+<http://example.org/data/uid_000008_20220228150020388353#Status_Process> a sio:SIO_000006,
         sio:SIO_001052 ;
     rdfs:label "Process: Status recording process" ;
-    sio:SIO_000229 <http://example.org/data/uid_000008_20220202093016584182#Status_Output> .
+    sio:SIO_000229 <http://example.org/data/uid_000008_20220228150020388353#Status_Output> .
 
-<http://example.org/data/uid_000008_20220202093016584182#Death_information_Attribute> a obo:NCIT_C70810,
+<http://example.org/data/uid_000008_20220228150020388353#Death_information_Attribute> a obo:NCIT_C70810,
         sio:SIO_000614 ;
     rdfs:label "Attribute type: Date of death" .
 
-<http://example.org/data/uid_000008_20220202093016584182#Status_Attribute> a sio:SIO_000614,
+<http://example.org/data/uid_000008_20220228150020388353#Status_Attribute> a sio:SIO_000614,
         sio:SIO_010059 ;
     rdfs:label "Attribute type: dead" .
 
-<http://example.org/data/uid_000008_20220202093016584182#Status_Role> a obo:OBI_0000093,
+<http://example.org/data/uid_000008_20220228150020388353#Status_Role> a obo:OBI_0000093,
         sio:SIO_000016 ;
     rdfs:label "Role: Patient for status recording" ;
-    sio:SIO_000356 <http://example.org/data/uid_000008_20220202093016584182#Death_information_Process>,
-        <http://example.org/data/uid_000008_20220202093016584182#Status_Process> .
+    sio:SIO_000356 <http://example.org/data/uid_000008_20220228150020388353#Death_information_Process>,
+        <http://example.org/data/uid_000008_20220228150020388353#Status_Process> .
 

@@ -1,0 +1,68 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/data/500-0001_20220310112622409568#Entity> a sio:SIO_000498 ;
+    sio:SIO_000228 <http://example.org/data/500-0001_20220310112622409568#Treatment_Role> .
+
+<http://example.org/data/500-0001_20220310112622409568#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/500-0001_20220310112622409568#Treatment_Role> ;
+    sio:SIO_000300 "500-0001"^^xsd:string .
+
+<https://www.whocc.no/atc_ddd_index/?code=L01XC02> a obo:NCIT_C1702,
+        obo:NCIT_C177929 ;
+    rdfs:label "Drug component: rituximab" ;
+    sio:SIO_000313 <http://example.org/data/500-0001_20220310112622409568#Treatment_Drug_Attribute> .
+
+<http://example.org/data/500-0001_20220310112622409568#Treatment_Dose_Attribute> a obo:NCIT_C25488,
+        sio:SIO_000614 ;
+    rdfs:label "Dose attribute" ;
+    sio:SIO_000221 <http://example.org/data/500-0001_20220310112622409568#Treatment_Frequency>,
+        <http://example.org/data/500-0001_20220310112622409568#Treatment_Unit> .
+
+<http://example.org/data/500-0001_20220310112622409568#Treatment_Enddate> a sio:SIO_000032 ;
+    rdfs:label "Enddate: 01/05/21" ;
+    sio:SIO_000300 "0101-01-01"^^xsd:date .
+
+<http://example.org/data/500-0001_20220310112622409568#Treatment_Frequency> a obo:NCIT_C66968 ;
+    rdfs:label "Frequency: per day" ;
+    sio:SIO_000300 1 .
+
+<http://example.org/data/500-0001_20220310112622409568#Treatment_Input> a obo:NCIT_C38288,
+        sio:SIO_000015 ;
+    rdfs:label "Route of administration: Oral Route of Administration" .
+
+<http://example.org/data/500-0001_20220310112622409568#Treatment_Prescription_Output> a obo:NCIT_C28180,
+        sio:SIO_000015 ;
+    rdfs:label "Prescription" ;
+    sio:SIO_000628 <http://example.org/data/500-0001_20220310112622409568#Treatment_Dose_Attribute>,
+        <http://example.org/data/500-0001_20220310112622409568#Treatment_Drug_Attribute> ;
+    rdfs:comment "comments"^^xsd:string .
+
+<http://example.org/data/500-0001_20220310112622409568#Treatment_Process> a obo:NCIT_C49236,
+        sio:SIO_000006 ;
+    rdfs:label "Process: Therapeutic Procedure" ;
+    sio:SIO_000139 <http://example.org/data/500-0001_20220310112622409568#Treatment_Drug_Attribute> ;
+    sio:SIO_000230 <http://example.org/data/500-0001_20220310112622409568#Treatment_Input> ;
+    sio:SIO_000339 <http://example.org/data/500-0001_20220310112622409568#Treatment_Prescription_Output> ;
+    sio:SIO_000680 <http://example.org/data/500-0001_20220310112622409568#Treatment_Startdate> ;
+    sio:SIO_000681 <http://example.org/data/500-0001_20220310112622409568#Treatment_Enddate> .
+
+<http://example.org/data/500-0001_20220310112622409568#Treatment_Startdate> a sio:SIO_000031 ;
+    rdfs:label "Startdate: 01/04/21" ;
+    sio:SIO_000300 "0101-01-01"^^xsd:date .
+
+<http://example.org/data/500-0001_20220310112622409568#Treatment_Unit> a obo:UO_0000022 ;
+    rdfs:label "Unit: miligram" .
+
+<http://example.org/data/500-0001_20220310112622409568#Treatment_Role> a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient" ;
+    sio:SIO_000356 <http://example.org/data/500-0001_20220310112622409568#Treatment_Process> .
+
+<http://example.org/data/500-0001_20220310112622409568#Treatment_Drug_Attribute> a sio:SIO_000614,
+        sio:SIO_010038 ;
+    rdfs:label "Drug attribute" ;
+    sio:SIO_000300 "60.0"^^xsd:float .
+

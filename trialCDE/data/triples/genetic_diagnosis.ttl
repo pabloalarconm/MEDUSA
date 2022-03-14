@@ -3,65 +3,65 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/data/uid_000002_20220202093016749267#Entity> a sio:SIO_000498 ;
-    sio:SIO_000008 <http://example.org/data/uid_000002_20220202093016749267#HGVS_Attribute>,
+<http://example.org/data/uid_000001_20220228150020431827#Entity> a sio:SIO_000498 ;
+    sio:SIO_000008 <https://identifiers.org/HGNC:12698>,
         <https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/>,
         <https://www.omim.org/entry/192977> ;
-    sio:SIO_000228 <http://example.org/data/uid_000002_20220202093016749267#Genetic_Role> .
+    sio:SIO_000228 <http://example.org/data/uid_000001_20220228150020431827#Genetic_Role> .
 
-<http://example.org/data/uid_000002_20220202093016749267#ID> a sio:SIO_000115 ;
-    sio:SIO_000020 <http://example.org/data/uid_000002_20220202093016749267#Genetic_Role> ;
-    sio:SIO_000300 "uid_000002"^^xsd:string .
+<http://example.org/data/uid_000001_20220228150020431827#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/uid_000001_20220228150020431827#Genetic_Role> ;
+    sio:SIO_000300 "uid_000001"^^xsd:string .
 
-<http://example.org/data/uid_000002_20220202093016749267#HGNC_Output> a sio:SIO_000015,
+<http://example.org/data/uid_000001_20220228150020431827#HGNC_Output> a sio:SIO_000015,
         sio:SIO_001381 ;
     rdfs:label "Output type: HGNC genome sequence variant" ;
-    sio:SIO_000300 "https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/"^^xsd:string ;
-    sio:SIO_000628 <https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> .
+    sio:SIO_000300 "https://identifiers.org/HGNC:12698"^^xsd:string ;
+    sio:SIO_000628 <https://identifiers.org/HGNC:12698> .
 
-<http://example.org/data/uid_000002_20220202093016749267#HGNC_Process> a obo:NCIT_C15709,
+<http://example.org/data/uid_000001_20220228150020431827#HGNC_Process> a obo:NCIT_C15709,
         sio:SIO_000006 ;
     rdfs:label "Process: HGNC genetic testing" ;
-    sio:SIO_000229 <http://example.org/data/uid_000002_20220202093016749267#HGNC_Output> .
+    sio:SIO_000229 <http://example.org/data/uid_000001_20220228150020431827#HGNC_Output> .
 
-<http://example.org/data/uid_000002_20220202093016749267#HGVS_Output> a sio:SIO_000015,
+<http://example.org/data/uid_000001_20220228150020431827#HGVS_Output> a sio:SIO_000015,
         sio:SIO_001388 ;
     rdfs:label "Output type: HGVS measurement value" ;
     sio:SIO_000300 "NM_004006.3:c.4375C>T"^^xsd:string ;
-    sio:SIO_000628 <http://example.org/data/uid_000002_20220202093016749267#HGVS_Attribute> .
+    sio:SIO_000628 <https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> .
 
-<http://example.org/data/uid_000002_20220202093016749267#HGVS_Process> a obo:NCIT_C15709,
+<http://example.org/data/uid_000001_20220228150020431827#HGVS_Process> a obo:NCIT_C15709,
         sio:SIO_000006 ;
     rdfs:label "Process: HGVS genetic testing" ;
-    sio:SIO_000229 <http://example.org/data/uid_000002_20220202093016749267#HGVS_Output> .
+    sio:SIO_000229 <http://example.org/data/uid_000001_20220228150020431827#HGVS_Output> .
 
-<http://example.org/data/uid_000002_20220202093016749267#OMIM_Output> a sio:SIO_000015,
+<http://example.org/data/uid_000001_20220228150020431827#OMIM_Output> a sio:SIO_000015,
         sio:SIO_001381 ;
     rdfs:label "Output type: OMIM genome sequence variant" ;
     sio:SIO_000300 "https://www.omim.org/entry/192977"^^xsd:string ;
     sio:SIO_000628 <https://www.omim.org/entry/192977> .
 
-<http://example.org/data/uid_000002_20220202093016749267#OMIM_Process> a obo:NCIT_C15709,
+<http://example.org/data/uid_000001_20220228150020431827#OMIM_Process> a obo:NCIT_C15709,
         sio:SIO_000006 ;
     rdfs:label "Process: OMIM genetic testing" ;
-    sio:SIO_000229 <http://example.org/data/uid_000002_20220202093016749267#OMIM_Output> .
+    sio:SIO_000229 <http://example.org/data/uid_000001_20220228150020431827#OMIM_Output> .
 
-<http://example.org/data/uid_000002_20220202093016749267#Genetic_Role> a obo:OBI_0000093,
+<http://example.org/data/uid_000001_20220228150020431827#Genetic_Role> a obo:OBI_0000093,
         sio:SIO_000016 ;
     rdfs:label "Role: Genetic diagnosis patient" ;
-    sio:SIO_000356 <http://example.org/data/uid_000002_20220202093016749267#HGNC_Process>,
-        <http://example.org/data/uid_000002_20220202093016749267#HGVS_Process>,
-        <http://example.org/data/uid_000002_20220202093016749267#OMIM_Process> .
+    sio:SIO_000356 <http://example.org/data/uid_000001_20220228150020431827#HGNC_Process>,
+        <http://example.org/data/uid_000001_20220228150020431827#HGVS_Process>,
+        <http://example.org/data/uid_000001_20220228150020431827#OMIM_Process> .
 
-<http://example.org/data/uid_000002_20220202093016749267#HGVS_Attribute> a obo:NCIT_C171178,
+<https://identifiers.org/HGNC:12698> a <http://edamontology.org/data_2298>,
+        sio:SIO_000015,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: https://identifiers.org/HGNC:12698" .
+
+<https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> a obo:NCIT_C171178,
         sio:SIO_000015,
         sio:SIO_000614 ;
     rdfs:label "Attribute type: NM_004006.3:c.4375C>T" .
-
-<https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> a <http://edamontology.org/data_2298>,
-        sio:SIO_000015,
-        sio:SIO_000614 ;
-    rdfs:label "Attribute type: https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/" .
 
 <https://www.omim.org/entry/192977> a <http://edamontology.org/data_1153>,
         sio:SIO_000015,

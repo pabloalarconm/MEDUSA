@@ -3,47 +3,46 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/data/uid_000010_20220202093016547465##Consent_Startdate> sio:SIO_000300 "1996-08-08"^^xsd:date .
+<http://example.org/data/uid_000010_20220228150020351452#Entity> a sio:SIO_000498 ;
+    sio:SIO_000008 <http://example.org/data/uid_000010_20220228150020351452#Consent_Attribute> ;
+    sio:SIO_000228 <http://example.org/data/uid_000010_20220228150020351452#Consent_Role> .
 
-<http://example.org/data/uid_000010_20220202093016547465#Entity> a sio:SIO_000498 ;
-    sio:SIO_000008 <http://example.org/data/uid_000010_20220202093016547465#Consent_Attribute> ;
-    sio:SIO_000228 <http://example.org/data/uid_000010_20220202093016547465#Consent_Role> .
-
-<http://example.org/data/uid_000010_20220202093016547465#ID> a sio:SIO_000115 ;
-    sio:SIO_000020 <http://example.org/data/uid_000010_20220202093016547465#Consent_Role> ;
+<http://example.org/data/uid_000010_20220228150020351452#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/uid_000010_20220228150020351452#Consent_Role> ;
     sio:SIO_000300 "uid_000010"^^xsd:string .
 
-<http://example.org/data/uid_000010_20220202093016547465#Consent_Enddate> a sio:SIO_000032 ;
+<http://example.org/data/uid_000010_20220228150020351452#Consent_Enddate> a sio:SIO_000032 ;
     rdfs:label "Enddate: 1996-08-08" ;
     sio:SIO_000300 "1996-08-08"^^xsd:date .
 
-<http://example.org/data/uid_000010_20220202093016547465#Consent_Input> a obo:ICO_0000001,
+<http://example.org/data/uid_000010_20220228150020351452#Consent_Input> a obo:ICO_0000001,
         sio:SIO_000015 ;
     rdfs:label "Input type: Consent document" ;
     sio:SIO_000300 "http://example.org/my_consent_document_type2"^^xsd:string .
 
-<http://example.org/data/uid_000010_20220202093016547465#Consent_Output> a sio:SIO_000015 ;
+<http://example.org/data/uid_000010_20220228150020351452#Consent_Output> a sio:SIO_000015 ;
     rdfs:label "Output type: Patient consent record" ;
     sio:SIO_000300 "disease specific research"^^xsd:string ;
-    sio:SIO_000628 <http://example.org/data/uid_000010_20220202093016547465#Consent_Attribute> .
+    sio:SIO_000628 <http://example.org/data/uid_000010_20220228150020351452#Consent_Attribute> .
 
-<http://example.org/data/uid_000010_20220202093016547465#Consent_Process> a obo:OBI_0000810,
+<http://example.org/data/uid_000010_20220228150020351452#Consent_Process> a obo:OBI_0000810,
         sio:SIO_000006 ;
     rdfs:label "Process: Consenting" ;
-    sio:SIO_000229 <http://example.org/data/uid_000010_20220202093016547465#Consent_Output> ;
-    sio:SIO_000230 <http://example.org/data/uid_000010_20220202093016547465#Consent_Input> ;
-    sio:SIO_000680 <http://example.org/data/uid_000010_20220202093016547465#Consent_Startdate> ;
-    sio:SIO_000681 <http://example.org/data/uid_000010_20220202093016547465#Consent_Enddate> .
+    sio:SIO_000229 <http://example.org/data/uid_000010_20220228150020351452#Consent_Output> ;
+    sio:SIO_000230 <http://example.org/data/uid_000010_20220228150020351452#Consent_Input> ;
+    sio:SIO_000680 <http://example.org/data/uid_000010_20220228150020351452#Consent_Startdate> ;
+    sio:SIO_000681 <http://example.org/data/uid_000010_20220228150020351452#Consent_Enddate> .
 
-<http://example.org/data/uid_000010_20220202093016547465#Consent_Startdate> a sio:SIO_000031 ;
-    rdfs:label "Startdate: 1996-08-08" .
+<http://example.org/data/uid_000010_20220228150020351452#Consent_Startdate> a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1996-08-08" ;
+    sio:SIO_000300 "1996-08-08"^^xsd:date .
 
-<http://example.org/data/uid_000010_20220202093016547465#Consent_Attribute> a obo:DUO_0000007,
+<http://example.org/data/uid_000010_20220228150020351452#Consent_Attribute> a obo:DUO_0000007,
         sio:SIO_000614 ;
     rdfs:label "Attribute type: disease specific research" .
 
-<http://example.org/data/uid_000010_20220202093016547465#Consent_Role> a obo:OBI_0000093,
+<http://example.org/data/uid_000010_20220228150020351452#Consent_Role> a obo:OBI_0000093,
         sio:SIO_000016 ;
     rdfs:label "Role: Patient for status recording" ;
-    sio:SIO_000356 <http://example.org/data/uid_000010_20220202093016547465#Consent_Process> .
+    sio:SIO_000356 <http://example.org/data/uid_000010_20220228150020351452#Consent_Process> .
 

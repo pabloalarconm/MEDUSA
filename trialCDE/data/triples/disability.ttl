@@ -3,39 +3,40 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/data/uid_000002_20220202093016750658#Entity> a sio:SIO_000498 ;
-    sio:SIO_000228 <http://example.org/data/uid_000002_20220202093016750658#Disability_Role> .
+<http://example.org/data/uid_000002_20220228150020433111#Entity> a sio:SIO_000498 ;
+    sio:SIO_000228 <http://example.org/data/uid_000002_20220228150020433111#Disability_Role> .
 
-<http://example.org/data/uid_000002_20220202093016750658#ID> a sio:SIO_000115 ;
-    sio:SIO_000020 <http://example.org/data/uid_000002_20220202093016750658#Disability_Role> ;
+<http://example.org/data/uid_000002_20220228150020433111#ID> a sio:SIO_000115 ;
+    sio:SIO_000020 <http://example.org/data/uid_000002_20220228150020433111#Disability_Role> ;
     sio:SIO_000300 "uid_000002"^^xsd:string .
 
-<http://example.org/data/uid_000002_20220202093016750658#Disability_Enddate> a sio:SIO_000032 ;
+<http://example.org/data/uid_000002_20220228150020433111#Disability_Enddate> a sio:SIO_000032 ;
     rdfs:label "Enddate: 2019-11-12" ;
     sio:SIO_000300 "2019-11-12"^^xsd:date .
 
-<http://example.org/data/uid_000002_20220202093016750658#Disability_Input> a obo:NCIT_C17048,
+<http://example.org/data/uid_000002_20220228150020433111#Disability_Input> a obo:NCIT_C17048,
         sio:SIO_000015 ;
     rdfs:label "Input type: Questionnaire" .
 
-<http://example.org/data/uid_000002_20220202093016750658#Disability_Output> a sio:SIO_000015 ;
+<http://example.org/data/uid_000002_20220228150020433111#Disability_Output> a sio:SIO_000015 ;
     rdfs:label "Output type: Disability score" ;
     sio:SIO_000300 "12"^^xsd:string .
 
-<http://example.org/data/uid_000002_20220202093016750658#Disability_Process> a obo:NCIT_C107391,
+<http://example.org/data/uid_000002_20220228150020433111#Disability_Process> a obo:NCIT_C107391,
+        obo:NCIT_C20993,
         sio:SIO_000006 ;
     rdfs:label "Process: Edmonton Symptom Assessment System" ;
-    sio:SIO_000229 <http://example.org/data/uid_000002_20220202093016750658#Disability_Output> ;
-    sio:SIO_000230 <http://example.org/data/uid_000002_20220202093016750658#Disability_Input> ;
-    sio:SIO_000680 <http://example.org/data/uid_000002_20220202093016750658#Disability_Startdate> ;
-    sio:SIO_000681 <http://example.org/data/uid_000002_20220202093016750658#Disability_Enddate> .
+    sio:SIO_000229 <http://example.org/data/uid_000002_20220228150020433111#Disability_Output> ;
+    sio:SIO_000230 <http://example.org/data/uid_000002_20220228150020433111#Disability_Input> ;
+    sio:SIO_000680 <http://example.org/data/uid_000002_20220228150020433111#Disability_Startdate> ;
+    sio:SIO_000681 <http://example.org/data/uid_000002_20220228150020433111#Disability_Enddate> .
 
-<http://example.org/data/uid_000002_20220202093016750658#Disability_Startdate> a obo:NCIT_C107391 ;
+<http://example.org/data/uid_000002_20220228150020433111#Disability_Startdate> a sio:SIO_000031 ;
     rdfs:label "Startdate: 2019-11-12" ;
     sio:SIO_000300 "2019-11-12"^^xsd:date .
 
-<http://example.org/data/uid_000002_20220202093016750658#Disability_Role> a obo:OBI_0000093,
+<http://example.org/data/uid_000002_20220228150020433111#Disability_Role> a obo:OBI_0000093,
         sio:SIO_000016 ;
     rdfs:label "Role: Patient" ;
-    sio:SIO_000356 <http://example.org/data/uid_000002_20220202093016750658#Disability_Process> .
+    sio:SIO_000356 <http://example.org/data/uid_000002_20220228150020433111#Disability_Process> .
 

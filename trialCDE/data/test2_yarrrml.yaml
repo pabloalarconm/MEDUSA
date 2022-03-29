@@ -1,0 +1,51 @@
+mapping:
+  20220328130008496230_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)#ID
+      predicate: biolink:hasID
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Entity
+  20220328130008496244_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: biolink:Case
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#Entity
+  20220328130008496249_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: biolink:ID
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#ID
+  20220328130008496253_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: $(pid)
+      predicate: biolink:hasnumerical_value
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)#ID
+prefixes:
+  biolink: https://w3id.org/biolink/vocab/
+  obo: http://purl.obolibrary.org/obo/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sio: http://semanticscience.org/resource/
+  this: 'http://example.org/data/'
+  xsd: http://www.w3.org/2001/XMLSchema#
+sources:
+  source_cde_test:
+    access: '/data/test2.csv'
+    iterator: $
+    referenceFormulation: 'csv'
+

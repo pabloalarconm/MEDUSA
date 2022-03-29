@@ -1,0 +1,22 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sio: <http://semanticscience.org/resource/> 
+PREFIX biolink: <https://w3id.org/biolink/vocab/> 
+PREFIX obo: <http://purl.obolibrary.org/obo/> 
+
+
+SELECT ?id_value WHERE { 
+
+  GRAPH <http://localhost:8890/DAV/home/LDP/test1> { 
+
+	?entity rdf:type biolink:Case .
+        ?entity rdf:type sio:SIO_000498 .
+        ?entity sio:has-role ?role .
+
+        ?ID rdf:type sio:SIO_000115 .
+        ?ID rdf:type biolink:ID.
+        ?ID sio:denotes ?role .
+        ?ID sio:SIO_000300 ?id_value .
+
+  }  
+} 

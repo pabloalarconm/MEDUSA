@@ -1,0 +1,4 @@
+<http://example.org/data/id_000001_123456789#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/ID>.
+<http://example.org/data/id_000001_123456789#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Case>.
+<http://example.org/data/id_000001_123456789#Entity> <https://w3id.org/biolink/vocab/hasID> <http://example.org/data/id_000001_123456789#ID>.
+<http://example.org/data/id_000001_123456789#ID> <https://w3id.org/biolink/vocab/hasnumerical_value> "id_000001"^^<http://www.w3.org/2001/XMLSchema#string>.

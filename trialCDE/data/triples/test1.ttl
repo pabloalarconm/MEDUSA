@@ -1,0 +1,15 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/data/id_000001_123456789#Entity> a sio:SIO_000498,
+        <https://w3id.org/biolink/vocab/Case> ;
+    sio:has-role <http://example.org/data/id_000001_123456789#Birthdate_Role> .
+
+<http://example.org/data/id_000001_123456789#ID> a sio:SIO_000115,
+        <https://w3id.org/biolink/vocab/ID> ;
+    sio:SIO_000300 "id_000001"^^xsd:string ;
+    sio:denotes <http://example.org/data/id_000001_123456789#Birthdate_Role> .
+
+<http://example.org/data/id_000001_123456789#Birthdate_Role> a obo:OBI_0000093 .
+

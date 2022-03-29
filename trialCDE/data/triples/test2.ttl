@@ -1,0 +1,9 @@
+@prefix ns1: <https://w3id.org/biolink/vocab/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/data/id_000001_123456789#Entity> a ns1:Case ;
+    ns1:hasID <http://example.org/data/id_000001_123456789#ID> .
+
+<http://example.org/data/id_000001_123456789#ID> a ns1:ID ;
+    ns1:hasnumerical_value "id_000001"^^xsd:string .
+

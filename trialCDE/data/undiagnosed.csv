@@ -1,2 +1,2 @@
 pid,uniqid,hp_uri,hp_label,clinvar_uri,hgvs_string,date
-uid_000002,20220310112622656821,http://purl.obolibrary.org/obo/HP_0001324,Muscle Weakness,https://identifiers.org/clinvar:4886,NM_003977.4(AIP):c.40C>T (p.Gln14Ter),2012-05-24
+uid_000002,20220315095719445959,http://purl.obolibrary.org/obo/HP_0001324,Muscle Weakness,https://identifiers.org/clinvar:4886,NM_003977.4(AIP):c.40C>T (p.Gln14Ter),2012-05-24

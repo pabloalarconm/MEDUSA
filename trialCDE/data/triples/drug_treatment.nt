@@ -1,50 +1,50 @@
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Process> <http://semanticscience.org/resource/SIO_000681> <http://example.org/data/500-0001_20220310112622409568#Treatment_Enddate>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Drug_Attribute> <http://semanticscience.org/resource/SIO_000300> "60"^^<http://www.w3.org/2001/XMLSchema#float>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Drug_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Drug attribute".
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Prescription_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C28180>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Dose_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Dose attribute".
+<http://example.org/data/500-0001_20220315095719196666#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498>.
+<http://example.org/data/500-0001_20220315095719196666#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Prescription_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C28180>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C38288>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Startdate> <http://semanticscience.org/resource/SIO_000300> "2019/04/05"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Enddate> <http://www.w3.org/2000/01/rdf-schema#label> "Enddate: 2021/08/08".
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Enddate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000032>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Process> <http://semanticscience.org/resource/SIO_000680> <http://example.org/data/500-0001_20220315095719196666#Treatment_Startdate>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Prescription_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Dose_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Dose attribute".
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Frequency> <http://semanticscience.org/resource/SIO_000300> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Startdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000031>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency: per day".
+<https://www.whocc.no/atc_ddd_index/?code=L01XC02> <http://semanticscience.org/resource/SIO_000313> <http://example.org/data/500-0001_20220315095719196666#Treatment_Drug_Attribute>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Enddate> <http://semanticscience.org/resource/SIO_000300> "2021/08/08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Dose_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C25488>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Dose_Attribute> <http://semanticscience.org/resource/SIO_000900> <http://example.org/data/500-0001_20220315095719196666#Treatment_Frequency>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Dose_Attribute> <http://semanticscience.org/resource/SIO_000221> <http://example.org/data/500-0001_20220315095719196666#Treatment_Unit>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Prescription_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Prescription".
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Process> <http://semanticscience.org/resource/SIO_000230> <http://example.org/data/500-0001_20220315095719196666#Treatment_Input>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role: Patient".
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Process> <http://semanticscience.org/resource/CHEMINF_000047> <http://example.org/data/500-0001_20220315095719196666#Treatment_Prescription_Output>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C49236>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Startdate> <http://www.w3.org/2000/01/rdf-schema#label> "Startdate: 2019/04/05".
+<http://example.org/data/500-0001_20220315095719196666#ID> <http://semanticscience.org/resource/SIO_000300> "500-0001"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Dose_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/500-0001_20220315095719196666#Treatment_Process>.
 <https://www.whocc.no/atc_ddd_index/?code=L01XC02> <http://www.w3.org/2000/01/rdf-schema#label> "Drug component: rituximab".
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/UO_0000022>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit: miligram".
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Startdate> <http://semanticscience.org/resource/SIO_000300> "01/04/21"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Enddate> <http://semanticscience.org/resource/SIO_000300> "01/05/21"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Startdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000031>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Frequency> <http://semanticscience.org/resource/SIO_000300> "1"^^<http://www.w3.org/2001/XMLSchema#integer>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
-<http://example.org/data/500-0001_20220310112622409568#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Process> <http://semanticscience.org/resource/SIO_000139> <http://example.org/data/500-0001_20220310112622409568#Treatment_Drug_Attribute>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Prescription_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/500-0001_20220310112622409568#Treatment_Process>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Enddate> <http://www.w3.org/2000/01/rdf-schema#label> "Enddate: 01/05/21".
-<https://www.whocc.no/atc_ddd_index/?code=L01XC02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C177929>.
-<http://example.org/data/500-0001_20220310112622409568#ID> <http://semanticscience.org/resource/SIO_000020> <http://example.org/data/500-0001_20220310112622409568#Treatment_Role>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Dose_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C25488>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: Therapeutic Procedure".
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Prescription_Output> <http://www.w3.org/2000/01/rdf-schema#comment> "comments"^^<http://www.w3.org/2001/XMLSchema#string>.
 <https://www.whocc.no/atc_ddd_index/?code=L01XC02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C1702>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Prescription_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.org/data/500-0001_20220310112622409568#Treatment_Dose_Attribute>.
-<http://example.org/data/500-0001_20220310112622409568#ID> <http://semanticscience.org/resource/SIO_000300> "500-0001"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C66968>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Process> <http://semanticscience.org/resource/SIO_000680> <http://example.org/data/500-0001_20220310112622409568#Treatment_Startdate>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Dose_Attribute> <http://semanticscience.org/resource/SIO_000221> <http://example.org/data/500-0001_20220310112622409568#Treatment_Unit>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C49236>.
-<https://www.whocc.no/atc_ddd_index/?code=L01XC02> <http://semanticscience.org/resource/SIO_000313> <http://example.org/data/500-0001_20220310112622409568#Treatment_Drug_Attribute>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Startdate> <http://www.w3.org/2000/01/rdf-schema#label> "Startdate: 01/04/21".
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Process> <http://semanticscience.org/resource/SIO_000230> <http://example.org/data/500-0001_20220310112622409568#Treatment_Input>.
-<http://example.org/data/500-0001_20220310112622409568#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Dose_Attribute> <http://semanticscience.org/resource/SIO_000221> <http://example.org/data/500-0001_20220310112622409568#Treatment_Frequency>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Prescription_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Prescription".
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Drug_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_010038>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency: per day".
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Dose_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Input> <http://www.w3.org/2000/01/rdf-schema#label> "Route of administration: Oral Route of Administration".
-<http://example.org/data/500-0001_20220310112622409568#Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/500-0001_20220310112622409568#Treatment_Role>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Prescription_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.org/data/500-0001_20220310112622409568#Treatment_Drug_Attribute>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C38288>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role: Patient".
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Drug_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Process> <http://semanticscience.org/resource/SIO_000339> <http://example.org/data/500-0001_20220310112622409568#Treatment_Prescription_Output>.
-<http://example.org/data/500-0001_20220310112622409568#Treatment_Enddate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000032>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Prescription_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.org/data/500-0001_20220315095719196666#Treatment_Drug_Attribute>.
+<https://www.whocc.no/atc_ddd_index/?code=L01XC02> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C177929>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit: miligram".
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Prescription_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.org/data/500-0001_20220315095719196666#Treatment_Dose_Attribute>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Prescription_Output> <http://www.w3.org/2000/01/rdf-schema#comment> "comments"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Drug_Attribute> <http://semanticscience.org/resource/SIO_000300> "60"^^<http://www.w3.org/2001/XMLSchema#float>.
+<http://example.org/data/500-0001_20220315095719196666#ID> <http://semanticscience.org/resource/SIO_000020> <http://example.org/data/500-0001_20220315095719196666#Treatment_Role>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Process> <http://semanticscience.org/resource/SIO_000681> <http://example.org/data/500-0001_20220315095719196666#Treatment_Enddate>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Drug_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Drug attribute".
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Drug_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C66968>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Input> <http://www.w3.org/2000/01/rdf-schema#label> "Route of administration: Oral Route of Administration".
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Drug_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_010038>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/UO_0000022>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Process> <http://semanticscience.org/resource/SIO_000139> <http://example.org/data/500-0001_20220315095719196666#Treatment_Drug_Attribute>.
+<http://example.org/data/500-0001_20220315095719196666#Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/500-0001_20220315095719196666#Treatment_Role>.
+<http://example.org/data/500-0001_20220315095719196666#Treatment_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: Therapeutic Procedure".

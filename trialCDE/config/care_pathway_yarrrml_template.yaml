@@ -1,50 +1,50 @@
 mapping:
-  20220228150012654915_source_cde_test:
+  20220404183259907314_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Care_pathway_Role
+        value: this:$(pid)_$(uniqid)_Care_pathway_Role
       predicate: sio:SIO_000020
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150012654929_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183259907329_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Care_pathway_Role
+        value: this:$(pid)_$(uniqid)_Care_pathway_Role
       predicate: sio:SIO_000228
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Entity
-  20220228150012654934_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220404183259907335_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Care_pathway_Process
+        value: this:$(pid)_$(uniqid)_Care_pathway_Process
       predicate: sio:SIO_000356
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Role
-  20220228150012654937_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Role
+  20220404183259907339_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Care_pathway_Startdate
+        value: this:$(pid)_$(uniqid)_Care_pathway_Startdate
       predicate: sio:SIO_000680
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Process
-  20220228150012654943_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
+  20220404183259907343_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Care_pathway_Enddate
+        value: this:$(pid)_$(uniqid)_Care_pathway_Enddate
       predicate: sio:SIO_000681
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Process
-  20220228150012654947_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
+  20220404183259907348_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -52,8 +52,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150012654951_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183259907351_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -61,8 +61,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Entity
-  20220228150012654954_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220404183259907355_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -70,8 +70,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Role
-  20220228150012654958_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Role
+  20220404183259907358_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -79,8 +79,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Role
-  20220228150012654961_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Role
+  20220404183259907362_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -88,8 +88,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Process
-  20220228150012654965_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
+  20220404183259907365_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -97,8 +97,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Process
-  20220228150012654968_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
+  20220404183259907369_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -106,8 +106,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Process
-  20220228150012654972_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
+  20220404183259907372_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -115,8 +115,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Startdate
-  20220228150012654977_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Startdate
+  20220404183259907379_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -124,8 +124,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Enddate
-  20220228150012654981_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Enddate
+  20220404183259907382_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -133,8 +133,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Role
-  20220228150012654985_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Role
+  20220404183259907386_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -142,8 +142,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Process
-  20220228150012654989_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
+  20220404183259907389_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -151,8 +151,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Startdate
-  20220228150012654992_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Startdate
+  20220404183259907392_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -160,8 +160,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Enddate
-  20220228150012654995_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Enddate
+  20220404183259907395_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -169,8 +169,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150012654998_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183259907399_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date
@@ -178,8 +178,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Startdate
-  20220228150012655001_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Startdate
+  20220404183259907402_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date
@@ -187,7 +187,7 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Care_pathway_Enddate
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Enddate
 prefixes:
   obo: http://purl.obolibrary.org/obo/
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#

@@ -1,68 +1,68 @@
 mapping:
-  20220228150015003454_source_cde_test:
+  20220404183302216566_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Disability_Role
+        value: this:$(pid)_$(uniqid)_Disability_Role
       predicate: sio:SIO_000020
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150015003468_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183302216581_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Disability_Role
+        value: this:$(pid)_$(uniqid)_Disability_Role
       predicate: sio:SIO_000228
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Entity
-  20220228150015003473_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220404183302216585_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Disability_Process
+        value: this:$(pid)_$(uniqid)_Disability_Process
       predicate: sio:SIO_000356
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Role
-  20220228150015003477_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Role
+  20220404183302216589_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Disability_Startdate
+        value: this:$(pid)_$(uniqid)_Disability_Startdate
       predicate: sio:SIO_000680
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Process
-  20220228150015003480_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Process
+  20220404183302216593_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Disability_Enddate
+        value: this:$(pid)_$(uniqid)_Disability_Enddate
       predicate: sio:SIO_000681
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Process
-  20220228150015003484_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Process
+  20220404183302216598_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Disability_Output
+        value: this:$(pid)_$(uniqid)_Disability_Output
       predicate: sio:SIO_000229
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Process
-  20220228150015003490_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Process
+  20220404183302216602_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Disability_Input
+        value: this:$(pid)_$(uniqid)_Disability_Input
       predicate: sio:SIO_000230
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Process
-  20220228150015003493_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Process
+  20220404183302216606_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -70,8 +70,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150015003498_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183302216610_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -79,8 +79,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Entity
-  20220228150015003501_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220404183302216613_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -88,8 +88,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Role
-  20220228150015003505_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Role
+  20220404183302216617_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -97,8 +97,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Role
-  20220228150015003509_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Role
+  20220404183302216620_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -106,8 +106,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Process
-  20220228150015003512_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Process
+  20220404183302216624_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -115,8 +115,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Process
-  20220228150015003516_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Process
+  20220404183302216629_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -124,8 +124,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Process
-  20220228150015003520_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Process
+  20220404183302216633_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -133,8 +133,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Startdate
-  20220228150015003523_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Startdate
+  20220404183302216636_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -142,8 +142,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Enddate
-  20220228150015003527_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Enddate
+  20220404183302216639_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -151,8 +151,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Output
-  20220228150015003530_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Output
+  20220404183302216644_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -160,8 +160,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Input
-  20220228150015003534_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Input
+  20220404183302216647_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -169,8 +169,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Input
-  20220228150015003539_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Input
+  20220404183302216651_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -178,8 +178,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Role
-  20220228150015003542_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Role
+  20220404183302216654_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -187,8 +187,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Process
-  20220228150015003546_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Process
+  20220404183302216658_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -196,8 +196,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Startdate
-  20220228150015003550_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Startdate
+  20220404183302216662_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -205,8 +205,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Enddate
-  20220228150015003553_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Enddate
+  20220404183302216665_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -214,8 +214,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Output
-  20220228150015003557_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Output
+  20220404183302216668_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -223,8 +223,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Input
-  20220228150015003560_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Input
+  20220404183302216672_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -232,8 +232,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150015003563_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183302216675_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date
@@ -241,8 +241,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Startdate
-  20220228150015003566_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Startdate
+  20220404183302216678_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date
@@ -250,8 +250,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Enddate
-  20220228150015003570_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Disability_Enddate
+  20220404183302216682_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -259,7 +259,7 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Disability_Output
+    subjects: this:$(pid)_$(uniqid)_Disability_Output
 prefixes:
   obo: http://purl.obolibrary.org/obo/
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#

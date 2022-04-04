@@ -1,86 +1,86 @@
 mapping:
-  20220228150014425411_source_cde_test:
+  20220404183301642026_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Consent_Role
+        value: this:$(pid)_$(uniqid)_Consent_Role
       predicate: sio:SIO_000020
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150014425426_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183301642040_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Consent_Role
+        value: this:$(pid)_$(uniqid)_Consent_Role
       predicate: sio:SIO_000228
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Entity
-  20220228150014425430_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220404183301642045_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Consent_Attribute
+        value: this:$(pid)_$(uniqid)_Consent_Attribute
       predicate: sio:SIO_000008
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Entity
-  20220228150014425434_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220404183301642049_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Consent_Process
+        value: this:$(pid)_$(uniqid)_Consent_Process
       predicate: sio:SIO_000356
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Role
-  20220228150014425438_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Role
+  20220404183301642053_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Consent_Startdate
+        value: this:$(pid)_$(uniqid)_Consent_Startdate
       predicate: sio:SIO_000680
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Process
-  20220228150014425443_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Process
+  20220404183301642059_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Consent_Enddate
+        value: this:$(pid)_$(uniqid)_Consent_Enddate
       predicate: sio:SIO_000681
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Process
-  20220228150014425447_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Process
+  20220404183301642063_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Consent_Output
+        value: this:$(pid)_$(uniqid)_Consent_Output
       predicate: sio:SIO_000229
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Process
-  20220228150014425450_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Process
+  20220404183301642066_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Consent_Input
+        value: this:$(pid)_$(uniqid)_Consent_Input
       predicate: sio:SIO_000230
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Process
-  20220228150014425455_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Process
+  20220404183301642070_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Consent_Attribute
+        value: this:$(pid)_$(uniqid)_Consent_Attribute
       predicate: sio:SIO_000628
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Output
-  20220228150014425458_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Output
+  20220404183301642073_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -88,8 +88,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150014425462_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183301642077_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -97,8 +97,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Entity
-  20220228150014425465_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220404183301642080_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -106,8 +106,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Role
-  20220228150014425469_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Role
+  20220404183301642084_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -115,8 +115,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Role
-  20220228150014425474_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Role
+  20220404183301642088_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -124,8 +124,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Process
-  20220228150014425478_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Process
+  20220404183301642092_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -133,8 +133,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Process
-  20220228150014425481_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Process
+  20220404183301642097_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -142,8 +142,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Startdate
-  20220228150014425484_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Startdate
+  20220404183301642100_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -151,8 +151,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Enddate
-  20220228150014425487_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Enddate
+  20220404183301642104_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -160,8 +160,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Output
-  20220228150014425492_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Output
+  20220404183301642107_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -169,8 +169,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Input
-  20220228150014425496_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Input
+  20220404183301642111_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -178,8 +178,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Input
-  20220228150014425499_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Input
+  20220404183301642114_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -187,8 +187,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Attribute
-  20220228150014425503_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Attribute
+  20220404183301642118_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -196,8 +196,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Attribute
-  20220228150014425507_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Attribute
+  20220404183301642122_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -205,8 +205,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Role
-  20220228150014425510_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Role
+  20220404183301642126_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -214,8 +214,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Process
-  20220228150014425514_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Process
+  20220404183301642129_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -223,8 +223,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Startdate
-  20220228150014425517_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Startdate
+  20220404183301642132_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -232,8 +232,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Enddate
-  20220228150014425520_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Enddate
+  20220404183301642137_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -241,8 +241,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Output
-  20220228150014425523_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Output
+  20220404183301642141_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -250,8 +250,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Input
-  20220228150014425527_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Input
+  20220404183301642145_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -259,8 +259,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Attribute
-  20220228150014425533_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Attribute
+  20220404183301642148_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -268,8 +268,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150014425536_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183301642151_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date
@@ -277,8 +277,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Startdate
-  20220228150014425539_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Startdate
+  20220404183301642155_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date
@@ -286,8 +286,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Enddate
-  20220228150014425542_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Enddate
+  20220404183301642158_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -295,8 +295,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Output
-  20220228150014425546_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Consent_Output
+  20220404183301642161_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -304,7 +304,7 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Consent_Input
+    subjects: this:$(pid)_$(uniqid)_Consent_Input
 prefixes:
   obo: http://purl.obolibrary.org/obo/
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#

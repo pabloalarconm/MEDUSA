@@ -7,7 +7,7 @@ prefixes = dict(
   sio = "http://semanticscience.org/resource/" ,
   xsd = "http://www.w3.org/2001/XMLSchema#",
   biolink = "https://w3id.org/biolink/vocab/",
-  this = "http://my_example.com/")
+  this = "http://my_example1.com/")
 
 
 triplets = [

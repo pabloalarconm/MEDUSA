@@ -19,9 +19,6 @@ def get_files(path,format):
         return format_files
         
 
-
-
-
 def nt2ttl(path_file):
     """
     Data transformation from .nt file to .ttl
@@ -33,6 +30,8 @@ def nt2ttl(path_file):
     g.namespace_manager.bind('this', URIRef("http://example.org/data/"))
     g.namespace_manager.bind('sio', URIRef("http://semanticscience.org/resource/"))
     g.namespace_manager.bind('obo', URIRef("http://purl.obolibrary.org/obo/"))
+    g.namespace_manager.bind('my', URIRef("http://example.org/data/"))
+
     #all_ns = [n for n in g.namespace_manager.namespaces()]
     #print(all_ns)
 

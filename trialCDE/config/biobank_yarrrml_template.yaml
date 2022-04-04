@@ -1,77 +1,77 @@
 mapping:
-  20220228150014716330_source_cde_test:
+  20220404183301930158_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Sample_Role
+        value: this:$(pid)_$(uniqid)_Sample_Role
       predicate: sio:SIO_000020
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150014716345_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183301930172_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Sample_Role
+        value: this:$(pid)_$(uniqid)_Sample_Role
       predicate: sio:SIO_000228
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Entity
-  20220228150014716350_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220404183301930177_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Sample_Process
+        value: this:$(pid)_$(uniqid)_Sample_Process
       predicate: sio:SIO_000356
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Sample_Role
-  20220228150014716353_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Sample_Role
+  20220404183301930180_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Specimen_Output
+        value: this:$(pid)_$(uniqid)_Specimen_Output
       predicate: sio:SIO_000229
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Sample_Process
-  20220228150014716357_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Sample_Process
+  20220404183301930184_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Biobank_Role
+        value: this:$(pid)_$(uniqid)_Biobank_Role
       predicate: sio:SIO_000020
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Biobank_ID
-  20220228150014716361_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Biobank_ID
+  20220404183301930189_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Biobank_Role
+        value: this:$(pid)_$(uniqid)_Biobank_Role
       predicate: sio:SIO_000228
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Biobank_Entity
-  20220228150014716366_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Biobank_Entity
+  20220404183301930193_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Biobank_Process
+        value: this:$(pid)_$(uniqid)_Biobank_Process
       predicate: sio:SIO_000356
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Biobank_Role
-  20220228150014716370_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Biobank_Role
+  20220404183301930197_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)#Specimen_Output
+        value: this:$(pid)_$(uniqid)_Specimen_Output
       predicate: sio:SIO_000229
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Biobank_Process
-  20220228150014716373_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Biobank_Process
+  20220404183301930201_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -79,8 +79,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150014716377_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183301930204_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -88,8 +88,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Entity
-  20220228150014716380_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220404183301930207_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -97,8 +97,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Sample_Role
-  20220228150014716386_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Sample_Role
+  20220404183301930211_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -106,8 +106,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Sample_Role
-  20220228150014716390_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Sample_Role
+  20220404183301930214_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -115,8 +115,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Sample_Process
-  20220228150014716393_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Sample_Process
+  20220404183301930220_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -124,8 +124,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Sample_Process
-  20220228150014716398_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Sample_Process
+  20220404183301930223_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -133,8 +133,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Specimen_Output
-  20220228150014716401_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Specimen_Output
+  20220404183301930226_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -142,8 +142,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Specimen_Output
-  20220228150014716405_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Specimen_Output
+  20220404183301930230_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -151,8 +151,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#BiobankID
-  20220228150014716408_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_BiobankID
+  20220404183301930234_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -160,8 +160,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Entity
-  20220228150014716412_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220404183301930237_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -169,8 +169,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Biobank_Role
-  20220228150014716415_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Biobank_Role
+  20220404183301930241_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -178,8 +178,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Biobank_Role
-  20220228150014716419_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Biobank_Role
+  20220404183301930244_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -187,8 +187,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Biobank_Process
-  20220228150014716423_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Biobank_Process
+  20220404183301930248_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -196,8 +196,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Biobank_Process
-  20220228150014716428_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Biobank_Process
+  20220404183301930252_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -205,8 +205,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Sample_Role
-  20220228150014716431_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Sample_Role
+  20220404183301930255_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -214,8 +214,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Sample_Process
-  20220228150014716434_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Sample_Process
+  20220404183301930258_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -223,8 +223,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Specimen_Output
-  20220228150014716438_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Specimen_Output
+  20220404183301930262_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -232,8 +232,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Biobank_Role
-  20220228150014716441_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Biobank_Role
+  20220404183301930265_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -241,8 +241,8 @@ mapping:
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Biobank_Process
-  20220228150014716444_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Biobank_Process
+  20220404183301930268_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -250,8 +250,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#ID
-  20220228150014716447_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_ID
+  20220404183301930272_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -259,7 +259,7 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)#Biobank_ID
+    subjects: this:$(pid)_$(uniqid)_Biobank_ID
 prefixes:
   obo: http://purl.obolibrary.org/obo/
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#

@@ -1,9 +1,33 @@
 @prefix ns1: <https://w3id.org/biolink/vocab/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://example.org/data/id_000001_123456789#Entity> a ns1:Case ;
-    ns1:hasID <http://example.org/data/id_000001_123456789#ID> .
+<http://example2.org/data/id_test_2_000000_1234567890#Entity> a ns1:Case ;
+    ns1:hasID <http://example2.org/data/id_test_2_000000_1234567890#ID> .
 
-<http://example.org/data/id_000001_123456789#ID> a ns1:ID ;
-    ns1:hasnumerical_value "id_000001"^^xsd:string .
+<http://example2.org/data/id_test_2_000006_1234567896#Entity> a ns1:Case ;
+    ns1:hasID <http://example2.org/data/id_test_2_000006_1234567896#ID> .
+
+<http://example2.org/data/id_test_2_000007_1234567897#Entity> a ns1:Case ;
+    ns1:hasID <http://example2.org/data/id_test_2_000007_1234567897#ID> .
+
+<http://example2.org/data/id_test_2_000008_1234567898#Entity> a ns1:Case ;
+    ns1:hasID <http://example2.org/data/id_test_2_000008_1234567898#ID> .
+
+<http://example2.org/data/id_test_2_000009_1234567899#Entity> a ns1:Case ;
+    ns1:hasID <http://example2.org/data/id_test_2_000009_1234567899#ID> .
+
+<http://example2.org/data/id_test_2_000000_1234567890#ID> a ns1:ID ;
+    ns1:hasnumerical_value "id_test_2_000000"^^xsd:string .
+
+<http://example2.org/data/id_test_2_000006_1234567896#ID> a ns1:ID ;
+    ns1:hasnumerical_value "id_test_2_000006"^^xsd:string .
+
+<http://example2.org/data/id_test_2_000007_1234567897#ID> a ns1:ID ;
+    ns1:hasnumerical_value "id_test_2_000007"^^xsd:string .
+
+<http://example2.org/data/id_test_2_000008_1234567898#ID> a ns1:ID ;
+    ns1:hasnumerical_value "id_test_2_000008"^^xsd:string .
+
+<http://example2.org/data/id_test_2_000009_1234567899#ID> a ns1:ID ;
+    ns1:hasnumerical_value "id_test_2_000009"^^xsd:string .
 

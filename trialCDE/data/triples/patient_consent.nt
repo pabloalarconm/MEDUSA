@@ -1,34 +1,34 @@
-<http://example.org/data/uid_000010_20220228150020351452#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/ICO_0000001>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Startdate> <http://www.w3.org/2000/01/rdf-schema#label> "Startdate: 1996-08-08".
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Enddate> <http://www.w3.org/2000/01/rdf-schema#label> "Enddate: 1996-08-08".
-<http://example.org/data/uid_000010_20220228150020351452#ID> <http://semanticscience.org/resource/SIO_000300> "uid_000010"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role: Patient for status recording".
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/DUO_0000007>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Process> <http://semanticscience.org/resource/SIO_000681> <http://example.org/data/uid_000010_20220228150020351452#Consent_Enddate>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.org/data/uid_000010_20220228150020351452#Consent_Output>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/uid_000010_20220228150020351452#Consent_Process>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output type: Patient consent record".
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.org/data/uid_000010_20220228150020351452#Consent_Attribute>.
-<http://example.org/data/uid_000010_20220228150020351452#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000810>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Startdate> <http://semanticscience.org/resource/SIO_000300> "1996-08-08"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/data/uid_000010_20220228150020351452#Entity> <http://semanticscience.org/resource/SIO_000008> <http://example.org/data/uid_000010_20220228150020351452#Consent_Attribute>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Enddate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000032>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Process> <http://semanticscience.org/resource/SIO_000230> <http://example.org/data/uid_000010_20220228150020351452#Consent_Input>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Startdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000031>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Enddate> <http://semanticscience.org/resource/SIO_000300> "1996-08-08"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Input> <http://semanticscience.org/resource/SIO_000300> "http://example.org/my_consent_document_type2"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/data/uid_000010_20220228150020351452#Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/uid_000010_20220228150020351452#Consent_Role>.
-<http://example.org/data/uid_000010_20220228150020351452#ID> <http://semanticscience.org/resource/SIO_000020> <http://example.org/data/uid_000010_20220228150020351452#Consent_Role>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Output> <http://semanticscience.org/resource/SIO_000300> "disease specific research"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Input> <http://www.w3.org/2000/01/rdf-schema#label> "Input type: Consent document".
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016>.
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: Consenting".
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute type: disease specific research".
-<http://example.org/data/uid_000010_20220228150020351452#Consent_Process> <http://semanticscience.org/resource/SIO_000680> <http://example.org/data/uid_000010_20220228150020351452#Consent_Startdate>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.org/data/uid_000010_20220315095719194773_Consent_Attribute>.
+<http://example.org/data/uid_000010_20220315095719194773_ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Enddate> <http://semanticscience.org/resource/SIO_000300> "1996-08-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role: Patient for status recording".
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Startdate> <http://www.w3.org/2000/01/rdf-schema#label> "Startdate: 1996-08-08".
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/ICO_0000001>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output type: Patient consent record".
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/DUO_0000007>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016>.
+<http://example.org/data/uid_000010_20220315095719194773_Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Enddate> <http://www.w3.org/2000/01/rdf-schema#label> "Enddate: 1996-08-08".
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Output> <http://semanticscience.org/resource/SIO_000300> "disease specific research"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/uid_000010_20220315095719194773_Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/uid_000010_20220315095719194773_Consent_Role>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.org/data/uid_000010_20220315095719194773_Consent_Output>.
+<http://example.org/data/uid_000010_20220315095719194773_Entity> <http://semanticscience.org/resource/SIO_000008> <http://example.org/data/uid_000010_20220315095719194773_Consent_Attribute>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Input> <http://semanticscience.org/resource/SIO_000300> "http://example.org/my_consent_document_type2"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: Consenting".
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Process> <http://semanticscience.org/resource/SIO_000680> <http://example.org/data/uid_000010_20220315095719194773_Consent_Startdate>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/uid_000010_20220315095719194773_Consent_Process>.
+<http://example.org/data/uid_000010_20220315095719194773_ID> <http://semanticscience.org/resource/SIO_000020> <http://example.org/data/uid_000010_20220315095719194773_Consent_Role>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Process> <http://semanticscience.org/resource/SIO_000230> <http://example.org/data/uid_000010_20220315095719194773_Consent_Input>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000810>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Process> <http://semanticscience.org/resource/SIO_000681> <http://example.org/data/uid_000010_20220315095719194773_Consent_Enddate>.
+<http://example.org/data/uid_000010_20220315095719194773_ID> <http://semanticscience.org/resource/SIO_000300> "uid_000010"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute type: disease specific research".
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Startdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000031>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Startdate> <http://semanticscience.org/resource/SIO_000300> "1996-08-08"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Enddate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000032>.
+<http://example.org/data/uid_000010_20220315095719194773_Consent_Input> <http://www.w3.org/2000/01/rdf-schema#label> "Input type: Consent document".

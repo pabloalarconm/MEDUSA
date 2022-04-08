@@ -1,68 +1,131 @@
 mapping:
-  20220404192852287662_source_cde_test:
+  20220407083226447214_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)_Disability_Role
+        value: this:$(pid)_$(uniqid)_Undiagnosed_Role
       predicate: sio:SIO_000020
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_ID
-  20220404192852287678_source_cde_test:
+  20220407083226447228_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)_Disability_Role
+        value: this:$(pid)_$(uniqid)_Undiagnosed_Role
       predicate: sio:SIO_000228
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Entity
-  20220404192852287683_source_cde_test:
+  20220407083226447232_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)_Disability_Process
+        value: this:$(pid)_$(uniqid)_Undiagnosed_Attribute
+      predicate: sio:SIO_000008
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220407083226447237_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Phenotype_Attribute
+      predicate: sio:SIO_000008
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220407083226447242_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(clinvar_uri)
+      predicate: sio:SIO_000008
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220407083226447245_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Undiagnosed_Process
       predicate: sio:SIO_000356
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Role
-  20220404192852287686_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Role
+  20220407083226447249_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)_Disability_Startdate
+        value: this:$(pid)_$(uniqid)_Undiagnosed_Startdate
       predicate: sio:SIO_000680
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Process
-  20220404192852287690_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
+  20220407083226447252_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)_Disability_Enddate
+        value: this:$(pid)_$(uniqid)_Undiagnosed_Enddate
       predicate: sio:SIO_000681
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Process
-  20220404192852287695_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
+  20220407083226447255_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)_Disability_Output
+        value: this:$(pid)_$(uniqid)_Undiagnosed_Output
       predicate: sio:SIO_000229
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Process
-  20220404192852287699_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
+  20220407083226447258_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: this:$(pid)_$(uniqid)_Disability_Input
+        value: this:$(pid)_$(uniqid)_Phenotype_Input
       predicate: sio:SIO_000230
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Process
-  20220404192852287703_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
+  20220407083226447261_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Genotype_Input
+      predicate: sio:SIO_000230
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
+  20220407083226447266_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Undiagnosed_Attribute
+      predicate: sio:SIO_000628
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Output
+  20220407083226447270_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Phenotype_Attribute
+      predicate: sio:SIO_000628
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Phenotype_Input
+  20220407083226447273_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(clinvar_uri)
+      predicate: sio:SIO_000628
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Genotype_Input
+  20220407083226447276_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -71,7 +134,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_ID
-  20220404192852287707_source_cde_test:
+  20220407083226447280_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -80,7 +143,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Entity
-  20220404192852287710_source_cde_test:
+  20220407083226447283_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -88,8 +151,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Role
-  20220404192852287714_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Role
+  20220407083226447286_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -97,8 +160,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Role
-  20220404192852287718_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Role
+  20220407083226447288_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -106,26 +169,17 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Process
-  20220404192852287721_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
+  20220407083226447295_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: obo:NCIT_C20993
+        value: sio:SIO_001001
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Process
-  20220404192852287727_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: $(test_uri)
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Process
-  20220404192852287730_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
+  20220407083226447299_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -133,8 +187,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Startdate
-  20220404192852287733_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Startdate
+  20220407083226447302_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -142,8 +196,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Enddate
-  20220404192852287737_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Enddate
+  20220407083226447305_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -151,8 +205,26 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Output
-  20220404192852287740_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Output
+  20220407083226447308_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Attribute
+  20220407083226447311_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: obo:NCIT_C113725
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Attribute
+  20220407083226447316_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -160,71 +232,161 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Input
-  20220404192852287745_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Phenotype_Input
+  20220407083226447319_source_cde_test:
     predicateobject:
     - objects:
         type: iri
-        value: obo:NCIT_C17048
+        value: 'obo:NCIT_C102741 '
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Input
-  20220404192852287748_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Phenotype_Input
+  20220407083226447323_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Phenotype_Attribute
+  20220407083226447326_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(hp_uri)
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Phenotype_Attribute
+  20220407083226447329_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Genotype_Input
+  20220407083226447331_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_001388
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Genotype_Input
+  20220407083226447334_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: $(clinvar_uri)
+  20220407083226447337_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: obo:NCIT_C171178
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: $(clinvar_uri)
+  20220407083226447340_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
-        value: 'Role: Patient'
+        value: 'Role: Undiagnosed patient'
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Role
-  20220404192852287752_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Role
+  20220407083226447344_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
-        value: 'Process: $(test_name)'
+        value: 'Process: Medical diagnosis'
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Process
-  20220404192852287756_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
+  20220407083226447348_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
-        value: 'Startdate: $(test_date)'
+        value: 'Startdate: $(date)'
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Startdate
-  20220404192852287760_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Startdate
+  20220407083226447351_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
-        value: 'Enddate: $(test_date)'
+        value: 'Enddate: $(date)'
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Enddate
-  20220404192852287763_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Enddate
+  20220407083226447354_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
-        value: 'Output type: Disability score'
+        value: 'Output type: Undiagnosed label'
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Output
-  20220404192852287766_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Output
+  20220407083226447356_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
-        value: 'Input type: Questionnaire'
+        value: 'Attribute type: Undiagnosed'
       predicate: rdfs:label
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Input
-  20220404192852287769_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Attribute
+  20220407083226447359_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Input type: HP_Phenotype'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Phenotype_Input
+  20220407083226447362_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: $(hp_label)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Phenotype_Attribute
+  20220407083226447365_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Input type: HGVS_Genotype'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Genotype_Input
+  20220407083226447368_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: $(hgvs_string)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: $(clinvar_uri)
+  20220407083226447372_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -233,33 +395,51 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_ID
-  20220404192852287773_source_cde_test:
+  20220407083226447375_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date
-        value: $(test_date)
+        value: $(date)
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Startdate
-  20220404192852287776_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Startdate
+  20220407083226447378_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date
-        value: $(test_date)
+        value: $(date)
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Enddate
-  20220404192852287780_source_cde_test:
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Enddate
+  20220407083226447382_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
-        value: $(score)
+        value: Undiagnosed
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Disability_Output
+    subjects: this:$(pid)_$(uniqid)_Undiagnosed_Output
+  20220407083226447385_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: $(hp_label)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Phenotype_Input
+  20220407083226447389_source_cde_test:
+    predicateobject:
+    - objects:
+        datatype: xsd:string
+        value: $(hgvs_string)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Genotype_Input
 prefixes:
   obo: http://purl.obolibrary.org/obo/
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#

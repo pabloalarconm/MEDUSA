@@ -1,5 +1,5 @@
 mapping:
-  20220404183301349813_source_cde_test:
+  20220407093130222749_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -8,7 +8,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_ID
-  20220404183301349828_source_cde_test:
+  20220407093130222763_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -17,7 +17,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183301349833_source_cde_test:
+  20220407093130222768_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -26,7 +26,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183301349837_source_cde_test:
+  20220407093130222773_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -35,7 +35,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183301349840_source_cde_test:
+  20220407093130222776_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -44,7 +44,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183301349845_source_cde_test:
+  20220407093130222781_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -53,7 +53,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Role
-  20220404183301349855_source_cde_test:
+  20220407093130222787_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -62,7 +62,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
-  20220404183301349858_source_cde_test:
+  20220407093130222790_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -71,7 +71,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
-  20220404183301349862_source_cde_test:
+  20220407093130222793_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -80,7 +80,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
-  20220404183301349865_source_cde_test:
+  20220407093130222796_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -89,7 +89,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
-  20220404183301349869_source_cde_test:
+  20220407093130222799_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -98,7 +98,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
-  20220404183301349872_source_cde_test:
+  20220407093130222804_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -107,7 +107,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Output
-  20220404183301349876_source_cde_test:
+  20220407093130222807_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -116,7 +116,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotype_Input
-  20220404183301349880_source_cde_test:
+  20220407093130222810_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -125,7 +125,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Genotype_Input
-  20220404183301349884_source_cde_test:
+  20220407093130222813_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -134,7 +134,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_ID
-  20220404183301349887_source_cde_test:
+  20220407093130222819_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -143,7 +143,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183301349892_source_cde_test:
+  20220407093130222823_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -152,7 +152,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Role
-  20220404183301349896_source_cde_test:
+  20220407093130222827_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -161,7 +161,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Role
-  20220404183301349900_source_cde_test:
+  20220407093130222829_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -170,7 +170,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
-  20220404183301349903_source_cde_test:
+  20220407093130222834_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -179,7 +179,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
-  20220404183301349907_source_cde_test:
+  20220407093130222837_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -188,7 +188,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Startdate
-  20220404183301349911_source_cde_test:
+  20220407093130222840_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -197,7 +197,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Enddate
-  20220404183301349915_source_cde_test:
+  20220407093130222843_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -206,7 +206,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Output
-  20220404183301349919_source_cde_test:
+  20220407093130222846_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -215,7 +215,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Attribute
-  20220404183301349922_source_cde_test:
+  20220407093130222849_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -224,7 +224,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Attribute
-  20220404183301349925_source_cde_test:
+  20220407093130222852_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -233,7 +233,16 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotype_Input
-  20220404183301349929_source_cde_test:
+  20220407093130222857_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: obo:NCIT_C102741
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Phenotype_Input
+  20220407093130222861_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -242,7 +251,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotype_Attribute
-  20220404183301349933_source_cde_test:
+  20220407093130222864_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -251,7 +260,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotype_Attribute
-  20220404183301349938_source_cde_test:
+  20220407093130222867_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -260,7 +269,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Genotype_Input
-  20220404183301349941_source_cde_test:
+  20220407093130222870_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -269,7 +278,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Genotype_Input
-  20220404183301349945_source_cde_test:
+  20220407093130222873_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -278,7 +287,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: $(clinvar_uri)
-  20220404183301349948_source_cde_test:
+  20220407093130222876_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -287,7 +296,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: $(clinvar_uri)
-  20220404183301349951_source_cde_test:
+  20220407093130222879_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -296,7 +305,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Role
-  20220404183301349955_source_cde_test:
+  20220407093130222883_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -305,7 +314,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
-  20220404183301349958_source_cde_test:
+  20220407093130222887_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -314,7 +323,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Startdate
-  20220404183301349961_source_cde_test:
+  20220407093130222890_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -323,7 +332,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Enddate
-  20220404183301349966_source_cde_test:
+  20220407093130222894_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -332,7 +341,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Output
-  20220404183301349969_source_cde_test:
+  20220407093130222896_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -341,7 +350,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Attribute
-  20220404183301349973_source_cde_test:
+  20220407093130222899_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -350,7 +359,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotype_Input
-  20220404183301349977_source_cde_test:
+  20220407093130222902_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -359,7 +368,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotype_Attribute
-  20220404183301349980_source_cde_test:
+  20220407093130222905_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -368,7 +377,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Genotype_Input
-  20220404183301349983_source_cde_test:
+  20220407093130222909_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -377,7 +386,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: $(clinvar_uri)
-  20220404183301349986_source_cde_test:
+  20220407093130222912_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -386,7 +395,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_ID
-  20220404183301349990_source_cde_test:
+  20220407093130222915_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date
@@ -395,7 +404,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Startdate
-  20220404183301349994_source_cde_test:
+  20220407093130222918_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:date
@@ -404,7 +413,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Enddate
-  20220404183301349998_source_cde_test:
+  20220407093130222921_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -413,7 +422,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Output
-  20220404183301350001_source_cde_test:
+  20220407093130222925_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string
@@ -422,7 +431,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotype_Input
-  20220404183301350004_source_cde_test:
+  20220407093130222929_source_cde_test:
     predicateobject:
     - objects:
         datatype: xsd:string

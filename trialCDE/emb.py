@@ -1,7 +1,7 @@
 import yaml
 import sys
 from pyperseo.functions import milisec
-from rdflib import Graph, Namespace
+from rdflib import Graph, Namespace, Literal, URIRef
 
 class EMB():
     def __init__(self, config, prefixes, triplets):
@@ -198,40 +198,83 @@ class EMB():
         """
         Transform your input triplets, prefixes into YARRRML based on your configuration input dictionary.
         """
-        self.tree = dict() # Reset tree object
-        self.tree = self.xmas_tree(self.triplets,"YARRRML")
+        self.triplets_curated = list()
+
+        for quad in self.triplets:
+            s,p,o,d = quad
+            if s.startswith("this"):
+                s_curated = s.replace("this","http://my_example.com/")
+
+            # Aqui va una funcion para transformar a full URI
+            if o.startswith("this"):
+                o_curated = o.replace("this","http://my_example.com/")
+            if d == "iri":
+                d_curated = "IRI"
+            # else:
+                # Aqui va una funcion para transformar a full URI
+
+            triplet = [s_curated,p,o_curated,d_curated]
+            self.triplets_curated.append(triplet)
+        #print(self.triplets_curated)
+
         g = Graph()
 
         # scaffold prefixes:
         rr = Namespace("http://www.w3.org/ns/r2rml#")
         rdf = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
-        rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#>")
+        rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#")
         void = Namespace("http://rdfs.org/ns/void#")
         rml = Namespace("http://semweb.mmlab.be/ns/rml#")
         ql = Namespace("http://semweb.mmlab.be/ns/ql#")
         ex = Namespace("http://mapping.example.com/")
 
+        g.namespace_manager.bind('rr',rr)
+        g.namespace_manager.bind('rdf',rdf)
+        g.namespace_manager.bind('rdfs',rdfs)
+        g.namespace_manager.bind('void', void)
+        g.namespace_manager.bind('rml',rml)
+        g.namespace_manager.bind('ql',ql)
+        g.namespace_manager.bind('ex',ex)
 
+        for p in self.prefixes.items():
+            g.namespace_manager.bind(p[0],p[1])
+
+        g.add((ex.rules, rdf.type, void.Dataset))
+        g.add((ex.source, rdf.type, rml.LogicalSource))
+        g.add((ex.source, rdfs.label, Literal(self.config["source_name"])))
+        g.add((ex.source, rml.source, Literal("/data/data.csv")))
+        g.add((ex.source, rml.iterator, Literal("$")))
+        g.add((ex.source, rml.referenceFormulation, ql.CSV))
 
         # flexible prefixes using prefixes object:
-
-        count = 0
-        for i in self.tree:
-            count += 1
+        for i in self.triplets_curated:
             time = milisec()
-            g.add((ex.rules, rdf.type, void.Dataset))
-            g.add((ex.rules, void.exampleResource, ex.f)) ## add interpolation
-            g.add(())
-            g.add(())
-            g.add(())
-            g.add(())
-            g.add(())
-            g.add(())
-            g.add(())
-            g.add(())
-            g.add(())
-            g.add(())
-            g.add(())
+            mapp = URIRef(ex+"map_"+time)
+            subj = URIRef(ex+"s_"+time)
+            predobj = URIRef(ex+"pom_"+time)
+            pred = URIRef(ex+"pm_"+time)
+            obj = URIRef(ex+"om_"+time)
+
+            su = URIRef(i[0])
+
+            g.add((ex.rules, void.exampleResource, mapp))
+            g.add((mapp, rml.logicalSource, ex.source))
+            g.add((mapp, rdf.type, rr.TripleMap))
+            g.add((mapp, rdfs.label,Literal(time)))
+            g.add((mapp, rr.subjectMap, subj))
+            g.add((mapp, rr.predicateObject, predobj))
+            g.add((subj, rdf.type, rr.SubjectMap))
+            g.add((subj, rr.template, su)) # Problema
+            g.add((predobj, rdf.type, rr.PredicateObjectMap))
+            g.add((predobj, rr.predicateMap, pred))            
+            g.add((predobj, rr.objectMap, obj))
+            g.add((pred, rdf.type, rr.PredicateMap))            
+            g.add((pred, rr.constant, Literal(i[1]))) #Problemon
+            g.add((obj, rdf.type, rr.ObjectMap))            
+            g.add((obj, rr.template, Literal(i[2]))) # Problema
+            g.add((obj, rr.termType, Literal(i[3])))  # TODO       
+
+        print(g.serialize(format="ttl"))
 
             
 
@@ -314,4 +357,4 @@ yarrrml = EMB(config, prefixes,triplets)
 # print(test2)
 
 test2 = yarrrml.transform_RML()
-print(test2)
+# print(test2)

@@ -3,6 +3,7 @@ import sys
 from pyperseo.functions import milisec
 from rdflib import Graph, Namespace, Literal, URIRef
 
+
 class EMB():
     def __init__(self, config, prefixes, triplets):
         self.config = config
@@ -194,117 +195,150 @@ class EMB():
             self.all = self.all + end
         return self.all
 
-    def transform_RML(self):
-        """
-        Transform your input triplets, prefixes into YARRRML based on your configuration input dictionary.
-        """
-        self.triplets_curated = list()
+    # def transform_RML(self):
+    #     """
+    #     Transform your input triplets, prefixes into YARRRML based on your configuration input dictionary.
+    #     """
+    #     self.triplets_curated = list()
 
-        for quad in self.triplets:
-            s,p,o,d = quad
-            if s.startswith("this"):
-                s_curated = s.replace("this","http://my_example.com/")
+    #     for quad in self.triplets:
+    #         s,p,o,d = quad
+    #         if s.startswith("this"):
+    #             s_curated = s.replace("this","http://my_example.com/")
 
-            # Aqui va una funcion para transformar a full URI
-            if o.startswith("this"):
-                o_curated = o.replace("this","http://my_example.com/")
-            if d == "iri":
-                d_curated = "IRI"
-            # else:
-                # Aqui va una funcion para transformar a full URI
+    #         # Aqui va una funcion para transformar a full URI
+    #         if o.startswith("this"):
+    #             o_curated = o.replace("this","http://my_example.com/")
+    #         if d == "iri":
+    #             d_curated = "IRI"
+    #         # else:
+    #             # Aqui va una funcion para transformar a full URI
 
-            triplet = [s_curated,p,o_curated,d_curated]
-            self.triplets_curated.append(triplet)
-        #print(self.triplets_curated)
+    #         triplet = [s_curated,p,o_curated,d_curated]
+    #         self.triplets_curated.append(triplet)
+    #     #print(self.triplets_curated)
 
-        g = Graph()
+    #     g = Graph()
 
-        # scaffold prefixes:
-        rr = Namespace("http://www.w3.org/ns/r2rml#")
-        rdf = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
-        rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#")
-        void = Namespace("http://rdfs.org/ns/void#")
-        rml = Namespace("http://semweb.mmlab.be/ns/rml#")
-        ql = Namespace("http://semweb.mmlab.be/ns/ql#")
-        ex = Namespace("http://mapping.example.com/")
+    #     # scaffold prefixes:
+    #     rr = Namespace("http://www.w3.org/ns/r2rml#")
+    #     rdf = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
+    #     rdfs = Namespace("http://www.w3.org/2000/01/rdf-schema#")
+    #     void = Namespace("http://rdfs.org/ns/void#")
+    #     rml = Namespace("http://semweb.mmlab.be/ns/rml#")
+    #     ql = Namespace("http://semweb.mmlab.be/ns/ql#")
+    #     ex = Namespace("http://mapping.example.com/")
 
-        g.namespace_manager.bind('rr',rr)
-        g.namespace_manager.bind('rdf',rdf)
-        g.namespace_manager.bind('rdfs',rdfs)
-        g.namespace_manager.bind('void', void)
-        g.namespace_manager.bind('rml',rml)
-        g.namespace_manager.bind('ql',ql)
-        g.namespace_manager.bind('ex',ex)
+    #     g.namespace_manager.bind('rr',rr)
+    #     g.namespace_manager.bind('rdf',rdf)
+    #     g.namespace_manager.bind('rdfs',rdfs)
+    #     g.namespace_manager.bind('void', void)
+    #     g.namespace_manager.bind('rml',rml)
+    #     g.namespace_manager.bind('ql',ql)
+    #     g.namespace_manager.bind('ex',ex)
 
-        for p in self.prefixes.items():
-            g.namespace_manager.bind(p[0],p[1])
+    #     for p in self.prefixes.items():
+    #         g.namespace_manager.bind(p[0],p[1])
 
-        g.add((ex.rules, rdf.type, void.Dataset))
-        g.add((ex.source, rdf.type, rml.LogicalSource))
-        g.add((ex.source, rdfs.label, Literal(self.config["source_name"])))
-        g.add((ex.source, rml.source, Literal("/data/data.csv")))
-        g.add((ex.source, rml.iterator, Literal("$")))
-        g.add((ex.source, rml.referenceFormulation, ql.CSV))
+    #     g.add((ex.rules, rdf.type, void.Dataset))
+    #     g.add((ex.source, rdf.type, rml.LogicalSource))
+    #     g.add((ex.source, rdfs.label, Literal(self.config["source_name"])))
+    #     g.add((ex.source, rml.source, Literal("/data/data.csv")))
+    #     g.add((ex.source, rml.iterator, Literal("$")))
+    #     g.add((ex.source, rml.referenceFormulation, ql.CSV))
 
-        # flexible prefixes using prefixes object:
-        for i in self.triplets_curated:
-            time = milisec()
-            mapp = URIRef(ex+"map_"+time)
-            subj = URIRef(ex+"s_"+time)
-            predobj = URIRef(ex+"pom_"+time)
-            pred = URIRef(ex+"pm_"+time)
-            obj = URIRef(ex+"om_"+time)
+    #     # flexible prefixes using prefixes object:
+    #     for i in self.triplets_curated:
+    #         time = milisec()
+    #         mapp = URIRef(ex+"map_"+time)
+    #         subj = URIRef(ex+"s_"+time)
+    #         predobj = URIRef(ex+"pom_"+time)
+    #         pred = URIRef(ex+"pm_"+time)
+    #         obj = URIRef(ex+"om_"+time)
 
-            su = URIRef(i[0])
+    #         su = URIRef(i[0])
 
-            g.add((ex.rules, void.exampleResource, mapp))
-            g.add((mapp, rml.logicalSource, ex.source))
-            g.add((mapp, rdf.type, rr.TripleMap))
-            g.add((mapp, rdfs.label,Literal(time)))
-            g.add((mapp, rr.subjectMap, subj))
-            g.add((mapp, rr.predicateObject, predobj))
-            g.add((subj, rdf.type, rr.SubjectMap))
-            g.add((subj, rr.template, su)) # Problema
-            g.add((predobj, rdf.type, rr.PredicateObjectMap))
-            g.add((predobj, rr.predicateMap, pred))            
-            g.add((predobj, rr.objectMap, obj))
-            g.add((pred, rdf.type, rr.PredicateMap))            
-            g.add((pred, rr.constant, Literal(i[1]))) #Problemon
-            g.add((obj, rdf.type, rr.ObjectMap))            
-            g.add((obj, rr.template, Literal(i[2]))) # Problema
-            g.add((obj, rr.termType, Literal(i[3])))  # TODO       
+    #         g.add((ex.rules, void.exampleResource, mapp))
+    #         g.add((mapp, rml.logicalSource, ex.source))
+    #         g.add((mapp, rdf.type, rr.TripleMap))
+    #         g.add((mapp, rdfs.label,Literal(time)))
+    #         g.add((mapp, rr.subjectMap, subj))
+    #         g.add((mapp, rr.predicateObject, predobj))
+    #         g.add((subj, rdf.type, rr.SubjectMap))
+    #         g.add((subj, rr.template, su)) # Problema
+    #         g.add((predobj, rdf.type, rr.PredicateObjectMap))
+    #         g.add((predobj, rr.predicateMap, pred))            
+    #         g.add((predobj, rr.objectMap, obj))
+    #         g.add((pred, rdf.type, rr.PredicateMap))            
+    #         g.add((pred, rr.constant, Literal(i[1]))) #Problemon
+    #         g.add((obj, rdf.type, rr.ObjectMap))            
+    #         g.add((obj, rr.template, Literal(i[2]))) # Problema
+    #         g.add((obj, rr.termType, Literal(i[3])))  # TODO       
 
-        print(g.serialize(format="ttl"))
+    #     print(g.serialize(format="ttl"))
 
             
+    def transform_OBDA(self):
+        """
+        Transform your triplets and prefixes inputs into OBDA (Ontology-Based Database Access).
+        """
+        self.amaia_OBDA = ""
+        self.tree = dict() # Reset tree object
+        self.triplets_curated = list()
 
-        
+        # Prefixes:
+        self.amaia_OBDA = self.amaia_OBDA + "[PrefixDeclaration]" + "\n"
+        for k,v in self.prefixes.items():
+            prefix = k + ":" + "\t" + v
+            self.amaia_OBDA = self.amaia_OBDA + prefix + "\n"
 
+        # Triplets preproccesing:
+        for quad in self.triplets:
+            s,p,o,d = quad
 
+            if '$(' in s:   # Change reference syntax to OBDA
+                s_curated = s.replace('$(', '{')
+                s_curated = s_curated.replace(")" , "}")
+            else:
+                s_curated = s
 
+            if p == "rdf:type": # Turn rdf:type into "a" statement
+                p_curated = "a"
+            else:
+                p_curated = p
 
+            if '$(' in o:   # Change reference syntax to OBDA 
+                o_curated = o.replace('$(', '{')
+                o_curated = o_curated.replace(")" , "}")
+            else:
+                o_curated = o
 
+            triplet = [s_curated,p_curated,o_curated,d]
+            self.triplets_curated.append(triplet) # Append curated triplets
 
+        # X-tree object
+        self.tree = self.xmas_tree(self.triplets_curated,"YARRRML") # Use same structure than YARRRML
 
+        # OBDA build
+        self.amaia_OBDA = self.amaia_OBDA + "\n" + "[MappingDeclaration] @collection [[" + "\n"
+        for t in self.tree.items():
+            self.amaia_OBDA = self.amaia_OBDA + "mappingId"	+ "\t" + self.config["source_name"] + milisec() + "\n" # milisec for unique mappingId objects
+            self.amaia_OBDA = self.amaia_OBDA + "target" + "\t" + t[0]
 
+            for l in t[1]:
+                if not l[2] == "iri":
+                    l[2] = l[2].replace(" ", "") # TODO Check spec for string to solve this convertion
+                    l[2] = l[2].replace(":", "_") # TODO Check spec for string to solve this convertion
+                    self.amaia_OBDA = self.amaia_OBDA +  " " + l[0] + " " + l[1] + "^^" + l[2] + " ;"
+                else:
+                    self.amaia_OBDA = self.amaia_OBDA +  " " + l[0] + " " + l[1] + " ;"
 
+            self.amaia_OBDA = self.amaia_OBDA + " ."
+            self.amaia_OBDA = self.amaia_OBDA + "\n" + "source" + "\t" "SELECT * FROM mytable #ADD your QUERY HERE" + "\n" + "\n"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        self.amaia_OBDA = self.amaia_OBDA + "]]" + "\n"
+        self.amaia_OBDA = self.amaia_OBDA.replace( "; .", ".")
+        return self.amaia_OBDA
         
 
 prefixes = dict(
@@ -328,7 +362,7 @@ triplets = [
 
 # sio types
 ["this:$(pid)_$(uniqid)_ID","rdf:type","sio:identifier","iri"],
-["this:$(pid)_$(uniqid)_Entity","rdf:type","$(datetime)","iri"],
+["this:$(pid)_$(uniqid)_Entity","rdf:type","sio:person","iri"],
 ["this:$(pid)_$(uniqid)_Role","rdf:type","sio:role","iri"],
 ["this:$(pid)_$(uniqid)_Process","rdf:type","sio:process","iri"],
 ["this:$(pid)_$(uniqid)_Output","rdf:type","sio:information-content-entity","iri"],
@@ -356,5 +390,5 @@ yarrrml = EMB(config, prefixes,triplets)
 # test2 = yarrrml.transform_YARRRML()
 # print(test2)
 
-test2 = yarrrml.transform_RML()
-# print(test2)
+test2 = yarrrml.transform_OBDA()
+print(test2)

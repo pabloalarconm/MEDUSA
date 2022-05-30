@@ -1,0 +1,55 @@
+[PrefixDeclaration]
+rdf:	http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:	http://www.w3.org/2000/01/rdf-schema#
+obo:	http://purl.obolibrary.org/obo/
+sio:	http://semanticscience.org/resource/
+xsd:	http://www.w3.org/2001/XMLSchema#
+this:	http://my_example.com/
+
+[MappingDeclaration] @collection [[
+mappingId	source_cde_test20220529211105203314
+target	this:{pid}_{uniqid}_ID sio:SIO_000020 this:{pid}_{uniqid}_Status_Role ; a sio:SIO_000115 ; sio:SIO_000300 {pid}^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211105203341
+target	this:{pid}_{uniqid}_Entity sio:SIO_000228 this:{pid}_{uniqid}_Status_Role ; sio:SIO_000008 this:{pid}_{uniqid}_Status_Attribute ; sio:SIO_000008 this:{pid}_{uniqid}_Death_information_Attribute ; a sio:SIO_000498 .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211105203351
+target	this:{pid}_{uniqid}_Status_Role sio:SIO_000356 this:{pid}_{uniqid}_Status_Process ; sio:SIO_000356 this:{pid}_{uniqid}_Death_information_Process ; a sio:SIO_000016 ; a obo:OBI_0000093 ; rdfs:label Role: Patient for status recording^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211105203360
+target	this:{pid}_{uniqid}_Status_Process sio:SIO_000229 this:{pid}_{uniqid}_Status_Output ; sio:SIO_000680 this:{pid}_{uniqid}_Status_Startdate ; sio:SIO_000681 this:{pid}_{uniqid}_Status_Enddate ; a sio:SIO_001052 ; a sio:SIO_000006 ; rdfs:label Process: Status recording process^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211105203369
+target	this:{pid}_{uniqid}_Status_Output sio:SIO_000628 this:{pid}_{uniqid}_Status_Attribute ; a sio:SIO_000015 ; rdfs:label Output type: {status_label}^^xsd_string ; sio:SIO_000300 {status_label}^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211105203377
+target	this:{pid}_{uniqid}_Death_information_Process sio:SIO_000229 this:{pid}_{uniqid}_Death_information_Output ; a sio:SIO_000006 ; rdfs:label Process: Death information recording process^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211105203383
+target	this:{pid}_{uniqid}_Death_information_Output sio:SIO_000628 this:{pid}_{uniqid}_Death_information_Attribute ; a sio:SIO_000015 ; rdfs:label Output type: Patient death information^^xsd_string ; sio:SIO_000300 {death_date}^^xsd_date .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211105203391
+target	this:{pid}_{uniqid}_Status_Attribute a sio:SIO_000614 ; a obo:NCIT_C166244 ; a {status_uri} ; rdfs:label Attribute type: {status_label}^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211105203398
+target	this:{pid}_{uniqid}_Status_Startdate a sio:SIO_000031 ; rdfs:label Startdate: {date}^^xsd_string ; sio:SIO_000300 {date}^^xsd_date .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211105203405
+target	this:{pid}_{uniqid}_Status_Enddate a sio:SIO_000032 ; rdfs:label Enddate: {date}^^xsd_string ; sio:SIO_000300 {date}^^xsd_date .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211105203412
+target	this:{pid}_{uniqid}_Death_information_Attribute a sio:SIO_000614 ; a obo:NCIT_C70810 ; rdfs:label Attribute type: Date of death^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+]]
+

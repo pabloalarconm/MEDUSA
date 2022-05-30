@@ -1,0 +1,57 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX this: <http://my_example.com/>
+
+idShape IRI {
+	sio:SIO_000020 @:roleShape ;
+	a [sio:SIO_000115] ;
+	sio:SIO_000300 xsd:string 
+} ;
+
+entityShape IRI {
+	sio:SIO_000228 @:roleShape ;
+	sio:SIO_000008 @:attributeShape ;
+	a [sio:SIO_000498] 
+} ;
+
+roleShape IRI {
+	sio:SIO_000356 @:processShape ;
+	a [obo:OBI_0000093] ;
+	rdfs:label xsd:string 
+} ;
+
+processShape IRI {
+	sio:SIO_000680 @:startdateShape ;
+	sio:SIO_000681 @:enddateShape ;
+	sio:SIO_000229 @:outputShape ;
+	a [sio:SIO_001001] ;
+	rdfs:label xsd:string 
+} ;
+
+outputShape IRI {
+	sio:SIO_000628 @:attributeShape ;
+	a [sio:SIO_001003] ;
+	rdfs:label xsd:string ;
+	sio:SIO_000300 xsd:string 
+} ;
+
+startdateShape IRI {
+	a [sio:SIO_000031] ;
+	rdfs:label xsd:string ;
+	sio:SIO_000300 xsd:date 
+} ;
+
+enddateShape IRI {
+	a [sio:SIO_000032] ;
+	rdfs:label xsd:string ;
+	sio:SIO_000300 xsd:date 
+} ;
+
+attributeShape IRI {
+	a IRI ;
+	rdfs:label xsd:string 
+} ;
+

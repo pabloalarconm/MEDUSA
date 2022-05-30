@@ -1,0 +1,44 @@
+# label: %name%
+# style: shape=%shape%;fillColor=%fill%;strokeColor=%stroke%;
+# namespace: csvimport-
+# width: auto
+# height: auto
+# padding: 15
+# ignore: id,shape,fill,stroke,refs
+# nodespacing: 40
+# levelspacing: 100
+# edgespacing: 40
+# layout: auto
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasoutput", "label": "sio:has output" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "foaf_type", "label": "foaf:type" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_isrealizedin", "label": "sio:is realized in" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasrole", "label": "sio:has role" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_refersto", "label": "sio:refers to" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_denotes", "label": "sio:denotes" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_has_quality", "label": "sio:has_quality" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasvalue", "label": "sio:has value" }
+id,name,fill,stroke,shape,sio_hasoutput,foaf_type,sio_isrealizedin,sio_hasrole,sio_refersto,sio_denotes,sio_has_quality,sio_hasvalue
+http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Role,Role: Symptom onset patient,#FFE6CC,#000000,rhombus,"NA","NA","NA","http://example.org/data/uid_000008_20220315095719448723_Entity","NA","http://example.org/data/uid_000008_20220315095719448723_ID","NA","NA"
+http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Process,Process: Symptom onset date recording process,#FFE6CC,#000000,rhombus,"NA","NA","http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Role","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Process,Process: Diagnosis date recording process,#FFE6CC,#000000,rhombus,"NA","NA","http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Role","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Output,Output type: Age at diagnosis,#FFE6CC,#000000,rhombus,"http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Process","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Output,Output type: Date of onset,#FFE6CC,#000000,rhombus,"http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Process","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Attribute,Attribute type: Stage or date of onset,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Output","NA","http://example.org/data/uid_000008_20220315095719448723_Entity","NA"
+http://purl.obolibrary.org/obo/NCIT_C25279,obo:Onset,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Attribute","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000016,sio:role,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Role,http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Role","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/OBI_0000093,obo:patient role,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Role,http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Role","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000008_20220315095719448723_Entity,uid_000008_20220315095719448723_Entity,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000008_20220315095719448723_ID,uid_000008_20220315095719448723_ID,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Role,Role: Diagnosis date patient,#FFE6CC,#000000,rhombus,"NA","NA","NA","http://example.org/data/uid_000008_20220315095719448723_Entity","NA","http://example.org/data/uid_000008_20220315095719448723_ID","NA","NA"
+http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Attribute,Attribute type: Stage or date of diagnosis,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Output","NA","http://example.org/data/uid_000008_20220315095719448723_Entity","NA"
+uid_000008,uid_000008,#DAE8FC,#000000,ellipse,"NA","NA","NA","NA","NA","NA","NA","http://example.org/data/uid_000008_20220315095719448723_ID"
+http://semanticscience.org/resource/SIO_000015,sio:information content entity,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Output,http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Output","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_001052,sio:data collection,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Process,http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Process","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000006,sio:process,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Process,http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Process","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C25164,obo:Date,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Output,http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Output","NA","NA","NA","NA","NA","NA"
+1999-06-08,1999-06-08,#DAE8FC,#000000,ellipse,"NA","NA","NA","NA","NA","NA","NA","http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Output"
+http://semanticscience.org/resource/SIO_000498,sio:person,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000008_20220315095719448723_Entity","NA","NA","NA","NA","NA","NA"
+1998-06-08,1998-06-08,#DAE8FC,#000000,ellipse,"NA","NA","NA","NA","NA","NA","NA","http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Output"
+http://semanticscience.org/resource/SIO_000115,sio:identifier,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000008_20220315095719448723_ID","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000614,sio:attribute,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Attribute,http://example.org/data/uid_000008_20220315095719448723_Symptom_onset_Attribute","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C156420,obo:Age at Diagnosis,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000008_20220315095719448723_Diagnosis_date_Attribute","NA","NA","NA","NA","NA","NA"

@@ -1,321 +1,18 @@
 mapping:
-  20220404183259329563_source_cde_test:
+  20220529211054361965_source_cde_test:
     predicateobject:
     - objects:
         type: iri
         value: this:$(pid)_$(uniqid)_Birthdate_Role
       predicate: sio:SIO_000020
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220404183259329578_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Birthdate_Role
-      predicate: sio:SIO_000228
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183259329583_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Birthdate_Attribute
-      predicate: sio:SIO_000008
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183259329586_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Birthdate_Process
-      predicate: sio:SIO_000356
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Role
-  20220404183259329590_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Birthdate_Output
-      predicate: sio:SIO_000229
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Process
-  20220404183259329596_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Birthdate_Attribute
-      predicate: sio:SIO_000628
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Output
-  20220404183259329600_source_cde_test:
-    predicateobject:
     - objects:
         type: iri
         value: this:$(pid)_$(uniqid)_Sex_Role
       predicate: sio:SIO_000020
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220404183259329604_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Sex_Role
-      predicate: sio:SIO_000228
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183259329607_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Sex_Attribute
-      predicate: sio:SIO_000008
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183259329610_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Sex_Process
-      predicate: sio:SIO_000356
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Role
-  20220404183259329614_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Sex_Output
-      predicate: sio:SIO_000229
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Process
-  20220404183259329618_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Sex_Attribute
-      predicate: sio:SIO_000628
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Output
-  20220404183259329621_source_cde_test:
-    predicateobject:
     - objects:
         type: iri
         value: sio:SIO_000115
       predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220404183259329626_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000498
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183259329630_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000016
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Role
-  20220404183259329634_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:OBI_0000093
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Role
-  20220404183259329637_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000006
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Process
-  20220404183259329641_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Output
-  20220404183259329644_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000614
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Attribute
-  20220404183259329647_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:NCIT_C68615
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Attribute
-  20220404183259329651_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000016
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Role
-  20220404183259329656_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:OBI_0000093
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Role
-  20220404183259329660_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000006
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Process
-  20220404183259329663_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Output
-  20220404183259329667_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000614
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Attribute
-  20220404183259329671_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: $(sexURI)
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Attribute
-  20220404183259329674_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:NCIT_C28421
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Attribute
-  20220404183259329678_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Role: Patient for age assessment'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Role
-  20220404183259329682_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Process: age measuring process'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Process
-  20220404183259329686_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Output type: Birth date'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Output
-  20220404183259329689_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Attribute type: Birth date)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Birthdate_Attribute
-  20220404183259329693_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Role: Patient for gender assessment'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Role
-  20220404183259329696_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Process: sex measuring process'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Process
-  20220404183259329699_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Output type: $(sexLabel)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Output
-  20220404183259329704_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Attribute type: $(sexLabel)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Sex_Attribute
-  20220404183259329707_source_cde_test:
-    predicateobject:
     - objects:
         datatype: xsd:string
         value: $(pid)
@@ -323,8 +20,83 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_ID
-  20220404183259329711_source_cde_test:
+  20220529211054361993_source_cde_test:
     predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Birthdate_Role
+      predicate: sio:SIO_000228
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Birthdate_Attribute
+      predicate: sio:SIO_000008
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Sex_Role
+      predicate: sio:SIO_000228
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Sex_Attribute
+      predicate: sio:SIO_000008
+    - objects:
+        type: iri
+        value: sio:SIO_000498
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220529211054362002_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Birthdate_Process
+      predicate: sio:SIO_000356
+    - objects:
+        type: iri
+        value: sio:SIO_000016
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:OBI_0000093
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Role: Patient for age assessment'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Birthdate_Role
+  20220529211054362008_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Birthdate_Output
+      predicate: sio:SIO_000229
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Process: age measuring process'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Birthdate_Process
+  20220529211054362019_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Birthdate_Attribute
+      predicate: sio:SIO_000628
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: Birth date'
+      predicate: rdfs:label
     - objects:
         datatype: xsd:date
         value: $(birthdate)
@@ -332,8 +104,58 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Birthdate_Output
-  20220404183259329714_source_cde_test:
+  20220529211054362027_source_cde_test:
     predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Sex_Process
+      predicate: sio:SIO_000356
+    - objects:
+        type: iri
+        value: sio:SIO_000016
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:OBI_0000093
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Role: Patient for gender assessment'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Sex_Role
+  20220529211054362034_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Sex_Output
+      predicate: sio:SIO_000229
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Process: sex measuring process'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Sex_Process
+  20220529211054362041_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Sex_Attribute
+      predicate: sio:SIO_000628
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: $(sexLabel)'
+      predicate: rdfs:label
     - objects:
         datatype: xsd:string
         value: $(sexLabel)
@@ -341,6 +163,44 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Sex_Output
+  20220529211054362046_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C68615
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: Birth date)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Birthdate_Attribute
+  20220529211054362056_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: $(sexURI)
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C28421
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: $(sexLabel)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Sex_Attribute
 prefixes:
   obo: http://purl.obolibrary.org/obo/
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#

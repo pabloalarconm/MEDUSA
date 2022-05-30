@@ -1,168 +1,14 @@
 mapping:
-  20220404183259907314_source_cde_test:
+  20220529211110118509_source_cde_test:
     predicateobject:
     - objects:
         type: iri
         value: this:$(pid)_$(uniqid)_Care_pathway_Role
       predicate: sio:SIO_000020
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220404183259907329_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Care_pathway_Role
-      predicate: sio:SIO_000228
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183259907335_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Care_pathway_Process
-      predicate: sio:SIO_000356
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Role
-  20220404183259907339_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Care_pathway_Startdate
-      predicate: sio:SIO_000680
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
-  20220404183259907343_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Care_pathway_Enddate
-      predicate: sio:SIO_000681
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
-  20220404183259907348_source_cde_test:
-    predicateobject:
     - objects:
         type: iri
         value: sio:SIO_000115
       predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220404183259907351_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000498
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183259907355_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000016
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Role
-  20220404183259907358_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:OBI_0000093
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Role
-  20220404183259907362_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000006
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
-  20220404183259907365_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:NCIT_C16205
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
-  20220404183259907369_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:NCIT_C159705
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
-  20220404183259907372_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000031
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Startdate
-  20220404183259907379_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000032
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Enddate
-  20220404183259907382_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Role: First contact patient'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Role
-  20220404183259907386_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Process: First contact with specialized center'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
-  20220404183259907389_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Startdate: $(first_contact_date)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Startdate
-  20220404183259907392_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Enddate: $(first_contact_date)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Care_pathway_Enddate
-  20220404183259907395_source_cde_test:
-    predicateobject:
     - objects:
         datatype: xsd:string
         value: $(pid)
@@ -170,8 +16,79 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_ID
-  20220404183259907399_source_cde_test:
+  20220529211110118535_source_cde_test:
     predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Care_pathway_Role
+      predicate: sio:SIO_000228
+    - objects:
+        type: iri
+        value: sio:SIO_000498
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220529211110118544_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Care_pathway_Process
+      predicate: sio:SIO_000356
+    - objects:
+        type: iri
+        value: sio:SIO_000016
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:OBI_0000093
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Role: First contact patient'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Role
+  20220529211110118552_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Care_pathway_Startdate
+      predicate: sio:SIO_000680
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Care_pathway_Enddate
+      predicate: sio:SIO_000681
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C16205
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C159705
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Process: First contact with specialized center'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Care_pathway_Process
+  20220529211110118558_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000031
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Startdate: $(first_contact_date)'
+      predicate: rdfs:label
     - objects:
         datatype: xsd:date
         value: $(first_contact_date)
@@ -179,8 +96,16 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Care_pathway_Startdate
-  20220404183259907402_source_cde_test:
+  20220529211110118563_source_cde_test:
     predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000032
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Enddate: $(first_contact_date)'
+      predicate: rdfs:label
     - objects:
         datatype: xsd:date
         value: $(first_contact_date)

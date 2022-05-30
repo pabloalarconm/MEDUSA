@@ -1,0 +1,47 @@
+# label: %name%
+# style: shape=%shape%;fillColor=%fill%;strokeColor=%stroke%;
+# namespace: csvimport-
+# width: auto
+# height: auto
+# padding: 15
+# ignore: id,shape,fill,stroke,refs
+# nodespacing: 40
+# levelspacing: 100
+# edgespacing: 40
+# layout: auto
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "foaf_type", "label": "foaf:type" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_refersto", "label": "sio:refers to" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasendtime", "label": "sio:has end time" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_has_quality", "label": "sio:has_quality" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasvalue", "label": "sio:has value" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasstarttime", "label": "sio:has start time" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_isrealizedin", "label": "sio:is realized in" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_denotes", "label": "sio:denotes" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasoutput", "label": "sio:has output" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasrole", "label": "sio:has role" }
+id,name,fill,stroke,shape,foaf_type,sio_refersto,sio_hasendtime,sio_has_quality,sio_hasvalue,sio_hasstarttime,sio_isrealizedin,sio_denotes,sio_hasoutput,sio_hasrole
+http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Output,Output type: Cerebellar ataxia,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Process","NA"
+http://semanticscience.org/resource/SIO_000015,sio:information content entity,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Output","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Attribute,Attribute type: Cerebellar ataxia,#FFE6CC,#000000,rhombus,"NA","http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Output","NA","http://example.org/data/uid_000007_20220315095719271607_Entity","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Process,Process: Comparative phenotypic assessment,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Role","NA","NA","NA"
+http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Enddate,Enddate: 1992-08-12,#FFE6CC,#000000,rhombus,"NA","NA","http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Process","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Role,Role: Phenotyping patient,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719271607_ID","NA","http://example.org/data/uid_000007_20220315095719271607_Entity"
+http://purl.obolibrary.org/obo/OBI_0000093,obo:patient role,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Role","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000032,sio:end date,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Enddate","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000007_20220315095719271607_Entity,uid_000007_20220315095719271607_Entity,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+1992-08-12,1992-08-12,#DAE8FC,#000000,ellipse,"NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Enddate,http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Startdate","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000006,sio:process,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Process","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Startdate,Startdate: 1992-08-12,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Process","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000031,sio:start date,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Startdate","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/OBI_0001546,obo:comparative phenotypic assessment,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Process","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000007_20220315095719271607_ID,uid_000007_20220315095719271607_ID,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000115,sio:identifier,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_ID","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000498,sio:person,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Entity","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C16205,obo:Healthcare Activity,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Process","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+uid_000007,uid_000007,#DAE8FC,#000000,ellipse,"NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719271607_ID","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C18020,obo:Diagnostic Procedure,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Process","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/HP_0001251,obo:Ataxia,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Attribute","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000614,sio:attribute,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Attribute","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C102741,obo:Clinical Observation Result Category,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Output","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_010056,sio:phenotype,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Attribute","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000016,sio:role,#d5e8d4,#000000,rounded,"http://example.org/data/uid_000007_20220315095719271607_Phenotypic_Role","NA","NA","NA","NA","NA","NA","NA","NA","NA"

@@ -1,0 +1,51 @@
+[PrefixDeclaration]
+rdf:	http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:	http://www.w3.org/2000/01/rdf-schema#
+obo:	http://purl.obolibrary.org/obo/
+sio:	http://semanticscience.org/resource/
+xsd:	http://www.w3.org/2001/XMLSchema#
+this:	http://my_example.com/
+
+[MappingDeclaration] @collection [[
+mappingId	source_cde_test20220529211121603517
+target	this:{pid}_{uniqid}_ID sio:SIO_000020 this:{pid}_{uniqid}_Symptom_onset_Role ; sio:SIO_000020 this:{pid}_{uniqid}_Diagnosis_date_Role ; a sio:SIO_000115 ; sio:SIO_000300 {pid}^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211121603543
+target	this:{pid}_{uniqid}_Entity sio:SIO_000228 this:{pid}_{uniqid}_Symptom_onset_Role ; sio:SIO_000008 this:{pid}_{uniqid}_Symptom_onset_Attribute ; sio:SIO_000228 this:{pid}_{uniqid}_Diagnosis_date_Role ; sio:SIO_000008 this:{pid}_{uniqid}_Diagnosis_date_Attribute ; a sio:SIO_000498 .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211121603555
+target	this:{pid}_{uniqid}_Symptom_onset_Role sio:SIO_000356 this:{pid}_{uniqid}_Symptom_onset_Process ; a sio:SIO_000016 ; a obo:OBI_0000093 ; rdfs:label Role: Symptom onset patient^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211121603563
+target	this:{pid}_{uniqid}_Symptom_onset_Process sio:SIO_000229 this:{pid}_{uniqid}_Symptom_onset_Output ; a sio:SIO_000006 ; a sio:SIO_001052 ; rdfs:label Process: Symptom onset date recording process^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211121603571
+target	this:{pid}_{uniqid}_Symptom_onset_Output sio:SIO_000628 this:{pid}_{uniqid}_Symptom_onset_Attribute ; a sio:SIO_000015 ; a {onset_uri} ; rdfs:label Output type: Date of onset^^xsd_string ; sio:SIO_000300 {onset_date}^^xsd_date .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211121603580
+target	this:{pid}_{uniqid}_Diagnosis_date_Role sio:SIO_000356 this:{pid}_{uniqid}_Diagnosis_date_Process ; a sio:SIO_000016 ; a obo:OBI_0000093 ; rdfs:label Role: Diagnosis date patient^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211121603587
+target	this:{pid}_{uniqid}_Diagnosis_date_Process sio:SIO_000229 this:{pid}_{uniqid}_Diagnosis_date_Output ; a sio:SIO_000006 ; a sio:SIO_001052 ; rdfs:label Process: Diagnosis date recording process^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211121603594
+target	this:{pid}_{uniqid}_Diagnosis_date_Output sio:SIO_000628 this:{pid}_{uniqid}_Diagnosis_date_Attribute ; a sio:SIO_000015 ; a {diagnosis_uri} ; rdfs:label Output type: Age at diagnosis^^xsd_string ; sio:SIO_000300 {diagnosis_date}^^xsd_date .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211121603602
+target	this:{pid}_{uniqid}_Symptom_onset_Attribute a sio:SIO_000614 ; a obo:NCIT_C25279 ; rdfs:label Attribute type: Stage or date of onset^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211121603609
+target	this:{pid}_{uniqid}_Diagnosis_date_Attribute a sio:SIO_000614 ; a obo:NCIT_C156420 ; rdfs:label Attribute type: Stage or date of diagnosis^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+]]
+

@@ -1,447 +1,14 @@
 mapping:
-  20220404183300767716_source_cde_test:
+  20220529211126310467_source_cde_test:
     predicateobject:
     - objects:
         type: iri
         value: this:$(pid)_$(uniqid)_Genetic_Role
       predicate: sio:SIO_000020
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220404183300767731_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Genetic_Role
-      predicate: sio:SIO_000228
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183300767736_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: $(clinvar_uri)
-      predicate: sio:SIO_000008
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183300767739_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: $(omim_uri)
-      predicate: sio:SIO_000008
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183300767743_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: $(hgnc_uri)
-      predicate: sio:SIO_000008
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183300767748_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_HGVS_Process
-      predicate: sio:SIO_000356
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Genetic_Role
-  20220404183300767752_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_OMIM_Process
-      predicate: sio:SIO_000356
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Genetic_Role
-  20220404183300767756_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_HGNC_Process
-      predicate: sio:SIO_000356
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Genetic_Role
-  20220404183300767759_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_HGVS_Output
-      predicate: sio:SIO_000229
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGVS_Process
-  20220404183300767762_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: $(clinvar_uri)
-      predicate: sio:SIO_000628
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGVS_Output
-  20220404183300767766_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_OMIM_Output
-      predicate: sio:SIO_000229
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_OMIM_Process
-  20220404183300767771_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: $(omim_uri)
-      predicate: sio:SIO_000628
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_OMIM_Output
-  20220404183300767774_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_HGNC_Output
-      predicate: sio:SIO_000229
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGNC_Process
-  20220404183300767778_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: $(hgnc_uri)
-      predicate: sio:SIO_000628
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGNC_Output
-  20220404183300767782_source_cde_test:
-    predicateobject:
     - objects:
         type: iri
         value: sio:SIO_000115
       predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220404183300767785_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000498
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183300767789_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000016
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Genetic_Role
-  20220404183300767792_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:OBI_0000093
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Genetic_Role
-  20220404183300767795_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:NCIT_C15709
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGVS_Process
-  20220404183300767799_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000006
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGVS_Process
-  20220404183300767802_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGVS_Output
-  20220404183300767808_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_001388
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGVS_Output
-  20220404183300767812_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000614
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: $(clinvar_uri)
-  20220404183300767816_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: $(clinvar_uri)
-  20220404183300767819_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:NCIT_C171178
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: $(clinvar_uri)
-  20220404183300767823_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:NCIT_C15709
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_OMIM_Process
-  20220404183300767826_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000006
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_OMIM_Process
-  20220404183300767829_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_OMIM_Output
-  20220404183300767834_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_001381
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_OMIM_Output
-  20220404183300767837_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000614
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: $(omim_uri)
-  20220404183300767841_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: $(omim_uri)
-  20220404183300767844_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: edam:data_1153
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: $(omim_uri)
-  20220404183300767848_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:NCIT_C15709
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGNC_Process
-  20220404183300767852_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000006
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGNC_Process
-  20220404183300767855_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGNC_Output
-  20220404183300767858_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_001381
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGNC_Output
-  20220404183300767863_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000614
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: $(hgnc_uri)
-  20220404183300767866_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: $(hgnc_uri)
-  20220404183300767869_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: edam:data_2298
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: $(hgnc_uri)
-  20220404183300767873_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Role: Genetic diagnosis patient'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Genetic_Role
-  20220404183300767876_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Process: HGVS genetic testing'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGVS_Process
-  20220404183300767879_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Output type: HGVS measurement value'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGVS_Output
-  20220404183300767884_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Attribute type: $(hgvs_string)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: $(clinvar_uri)
-  20220404183300767887_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Process: OMIM genetic testing'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_OMIM_Process
-  20220404183300767891_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Output type: OMIM genome sequence variant'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_OMIM_Output
-  20220404183300767895_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Attribute type: $(omim_uri)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: $(omim_uri)
-  20220404183300767898_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Process: HGNC genetic testing'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGNC_Process
-  20220404183300767901_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Output type: HGNC genome sequence variant'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_HGNC_Output
-  20220404183300767904_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Attribute type: $(hgnc_uri)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: $(hgnc_uri)
-  20220404183300767907_source_cde_test:
-    predicateobject:
     - objects:
         datatype: xsd:string
         value: $(pid)
@@ -449,8 +16,99 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_ID
-  20220404183300767911_source_cde_test:
+  20220529211126310493_source_cde_test:
     predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Genetic_Role
+      predicate: sio:SIO_000228
+    - objects:
+        type: iri
+        value: $(clinvar_uri)
+      predicate: sio:SIO_000008
+    - objects:
+        type: iri
+        value: $(omim_uri)
+      predicate: sio:SIO_000008
+    - objects:
+        type: iri
+        value: $(hgnc_uri)
+      predicate: sio:SIO_000008
+    - objects:
+        type: iri
+        value: sio:SIO_000498
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220529211126310503_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_HGVS_Process
+      predicate: sio:SIO_000356
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_OMIM_Process
+      predicate: sio:SIO_000356
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_HGNC_Process
+      predicate: sio:SIO_000356
+    - objects:
+        type: iri
+        value: sio:SIO_000016
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:OBI_0000093
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Role: Genetic diagnosis patient'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Genetic_Role
+  20220529211126310509_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_HGVS_Output
+      predicate: sio:SIO_000229
+    - objects:
+        type: iri
+        value: obo:NCIT_C15709
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Process: HGVS genetic testing'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_HGVS_Process
+  20220529211126310516_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(clinvar_uri)
+      predicate: sio:SIO_000628
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: sio:SIO_001388
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: HGVS measurement value'
+      predicate: rdfs:label
     - objects:
         datatype: xsd:string
         value: $(hgvs_string)
@@ -458,8 +116,45 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_HGVS_Output
-  20220404183300767917_source_cde_test:
+  20220529211126310522_source_cde_test:
     predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_OMIM_Output
+      predicate: sio:SIO_000229
+    - objects:
+        type: iri
+        value: obo:NCIT_C15709
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Process: OMIM genetic testing'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_OMIM_Process
+  20220529211126310529_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(omim_uri)
+      predicate: sio:SIO_000628
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: sio:SIO_001381
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: OMIM genome sequence variant'
+      predicate: rdfs:label
     - objects:
         datatype: xsd:string
         value: $(omim_uri)
@@ -467,8 +162,45 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_OMIM_Output
-  20220404183300767921_source_cde_test:
+  20220529211126310535_source_cde_test:
     predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_HGNC_Output
+      predicate: sio:SIO_000229
+    - objects:
+        type: iri
+        value: obo:NCIT_C15709
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Process: HGNC genetic testing'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_HGNC_Process
+  20220529211126310541_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: $(hgnc_uri)
+      predicate: sio:SIO_000628
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: sio:SIO_001381
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: HGNC genome sequence variant'
+      predicate: rdfs:label
     - objects:
         datatype: xsd:string
         value: $(hgnc_uri)
@@ -476,6 +208,69 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_HGNC_Output
+  20220529211126310547_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C171178
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: $(hgvs_string)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: $(clinvar_uri)
+  20220529211126310553_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: edam:data_1153
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: $(omim_uri)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: $(omim_uri)
+  20220529211126310560_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: edam:data_2298
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: $(hgnc_uri)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: $(hgnc_uri)
 prefixes:
   edam: http://edamontology.org/
   obo: http://purl.obolibrary.org/obo/

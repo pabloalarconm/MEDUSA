@@ -1,267 +1,14 @@
 mapping:
-  20220404183301062116_source_cde_test:
+  20220529211132514606_source_cde_test:
     predicateobject:
     - objects:
         type: iri
         value: this:$(pid)_$(uniqid)_Phenotypic_Role
       predicate: sio:SIO_000020
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220404183301062130_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Phenotypic_Role
-      predicate: sio:SIO_000228
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183301062135_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Phenotypic_Attribute
-      predicate: sio:SIO_000008
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183301062139_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Phenotypic_Process
-      predicate: sio:SIO_000356
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Role
-  20220404183301062145_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Phenotypic_Startdate
-      predicate: sio:SIO_000680
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Process
-  20220404183301062149_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Phenotypic_Enddate
-      predicate: sio:SIO_000681
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Process
-  20220404183301062153_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Phenotypic_Output
-      predicate: sio:SIO_000229
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Process
-  20220404183301062156_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: this:$(pid)_$(uniqid)_Phenotypic_Attribute
-      predicate: sio:SIO_000628
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Output
-  20220404183301062160_source_cde_test:
-    predicateobject:
     - objects:
         type: iri
         value: sio:SIO_000115
       predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220404183301062163_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000498
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220404183301062167_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000016
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Role
-  20220404183301062170_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:OBI_0000093
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Role
-  20220404183301062174_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000006
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Process
-  20220404183301062179_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:OBI_0001546
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Process
-  20220404183301062184_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:NCIT_C16205
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Process
-  20220404183301062187_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:NCIT_C18020
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Process
-  20220404183301062191_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000031
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Startdate
-  20220404183301062194_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000032
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Enddate
-  20220404183301062198_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Output
-  20220404183301062201_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: obo:NCIT_C102741
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Output
-  20220404183301062205_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_000614
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Attribute
-  20220404183301062209_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: sio:SIO_010056
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Attribute
-  20220404183301062213_source_cde_test:
-    predicateobject:
-    - objects:
-        type: iri
-        value: $(HP_IRI)
-      predicate: rdf:type
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Attribute
-  20220404183301062216_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Role: Phenotyping patient'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Role
-  20220404183301062220_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Process: Comparative phenotypic assessment'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Process
-  20220404183301062224_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Startdate: $(date)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Startdate
-  20220404183301062227_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Enddate: $(date)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Enddate
-  20220404183301062230_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Output type: $(HP_Label)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Output
-  20220404183301062234_source_cde_test:
-    predicateobject:
-    - objects:
-        datatype: xsd:string
-        value: 'Attribute type: $(HP_Label)'
-      predicate: rdfs:label
-    sources:
-    - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Phenotypic_Attribute
-  20220404183301062238_source_cde_test:
-    predicateobject:
     - objects:
         datatype: xsd:string
         value: $(pid)
@@ -269,8 +16,112 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_ID
-  20220404183301062241_source_cde_test:
+  20220529211132514633_source_cde_test:
     predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Phenotypic_Role
+      predicate: sio:SIO_000228
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Phenotypic_Attribute
+      predicate: sio:SIO_000008
+    - objects:
+        type: iri
+        value: sio:SIO_000498
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Entity
+  20220529211132514641_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Phenotypic_Process
+      predicate: sio:SIO_000356
+    - objects:
+        type: iri
+        value: sio:SIO_000016
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:OBI_0000093
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Role: Phenotyping patient'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Phenotypic_Role
+  20220529211132514650_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Phenotypic_Startdate
+      predicate: sio:SIO_000680
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Phenotypic_Enddate
+      predicate: sio:SIO_000681
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Phenotypic_Output
+      predicate: sio:SIO_000229
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:OBI_0001546
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C16205
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C18020
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Process: Comparative phenotypic assessment'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Phenotypic_Process
+  20220529211132514656_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Phenotypic_Attribute
+      predicate: sio:SIO_000628
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C102741
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: $(HP_Label)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Phenotypic_Output
+  20220529211132514662_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000031
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Startdate: $(date)'
+      predicate: rdfs:label
     - objects:
         datatype: xsd:date
         value: $(date)
@@ -278,8 +129,16 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotypic_Startdate
-  20220404183301062245_source_cde_test:
+  20220529211132514667_source_cde_test:
     predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000032
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Enddate: $(date)'
+      predicate: rdfs:label
     - objects:
         datatype: xsd:date
         value: $(date)
@@ -287,6 +146,27 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotypic_Enddate
+  20220529211132514673_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: sio:SIO_010056
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: $(HP_IRI)
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: $(HP_Label)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Phenotypic_Attribute
 prefixes:
   obo: http://purl.obolibrary.org/obo/
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#

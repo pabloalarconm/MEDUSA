@@ -1,0 +1,60 @@
+[PrefixDeclaration]
+rdf:	http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:	http://www.w3.org/2000/01/rdf-schema#
+obo:	http://purl.obolibrary.org/obo/
+sio:	http://semanticscience.org/resource/
+xsd:	http://www.w3.org/2001/XMLSchema#
+edam:	http://edamontology.org/
+this:	http://my_example.com/
+
+[MappingDeclaration] @collection [[
+mappingId	source_cde_test20220529211127309744
+target	this:{pid}_{uniqid}_ID sio:SIO_000020 this:{pid}_{uniqid}_Genetic_Role ; a sio:SIO_000115 ; sio:SIO_000300 {pid}^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211127309773
+target	this:{pid}_{uniqid}_Entity sio:SIO_000228 this:{pid}_{uniqid}_Genetic_Role ; sio:SIO_000008 {clinvar_uri} ; sio:SIO_000008 {omim_uri} ; sio:SIO_000008 {hgnc_uri} ; a sio:SIO_000498 .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211127309783
+target	this:{pid}_{uniqid}_Genetic_Role sio:SIO_000356 this:{pid}_{uniqid}_HGVS_Process ; sio:SIO_000356 this:{pid}_{uniqid}_OMIM_Process ; sio:SIO_000356 this:{pid}_{uniqid}_HGNC_Process ; a sio:SIO_000016 ; a obo:OBI_0000093 ; rdfs:label Role: Genetic diagnosis patient^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211127309793
+target	this:{pid}_{uniqid}_HGVS_Process sio:SIO_000229 this:{pid}_{uniqid}_HGVS_Output ; a obo:NCIT_C15709 ; a sio:SIO_000006 ; rdfs:label Process: HGVS genetic testing^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211127309800
+target	this:{pid}_{uniqid}_HGVS_Output sio:SIO_000628 {clinvar_uri} ; a sio:SIO_000015 ; a sio:SIO_001388 ; rdfs:label Output type: HGVS measurement value^^xsd_string ; sio:SIO_000300 {hgvs_string}^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211127309809
+target	this:{pid}_{uniqid}_OMIM_Process sio:SIO_000229 this:{pid}_{uniqid}_OMIM_Output ; a obo:NCIT_C15709 ; a sio:SIO_000006 ; rdfs:label Process: OMIM genetic testing^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211127309816
+target	this:{pid}_{uniqid}_OMIM_Output sio:SIO_000628 {omim_uri} ; a sio:SIO_000015 ; a sio:SIO_001381 ; rdfs:label Output type: OMIM genome sequence variant^^xsd_string ; sio:SIO_000300 {omim_uri}^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211127309824
+target	this:{pid}_{uniqid}_HGNC_Process sio:SIO_000229 this:{pid}_{uniqid}_HGNC_Output ; a obo:NCIT_C15709 ; a sio:SIO_000006 ; rdfs:label Process: HGNC genetic testing^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211127309833
+target	this:{pid}_{uniqid}_HGNC_Output sio:SIO_000628 {hgnc_uri} ; a sio:SIO_000015 ; a sio:SIO_001381 ; rdfs:label Output type: HGNC genome sequence variant^^xsd_string ; sio:SIO_000300 {hgnc_uri}^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211127309859
+target	{clinvar_uri} a sio:SIO_000614 ; a sio:SIO_000015 ; a obo:NCIT_C171178 ; rdfs:label Attribute type: {hgvs_string}^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211127309868
+target	{omim_uri} a sio:SIO_000614 ; a sio:SIO_000015 ; a edam:data_1153 ; rdfs:label Attribute type: {omim_uri}^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220529211127309875
+target	{hgnc_uri} a sio:SIO_000614 ; a sio:SIO_000015 ; a edam:data_2298 ; rdfs:label Attribute type: {hgnc_uri}^^xsd_string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+]]
+

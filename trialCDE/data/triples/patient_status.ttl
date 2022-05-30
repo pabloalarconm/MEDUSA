@@ -1,59 +1,59 @@
-@prefix : <http://purl.org/ejp-rd/cde/v1/example-rdf/> .
+@prefix my: <http://example.org/data/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:Entity a sio:SIO_000498 ;
-    sio:SIO_000008 :Death_information_Attribute,
-        :Status_Attribute ;
-    sio:SIO_000228 :Status_Role .
+my:uid_000008_20220315095719232013_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000008_20220315095719232013_Death_information_Attribute,
+        my:uid_000008_20220315095719232013_Status_Attribute ;
+    sio:SIO_000228 my:uid_000008_20220315095719232013_Status_Role .
 
-:ID a sio:SIO_000115 ;
-    sio:SIO_000020 :Status_Role ;
+my:uid_000008_20220315095719232013_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000008_20220315095719232013_Status_Role ;
     sio:SIO_000300 "uid_000008"^^xsd:string .
 
-:Death_information_Output a sio:SIO_000015 ;
+my:uid_000008_20220315095719232013_Death_information_Output a sio:SIO_000015 ;
     rdfs:label "Output type: Patient death information" ;
     sio:SIO_000300 "2010-06-08"^^xsd:date ;
-    sio:SIO_000628 :Death_information_Attribute .
+    sio:SIO_000628 my:uid_000008_20220315095719232013_Death_information_Attribute .
 
-:Death_information_Process a sio:SIO_000006 ;
+my:uid_000008_20220315095719232013_Death_information_Process a sio:SIO_000006 ;
     rdfs:label "Process: Death information recording process" ;
-    sio:SIO_000229 :Death_information_Output .
+    sio:SIO_000229 my:uid_000008_20220315095719232013_Death_information_Output .
 
-:Status_Enddate a sio:SIO_000032 ;
+my:uid_000008_20220315095719232013_Status_Enddate a sio:SIO_000032 ;
     rdfs:label "Enddate: 2010-06-08" ;
     sio:SIO_000300 "2010-06-08"^^xsd:date .
 
-:Status_Output a sio:SIO_000015 ;
+my:uid_000008_20220315095719232013_Status_Output a sio:SIO_000015 ;
     rdfs:label "Output type: dead" ;
     sio:SIO_000300 "dead"^^xsd:string ;
-    sio:SIO_000628 :Status_Attribute .
+    sio:SIO_000628 my:uid_000008_20220315095719232013_Status_Attribute .
 
-:Status_Process a sio:SIO_000006,
+my:uid_000008_20220315095719232013_Status_Process a sio:SIO_000006,
         sio:SIO_001052 ;
     rdfs:label "Process: Status recording process" ;
-    sio:SIO_000229 :Status_Output ;
-    sio:SIO_000680 :Status_Startdate ;
-    sio:SIO_000681 :Status_Enddate .
+    sio:SIO_000229 my:uid_000008_20220315095719232013_Status_Output ;
+    sio:SIO_000680 my:uid_000008_20220315095719232013_Status_Startdate ;
+    sio:SIO_000681 my:uid_000008_20220315095719232013_Status_Enddate .
 
-:Status_Startdate a sio:SIO_000031 ;
+my:uid_000008_20220315095719232013_Status_Startdate a sio:SIO_000031 ;
     rdfs:label "Startdate: 2010-06-08" ;
     sio:SIO_000300 "2010-06-08"^^xsd:date .
 
-:Death_information_Attribute a obo:NCIT_C70810,
+my:uid_000008_20220315095719232013_Death_information_Attribute a obo:NCIT_C70810,
         sio:SIO_000614 ;
     rdfs:label "Attribute type: Date of death" .
 
-:Status_Attribute a obo:NCIT_C166244,
+my:uid_000008_20220315095719232013_Status_Attribute a obo:NCIT_C166244,
         sio:SIO_000614,
         sio:SIO_010059 ;
     rdfs:label "Attribute type: dead" .
 
-:Status_Role a obo:OBI_0000093,
+my:uid_000008_20220315095719232013_Status_Role a obo:OBI_0000093,
         sio:SIO_000016 ;
     rdfs:label "Role: Patient for status recording" ;
-    sio:SIO_000356 :Death_information_Process,
-        :Status_Process .
+    sio:SIO_000356 my:uid_000008_20220315095719232013_Death_information_Process,
+        my:uid_000008_20220315095719232013_Status_Process .
+

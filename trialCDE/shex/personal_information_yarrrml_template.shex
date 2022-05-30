@@ -3,41 +3,75 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX this: <http://my_example.com/>
+PREFIX : <http://my_example.com/>
 
-idShape IRI {
-	sio:SIO_000020 @:roleShape ;
+:idShape IRI {
+	sio:SIO_000020 @:sexroleShape ;
 	a [sio:SIO_000115] ;
+    sio:SIO_000020 @:birthdateroleShape ;
+    sio:SIO_000020 @:sexroleShape ;
 	sio:SIO_000300 xsd:string 
 } ;
 
-entityShape IRI {
-	sio:SIO_000228 @:roleShape ;
-	sio:SIO_000008 @:attributeShape ;
+:entityShape IRI {
 	a [sio:SIO_000498] 
+    rdfs:label xsd:string? ;
+	sio:SIO_000228 @:sexroleShape ;
+	sio:SIO_000008 @:sexattributeShape ;
+    sio:SIO_000228 @:birthdateRoleShape ;
+    sio:SIO_000008 @:birthdateAttributeShape
 } ;
 
-roleShape IRI {
-	sio:SIO_000356 @:processShape ;
+:birthdateroleShape IRI {
+	sio:SIO_000356 @:birthdateprocessShape ;
 	a [obo:OBI_0000093] ;
-	rdfs:label xsd:string 
+	a [sio:SIO_000016] ;
+	rdfs:label xsd:string? 
 } ;
 
-processShape IRI {
-	sio:SIO_000229 @:outputShape ;
+:birthdateprocessShape IRI {
 	a [sio:SIO_000006] ;
-	rdfs:label xsd:string 
+	sio:SIO_000229 @:birthdateoutputShape ;
+	rdfs:label xsd:string? 
 } ;
 
-outputShape IRI {
-	sio:SIO_000628 @:attributeShape ;
+:birthdateoutputShape IRI {
 	a [sio:SIO_000015] ;
-	rdfs:label xsd:string ;
+	sio:SIO_000628 @:birthdateattributeShape ;
+	rdfs:label xsd:string? ;
+	sio:SIO_000300 xsd:date 
+} ;
+
+:birthdateattributeShape IRI {
+    a [sio:SIO_000614] ;
+	a [obo:NCIT_C68615] ;
+	rdfs:label xsd:string? 
+} ;
+
+:sexroleShape IRI {
+    a [obo:OBI_0000093] ;
+    a [sio:SIO_000016] ;
+	sio:SIO_000356 @:sexprocessShape ;
+	rdfs:label xsd:string? 
+} ;
+
+:sexprocessShape IRI {
+	a [sio:SIO_000006] ;
+	sio:SIO_000229 @:sexoutputShape ;
+	rdfs:label xsd:string? 
+} ;
+
+:sexoutputShape IRI {
+	a [sio:SIO_000015] ;
+	rdfs:label xsd:string? ;
+	sio:SIO_000628 @:sexattributeShape ;
 	sio:SIO_000300 xsd:string 
 } ;
 
-attributeShape IRI {
-	a [obo:NCIT_C28421] ;
-	rdfs:label xsd:string 
+:sexattributeShape IRI {
+    a [sio:SIO_000614] ;
+    a [obo:NCIT_C28421] ;
+    a [obo:NCIT_C16576 obo:NCIT_C20197 obo:NCIT_C124294 obo:NCIT_C17998] ;
+    rdfs:label xsd:string?
 } ;
 

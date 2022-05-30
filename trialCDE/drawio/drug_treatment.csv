@@ -1,0 +1,65 @@
+# label: %name%
+# style: shape=%shape%;fillColor=%fill%;strokeColor=%stroke%;
+# namespace: csvimport-
+# width: auto
+# height: auto
+# padding: 15
+# ignore: id,shape,fill,stroke,refs
+# nodespacing: 40
+# levelspacing: 100
+# edgespacing: 40
+# layout: auto
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "foaf_type", "label": "rdf:type" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasunit", "label": "sio:has unit" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasvalue", "label": "sio:has value" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_conformsto", "label": "sio:conforms to" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasrole", "label": "sio:has role" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_iscomponentpartof", "label": "sio:is component part of" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "rdfs_comment", "label": "rdfs:comment" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasendtime", "label": "sio:has end time" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasoutput", "label": "sio:has output" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasinput", "label": "sio:has input" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasagent", "label": "sio:has agent" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_refersto", "label": "sio:refers to" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_denotes", "label": "sio:denotes" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasfrequency", "label": "sio:has frequency" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_isrealizedin", "label": "sio:is realized in" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasstarttime", "label": "sio:has start time" }
+id,name,fill,stroke,shape,foaf_type,sio_hasunit,sio_hasvalue,sio_conformsto,sio_hasrole,sio_iscomponentpartof,rdfs_comment,sio_hasendtime,sio_hasoutput,sio_hasinput,sio_hasagent,sio_refersto,sio_denotes,sio_hasfrequency,sio_isrealizedin,sio_hasstarttime
+http://example.org/data/id_000007_20220315095719196666_Administration_input,Route of administration: Oral Route of Administration,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Drug_intake_process","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C38288,obo:Oral Route of Administration,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Administration_input","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/id_000007_20220315095719196666_Dose,Dose,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Prescription_output","NA","NA","NA","NA"
+http://example.org/data/id_000007_20220315095719196666_Unit,Unit: miligram,#FFE6CC,#000000,rhombus,"NA","http://example.org/data/id_000007_20220315095719196666_Dose","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/id_000007_20220315095719196666_ID,id_000007_20220315095719196666_ID,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+id_000007,id_000007,#DAE8FC,#000000,ellipse,"NA","NA","http://example.org/data/id_000007_20220315095719196666_ID","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/id_000007_20220315095719196666_Treatment_enddate,Enddate: 2021-08-08,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Drug_intake_process","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000032,sio:end date,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Treatment_enddate","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/id_000007_20220315095719196666_Drug_intake_process,Process: Drug intake,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Treatment_role","NA"
+http://example.org/data/id_000007_20220315095719196666_Prescription_output,Prescription,#FFE6CC,#000000,rhombus,"NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Drug_intake_process","NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Drug_prescription_process","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/id_000007_20220315095719196666_Treatment_role,Role: Patient,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Entity","NA","NA","NA","NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_ID","NA","NA","NA"
+http://example.org/data/id_000007_20220315095719196666_Drug,Drug,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","https://www.whocc.no/atc_ddd_index/?code=L01XC02","NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Drug_intake_process","http://example.org/data/id_000007_20220315095719196666_Prescription_output","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_010038,sio:drug,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Drug","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/id_000007_20220315095719196666_Frequency,Frequency: per day,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Dose","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C66968,obo:Per Day,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Frequency","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+60.0,60.0,#DAE8FC,#000000,ellipse,"NA","NA","http://example.org/data/id_000007_20220315095719196666_Drug","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+https://www.whocc.no/atc_ddd_index/?code=L01XC02,Drug component: rituximab,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C177929,obo:Drug Product Component,#d5e8d4,#000000,rounded,"https://www.whocc.no/atc_ddd_index/?code=L01XC02","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/UO_0000022,obo:milligram,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Unit","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/id_000007_20220315095719196666_Entity,id_000007_20220315095719196666_Entity,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/id_000007_20220315095719196666_Treatment_startdate,Startdate: 2019-04-05,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Drug_intake_process"
+2019-04-05,2019-04-05,#DAE8FC,#000000,ellipse,"NA","NA","http://example.org/data/id_000007_20220315095719196666_Treatment_startdate","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+comments,comments,#DAE8FC,#000000,ellipse,"NA","NA","NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Prescription_output","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C25488,obo:Dose,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Dose","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+2021-08-08,2021-08-08,#DAE8FC,#000000,ellipse,"NA","NA","http://example.org/data/id_000007_20220315095719196666_Treatment_enddate","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/id_000007_20220315095719196666_Drug_prescription_process,Process: Drug prescription,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","http://example.org/data/id_000007_20220315095719196666_Treatment_role","NA"
+http://purl.obolibrary.org/obo/NCIT_C1702,obo:Rituximab,#d5e8d4,#000000,rounded,"https://www.whocc.no/atc_ddd_index/?code=L01XC02","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000015,sio:information content entity,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Administration_input,http://example.org/data/id_000007_20220315095719196666_Prescription_output","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C28180,obo:Prescription,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Prescription_output","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+1,1,#DAE8FC,#000000,ellipse,"NA","NA","http://example.org/data/id_000007_20220315095719196666_Frequency","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C111077,obo:Human Prescription Drug Distribution,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Drug_prescription_process","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000031,sio:start date,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Treatment_startdate","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000016,sio:role,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Treatment_role","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000115,sio:identifier,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_ID","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C25538,obo:Intake,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Drug_intake_process","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/OBI_0000093,obo:patient role,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Treatment_role","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000498,sio:person,#d5e8d4,#000000,rounded,"http://example.org/data/id_000007_20220315095719196666_Entity","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"

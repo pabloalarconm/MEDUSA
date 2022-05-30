@@ -138,16 +138,28 @@ class EMB():
 
         # prefixes addtion:
         for k,v in self.prefixes.items():
-            prefix = "PREFIX " + k + ": <" + v + ">"
+            if not k == basicURI:
+                prefix = "PREFIX " + k + ": <" + v + ">"
+            else:
+                prefix = "PREFIX " + ": <" + v + ">"
+
             self.all = self.all + prefix + "\n"
 
         # triplets curation:
         for quad in self.triplets:
             s,p,o,d = quad
             if s.startswith(basicURI + ":" ): # Get rid of the whole URI, only focused on representative name's node
-                c_element = s[::-1].split("_")[0]
-                c_element = c_element[::-1]
-                s_curated = c_element.lower() + "Shape"
+                s_curated = s[::-1].partition(")")[0]
+                s_curated = s_curated.replace("_","")
+                s_curated = s_curated.replace("/","")
+                s_curated = s_curated[::-1]
+                s_curated = ":" + s_curated.lower() + "Shape"
+            elif s.startswith("$("):
+                s_curated = s.replace("$(","")
+                s_curated = s_curated.replace(")","")
+                s_curated = s_curated.replace("_","")
+                s_curated = s_curated.replace("/","")
+                s_curated = ":" + s_curated.lower() + "Shape"
             elif s.startswith("http"): # Right syntax in case of IRI
                 s_curated = "<" + s + ">"
             else:
@@ -162,9 +174,17 @@ class EMB():
                 o_curated = d
             else:
                 if o.startswith(basicURI + ":" ):
-                    c_element = o[::-1].split("_")[0]
-                    c_element = c_element[::-1]
-                    o_curated = "@:" + c_element.lower() + "Shape"
+                    o_curated = o[::-1].partition(")")[0]
+                    o_curated = o_curated.replace("_","")
+                    o_curated = o_curated.replace("/","")
+                    o_curated = o_curated[::-1]
+                    o_curated = "@:" + o_curated.lower() + "Shape"
+                elif o.startswith("$("):
+                    o_curated = o.replace("$(","")
+                    o_curated = o_curated.replace(")","")
+                    o_curated = o_curated.replace("_","")
+                    o_curated = o_curated.replace("/","")
+                    o_curated = "@:" + o_curated.lower() + "Shape"
                 elif "$(" in o and d == "iri":
                     o_curated = "IRI"
                 elif o.startswith("http"):
@@ -329,7 +349,7 @@ class EMB():
                 if not l[2] == "iri":
                     l[2] = l[2].replace(" ", "") # TODO Check spec for string to solve this convertion
                     l[2] = l[2].replace(":", "_") # TODO Check spec for string to solve this convertion
-                    self.amaia_OBDA = self.amaia_OBDA +  " " + l[0] + " " + l[1] + "^^" + l[2] + " ;"
+                    self.amaia_OBDA = self.amaia_OBDA +  " " + l[0] + " " + '"' + l[1]+ '"' + "^^" + l[2] + " ;"
                 else:
                     self.amaia_OBDA = self.amaia_OBDA +  " " + l[0] + " " + l[1] + " ;"
 
@@ -352,24 +372,57 @@ prefixes = dict(
 
 triplets = [
 
-# sio nodes
-["this:$(pid)_$(uniqid)_ID","sio:denotes","this:$(pid)_$(uniqid)_Role","iri"],
-["this:$(pid)_$(uniqid)_Entity","sio:has-role","this:$(pid)_$(uniqid)_Role","iri"],
-["this:$(pid)_$(uniqid)_Role","sio:is-realized-in","this:$(pid)_$(uniqid)_Process","iri"],
-["this:$(pid)_$(uniqid)_Process","sio:has-output","this:$(pid)_$(uniqid)_Output","iri"],
-["this:$(pid)_$(uniqid)_Output","sio:refers-to","this:$(pid)_$(uniqid)_Attribute","iri"],
-["this:$(pid)_$(uniqid)_Entity","sio:has-attribute","this:$(pid)_$(uniqid)_Attribute","iri"],
+# Nodes
+["this:$(pid)_$(uniqid)_ID","sio:SIO_000020","this:$(pid)_$(uniqid)_Status_Role","iri"],
+["this:$(pid)_$(uniqid)_Entity","sio:SIO_000228","this:$(pid)_$(uniqid)_Status_Role","iri"],
+["this:$(pid)_$(uniqid)_Entity","sio:SIO_000008","this:$(pid)_$(uniqid)_Status_Attribute","iri"],
+["this:$(pid)_$(uniqid)_Status_Role","sio:SIO_000356","this:$(pid)_$(uniqid)_Status_Process","iri"],
+["this:$(pid)_$(uniqid)_Status_Process","sio:SIO_000229","this:$(pid)_$(uniqid)_Status_Output","iri"],
+["this:$(pid)_$(uniqid)_Status_Process","sio:SIO_000680","this:$(pid)_$(uniqid)_Status_Startdate","iri"],
+["this:$(pid)_$(uniqid)_Status_Process","sio:SIO_000681","this:$(pid)_$(uniqid)_Status_Enddate","iri"],
+["this:$(pid)_$(uniqid)_Status_Output","sio:SIO_000628","this:$(pid)_$(uniqid)_Status_Attribute","iri"],
 
-# sio types
-["this:$(pid)_$(uniqid)_ID","rdf:type","sio:identifier","iri"],
-["this:$(pid)_$(uniqid)_Entity","rdf:type","sio:person","iri"],
-["this:$(pid)_$(uniqid)_Role","rdf:type","sio:role","iri"],
-["this:$(pid)_$(uniqid)_Process","rdf:type","sio:process","iri"],
-["this:$(pid)_$(uniqid)_Output","rdf:type","sio:information-content-entity","iri"],
-["this:$(pid)_$(uniqid)_Attribute","rdf:type","sio:attribute","iri"],
+["this:$(pid)_$(uniqid)_Entity","sio:SIO_000008","this:$(pid)_$(uniqid)_Death_information_Attribute","iri"],
+["this:$(pid)_$(uniqid)_Status_Role","sio:SIO_000356","this:$(pid)_$(uniqid)_Death_information_Process","iri"],
+["this:$(pid)_$(uniqid)_Death_information_Process","sio:SIO_000229","this:$(pid)_$(uniqid)_Death_information_Output","iri"],
+["this:$(pid)_$(uniqid)_Death_information_Output","sio:SIO_000628","this:$(pid)_$(uniqid)_Death_information_Attribute","iri"],
 
-# data
-["this:$(pid)_$(uniqid)_Output","sio:has-value","$(datetime)","xsd:date"]]
+# Types
+["this:$(pid)_$(uniqid)_ID","rdf:type","sio:SIO_000115","iri"],
+["this:$(pid)_$(uniqid)_Entity","rdf:type","sio:SIO_000498","iri"],
+["this:$(pid)_$(uniqid)_Status_Role","rdf:type","sio:SIO_000016","iri"],
+["this:$(pid)_$(uniqid)_Status_Role","rdf:type","obo:OBI_0000093","iri"],
+["this:$(pid)_$(uniqid)_Status_Process","rdf:type","sio:SIO_001052","iri"],
+["this:$(pid)_$(uniqid)_Status_Process","rdf:type","sio:SIO_000006","iri"],
+["this:$(pid)_$(uniqid)_Status_Output","rdf:type","sio:SIO_000015","iri"],
+["this:$(pid)_$(uniqid)_Status_Attribute","rdf:type","sio:SIO_000614","iri"],
+["this:$(pid)_$(uniqid)_Status_Attribute","rdf:type","obo:NCIT_C166244","iri"],
+["this:$(pid)_$(uniqid)_Status_Attribute","rdf:type","$(status_uri)","iri"],
+["this:$(pid)_$(uniqid)_Status_Startdate","rdf:type","sio:SIO_000031","iri"],
+["this:$(pid)_$(uniqid)_Status_Enddate","rdf:type","sio:SIO_000032","iri"],
+
+["this:$(pid)_$(uniqid)_Death_information_Process","rdf:type","sio:SIO_000006","iri"],
+["this:$(pid)_$(uniqid)_Death_information_Output","rdf:type","sio:SIO_000015","iri"],
+["this:$(pid)_$(uniqid)_Death_information_Attribute","rdf:type","sio:SIO_000614","iri"],
+["this:$(pid)_$(uniqid)_Death_information_Attribute","rdf:type","obo:NCIT_C70810","iri"],
+
+# Labels
+["this:$(pid)_$(uniqid)_Status_Role","rdfs:label","Role: Patient for status recording","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Process","rdfs:label","Process: Status recording process","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Startdate","rdfs:label","Startdate: $(date)","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Enddate","rdfs:label","Enddate: $(date)","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Output","rdfs:label","Output type: $(status_label)","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Attribute","rdfs:label","Attribute type: $(status_label)","xsd:string"],
+["this:$(pid)_$(uniqid)_Death_information_Process","rdfs:label","Process: Death information recording process","xsd:string"],
+["this:$(pid)_$(uniqid)_Death_information_Output","rdfs:label","Output type: Patient death information","xsd:string"],
+["this:$(pid)_$(uniqid)_Death_information_Attribute","rdfs:label","Attribute type: Date of death","xsd:string"],
+
+# Values
+["this:$(pid)_$(uniqid)_ID","sio:SIO_000300","$(pid)","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Output","sio:SIO_000300","$(status_label)","xsd:string"],
+["this:$(pid)_$(uniqid)_Death_information_Output","sio:SIO_000300","$(death_date)","xsd:date"],
+["this:$(pid)_$(uniqid)_Status_Startdate","sio:SIO_000300","$(date)","xsd:date"],
+["this:$(pid)_$(uniqid)_Status_Enddate","sio:SIO_000300","$(date)","xsd:date"]]
 
 
 
@@ -384,8 +437,8 @@ config = dict(
 
 yarrrml = EMB(config, prefixes,triplets)
 
-# test = yarrrml.transform_ShEx("this")
-# print(test)
+test = yarrrml.transform_ShEx("this")
+print(test)
 
 # test2 = yarrrml.transform_YARRRML()
 # print(test2)

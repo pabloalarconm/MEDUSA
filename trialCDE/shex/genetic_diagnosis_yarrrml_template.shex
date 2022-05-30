@@ -4,50 +4,76 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX sio: <http://semanticscience.org/resource/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX edam: <http://edamontology.org/>
-PREFIX this: <http://my_example.com/>
+PREFIX : <http://my_example.com/>
 
-idShape IRI {
-	sio:SIO_000020 @:roleShape ;
+:idShape IRI {
+	sio:SIO_000020 @:geneticroleShape ;
 	a [sio:SIO_000115] ;
 	sio:SIO_000300 xsd:string 
 } ;
 
-entityShape IRI {
-	sio:SIO_000228 @:roleShape ;
-	sio:SIO_000008 IRI ;
+:entityShape IRI {
+	sio:SIO_000228 @:geneticroleShape ;
+	sio:SIO_000008 @:hgncuriShape ;
 	a [sio:SIO_000498] 
 } ;
 
-roleShape IRI {
-	sio:SIO_000356 @:processShape ;
+:geneticroleShape IRI {
+	sio:SIO_000356 @:hgncprocessShape ;
 	a [obo:OBI_0000093] ;
 	rdfs:label xsd:string 
 } ;
 
-processShape IRI {
-	sio:SIO_000229 @:outputShape ;
+:hgvsprocessShape IRI {
+	sio:SIO_000229 @:hgvsoutputShape ;
 	a [sio:SIO_000006] ;
 	rdfs:label xsd:string 
 } ;
 
-outputShape IRI {
-	sio:SIO_000628 IRI ;
+:hgvsoutputShape IRI {
+	sio:SIO_000628 @:clinvaruriShape ;
+	a [sio:SIO_001388] ;
+	rdfs:label xsd:string ;
+	sio:SIO_000300 xsd:string 
+} ;
+
+:omimprocessShape IRI {
+	sio:SIO_000229 @:omimoutputShape ;
+	a [sio:SIO_000006] ;
+	rdfs:label xsd:string 
+} ;
+
+:omimoutputShape IRI {
+	sio:SIO_000628 @:omimuriShape ;
 	a [sio:SIO_001381] ;
 	rdfs:label xsd:string ;
 	sio:SIO_000300 xsd:string 
 } ;
 
-$(clinvar_uri) IRI {
+:hgncprocessShape IRI {
+	sio:SIO_000229 @:hgncoutputShape ;
+	a [sio:SIO_000006] ;
+	rdfs:label xsd:string 
+} ;
+
+:hgncoutputShape IRI {
+	sio:SIO_000628 @:hgncuriShape ;
+	a [sio:SIO_001381] ;
+	rdfs:label xsd:string ;
+	sio:SIO_000300 xsd:string 
+} ;
+
+:clinvaruriShape IRI {
 	a [obo:NCIT_C171178] ;
 	rdfs:label xsd:string 
 } ;
 
-$(omim_uri) IRI {
+:omimuriShape IRI {
 	a [edam:data_1153] ;
 	rdfs:label xsd:string 
 } ;
 
-$(hgnc_uri) IRI {
+:hgncuriShape IRI {
 	a [edam:data_2298] ;
 	rdfs:label xsd:string 
 } ;

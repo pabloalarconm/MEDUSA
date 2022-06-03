@@ -7,44 +7,44 @@ xsd:	http://www.w3.org/2001/XMLSchema#
 this:	http://my_example.com/
 
 [MappingDeclaration] @collection [[
-mappingId	source_cde_test20220530191218142370
+mappingId	source_cde_test20220603101431258862
 target	this:{pid}_{uniqid}_ID sio:SIO_000020 this:{pid}_{uniqid}_Birthdate_Role ; sio:SIO_000020 this:{pid}_{uniqid}_Sex_Role ; a sio:SIO_000115 ; sio:SIO_000300 "{pid}"^^xsd_string .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191218142388
+mappingId	source_cde_test20220603101431258878
 target	this:{pid}_{uniqid}_Entity sio:SIO_000228 this:{pid}_{uniqid}_Birthdate_Role ; sio:SIO_000008 this:{pid}_{uniqid}_Birthdate_Attribute ; sio:SIO_000228 this:{pid}_{uniqid}_Sex_Role ; sio:SIO_000008 this:{pid}_{uniqid}_Sex_Attribute ; a sio:SIO_000498 .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191218142395
+mappingId	source_cde_test20220603101431258886
 target	this:{pid}_{uniqid}_Birthdate_Role sio:SIO_000356 this:{pid}_{uniqid}_Birthdate_Process ; a sio:SIO_000016 ; a obo:OBI_0000093 ; rdfs:label "Role: Patient for age assessment"^^xsd_string .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191218142402
+mappingId	source_cde_test20220603101431258892
 target	this:{pid}_{uniqid}_Birthdate_Process sio:SIO_000229 this:{pid}_{uniqid}_Birthdate_Output ; a sio:SIO_000006 ; rdfs:label "Process: age measuring process"^^xsd_string .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191218142407
+mappingId	source_cde_test20220603101431258897
 target	this:{pid}_{uniqid}_Birthdate_Output sio:SIO_000628 this:{pid}_{uniqid}_Birthdate_Attribute ; a sio:SIO_000015 ; rdfs:label "Output type: Birth date"^^xsd_string ; sio:SIO_000300 "{birthdate}"^^xsd_date .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191218142414
+mappingId	source_cde_test20220603101431258903
 target	this:{pid}_{uniqid}_Sex_Role sio:SIO_000356 this:{pid}_{uniqid}_Sex_Process ; a sio:SIO_000016 ; a obo:OBI_0000093 ; rdfs:label "Role: Patient for gender assessment"^^xsd_string .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191218142420
+mappingId	source_cde_test20220603101431258908
 target	this:{pid}_{uniqid}_Sex_Process sio:SIO_000229 this:{pid}_{uniqid}_Sex_Output ; a sio:SIO_000006 ; rdfs:label "Process: sex measuring process"^^xsd_string .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191218142425
+mappingId	source_cde_test20220603101431258913
 target	this:{pid}_{uniqid}_Sex_Output sio:SIO_000628 this:{pid}_{uniqid}_Sex_Attribute ; a sio:SIO_000015 ; rdfs:label "Output type: {sexLabel}"^^xsd_string ; sio:SIO_000300 "{sexLabel}"^^xsd_string .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191218142431
+mappingId	source_cde_test20220603101431258918
 target	this:{pid}_{uniqid}_Birthdate_Attribute a sio:SIO_000614 ; a obo:NCIT_C68615 ; rdfs:label "Attribute type: Birth date"^^xsd_string .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191218142437
-target	this:{pid}_{uniqid}_Sex_Attribute a sio:SIO_000614 ; a {sexURI} ; a obo:NCIT_C28421 ; rdfs:label "Attribute type: {sexLabel}"^^xsd_string .
+mappingId	source_cde_test20220603101431258924
+target	this:{pid}_{uniqid}_Sex_Attribute a sio:SIO_000614 ; a <{sexURI}> ; a obo:NCIT_C28421 ; rdfs:label "Attribute type: {sexLabel}"^^xsd_string .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
 ]]

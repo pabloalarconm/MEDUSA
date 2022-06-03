@@ -9,7 +9,7 @@
 # levelspacing: 100
 # edgespacing: 40
 # layout: auto
-# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "foaf_type", "label": "rdf:type" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "foaf_type", "label": "foaf:type" }
 # connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasunit", "label": "sio:has unit" }
 # connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasvalue", "label": "sio:has value" }
 # connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_conformsto", "label": "sio:conforms to" }

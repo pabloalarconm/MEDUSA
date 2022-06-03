@@ -13,13 +13,13 @@ prefixes = dict(
 triplets = [
 
 # Nodes
-["this:$(pid)_$(uniqid)#ID","sio:denotes","this:$(pid)_$(uniqid)#Birthdate_Role","iri"],
-["this:$(pid)_$(uniqid)#Entity","sio:has-role","this:$(pid)_$(uniqid)#Birthdate_Role","iri"],
+["this:$(pid)_$(uniqid)#ID","sio:denotes","this:$(pid)_$(uniqid)#Role","iri"],
+["this:$(pid)_$(uniqid)#Entity","sio:has-role","this:$(pid)_$(uniqid)#Role","iri"],
 
 # Types
 ["this:$(pid)_$(uniqid)#ID","rdf:type","sio:SIO_000115","iri"],
 ["this:$(pid)_$(uniqid)#Entity","rdf:type","sio:SIO_000498","iri"],
-["this:$(pid)_$(uniqid)#Birthdate_Role","rdf:type","obo:OBI_0000093","iri"],
+["this:$(pid)_$(uniqid)#Role","rdf:type","obo:OBI_0000093","iri"],
 
 # Biolink types
 ["this:$(pid)_$(uniqid)#Entity","rdf:type","biolink:Case","iri"],
@@ -38,6 +38,6 @@ config = dict(
   csv_name = "source_1" # parameter only needed in case you pick "csv" as configuration
 )
 
-yarrrml = EMB(config)
-test = yarrrml.transform(prefixes, triplets)
+builder = EMB(config, prefixes, triplets)
+test = builder.transform_YARRRML()
 print(test)

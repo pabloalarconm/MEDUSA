@@ -1,0 +1,40 @@
+@prefix my: <http://example.org/data/> .
+@prefix ns1: <https://w3id.org/biolink/vocab/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix this: <http://example.org/data/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/data/1234567890#Entity> a ns1:Case ;
+    ns1:hasID <http://example.org/data/#ID> .
+
+<http://example.org/data/1234567890#ID> a ns1:ID ;
+    ns1:hasnumerical_value "id_test_2_000000"^^xsd:string .
+
+<http://example.org/data/1234567896#Entity> a ns1:Case ;
+    ns1:hasID <http://example.org/data/#ID> .
+
+<http://example.org/data/1234567896#ID> a ns1:ID ;
+    ns1:hasnumerical_value "id_test_2_000006"^^xsd:string .
+
+<http://example.org/data/1234567897#Entity> a ns1:Case ;
+    ns1:hasID <http://example.org/data/#ID> .
+
+<http://example.org/data/1234567897#ID> a ns1:ID ;
+    ns1:hasnumerical_value "id_test_2_000007"^^xsd:string .
+
+<http://example.org/data/1234567898#Entity> a ns1:Case ;
+    ns1:hasID <http://example.org/data/#ID> .
+
+<http://example.org/data/1234567898#ID> a ns1:ID ;
+    ns1:hasnumerical_value "id_test_2_000008"^^xsd:string .
+
+<http://example.org/data/1234567899#Entity> a ns1:Case ;
+    ns1:hasID <http://example.org/data/#ID> .
+
+<http://example.org/data/1234567899#ID> a ns1:ID ;
+    ns1:hasnumerical_value "id_test_2_000009"^^xsd:string .
+

@@ -7,27 +7,27 @@ xsd:	http://www.w3.org/2001/XMLSchema#
 this:	http://my_example.com/
 
 [MappingDeclaration] @collection [[
-mappingId	source_cde_test20220530191228296546
+mappingId	source_cde_test20220603101449226614
 target	this:{pid}_{uniqid}_ID sio:SIO_000020 this:{pid}_{uniqid}_Care_pathway_Role ; a sio:SIO_000115 ; sio:SIO_000300 "{pid}"^^xsd_string .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191228296564
+mappingId	source_cde_test20220603101449226629
 target	this:{pid}_{uniqid}_Entity sio:SIO_000228 this:{pid}_{uniqid}_Care_pathway_Role ; a sio:SIO_000498 .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191228296571
+mappingId	source_cde_test20220603101449226635
 target	this:{pid}_{uniqid}_Care_pathway_Role sio:SIO_000356 this:{pid}_{uniqid}_Care_pathway_Process ; a sio:SIO_000016 ; a obo:OBI_0000093 ; rdfs:label "Role: First contact patient"^^xsd_string .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191228296578
+mappingId	source_cde_test20220603101449226641
 target	this:{pid}_{uniqid}_Care_pathway_Process sio:SIO_000680 this:{pid}_{uniqid}_Care_pathway_Startdate ; sio:SIO_000681 this:{pid}_{uniqid}_Care_pathway_Enddate ; a sio:SIO_000006 ; a obo:NCIT_C16205 ; a obo:NCIT_C159705 ; rdfs:label "Process: First contact with specialized center"^^xsd_string .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191228296585
+mappingId	source_cde_test20220603101449226647
 target	this:{pid}_{uniqid}_Care_pathway_Startdate a sio:SIO_000031 ; rdfs:label "Startdate: {first_contact_date}"^^xsd_string ; sio:SIO_000300 "{first_contact_date}"^^xsd_date .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 
-mappingId	source_cde_test20220530191228296591
+mappingId	source_cde_test20220603101449226654
 target	this:{pid}_{uniqid}_Care_pathway_Enddate a sio:SIO_000032 ; rdfs:label "Enddate: {first_contact_date}"^^xsd_string ; sio:SIO_000300 "{first_contact_date}"^^xsd_date .
 source	SELECT * FROM mytable #ADD your QUERY HERE
 

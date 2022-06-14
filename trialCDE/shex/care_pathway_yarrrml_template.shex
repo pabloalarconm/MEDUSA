@@ -6,38 +6,41 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX : <http://my_example.com/>
 
 :idShape IRI {
-	sio:SIO_000020 @:carepathwayroleShape ;
+	sio:SIO_000020 @:carePathwayRoleShape ;
 	a [sio:SIO_000115] ;
 	sio:SIO_000300 xsd:string 
-} ;
+}
 
 :entityShape IRI {
-	sio:SIO_000228 @:carepathwayroleShape ;
+	sio:SIO_000228 @:carePathwayRoleShape ;
 	a [sio:SIO_000498] 
-} ;
+}
 
-:carepathwayroleShape IRI {
-	sio:SIO_000356 @:carepathwayprocessShape ;
+:carePathwayRoleShape IRI {
+	sio:SIO_000356 @:carePathwayProcessShape ;
+	a [sio:SIO_000016] ;
 	a [obo:OBI_0000093] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 
-:carepathwayprocessShape IRI {
-	sio:SIO_000680 @:carepathwaystartdateShape ;
-	sio:SIO_000681 @:carepathwayenddateShape ;
+:carePathwayProcessShape IRI {
+	sio:SIO_000680 @:carePathwayStartdateShape ;
+	sio:SIO_000681 @:carePathwayEnddateShape ;
+	a [sio:SIO_000006] ;
+	a [obo:NCIT_C16205] ;
 	a [obo:NCIT_C159705] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 
-:carepathwaystartdateShape IRI {
+:carePathwayStartdateShape IRI {
 	a [sio:SIO_000031] ;
-	rdfs:label xsd:string ;
+	rdfs:label xsd:string? ;
 	sio:SIO_000300 xsd:date 
-} ;
+}
 
-:carepathwayenddateShape IRI {
+:carePathwayEnddateShape IRI {
 	a [sio:SIO_000032] ;
-	rdfs:label xsd:string ;
+	rdfs:label xsd:string? ;
 	sio:SIO_000300 xsd:date 
-} ;
+}
 

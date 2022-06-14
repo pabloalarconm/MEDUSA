@@ -1,0 +1,52 @@
+[PrefixDeclaration]
+rdf:	http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:	http://www.w3.org/2000/01/rdf-schema#
+obo:	http://purl.obolibrary.org/obo/
+sio:	http://semanticscience.org/resource/
+xsd:	http://www.w3.org/2001/XMLSchema#
+biolink:	https://w3id.org/biolink/vocab/
+this:	http://my_example.com/
+
+[MappingDeclaration] @collection [[
+mappingId	source_cde_test20220608105824102120
+target	this:{pid}_{uniqid}#ID sio:SIO_000020 this:{pid}_{uniqid}#Age_Role ; sio:SIO_000020 this:{pid}_{uniqid}#Sex_Role ; a sio:SIO_000115 ; sio:SIO_000300 "{pid}"^^xsd:string .
+source	SELECT * FROM personal_information10
+
+mappingId	source_cde_test20220608105824102137
+target	this:{pid}_{uniqid}#Entity sio:SIO_000228 this:{pid}_{uniqid}#Age_Role ; sio:SIO_000008 this:{pid}_{uniqid}#Age_Attribute ; sio:SIO_000228 this:{pid}_{uniqid}#Sex_Role ; sio:SIO_000008 this:{pid}_{uniqid}#Sex_Attribute ; a sio:SIO_000498 ; a biolink:Case .
+source	SELECT * FROM personal_information10
+
+mappingId	source_cde_test20220608105824102145
+target	this:{pid}_{uniqid}#Age_Role sio:SIO_000356 this:{pid}_{uniqid}#Age_Process ; a sio:SIO_000016 ; a obo:OBI_0000093 ; rdfs:label "Role: Patient for age assessment"^^xsd:string .
+source	SELECT * FROM personal_information10
+
+mappingId	source_cde_test20220608105824102151
+target	this:{pid}_{uniqid}#Age_Process sio:SIO_000229 this:{pid}_{uniqid}#Age_Output ; a sio:SIO_000006 ; a biolink:Procedure ; rdfs:label "Process: age measuring process"^^xsd:string .
+source	SELECT * FROM personal_information10
+
+mappingId	source_cde_test20220608105824102157
+target	this:{pid}_{uniqid}#Age_Output sio:SIO_000628 this:{pid}_{uniqid}#Age_Attribute ; a sio:SIO_000015 ; a biolink:InformationContentEntity ; rdfs:label "Output type: Age"^^xsd:string ; sio:SIO_000300 "{age}"^^xsd:float .
+source	SELECT * FROM personal_information10
+
+mappingId	source_cde_test20220608105824102164
+target	this:{pid}_{uniqid}#Sex_Role sio:SIO_000356 this:{pid}_{uniqid}#Sex_Process ; a sio:SIO_000016 ; a obo:OBI_0000093 ; rdfs:label "Role: Patient for gender assessment"^^xsd:string .
+source	SELECT * FROM personal_information10
+
+mappingId	source_cde_test20220608105824102170
+target	this:{pid}_{uniqid}#Sex_Process sio:SIO_000229 this:{pid}_{uniqid}#Sex_Output ; a sio:SIO_000006 ; a biolink:Procedure ; rdfs:label "Process: sex measuring process"^^xsd:string .
+source	SELECT * FROM personal_information10
+
+mappingId	source_cde_test20220608105824102176
+target	this:{pid}_{uniqid}#Sex_Output sio:SIO_000628 this:{pid}_{uniqid}#Sex_Attribute ; a sio:SIO_000015 ; a biolink:InformationContentEntity ; rdfs:label "Output type: {sexLabel}"^^xsd:string ; sio:SIO_000300 "{sexLabel}"^^xsd:string .
+source	SELECT * FROM personal_information10
+
+mappingId	source_cde_test20220608105824102183
+target	this:{pid}_{uniqid}#Age_Attribute a sio:SIO_000614 ; a obo:NCIT_C25150 ; a biolink:Attribute ; rdfs:label "Attribute type: Age"^^xsd:string .
+source	SELECT * FROM personal_information10
+
+mappingId	source_cde_test20220608105824102189
+target	this:{pid}_{uniqid}#Sex_Attribute a sio:SIO_000614 ; a <{sexURI}> ; a obo:NCIT_C28421 ; a biolink:Attribute ; a biolink:BiologicalSex ; rdfs:label "Attribute type: {sexLabel}"^^xsd:string .
+source	SELECT * FROM personal_information10
+
+]]
+

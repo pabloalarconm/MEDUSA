@@ -1,0 +1,67 @@
+[PrefixDeclaration]
+rdf:	http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:	http://www.w3.org/2000/01/rdf-schema#
+obo:	http://purl.obolibrary.org/obo/
+sio:	http://semanticscience.org/resource/
+xsd:	http://www.w3.org/2001/XMLSchema#
+this:	http://my_example.com/
+
+[MappingDeclaration] @collection [[
+mappingId	source_cde_test20220609103720074557
+target	this:{pid}_{uniqid}_ID sio:SIO_000020 this:{pid}_{uniqid}_Treatment_role ; a sio:SIO_000115 ; sio:SIO_000300 "{pid}"^^xsd:string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074575
+target	this:{pid}_{uniqid}_Entity sio:SIO_000228 this:{pid}_{uniqid}_Treatment_role ; a sio:SIO_000498 .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074581
+target	this:{pid}_{uniqid}_Treatment_role sio:SIO_000356 this:{pid}_{uniqid}_Drug_intake_process ; sio:SIO_000356 this:{pid}_{uniqid}_Drug_prescription_process ; a sio:SIO_000016 ; a obo:OBI_0000093 ; rdfs:label "Role: Patient"^^xsd:string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074588
+target	this:{pid}_{uniqid}_Drug_intake_process sio:CHEMINF_000047 this:{pid}_{uniqid}_Prescription_output ; sio:SIO_000680 this:{pid}_{uniqid}_Treatment_startdate ; sio:SIO_000681 this:{pid}_{uniqid}_Treatment_enddate ; sio:SIO_000230 this:{pid}_{uniqid}_Administration_input ; sio:SIO_000139 this:{pid}_{uniqid}_Drug ; a obo:NCIT_C25538 ; rdfs:label "Process: Drug intake"^^xsd:string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074595
+target	this:{pid}_{uniqid}_Drug_prescription_process sio:SIO_000229 this:{pid}_{uniqid}_Prescription_output ; a obo:NCIT_C111077 ; rdfs:label "Process: Drug prescription"^^xsd:string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074601
+target	this:{pid}_{uniqid}_Prescription_output sio:SIO_000628 this:{pid}_{uniqid}_Drug ; sio:SIO_000628 this:{pid}_{uniqid}_Dose ; a sio:SIO_000015 ; a obo:NCIT_C28180 ; rdfs:label "Prescription"^^xsd:string ; rdfs:comment "{comments}"^^xsd:string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074608
+target	this:{pid}_{uniqid}_Dose sio:SIO_000221 this:{pid}_{uniqid}_Unit ; sio:SIO_000900 this:{pid}_{uniqid}_Frequency ; a obo:NCIT_C25488 ; rdfs:label "Dose"^^xsd:string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074613
+target	{med_atc_uri} sio:SIO_000313 this:{pid}_{uniqid}_Drug ; a obo:NCIT_C177929 ; a <{med_atc_type}> ; rdfs:label "Drug component: {med_atc_label}"^^xsd:string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074619
+target	this:{pid}_{uniqid}_Treatment_startdate a sio:SIO_000031 ; rdfs:label "Startdate: {startdate}"^^xsd:string ; sio:SIO_000300 "{startdate}"^^xsd:date .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074625
+target	this:{pid}_{uniqid}_Treatment_enddate a sio:SIO_000032 ; rdfs:label "Enddate: {enddate}"^^xsd:string ; sio:SIO_000300 "{enddate}"^^xsd:date .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074630
+target	this:{pid}_{uniqid}_Administration_input a sio:SIO_000015 ; a <{routeURI}> ; rdfs:label "Route of administration: {routeLabel}"^^xsd:string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074635
+target	this:{pid}_{uniqid}_Unit a <{unitURI}> ; rdfs:label "Unit: {unitLabel}"^^xsd:string .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074640
+target	this:{pid}_{uniqid}_Drug a sio:SIO_010038 ; rdfs:label "Drug"^^xsd:string ; sio:SIO_000300 "{dose}"^^xsd:float .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+mappingId	source_cde_test20220609103720074645
+target	this:{pid}_{uniqid}_Frequency a <{freqURI}> ; rdfs:label "Frequency: {freqLabel}"^^xsd:string ; sio:SIO_000300 "{freq}"^^xsd:integer .
+source	SELECT * FROM mytable #ADD your QUERY HERE
+
+]]
+

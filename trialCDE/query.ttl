@@ -1,0 +1,209 @@
+# CDE Query 
+
+
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  obo: <http://purl.obolibrary.org/obo/>
+PREFIX  sio: <http://semanticscience.org/resource/>
+PREFIX  xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX  biolink: <https://w3id.org/biolink/vocab/>
+PREFIX  this: <http://my_example.com/>
+SELECT distinct ?identifier ?age ?sex_label
+WHERE { 
+
+    #Age
+    ?id sio:SIO_000020 ?role_age .
+    ?id a sio:SIO_000115 .
+    ?id sio:SIO_000300 ?identifier .
+    ?person sio:SIO_000228 ?role_age .
+    ?person sio:SIO_000008 ?attribute_age .
+    ?person a sio:SIO_000498 .
+    ?person a biolink:Case .
+    ?role_age sio:SIO_000356 ?process_age .
+    ?role_age a sio:SIO_000016 .
+    ?role_age a obo:OBI_0000093 .
+    ?process_age sio:SIO_000229 ?output_age .
+    ?process_age a biolink:Procedure .
+    ?process_age a sio:SIO_000006 .
+    ?output_age sio:SIO_000628 ?attribute_age .
+    ?output_age a sio:SIO_000015 .
+    ?output_age a biolink:InformationContentEntity .
+    ?output_age sio:SIO_000300 ?age . # age value
+    ?attribute_age a sio:SIO_000614 .
+    ?attribute_age a obo:NCIT_C25150 . #age term
+    ?attribute_age a biolink:Attribute .
+    
+    #Sex
+    ?id sio:SIO_000020 ?role_sex .
+    ?person sio:SIO_000228 ?role_sex .
+    ?person sio:SIO_000008 ?attribute_sex .
+    ?role_sex sio:SIO_000356 ?process_sex .
+    ?role_sex a sio:SIO_000016 .
+    ?role_sex a obo:OBI_0000093 .
+    ?process_sex sio:SIO_000229 ?output_sex .
+    ?process_sex a sio:SIO_000006 .
+    ?process_sex a biolink:Procedure .
+    ?output_sex sio:SIO_000628 ?attribute_sex .
+    ?output_sex a sio:SIO_000015 .
+    ?output_sex a biolink:InformationContentEntity .
+    ?output_sex sio:SIO_000300 ?sex_label . # sex value text
+    ?attribute_sex a sio:SIO_000614 .
+    ?attribute_sex a obo:NCIT_C28421 . # Sex term
+    # ?attribute_sex a ?sexuri . # sex uri value
+    # ?attribute_sex a biolink:BiologicalSex .
+    # ?attrrbute_sex a biolink:Attribute .
+    
+}
+
+
+# Without bnode:
+
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  obo: <http://purl.obolibrary.org/obo/>
+PREFIX  sio: <http://semanticscience.org/resource/>
+PREFIX  xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX  biolink: <https://w3id.org/biolink/vocab/>
+PREFIX  this: <http://my_example.com/>
+PREFIX blowl: <https://w3id.org/c-path/biolink_sdtm_owl/>
+CONSTRUCT {
+    blowl:SUBJECT a biolink:Case .
+    blowl:SUBJECT biolink:id ?identifier .
+    
+    # AGE:
+    blowl:SUBJECT biolink:has_attribute blowl:AGE .
+    blowl:AGE a biolink:Attribute .
+    blowl:AGE biolink:has_quantitave_value biolink:QuantityValue .
+    biolink:QuantityValue biolink:has_quantitave_value ?age .
+    biolink:QuantityValue biolink:has_unit "YEARS"^^xsd:string .
+    
+    #SEX:
+    blowl:SUBJECT biolink:has_attribute blowl:SEX .
+    blowl:SEX a biolink:BiologicalSex.
+    blowl:SEX biolink:has_quantitave_value ?sex_label .
+    
+}WHERE { 
+    #Age
+    ?id sio:SIO_000020 ?role_age .
+    ?id a sio:SIO_000115 .
+    ?id sio:SIO_000300 ?identifier .
+    ?person sio:SIO_000228 ?role_age .
+    ?person sio:SIO_000008 ?attribute_age .
+    ?person a sio:SIO_000498 .
+    ?person a biolink:Case .
+    ?role_age sio:SIO_000356 ?process_age .
+    ?role_age a sio:SIO_000016 .
+    ?role_age a obo:OBI_0000093 .
+    ?process_age sio:SIO_000229 ?output_age .
+    ?process_age a biolink:Procedure .
+    ?process_age a sio:SIO_000006 .
+    ?output_age sio:SIO_000628 ?attribute_age .
+    ?output_age a sio:SIO_000015 .
+    ?output_age a biolink:InformationContentEntity .
+    ?output_age sio:SIO_000300 ?age . # age value
+    ?attribute_age a sio:SIO_000614 .
+    ?attribute_age a obo:NCIT_C25150 . #age term
+    ?attribute_age a biolink:Attribute .
+    
+    #Sex
+    ?id sio:SIO_000020 ?role_sex .
+    ?person sio:SIO_000228 ?role_sex .
+    ?person sio:SIO_000008 ?attribute_sex .
+    ?role_sex sio:SIO_000356 ?process_sex .
+    ?role_sex a sio:SIO_000016 .
+    ?role_sex a obo:OBI_0000093 .
+    ?process_sex sio:SIO_000229 ?output_sex .
+    ?process_sex a sio:SIO_000006 .
+    ?process_sex a biolink:Procedure .
+    ?output_sex sio:SIO_000628 ?attribute_sex .
+    ?output_sex a sio:SIO_000015 .
+    ?output_sex a biolink:InformationContentEntity .
+    ?output_sex sio:SIO_000300 ?sex_label . # sex value text
+    # ?attribute_sex a sio:SIO_000614 .
+    # ?attribute_sex a obo:NCIT_C28421 . # Sex term
+    # ?attribute_sex a ?sexuri . # sex uri value
+    # ?attribute_sex a biolink:BiologicalSex .
+    # ?attrrbute_sex a biolink:Attribute .
+}
+
+
+# with bnode:
+
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  obo: <http://purl.obolibrary.org/obo/>
+PREFIX  sio: <http://semanticscience.org/resource/>
+PREFIX  xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX  biolink: <https://w3id.org/biolink/vocab/>
+PREFIX  this: <http://my_example.com/>
+PREFIX blowl: <https://w3id.org/c-path/biolink_sdtm_owl/>
+
+
+
+CONSTRUCT {
+    _:SUBJECT a biolink:Case .
+    _:SUBJECT biolink:id ?identifier .
+    
+    # AGE:
+    _:SUBJECT biolink:has_attribute _:AGE .
+    _:AGE a biolink:Attribute .
+    _:AGE biolink:has_quantitave_value _:QuantityValue .
+    _:QuantityValue biolink:has_quantitave_value ?age .
+    _:QuantityValue biolink:has_unit "YEARS"^^xsd:string .
+    
+    #SEX:
+    _:SUBJECT biolink:has_attribute _:SEX .
+    _:SEX a biolink:BiologicalSex.
+    _:SEX biolink:has_quantitave_value ?sex_label .
+
+} WHERE { 
+
+    #Age
+    ?id sio:SIO_000020 ?role_age .
+    ?id a sio:SIO_000115 .
+    ?id sio:SIO_000300 ?identifier .
+    ?person sio:SIO_000228 ?role_age .
+    ?person sio:SIO_000008 ?attribute_age .
+    ?person a sio:SIO_000498 .
+    ?person a biolink:Case .
+    ?role_age sio:SIO_000356 ?process_age .
+    ?role_age a sio:SIO_000016 .
+    ?role_age a obo:OBI_0000093 .
+    ?process_age sio:SIO_000229 ?output_age .
+    ?process_age a biolink:Procedure .
+    ?process_age a sio:SIO_000006 .
+    ?output_age sio:SIO_000628 ?attribute_age .
+    ?output_age a sio:SIO_000015 .
+    ?output_age a biolink:InformationContentEntity .
+    ?output_age sio:SIO_000300 ?age . # age value
+    ?attribute_age a sio:SIO_000614 .
+    ?attribute_age a obo:NCIT_C25150 . #age term
+    ?attribute_age a biolink:Attribute .
+    
+    #Sex
+    ?id sio:SIO_000020 ?role_sex .
+    ?person sio:SIO_000228 ?role_sex .
+    ?person sio:SIO_000008 ?attribute_sex .
+    ?role_sex sio:SIO_000356 ?process_sex .
+    ?role_sex a sio:SIO_000016 .
+    ?role_sex a obo:OBI_0000093 .
+    ?process_sex sio:SIO_000229 ?output_sex .
+    ?process_sex a sio:SIO_000006 .
+    ?process_sex a biolink:Procedure .
+    ?output_sex sio:SIO_000628 ?attribute_sex .
+    ?output_sex a sio:SIO_000015 .
+    ?output_sex a biolink:InformationContentEntity .
+    ?output_sex sio:SIO_000300 ?sex_label . # sex value text
+    # ?attribute_sex a sio:SIO_000614 .
+    # ?attribute_sex a obo:NCIT_C28421 . # Sex term
+    # ?attribute_sex a ?sexuri . # sex uri value
+    # ?attribute_sex a biolink:BiologicalSex .
+    # ?attrrbute_sex a biolink:Attribute .
+    
+}

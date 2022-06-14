@@ -35,11 +35,11 @@ class EMB():
                 s, p, o = tri
                 if not s in self.tree.keys():
                     map = dict()
-                    map.update({s:{p:o}}) 
+                    map.update({s:[[p,o]]}) 
                     self.tree.update(map)
                 else:
-                    po = {p:o} 
-                    self.tree[s].update(po)
+                    po = [p,o]  
+                    self.tree[s].append(po)
             return self.tree
         elif model == "YARRRML":
             for quad in data:
@@ -148,18 +148,43 @@ class EMB():
         # triplets curation:
         for quad in self.triplets:
             s,p,o,d = quad
-            if s.startswith(basicURI + ":" ): # Get rid of the whole URI, only focused on representative name's node
-                s_curated = s[::-1].partition(")")[0]
-                s_curated = s_curated.replace("_","")
-                s_curated = s_curated.replace("/","")
-                s_curated = s_curated[::-1]
-                s_curated = ":" + s_curated.lower() + "Shape"
+            if s.startswith(basicURI + ":" ):
+                # Select shape's name removing the rest of the IRI:
+                s_curated = s.split(")")[-1]
+                s_list = s_curated.split('_')
+                if "" in s_list:
+                    s_list.remove("")
+                # Using standard to name the shape properly:
+                statement = ":"
+                if len(s_list) >= 2:
+                    statement = statement + s_list[0].lower()
+                    for sl in s_list[1:]:
+                        statement = statement + sl[0].upper() + sl[1:].lower()
+                    statement = statement + "Shape"
+                else:
+                    statement =  statement + s_list[-1].lower() + "Shape"
+                s_curated = statement
+
             elif s.startswith("$("):
+                # Removing data innput references:
                 s_curated = s.replace("$(","")
                 s_curated = s_curated.replace(")","")
-                s_curated = s_curated.replace("_","")
-                s_curated = s_curated.replace("/","")
-                s_curated = ":" + s_curated.lower() + "Shape"
+                
+                s_list = s_curated.split('_')
+                if "" in s_list:
+                    s_list.remove("")
+
+                # Using standard to name the shape properly:
+                statement = "@:"
+                if len(s_list) >= 2:
+                    statement = statement + s_list[0].lower()
+                    for sl in s_list[1:]:
+                        statement = statement + sl[0].upper() + sl[1:].lower()
+                    statement = statement + "Shape"
+                else:
+                    statement =  ":"+ s_list[-1].lower() + "Shape"
+                s_curated = statement
+
             elif s.startswith("http"): # Right syntax in case of IRI
                 s_curated = "<" + s + ">"
             else:
@@ -174,23 +199,52 @@ class EMB():
                 o_curated = d
             else:
                 if o.startswith(basicURI + ":" ):
-                    o_curated = o[::-1].partition(")")[0]
-                    o_curated = o_curated.replace("_","")
-                    o_curated = o_curated.replace("/","")
-                    o_curated = o_curated[::-1]
-                    o_curated = "@:" + o_curated.lower() + "Shape"
+                    # Select shape's name removing the rest of the IRI:
+                    o_curated = o.split(")")[-1]
+                    o_list = o_curated.split('_')
+                    if "" in o_list:
+                        o_list.remove("")
+
+                    # Using standard to name the shape properly:
+                    statement = "@:"
+                    if len(o_list) >= 2:
+                        statement = statement + o_list[0].lower()
+                        for ol in o_list[1:]:
+                            statement = statement + ol[0].upper() + ol[1:].lower()
+                        statement = statement + "Shape"
+                    else:
+                        statement =  statement + o_list[-1].lower() + "Shape"
+                    o_curated = statement
+
                 elif o.startswith("$("):
+                    # Removing data input references:
                     o_curated = o.replace("$(","")
                     o_curated = o_curated.replace(")","")
-                    o_curated = o_curated.replace("_","")
-                    o_curated = o_curated.replace("/","")
-                    o_curated = "@:" + o_curated.lower() + "Shape"
+        
+                    o_list = o_curated.split('_')
+                    if "" in o_list:
+                        o_list.remove("")
+
+                    # Using standard to name the shape properly:
+                    statement = "@:"
+                    if len(o_list) >= 2:
+                        statement = statement + o_list[0].lower()
+                        for ol in o_list[1:]:
+                            statement = statement + ol[0].upper() + ol[1:].lower()
+                        statement = statement + "Shape"
+                    else:
+                        statement =  statement + o_list[-1].lower() + "Shape"
+
+                    o_curated = statement
+
                 elif "$(" in o and d == "iri":
                     o_curated = "IRI"
                 elif o.startswith("http"):
                     o_curated = "IRI"
                 else:
                     o_curated = o
+            if p_curated == "rdfs:label" and d == "xsd:string" and self.config["configuration"] == "ejp":
+                o_curated = "xsd:string?"
             
             triplet = [s_curated,p_curated,o_curated]
             self.triplets_curated.append(triplet) # Append curated triplets
@@ -199,23 +253,325 @@ class EMB():
         self.tree = self.xmas_tree(self.triplets_curated,"ShEx") # Transform your data into a subject-sorted dictionary
 
         # triplets into ShEx:
-        for s in self.tree:
-            subj= "\n" + s + " IRI {"
+        for s in self.tree.items():
+            
+            subj= "\n" + s[0] + " IRI {"
             self.all = self.all + subj
-            for p,o in self.tree[s].items():
-                if o.startswith("@") or o.startswith("xsd"):
-                    pred_obj = "\n" + "\t" + p + " " + o + " ;"
-                elif o == "IRI":
-                    pred_obj = "\n" + "\t" + p + " " + o + " ;"
+            # for p,o in self.tree.items():
+            for l in s[1]:
+                if l[1].startswith("@") or l[1].startswith("xsd") or l[1] == "IRI":
+                    pred_obj = "\n" + "\t" + l[0] + " " + l[1] + " ;"
                 else:
-                    pred_obj = "\n" + "\t" + p + " [" + o + "]" + " ;"
+                    pred_obj = "\n" + "\t" + l[0] + " [" + l[1] + "]" + " ;"
                 self.all = self.all + pred_obj
             self.all = self.all[:-1]
-            end = "\n" + "} ;" + "\n"
+            end = "\n" + "}" + "\n"
             self.all = self.all + end
         return self.all
 
-    # def transform_RML(self):
+
+    def transform_OBDA(self):
+        """
+        Transform your triplets and prefixes inputs into OBDA (Ontology-Based Database Access).
+        """
+        self.amaia_OBDA = ""
+        self.tree = dict() # Reset tree object
+        self.triplets_curated = list()
+
+        # Prefixes:
+        self.amaia_OBDA = self.amaia_OBDA + "[PrefixDeclaration]" + "\n"
+        for k,v in self.prefixes.items():
+            prefix = k + ":" + "\t" + v
+            self.amaia_OBDA = self.amaia_OBDA + prefix + "\n"
+
+        # Triplets preproccesing:
+        for quad in self.triplets:
+            s,p,o,d = quad
+
+            if '$(' in s:   # Change reference syntax to OBDA
+                s_curated = s.replace('$(', '{')
+                s_curated = s_curated.replace(")" , "}")
+            else:
+                s_curated = s
+
+            if p == "rdf:type": # Turn rdf:type into "a" statement
+                p_curated = "a"
+            else:
+                p_curated = p
+
+            if '$(' in o:   # Change reference syntax to OBDA
+                o_curated = o.replace('$(', '{')
+                o_curated = o_curated.replace(")" , "}")
+                if o.startswith("$(") and d == "iri":
+                    o_curated = "<" + o_curated + ">"
+            else:
+                o_curated = o
+
+            triplet = [s_curated,p_curated,o_curated,d]
+            self.triplets_curated.append(triplet) # Append curated triplets
+
+        # X-tree object
+        self.tree = self.xmas_tree(self.triplets_curated,"YARRRML") # Use same structure than YARRRML
+
+        # OBDA build
+        self.amaia_OBDA = self.amaia_OBDA + "\n" + "[MappingDeclaration] @collection [[" + "\n"
+        for t in self.tree.items():
+            self.amaia_OBDA = self.amaia_OBDA + "mappingId"	+ "\t" + self.config["source_name"] + milisec() + "\n" # milisec for unique mappingId objects
+            self.amaia_OBDA = self.amaia_OBDA + "target" + "\t" + t[0]
+
+            for l in t[1]:
+                if not l[2] == "iri":
+                    self.amaia_OBDA = self.amaia_OBDA +  " " + l[0] + " " + '"' + l[1]+ '"' + "^^" + l[2] + " ;"
+                else:
+                    self.amaia_OBDA = self.amaia_OBDA +  " " + l[0] + " " + l[1] + " ;"
+
+            self.amaia_OBDA = self.amaia_OBDA + " ."
+            self.amaia_OBDA = self.amaia_OBDA + "\n" + "source" + "\t" "SELECT * FROM mytable #ADD your QUERY HERE" + "\n" + "\n"
+
+        self.amaia_OBDA = self.amaia_OBDA + "]]" + "\n"
+        self.amaia_OBDA = self.amaia_OBDA.replace( "; .", ".")
+        return self.amaia_OBDA
+
+
+    def transform_SPARQL(self, basicURI):
+
+        self.amaia_SPARQL = ""
+        # Prefixes:
+        for k,v in self.prefixes.items():
+            self.amaia_SPARQL = self.amaia_SPARQL + "PREFIX " + k + ": " + "<" + v + ">" + "\n"
+
+        self.amaia_SPARQL = self.amaia_SPARQL + "SELECT DISTINCT *" + "\n" + "WHERE {" + "\n"
+
+        # Triplets preproccesing:
+        for quad in self.triplets:
+            s,p,o,d = quad
+
+            # For subject:
+            if s.startswith("$("): # If subject is a data input reference:
+                s_curated = s.replace("$(","")
+                s_curated = s_curated.replace(")","")
+
+                #Removing separators from the text, only words
+                s_list = s_curated.split('_')
+                if "" in s_list:
+                    s_list.remove("")
+                
+                # creating the proper statement:
+                statement = "?"
+                for sl in s_list:
+                    statement = statement + sl.lower()
+                s_curated = statement      
+
+            elif s.startswith(basicURI + ":"): # If subject start with the basic URI (most probable)
+                if "$(" in s: # Contains any uniqid inside URL:
+                    s_curated = s.split(")")[-1] # Get only the last part without references
+                if "/" in s_curated:
+                    s_curated = s.split("/")[-1] # Get only last part without /
+
+                s_list = s_curated.split('_')
+                if "" in s_list:
+                    s_list.remove("")
+
+                # creating the proper statement:
+                statement = "?"
+                for sl in s_list:
+                    statement = statement + sl.lower()
+                s_curated = statement 
+
+            elif s.startswith("http"):
+                s_curated = "<" + s + ">"
+            else:
+                s_curated = s 
+            
+            # For predicate:
+            if p == "rdf:type": # Turn rdf:type into "a" statement
+                p_curated = "a"
+            else:
+                p_curated = p
+
+            # For object and datatype:
+            if not str(d) == "iri": # At non-IRI objects, all you need is the datatype
+                o_curated = d
+            else:
+                if o.startswith("$("): # If subject is a data input reference:
+                    o_curated = o.replace("$(","")
+                    o_curated = o_curated.replace(")","")
+
+                    #Removing separators from the text, only words
+                    o_list = o_curated.split('_')
+                    if "" in o_list:
+                        o_list.remove("")
+
+                    # creating the proper statement:
+                    statement = "?"
+                    for ol in o_list:
+                        statement = statement + ol.lower()
+                    o_curated = statement 
+
+                elif o.startswith(basicURI + ":"): # If subject start with the basic URI (most probable)
+                    if "$(" in o: # Contains any uniqid inside URL:
+                        o_curated = o.split(")")[-1] # Get only the last part without references
+                    if "/" in o_curated:
+                        o_curated = o.split("/")[-1] # Get only last part without /
+
+                    o_list = o_curated.split('_')
+                    if "" in o_list:
+                        o_list.remove("")
+
+                    # creating the proper statement:
+                    statement = "?"
+                    for ol in o_list:
+                        statement = statement + ol.lower()
+                    o_curated = statement 
+                    
+                elif o.startswith("http"):
+                    o_curated = "<" + o + ">"
+                else:
+                    o_curated = o 
+            
+            self.amaia_SPARQL = self.amaia_SPARQL + "\t" +  s_curated + " " + p_curated + " " + o_curated + " ." + "\n"
+        self.amaia_SPARQL = self.amaia_SPARQL + "}" + "\n"
+        return self.amaia_SPARQL
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+prefixes = dict(
+  rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ,
+  rdfs = "http://www.w3.org/2000/01/rdf-schema#" ,
+  obo = "http://purl.obolibrary.org/obo/" ,
+  sio = "http://semanticscience.org/resource/" ,
+  xsd = "http://www.w3.org/2001/XMLSchema#",
+  this = "http://my_example.com/")
+
+
+triplets = [
+
+# Nodes
+["this:$(pid)_$(uniqid)_ID","sio:SIO_000020","this:$(pid)_$(uniqid)_Status_Role","iri"],
+["this:$(pid)_$(uniqid)_Entity","sio:SIO_000228","this:$(pid)_$(uniqid)_Status_Role","iri"],
+["this:$(pid)_$(uniqid)_Entity","sio:SIO_000008","this:$(pid)_$(uniqid)_Status_Attribute","iri"],
+["this:$(pid)_$(uniqid)_Status_Role","sio:SIO_000356","this:$(pid)_$(uniqid)_Status_Process","iri"],
+["this:$(pid)_$(uniqid)_Status_Process","sio:SIO_000229","this:$(pid)_$(uniqid)_Status_Output","iri"],
+["this:$(pid)_$(uniqid)_Status_Process","sio:SIO_000680","this:$(pid)_$(uniqid)_Status_Startdate","iri"],
+["this:$(pid)_$(uniqid)_Status_Process","sio:SIO_000681","this:$(pid)_$(uniqid)_Status_Enddate","iri"],
+["this:$(pid)_$(uniqid)_Status_Output","sio:SIO_000628","this:$(pid)_$(uniqid)_Status_Attribute","iri"],
+
+["this:$(pid)_$(uniqid)_Entity","sio:SIO_000008","this:$(pid)_$(uniqid)_Death_information_Attribute","iri"],
+["this:$(pid)_$(uniqid)_Status_Role","sio:SIO_000356","this:$(pid)_$(uniqid)_Death_information_Process","iri"],
+["this:$(pid)_$(uniqid)_Death_information_Process","sio:SIO_000229","this:$(pid)_$(uniqid)_Death_information_Output","iri"],
+["this:$(pid)_$(uniqid)_Death_information_Output","sio:SIO_000628","this:$(pid)_$(uniqid)_Death_information_Attribute","iri"],
+
+# Types
+["this:$(pid)_$(uniqid)_ID","rdf:type","sio:SIO_000115","iri"],
+["this:$(pid)_$(uniqid)_Entity","rdf:type","sio:SIO_000498","iri"],
+["this:$(pid)_$(uniqid)_Status_Role","rdf:type","sio:SIO_000016","iri"],
+["this:$(pid)_$(uniqid)_Status_Role","rdf:type","obo:OBI_0000093","iri"],
+["this:$(pid)_$(uniqid)_Status_Process","rdf:type","sio:SIO_001052","iri"],
+["this:$(pid)_$(uniqid)_Status_Process","rdf:type","sio:SIO_000006","iri"],
+["this:$(pid)_$(uniqid)_Status_Output","rdf:type","sio:SIO_000015","iri"],
+["this:$(pid)_$(uniqid)_Status_Attribute","rdf:type","sio:SIO_000614","iri"],
+["this:$(pid)_$(uniqid)_Status_Attribute","rdf:type","obo:NCIT_C166244","iri"],
+["this:$(pid)_$(uniqid)_Status_Attribute","rdf:type","$(status_uri)","iri"],
+["this:$(pid)_$(uniqid)_Status_Startdate","rdf:type","sio:SIO_000031","iri"],
+["this:$(pid)_$(uniqid)_Status_Enddate","rdf:type","sio:SIO_000032","iri"],
+
+["this:$(pid)_$(uniqid)_Death_information_Process","rdf:type","sio:SIO_000006","iri"],
+["this:$(pid)_$(uniqid)_Death_information_Output","rdf:type","sio:SIO_000015","iri"],
+["this:$(pid)_$(uniqid)_Death_information_Attribute","rdf:type","sio:SIO_000614","iri"],
+["this:$(pid)_$(uniqid)_Death_information_Attribute","rdf:type","obo:NCIT_C70810","iri"],
+
+# Labels
+["this:$(pid)_$(uniqid)_Status_Role","rdfs:label","Role: Patient for status recording","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Process","rdfs:label","Process: Status recording process","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Startdate","rdfs:label","Startdate: $(date)","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Enddate","rdfs:label","Enddate: $(date)","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Output","rdfs:label","Output type: $(status_label)","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Attribute","rdfs:label","Attribute type: $(status_label)","xsd:string"],
+["this:$(pid)_$(uniqid)_Death_information_Process","rdfs:label","Process: Death information recording process","xsd:string"],
+["this:$(pid)_$(uniqid)_Death_information_Output","rdfs:label","Output type: Patient death information","xsd:string"],
+["this:$(pid)_$(uniqid)_Death_information_Attribute","rdfs:label","Attribute type: Date of death","xsd:string"],
+
+# Values
+["this:$(pid)_$(uniqid)_ID","sio:SIO_000300","$(pid)","xsd:string"],
+["this:$(pid)_$(uniqid)_Status_Output","sio:SIO_000300","$(status_label)","xsd:string"],
+["this:$(pid)_$(uniqid)_Death_information_Output","sio:SIO_000300","$(death_date)","xsd:date"],
+["this:$(pid)_$(uniqid)_Status_Startdate","sio:SIO_000300","$(date)","xsd:date"],
+["this:$(pid)_$(uniqid)_Status_Enddate","sio:SIO_000300","$(date)","xsd:date"]]
+
+
+
+config = dict(
+  source_name = "source_cde_test",
+  configuration = "ejp",    # Two options for this parameter:
+                            # ejp: it defines CDE-in-a-Box references, being compatible with this workflow  
+                            # csv: No workflow defined, set the source configuration for been used by CSV as data source
+                            
+  csv_name = "source_1" # parameter only needed in case you pick "csv" as configuration
+)
+
+yarrrml = EMB(config, prefixes,triplets)
+
+# test = yarrrml.transform_ShEx("this")
+# print(test)
+
+# test2 = yarrrml.transform_YARRRML()
+# print(test2)
+
+# test2 = yarrrml.transform_OBDA()
+# print(test2)
+
+test3 = yarrrml.transform_SPARQL("this")
+print(test3)
+
+
+
+# def transform_RML(self):
     #     """
     #     Transform your input triplets, prefixes into YARRRML based on your configuration input dictionary.
     #     """
@@ -296,154 +652,3 @@ class EMB():
     #         g.add((obj, rr.termType, Literal(i[3])))  # TODO       
 
     #     print(g.serialize(format="ttl"))
-
-            
-    def transform_OBDA(self):
-        """
-        Transform your triplets and prefixes inputs into OBDA (Ontology-Based Database Access).
-        """
-        self.amaia_OBDA = ""
-        self.tree = dict() # Reset tree object
-        self.triplets_curated = list()
-
-        # Prefixes:
-        self.amaia_OBDA = self.amaia_OBDA + "[PrefixDeclaration]" + "\n"
-        for k,v in self.prefixes.items():
-            prefix = k + ":" + "\t" + v
-            self.amaia_OBDA = self.amaia_OBDA + prefix + "\n"
-
-        # Triplets preproccesing:
-        for quad in self.triplets:
-            s,p,o,d = quad
-
-            if '$(' in s:   # Change reference syntax to OBDA
-                s_curated = s.replace('$(', '{')
-                s_curated = s_curated.replace(")" , "}")
-            else:
-                s_curated = s
-
-            if p == "rdf:type": # Turn rdf:type into "a" statement
-                p_curated = "a"
-            else:
-                p_curated = p
-
-            if '$(' in o:   # Change reference syntax to OBDA
-                o_curated = o.replace('$(', '{')
-                o_curated = o_curated.replace(")" , "}")
-                if o.startswith("$(") and d == "iri":
-                    o_curated = "<" + o_curated + ">"
-            else:
-                o_curated = o
-
-            triplet = [s_curated,p_curated,o_curated,d]
-            self.triplets_curated.append(triplet) # Append curated triplets
-
-        # X-tree object
-        self.tree = self.xmas_tree(self.triplets_curated,"YARRRML") # Use same structure than YARRRML
-
-        # OBDA build
-        self.amaia_OBDA = self.amaia_OBDA + "\n" + "[MappingDeclaration] @collection [[" + "\n"
-        for t in self.tree.items():
-            self.amaia_OBDA = self.amaia_OBDA + "mappingId"	+ "\t" + self.config["source_name"] + milisec() + "\n" # milisec for unique mappingId objects
-            self.amaia_OBDA = self.amaia_OBDA + "target" + "\t" + t[0]
-
-            for l in t[1]:
-                if not l[2] == "iri":
-                    l[2] = l[2].replace(" ", "") # TODO Check spec for string to solve this convertion
-                    l[2] = l[2].replace(":", "_") # TODO Check spec for string to solve this convertion
-                    self.amaia_OBDA = self.amaia_OBDA +  " " + l[0] + " " + '"' + l[1]+ '"' + "^^" + l[2] + " ;"
-                else:
-                    self.amaia_OBDA = self.amaia_OBDA +  " " + l[0] + " " + l[1] + " ;"
-
-            self.amaia_OBDA = self.amaia_OBDA + " ."
-            self.amaia_OBDA = self.amaia_OBDA + "\n" + "source" + "\t" "SELECT * FROM mytable #ADD your QUERY HERE" + "\n" + "\n"
-
-        self.amaia_OBDA = self.amaia_OBDA + "]]" + "\n"
-        self.amaia_OBDA = self.amaia_OBDA.replace( "; .", ".")
-        return self.amaia_OBDA
-        
-
-prefixes = dict(
-  rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ,
-  rdfs = "http://www.w3.org/2000/01/rdf-schema#" ,
-  obo = "http://purl.obolibrary.org/obo/" ,
-  sio = "http://semanticscience.org/resource/" ,
-  xsd = "http://www.w3.org/2001/XMLSchema#",
-  this = "http://my_example.com/")
-
-
-triplets = [
-
-# Nodes
-["this:$(pid)_$(uniqid)_ID","sio:SIO_000020","this:$(pid)_$(uniqid)_Status_Role","iri"],
-["this:$(pid)_$(uniqid)_Entity","sio:SIO_000228","this:$(pid)_$(uniqid)_Status_Role","iri"],
-["this:$(pid)_$(uniqid)_Entity","sio:SIO_000008","this:$(pid)_$(uniqid)_Status_Attribute","iri"],
-["this:$(pid)_$(uniqid)_Status_Role","sio:SIO_000356","this:$(pid)_$(uniqid)_Status_Process","iri"],
-["this:$(pid)_$(uniqid)_Status_Process","sio:SIO_000229","this:$(pid)_$(uniqid)_Status_Output","iri"],
-["this:$(pid)_$(uniqid)_Status_Process","sio:SIO_000680","this:$(pid)_$(uniqid)_Status_Startdate","iri"],
-["this:$(pid)_$(uniqid)_Status_Process","sio:SIO_000681","this:$(pid)_$(uniqid)_Status_Enddate","iri"],
-["this:$(pid)_$(uniqid)_Status_Output","sio:SIO_000628","this:$(pid)_$(uniqid)_Status_Attribute","iri"],
-
-["this:$(pid)_$(uniqid)_Entity","sio:SIO_000008","this:$(pid)_$(uniqid)_Death_information_Attribute","iri"],
-["this:$(pid)_$(uniqid)_Status_Role","sio:SIO_000356","this:$(pid)_$(uniqid)_Death_information_Process","iri"],
-["this:$(pid)_$(uniqid)_Death_information_Process","sio:SIO_000229","this:$(pid)_$(uniqid)_Death_information_Output","iri"],
-["this:$(pid)_$(uniqid)_Death_information_Output","sio:SIO_000628","this:$(pid)_$(uniqid)_Death_information_Attribute","iri"],
-
-# Types
-["this:$(pid)_$(uniqid)_ID","rdf:type","sio:SIO_000115","iri"],
-["this:$(pid)_$(uniqid)_Entity","rdf:type","sio:SIO_000498","iri"],
-["this:$(pid)_$(uniqid)_Status_Role","rdf:type","sio:SIO_000016","iri"],
-["this:$(pid)_$(uniqid)_Status_Role","rdf:type","obo:OBI_0000093","iri"],
-["this:$(pid)_$(uniqid)_Status_Process","rdf:type","sio:SIO_001052","iri"],
-["this:$(pid)_$(uniqid)_Status_Process","rdf:type","sio:SIO_000006","iri"],
-["this:$(pid)_$(uniqid)_Status_Output","rdf:type","sio:SIO_000015","iri"],
-["this:$(pid)_$(uniqid)_Status_Attribute","rdf:type","sio:SIO_000614","iri"],
-["this:$(pid)_$(uniqid)_Status_Attribute","rdf:type","obo:NCIT_C166244","iri"],
-["this:$(pid)_$(uniqid)_Status_Attribute","rdf:type","$(status_uri)","iri"],
-["this:$(pid)_$(uniqid)_Status_Startdate","rdf:type","sio:SIO_000031","iri"],
-["this:$(pid)_$(uniqid)_Status_Enddate","rdf:type","sio:SIO_000032","iri"],
-
-["this:$(pid)_$(uniqid)_Death_information_Process","rdf:type","sio:SIO_000006","iri"],
-["this:$(pid)_$(uniqid)_Death_information_Output","rdf:type","sio:SIO_000015","iri"],
-["this:$(pid)_$(uniqid)_Death_information_Attribute","rdf:type","sio:SIO_000614","iri"],
-["this:$(pid)_$(uniqid)_Death_information_Attribute","rdf:type","obo:NCIT_C70810","iri"],
-
-# Labels
-["this:$(pid)_$(uniqid)_Status_Role","rdfs:label","Role: Patient for status recording","xsd:string"],
-["this:$(pid)_$(uniqid)_Status_Process","rdfs:label","Process: Status recording process","xsd:string"],
-["this:$(pid)_$(uniqid)_Status_Startdate","rdfs:label","Startdate: $(date)","xsd:string"],
-["this:$(pid)_$(uniqid)_Status_Enddate","rdfs:label","Enddate: $(date)","xsd:string"],
-["this:$(pid)_$(uniqid)_Status_Output","rdfs:label","Output type: $(status_label)","xsd:string"],
-["this:$(pid)_$(uniqid)_Status_Attribute","rdfs:label","Attribute type: $(status_label)","xsd:string"],
-["this:$(pid)_$(uniqid)_Death_information_Process","rdfs:label","Process: Death information recording process","xsd:string"],
-["this:$(pid)_$(uniqid)_Death_information_Output","rdfs:label","Output type: Patient death information","xsd:string"],
-["this:$(pid)_$(uniqid)_Death_information_Attribute","rdfs:label","Attribute type: Date of death","xsd:string"],
-
-# Values
-["this:$(pid)_$(uniqid)_ID","sio:SIO_000300","$(pid)","xsd:string"],
-["this:$(pid)_$(uniqid)_Status_Output","sio:SIO_000300","$(status_label)","xsd:string"],
-["this:$(pid)_$(uniqid)_Death_information_Output","sio:SIO_000300","$(death_date)","xsd:date"],
-["this:$(pid)_$(uniqid)_Status_Startdate","sio:SIO_000300","$(date)","xsd:date"],
-["this:$(pid)_$(uniqid)_Status_Enddate","sio:SIO_000300","$(date)","xsd:date"]]
-
-
-
-config = dict(
-  source_name = "source_cde_test",
-  configuration = "ejp",    # Two options for this parameter:
-                            # ejp: it defines CDE-in-a-Box references, being compatible with this workflow  
-                            # csv: No workflow defined, set the source configuration for been used by CSV as data source
-                            
-  csv_name = "source_1" # parameter only needed in case you pick "csv" as configuration
-)
-
-yarrrml = EMB(config, prefixes,triplets)
-
-test = yarrrml.transform_ShEx("this")
-print(test)
-
-# test2 = yarrrml.transform_YARRRML()
-# print(test2)
-
-test2 = yarrrml.transform_OBDA()
-print(test2)

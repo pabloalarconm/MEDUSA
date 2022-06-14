@@ -81,6 +81,10 @@ config = dict(
   csv_name = "source_1" # parameter only needed in case you pick "csv" as configuration
 )
 
-yarrrml = EMB(config)
-test = yarrrml.transform(prefixes, triplets)
+builder = EMB(config, prefixes, triplets)
+
+# test = builder.transform_YARRRML()
+# print(test)
+
+test = builder.transform_OBDA()
 print(test)

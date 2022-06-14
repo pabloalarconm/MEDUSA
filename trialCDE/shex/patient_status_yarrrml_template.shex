@@ -6,70 +6,77 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX : <http://my_example.com/>
 
 :idShape IRI {
-	sio:SIO_000020 @:statusroleShape ;
+	sio:SIO_000020 @:statusRoleShape ;
 	a [sio:SIO_000115] ;
 	sio:SIO_000300 xsd:string 
-} ;
+}
 
-:entityShape IRI {
-	sio:SIO_000228 @:statusroleShape ;
-	sio:SIO_000008 @:deathinformationattributeShape ;
+:personShape IRI {
+	sio:SIO_000228 @:statusRoleShape ;
+	sio:SIO_000008 @:statusAttributeShape ;
+	sio:SIO_000008 @:deathInformationAttributeShape ;
 	a [sio:SIO_000498] 
-} ;
+}
 
-:statusroleShape IRI {
-	sio:SIO_000356 @:deathinformationprocessShape ;
+:statusRoleShape IRI {
+	sio:SIO_000356 @:statusProcessShape ;
+	sio:SIO_000356 @:deathInformationProcessShape ;
+	a [sio:SIO_000016] ;
 	a [obo:OBI_0000093] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 
-:statusprocessShape IRI {
-	sio:SIO_000229 @:statusoutputShape ;
-	sio:SIO_000680 @:statusstartdateShape ;
-	sio:SIO_000681 @:statusenddateShape ;
+:statusProcessShape IRI {
+	sio:SIO_000229 @:statusOutputShape ;
+	sio:SIO_000680 @:statusStartdateShape ;
+	sio:SIO_000681 @:statusEnddateShape ;
+	a [sio:SIO_001052] ;
 	a [sio:SIO_000006] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 
-:statusoutputShape IRI {
-	sio:SIO_000628 @:statusattributeShape ;
+:statusOutputShape IRI {
+	sio:SIO_000628 @:statusAttributeShape ;
 	a [sio:SIO_000015] ;
-	rdfs:label xsd:string ;
+	rdfs:label xsd:string? ;
 	sio:SIO_000300 xsd:string 
-} ;
+}
 
-:deathinformationprocessShape IRI {
-	sio:SIO_000229 @:deathinformationoutputShape ;
+:deathInformationProcessShape IRI {
+	sio:SIO_000229 @:deathInformationOutputShape ;
 	a [sio:SIO_000006] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 
-:deathinformationoutputShape IRI {
-	sio:SIO_000628 @:deathinformationattributeShape ;
+:deathInformationOutputShape IRI {
+	sio:SIO_000628 @:deathInformationAttributeShape ;
 	a [sio:SIO_000015] ;
-	rdfs:label xsd:string ;
+	rdfs:label xsd:string? ;
 	sio:SIO_000300 xsd:date 
-} ;
+}
 
-:statusattributeShape IRI {
-	a @:statusuriShape ;
-	rdfs:label xsd:string 
-} ;
+:statusAttributeShape IRI {
+	a [sio:SIO_000614] ;
+	a [obo:NCIT_C166244] ;
+	a [sio:SIO_010059 sio:SIO_010058 obo:NCIT_C70740 obo:NCIT_C124784] ;
+	rdfs:label xsd:string? 
+}
 
-:statusstartdateShape IRI {
+:statusStartdateShape IRI {
 	a [sio:SIO_000031] ;
-	rdfs:label xsd:string ;
+	rdfs:label xsd:string? ;
 	sio:SIO_000300 xsd:date 
-} ;
+}
 
-:statusenddateShape IRI {
+:statusEnddateShape IRI {
 	a [sio:SIO_000032] ;
-	rdfs:label xsd:string ;
+	rdfs:label xsd:string? ;
 	sio:SIO_000300 xsd:date 
-} ;
+}
 
-:deathinformationattributeShape IRI {
+:deathInformationAttributeShape IRI {
+	a [sio:SIO_000614] ;
 	a [obo:NCIT_C70810] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 

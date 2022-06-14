@@ -6,62 +6,73 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX : <http://my_example.com/>
 
 :idShape IRI {
-	sio:SIO_000020 @:diagnosisdateroleShape ;
+	sio:SIO_000020 @:symptomOnsetRoleShape ;
+	sio:SIO_000020 @:diagnosisDateRoleShape ;
 	a [sio:SIO_000115] ;
 	sio:SIO_000300 xsd:string 
-} ;
+}
 
 :entityShape IRI {
-	sio:SIO_000228 @:diagnosisdateroleShape ;
-	sio:SIO_000008 @:diagnosisdateattributeShape ;
+	sio:SIO_000228 @:symptomOnsetRoleShape ;
+	sio:SIO_000008 @:symptomOnsetAttributeShape ;
+	sio:SIO_000228 @:diagnosisDateRoleShape ;
+	sio:SIO_000008 @:diagnosisDateAttributeShape ;
 	a [sio:SIO_000498] 
-} ;
+}
 
-:symptomonsetroleShape IRI {
-	sio:SIO_000356 @:symptomonsetprocessShape ;
+:symptomOnsetRoleShape IRI {
+	sio:SIO_000356 @:symptomOnsetProcessShape ;
+	a [sio:SIO_000016] ;
 	a [obo:OBI_0000093] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 
-:symptomonsetprocessShape IRI {
-	sio:SIO_000229 @:symptomonsetoutputShape ;
+:symptomOnsetProcessShape IRI {
+	sio:SIO_000229 @:symptomOnsetOutputShape ;
+	a [sio:SIO_000006] ;
 	a [sio:SIO_001052] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 
-:symptomonsetoutputShape IRI {
-	sio:SIO_000628 @:symptomonsetattributeShape ;
-	a @:onseturiShape ;
-	rdfs:label xsd:string ;
+:symptomOnsetOutputShape IRI {
+	sio:SIO_000628 @:symptomOnsetAttributeShape ;
+	a [sio:SIO_000015] ;
+	a @:onsetUriShape ;
+	rdfs:label xsd:string? ;
 	sio:SIO_000300 xsd:date 
-} ;
+}
 
-:diagnosisdateroleShape IRI {
-	sio:SIO_000356 @:diagnosisdateprocessShape ;
+:diagnosisDateRoleShape IRI {
+	sio:SIO_000356 @:diagnosisDateProcessShape ;
+	a [sio:SIO_000016] ;
 	a [obo:OBI_0000093] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 
-:diagnosisdateprocessShape IRI {
-	sio:SIO_000229 @:diagnosisdateoutputShape ;
+:diagnosisDateProcessShape IRI {
+	sio:SIO_000229 @:diagnosisDateOutputShape ;
+	a [sio:SIO_000006] ;
 	a [sio:SIO_001052] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 
-:diagnosisdateoutputShape IRI {
-	sio:SIO_000628 @:diagnosisdateattributeShape ;
-	a @:diagnosisuriShape ;
-	rdfs:label xsd:string ;
+:diagnosisDateOutputShape IRI {
+	sio:SIO_000628 @:diagnosisDateAttributeShape ;
+	a [sio:SIO_000015] ;
+	a @:diagnosisUriShape ;
+	rdfs:label xsd:string? ;
 	sio:SIO_000300 xsd:date 
-} ;
+}
 
-:symptomonsetattributeShape IRI {
+:symptomOnsetAttributeShape IRI {
+	a [sio:SIO_000614] ;
 	a [obo:NCIT_C25279] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 
-:diagnosisdateattributeShape IRI {
+:diagnosisDateAttributeShape IRI {
+	a [sio:SIO_000614] ;
 	a [obo:NCIT_C156420] ;
-	rdfs:label xsd:string 
-} ;
+	rdfs:label xsd:string? 
+}
 

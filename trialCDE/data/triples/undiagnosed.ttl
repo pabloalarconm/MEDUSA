@@ -1,66 +1,65 @@
-@prefix : <http://purl.org/ejp-rd/cde/v1/example-rdf/> .
+@prefix my: <http://example.org/data/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:Person a sio:SIO_000498 ;
-    sio:SIO_000008 :Phenotype_Attribute,
-        :Undiagnosed_Attribute,
+my:uid_000002_20220315095719445959_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000002_20220315095719445959_Phenotype_Attribute,
+        my:uid_000002_20220315095719445959_Undiagnosed_Attribute,
         <https://identifiers.org/clinvar:4886> ;
-    sio:SIO_000228 :Undiagnosed_Role .
+    sio:SIO_000228 my:uid_000002_20220315095719445959_Undiagnosed_Role .
 
-:ID a sio:SIO_000115 ;
-    sio:SIO_000020 :Undiagnosed_Role ;
+my:uid_000002_20220315095719445959_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000002_20220315095719445959_Undiagnosed_Role ;
     sio:SIO_000300 "uid_000002"^^xsd:string .
 
-:Genotype_Input a sio:SIO_000015,
+my:uid_000002_20220315095719445959_Genotype_Input a sio:SIO_000015,
         sio:SIO_001388 ;
     rdfs:label "Input type: HGVS_Genotype" ;
     sio:SIO_000300 "NM_003977.4(AIP):c.40C>T (p.Gln14Ter)"^^xsd:string ;
     sio:SIO_000628 <https://identifiers.org/clinvar:4886> .
 
-:Phenotype_Input a obo:NCIT_C102741,
+my:uid_000002_20220315095719445959_Phenotype_Input a obo:NCIT_C102741,
         sio:SIO_000015 ;
     rdfs:label "Input type: HP_Phenotype" ;
     sio:SIO_000300 "Muscle Weakness"^^xsd:string ;
-    sio:SIO_000628 :Phenotype_Attribute .
+    sio:SIO_000628 my:uid_000002_20220315095719445959_Phenotype_Attribute .
 
-:Undiagnosed_Enddate a sio:SIO_000032 ;
+my:uid_000002_20220315095719445959_Undiagnosed_Enddate a sio:SIO_000032 ;
     rdfs:label "Enddate: 2012-05-24" ;
     sio:SIO_000300 "2012-05-24"^^xsd:date .
 
-:Undiagnosed_Output a sio:SIO_000015 ;
+my:uid_000002_20220315095719445959_Undiagnosed_Output a sio:SIO_000015 ;
     rdfs:label "Output type: Undiagnosed label" ;
     sio:SIO_000300 "Undiagnosed" ;
-    sio:SIO_000628 :Undiagnosed_Attribute .
+    sio:SIO_000628 my:uid_000002_20220315095719445959_Undiagnosed_Attribute .
 
-:Undiagnosed_Process a sio:SIO_000006,
+my:uid_000002_20220315095719445959_Undiagnosed_Process a sio:SIO_000006,
         sio:SIO_001001 ;
     rdfs:label "Process: Medical diagnosis" ;
-    sio:SIO_000229 :Undiagnosed_Output ;
-    sio:SIO_000230 :Genotype_Input,
-        :Phenotype_Input ;
-    sio:SIO_000680 :Undiagnosed_Startdate ;
-    sio:SIO_000681 :Undiagnosed_Enddate .
+    sio:SIO_000229 my:uid_000002_20220315095719445959_Undiagnosed_Output ;
+    sio:SIO_000230 my:uid_000002_20220315095719445959_Genotype_Input,
+        my:uid_000002_20220315095719445959_Phenotype_Input ;
+    sio:SIO_000680 my:uid_000002_20220315095719445959_Undiagnosed_Startdate ;
+    sio:SIO_000681 my:uid_000002_20220315095719445959_Undiagnosed_Enddate .
 
-:Undiagnosed_Startdate a sio:SIO_000031 ;
+my:uid_000002_20220315095719445959_Undiagnosed_Startdate a sio:SIO_000031 ;
     rdfs:label "Startdate: 2012-05-24" ;
     sio:SIO_000300 "2012-05-24"^^xsd:date .
 
-:Phenotype_Attribute a obo:HP_0001324,
+my:uid_000002_20220315095719445959_Phenotype_Attribute a obo:HP_0001324,
         sio:SIO_000614 ;
     rdfs:label "Attribute type: Muscle Weakness" .
 
-:Undiagnosed_Attribute a obo:NCIT_C113725,
+my:uid_000002_20220315095719445959_Undiagnosed_Attribute a obo:NCIT_C113725,
         sio:SIO_000614 ;
     rdfs:label "Attribute type: Undiagnosed" .
 
-:Undiagnosed_Role a obo:OBI_0000093,
+my:uid_000002_20220315095719445959_Undiagnosed_Role a obo:OBI_0000093,
         sio:SIO_000016 ;
     rdfs:label "Role: Undiagnosed patient" ;
-    sio:SIO_000356 :Undiagnosed_Process .
+    sio:SIO_000356 my:uid_000002_20220315095719445959_Undiagnosed_Process .
 
 <https://identifiers.org/clinvar:4886> a obo:NCIT_C171178,
         sio:SIO_000614 ;

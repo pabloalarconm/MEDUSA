@@ -1,0 +1,13 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+
+<http://example.org/data/id_test_1_000001_1234567891#Entity> a sio:SIO_000498,
+        <https://w3id.org/biolink/vocab/Case> ;
+    sio:has-role <http://example.org/data/id_test_1_000001_1234567891#Role> .
+
+<http://example.org/data/id_test_1_000001_1234567891#ID> a sio:SIO_000115,
+        <https://w3id.org/biolink/vocab/ID> ;
+    sio:denotes <http://example.org/data/id_test_1_000001_1234567891#Role> .
+
+<http://example.org/data/id_test_1_000001_1234567891#Role> a obo:OBI_0000093 .
+

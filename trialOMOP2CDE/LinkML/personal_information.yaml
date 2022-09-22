@@ -1,0 +1,108 @@
+id: http://purl.org/ejp-rd/
+name: ejp
+description: |-
+  --------------------- Personal information schema of EJP CDE model -------------------------
+
+
+# imports:
+#   - linkml:types
+#   # - biolink
+
+prefixes:
+  this: http://my_example.com/
+  linkml: https://w3id.org/linkml/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sio: http://semanticscience.org/resource/
+  obo: http://purl.obolibrary.org/obo/
+
+default_range: string
+
+
+############ CLASSES ############
+
+classes:
+  
+  ############### UPPPER CLASSES #####################
+
+  Identifier:
+    class_uri: sio:SIO_000115
+    slots:
+     - denotes
+
+  Entity:
+    class_uri: sio:SIO_000498
+    slots:
+      - has_role
+      - has_attribute
+
+  Role:
+    class_uri: sio:SIO_000016
+    slots:
+      - is_realized_in
+
+  Process:
+    class_uri: sio:SIO_000006
+    slots:
+      - has_output
+
+  InformationContentEntity:
+    class_uri: sio:SIO_000015
+    slots:
+      - refers_to
+
+  Attribute:
+    class_uri: sio:SIO_000614
+
+  ############### INHERITED CLASSES #####################
+
+
+
+
+  PatientRole:
+    is_a: Role
+    class_uri: obo:OBI_0000093
+
+  BirthdateAttribute:
+    is_a: Attribute
+    class_uri: obo:NCIT_C68615
+
+  SexAttribute:
+    is_a: Attribute
+    class_uri: obo:NCIT_C68615
+
+
+
+############ SLOTS  #############
+
+slots: 
+
+  denotes:
+    description: denotes is a relation between an entity and what it is a sign or indication of, or what specifically means.
+    range: Role
+    slot_uri: sio:SIO_000020
+
+  has_role:
+    description: has role is a relation between an entity and a role that it bears.
+    range: Role
+    slot_uri: sio:SIO_000228
+
+  has_attribute:
+    description: has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.
+    range: Attribute
+    slot_uri: sio:SIO_000008
+
+  is_realized_in:
+    description: the role of a patient is realized in medical examination
+    range: Process
+    slot_uri: sio:SIO_000356
+
+  has_output:
+    description: has output is a relation between an process and an entity, where the entity is present at the end of the process.
+    range: InformationContentEntity
+    slot_uri: sio:SIO_000229
+
+  refers_to:
+    description: refers to is a relation between one entity and the entity that it makes reference to.
+    range: Attribute
+    slot_uri: sio:SIO_000628

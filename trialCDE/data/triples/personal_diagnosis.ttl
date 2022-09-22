@@ -1,0 +1,1626 @@
+@prefix my: <http://example.org/data/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+my:uid_000001_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000001_20211001110703675410_Birthdate_Attribute,
+        my:uid_000001_20211001110703675410_Diagnosis_Attribute,
+        my:uid_000001_20211001110703675410_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000001_20211001110703675410_Birthdate_Role,
+        my:uid_000001_20211001110703675410_Diagnosis_Role,
+        my:uid_000001_20211001110703675410_Sex_Role .
+
+my:uid_000001_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000001_20211001110703675410_Birthdate_Role,
+        my:uid_000001_20211001110703675410_Diagnosis_Role,
+        my:uid_000001_20211001110703675410_Sex_Role ;
+    sio:SIO_000300 "uid_000001"^^xsd:string .
+
+my:uid_000002_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000002_20211001110703675473_Birthdate_Attribute,
+        my:uid_000002_20211001110703675473_Diagnosis_Attribute,
+        my:uid_000002_20211001110703675473_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000002_20211001110703675473_Birthdate_Role,
+        my:uid_000002_20211001110703675473_Diagnosis_Role,
+        my:uid_000002_20211001110703675473_Sex_Role .
+
+my:uid_000002_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000002_20211001110703675473_Birthdate_Role,
+        my:uid_000002_20211001110703675473_Diagnosis_Role,
+        my:uid_000002_20211001110703675473_Sex_Role ;
+    sio:SIO_000300 "uid_000002"^^xsd:string .
+
+my:uid_000003_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000003_20211001110703675490_Birthdate_Attribute,
+        my:uid_000003_20211001110703675490_Diagnosis_Attribute,
+        my:uid_000003_20211001110703675490_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000003_20211001110703675490_Birthdate_Role,
+        my:uid_000003_20211001110703675490_Diagnosis_Role,
+        my:uid_000003_20211001110703675490_Sex_Role .
+
+my:uid_000003_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000003_20211001110703675490_Birthdate_Role,
+        my:uid_000003_20211001110703675490_Diagnosis_Role,
+        my:uid_000003_20211001110703675490_Sex_Role ;
+    sio:SIO_000300 "uid_000003"^^xsd:string .
+
+my:uid_000004_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000004_20211001110703675502_Birthdate_Attribute,
+        my:uid_000004_20211001110703675502_Diagnosis_Attribute,
+        my:uid_000004_20211001110703675502_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000004_20211001110703675502_Birthdate_Role,
+        my:uid_000004_20211001110703675502_Diagnosis_Role,
+        my:uid_000004_20211001110703675502_Sex_Role .
+
+my:uid_000004_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000004_20211001110703675502_Birthdate_Role,
+        my:uid_000004_20211001110703675502_Diagnosis_Role,
+        my:uid_000004_20211001110703675502_Sex_Role ;
+    sio:SIO_000300 "uid_000004"^^xsd:string .
+
+my:uid_000005_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000005_20211001110703675513_Birthdate_Attribute,
+        my:uid_000005_20211001110703675513_Diagnosis_Attribute,
+        my:uid_000005_20211001110703675513_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000005_20211001110703675513_Birthdate_Role,
+        my:uid_000005_20211001110703675513_Diagnosis_Role,
+        my:uid_000005_20211001110703675513_Sex_Role .
+
+my:uid_000005_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000005_20211001110703675513_Birthdate_Role,
+        my:uid_000005_20211001110703675513_Diagnosis_Role,
+        my:uid_000005_20211001110703675513_Sex_Role ;
+    sio:SIO_000300 "uid_000005"^^xsd:string .
+
+my:uid_000006_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000006_20211001110703675523_Birthdate_Attribute,
+        my:uid_000006_20211001110703675523_Diagnosis_Attribute,
+        my:uid_000006_20211001110703675523_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000006_20211001110703675523_Birthdate_Role,
+        my:uid_000006_20211001110703675523_Diagnosis_Role,
+        my:uid_000006_20211001110703675523_Sex_Role .
+
+my:uid_000006_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000006_20211001110703675523_Birthdate_Role,
+        my:uid_000006_20211001110703675523_Diagnosis_Role,
+        my:uid_000006_20211001110703675523_Sex_Role ;
+    sio:SIO_000300 "uid_000006"^^xsd:string .
+
+my:uid_000007_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000007_20211001110703675534_Birthdate_Attribute,
+        my:uid_000007_20211001110703675534_Diagnosis_Attribute,
+        my:uid_000007_20211001110703675534_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000007_20211001110703675534_Birthdate_Role,
+        my:uid_000007_20211001110703675534_Diagnosis_Role,
+        my:uid_000007_20211001110703675534_Sex_Role .
+
+my:uid_000007_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000007_20211001110703675534_Birthdate_Role,
+        my:uid_000007_20211001110703675534_Diagnosis_Role,
+        my:uid_000007_20211001110703675534_Sex_Role ;
+    sio:SIO_000300 "uid_000007"^^xsd:string .
+
+my:uid_000008_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000008_20211001110703675544_Birthdate_Attribute,
+        my:uid_000008_20211001110703675544_Diagnosis_Attribute,
+        my:uid_000008_20211001110703675544_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000008_20211001110703675544_Birthdate_Role,
+        my:uid_000008_20211001110703675544_Diagnosis_Role,
+        my:uid_000008_20211001110703675544_Sex_Role .
+
+my:uid_000008_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000008_20211001110703675544_Birthdate_Role,
+        my:uid_000008_20211001110703675544_Diagnosis_Role,
+        my:uid_000008_20211001110703675544_Sex_Role ;
+    sio:SIO_000300 "uid_000008"^^xsd:string .
+
+my:uid_000009_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000009_20211001110703675555_Birthdate_Attribute,
+        my:uid_000009_20211001110703675555_Diagnosis_Attribute,
+        my:uid_000009_20211001110703675555_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000009_20211001110703675555_Birthdate_Role,
+        my:uid_000009_20211001110703675555_Diagnosis_Role,
+        my:uid_000009_20211001110703675555_Sex_Role .
+
+my:uid_000009_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000009_20211001110703675555_Birthdate_Role,
+        my:uid_000009_20211001110703675555_Diagnosis_Role,
+        my:uid_000009_20211001110703675555_Sex_Role ;
+    sio:SIO_000300 "uid_000009"^^xsd:string .
+
+my:uid_000010_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000010_20211001110703675565_Birthdate_Attribute,
+        my:uid_000010_20211001110703675565_Diagnosis_Attribute,
+        my:uid_000010_20211001110703675565_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000010_20211001110703675565_Birthdate_Role,
+        my:uid_000010_20211001110703675565_Diagnosis_Role,
+        my:uid_000010_20211001110703675565_Sex_Role .
+
+my:uid_000010_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000010_20211001110703675565_Birthdate_Role,
+        my:uid_000010_20211001110703675565_Diagnosis_Role,
+        my:uid_000010_20211001110703675565_Sex_Role ;
+    sio:SIO_000300 "uid_000010"^^xsd:string .
+
+my:uid_000011_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000011_20211001110703675575_Birthdate_Attribute,
+        my:uid_000011_20211001110703675575_Diagnosis_Attribute,
+        my:uid_000011_20211001110703675575_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000011_20211001110703675575_Birthdate_Role,
+        my:uid_000011_20211001110703675575_Diagnosis_Role,
+        my:uid_000011_20211001110703675575_Sex_Role .
+
+my:uid_000011_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000011_20211001110703675575_Birthdate_Role,
+        my:uid_000011_20211001110703675575_Diagnosis_Role,
+        my:uid_000011_20211001110703675575_Sex_Role ;
+    sio:SIO_000300 "uid_000011"^^xsd:string .
+
+my:uid_000012_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000012_20211001110703675585_Birthdate_Attribute,
+        my:uid_000012_20211001110703675585_Diagnosis_Attribute,
+        my:uid_000012_20211001110703675585_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000012_20211001110703675585_Birthdate_Role,
+        my:uid_000012_20211001110703675585_Diagnosis_Role,
+        my:uid_000012_20211001110703675585_Sex_Role .
+
+my:uid_000012_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000012_20211001110703675585_Birthdate_Role,
+        my:uid_000012_20211001110703675585_Diagnosis_Role,
+        my:uid_000012_20211001110703675585_Sex_Role ;
+    sio:SIO_000300 "uid_000012"^^xsd:string .
+
+my:uid_000013_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000013_20211001110703675596_Birthdate_Attribute,
+        my:uid_000013_20211001110703675596_Diagnosis_Attribute,
+        my:uid_000013_20211001110703675596_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000013_20211001110703675596_Birthdate_Role,
+        my:uid_000013_20211001110703675596_Diagnosis_Role,
+        my:uid_000013_20211001110703675596_Sex_Role .
+
+my:uid_000013_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000013_20211001110703675596_Birthdate_Role,
+        my:uid_000013_20211001110703675596_Diagnosis_Role,
+        my:uid_000013_20211001110703675596_Sex_Role ;
+    sio:SIO_000300 "uid_000013"^^xsd:string .
+
+my:uid_000014_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000014_20211001110703675606_Birthdate_Attribute,
+        my:uid_000014_20211001110703675606_Diagnosis_Attribute,
+        my:uid_000014_20211001110703675606_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000014_20211001110703675606_Birthdate_Role,
+        my:uid_000014_20211001110703675606_Diagnosis_Role,
+        my:uid_000014_20211001110703675606_Sex_Role .
+
+my:uid_000014_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000014_20211001110703675606_Birthdate_Role,
+        my:uid_000014_20211001110703675606_Diagnosis_Role,
+        my:uid_000014_20211001110703675606_Sex_Role ;
+    sio:SIO_000300 "uid_000014"^^xsd:string .
+
+my:uid_000015_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000015_20211001110703675616_Birthdate_Attribute,
+        my:uid_000015_20211001110703675616_Diagnosis_Attribute,
+        my:uid_000015_20211001110703675616_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000015_20211001110703675616_Birthdate_Role,
+        my:uid_000015_20211001110703675616_Diagnosis_Role,
+        my:uid_000015_20211001110703675616_Sex_Role .
+
+my:uid_000015_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000015_20211001110703675616_Birthdate_Role,
+        my:uid_000015_20211001110703675616_Diagnosis_Role,
+        my:uid_000015_20211001110703675616_Sex_Role ;
+    sio:SIO_000300 "uid_000015"^^xsd:string .
+
+my:uid_000016_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000016_20211001110703675627_Birthdate_Attribute,
+        my:uid_000016_20211001110703675627_Diagnosis_Attribute,
+        my:uid_000016_20211001110703675627_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000016_20211001110703675627_Birthdate_Role,
+        my:uid_000016_20211001110703675627_Diagnosis_Role,
+        my:uid_000016_20211001110703675627_Sex_Role .
+
+my:uid_000016_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000016_20211001110703675627_Birthdate_Role,
+        my:uid_000016_20211001110703675627_Diagnosis_Role,
+        my:uid_000016_20211001110703675627_Sex_Role ;
+    sio:SIO_000300 "uid_000016"^^xsd:string .
+
+my:uid_000017_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000017_20211001110703675637_Birthdate_Attribute,
+        my:uid_000017_20211001110703675637_Diagnosis_Attribute,
+        my:uid_000017_20211001110703675637_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000017_20211001110703675637_Birthdate_Role,
+        my:uid_000017_20211001110703675637_Diagnosis_Role,
+        my:uid_000017_20211001110703675637_Sex_Role .
+
+my:uid_000017_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000017_20211001110703675637_Birthdate_Role,
+        my:uid_000017_20211001110703675637_Diagnosis_Role,
+        my:uid_000017_20211001110703675637_Sex_Role ;
+    sio:SIO_000300 "uid_000017"^^xsd:string .
+
+my:uid_000018_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000018_20211001110703675647_Birthdate_Attribute,
+        my:uid_000018_20211001110703675647_Diagnosis_Attribute,
+        my:uid_000018_20211001110703675647_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000018_20211001110703675647_Birthdate_Role,
+        my:uid_000018_20211001110703675647_Diagnosis_Role,
+        my:uid_000018_20211001110703675647_Sex_Role .
+
+my:uid_000018_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000018_20211001110703675647_Birthdate_Role,
+        my:uid_000018_20211001110703675647_Diagnosis_Role,
+        my:uid_000018_20211001110703675647_Sex_Role ;
+    sio:SIO_000300 "uid_000018"^^xsd:string .
+
+my:uid_000019_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000019_20211001110703675657_Birthdate_Attribute,
+        my:uid_000019_20211001110703675657_Diagnosis_Attribute,
+        my:uid_000019_20211001110703675657_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000019_20211001110703675657_Birthdate_Role,
+        my:uid_000019_20211001110703675657_Diagnosis_Role,
+        my:uid_000019_20211001110703675657_Sex_Role .
+
+my:uid_000019_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000019_20211001110703675657_Birthdate_Role,
+        my:uid_000019_20211001110703675657_Diagnosis_Role,
+        my:uid_000019_20211001110703675657_Sex_Role ;
+    sio:SIO_000300 "uid_000019"^^xsd:string .
+
+my:uid_000020_Entity a sio:SIO_000498 ;
+    sio:SIO_000008 my:uid_000020_20211001110703675667_Birthdate_Attribute,
+        my:uid_000020_20211001110703675667_Diagnosis_Attribute,
+        my:uid_000020_20211001110703675667_Sex_Attribute ;
+    sio:SIO_000228 my:uid_000020_20211001110703675667_Birthdate_Role,
+        my:uid_000020_20211001110703675667_Diagnosis_Role,
+        my:uid_000020_20211001110703675667_Sex_Role .
+
+my:uid_000020_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:uid_000020_20211001110703675667_Birthdate_Role,
+        my:uid_000020_20211001110703675667_Diagnosis_Role,
+        my:uid_000020_20211001110703675667_Sex_Role ;
+    sio:SIO_000300 "uid_000020"^^xsd:string .
+
+my:uid_000001_20211001110703675410_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1974-12-05"^^xsd:date ;
+    sio:SIO_000628 my:uid_000001_20211001110703675410_Birthdate_Attribute .
+
+my:uid_000001_20211001110703675410_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000001_20211001110703675410_Birthdate_Output .
+
+my:uid_000001_20211001110703675410_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1974-12-07" ;
+    sio:SIO_000300 "1974-12-07"^^xsd:date .
+
+my:uid_000001_20211001110703675410_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000001_20211001110703675410_Diagnosis_Attribute .
+
+my:uid_000001_20211001110703675410_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000001_20211001110703675410_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000001_20211001110703675410_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000001_20211001110703675410_Diagnosis_Enddate .
+
+my:uid_000001_20211001110703675410_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1974-12-07" ;
+    sio:SIO_000300 "1974-12-07"^^xsd:date .
+
+my:uid_000001_20211001110703675410_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Female" ;
+    sio:SIO_000300 "Female"^^xsd:string ;
+    sio:SIO_000628 my:uid_000001_20211001110703675410_Sex_Attribute .
+
+my:uid_000001_20211001110703675410_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000001_20211001110703675410_Sex_Output .
+
+my:uid_000002_20211001110703675473_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1985-05-23"^^xsd:date ;
+    sio:SIO_000628 my:uid_000002_20211001110703675473_Birthdate_Attribute .
+
+my:uid_000002_20211001110703675473_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000002_20211001110703675473_Birthdate_Output .
+
+my:uid_000002_20211001110703675473_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1996-06-23" ;
+    sio:SIO_000300 "1996-06-23"^^xsd:date .
+
+my:uid_000002_20211001110703675473_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000002_20211001110703675473_Diagnosis_Attribute .
+
+my:uid_000002_20211001110703675473_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000002_20211001110703675473_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000002_20211001110703675473_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000002_20211001110703675473_Diagnosis_Enddate .
+
+my:uid_000002_20211001110703675473_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1996-06-23" ;
+    sio:SIO_000300 "1996-06-23"^^xsd:date .
+
+my:uid_000002_20211001110703675473_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Female" ;
+    sio:SIO_000300 "Female"^^xsd:string ;
+    sio:SIO_000628 my:uid_000002_20211001110703675473_Sex_Attribute .
+
+my:uid_000002_20211001110703675473_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000002_20211001110703675473_Sex_Output .
+
+my:uid_000003_20211001110703675490_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1980-05-08"^^xsd:date ;
+    sio:SIO_000628 my:uid_000003_20211001110703675490_Birthdate_Attribute .
+
+my:uid_000003_20211001110703675490_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000003_20211001110703675490_Birthdate_Output .
+
+my:uid_000003_20211001110703675490_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1980-05-09" ;
+    sio:SIO_000300 "1980-05-09"^^xsd:date .
+
+my:uid_000003_20211001110703675490_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000003_20211001110703675490_Diagnosis_Attribute .
+
+my:uid_000003_20211001110703675490_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000003_20211001110703675490_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000003_20211001110703675490_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000003_20211001110703675490_Diagnosis_Enddate .
+
+my:uid_000003_20211001110703675490_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1980-05-09" ;
+    sio:SIO_000300 "1980-05-09"^^xsd:date .
+
+my:uid_000003_20211001110703675490_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Female" ;
+    sio:SIO_000300 "Female"^^xsd:string ;
+    sio:SIO_000628 my:uid_000003_20211001110703675490_Sex_Attribute .
+
+my:uid_000003_20211001110703675490_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000003_20211001110703675490_Sex_Output .
+
+my:uid_000004_20211001110703675502_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1994-05-06"^^xsd:date ;
+    sio:SIO_000628 my:uid_000004_20211001110703675502_Birthdate_Attribute .
+
+my:uid_000004_20211001110703675502_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000004_20211001110703675502_Birthdate_Output .
+
+my:uid_000004_20211001110703675502_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1994-05-08" ;
+    sio:SIO_000300 "1994-05-08"^^xsd:date .
+
+my:uid_000004_20211001110703675502_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000004_20211001110703675502_Diagnosis_Attribute .
+
+my:uid_000004_20211001110703675502_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000004_20211001110703675502_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000004_20211001110703675502_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000004_20211001110703675502_Diagnosis_Enddate .
+
+my:uid_000004_20211001110703675502_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1994-05-08" ;
+    sio:SIO_000300 "1994-05-08"^^xsd:date .
+
+my:uid_000004_20211001110703675502_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Male" ;
+    sio:SIO_000300 "Male"^^xsd:string ;
+    sio:SIO_000628 my:uid_000004_20211001110703675502_Sex_Attribute .
+
+my:uid_000004_20211001110703675502_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000004_20211001110703675502_Sex_Output .
+
+my:uid_000005_20211001110703675513_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1998-06-06"^^xsd:date ;
+    sio:SIO_000628 my:uid_000005_20211001110703675513_Birthdate_Attribute .
+
+my:uid_000005_20211001110703675513_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000005_20211001110703675513_Birthdate_Output .
+
+my:uid_000005_20211001110703675513_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1998-06-07" ;
+    sio:SIO_000300 "1998-06-07"^^xsd:date .
+
+my:uid_000005_20211001110703675513_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000005_20211001110703675513_Diagnosis_Attribute .
+
+my:uid_000005_20211001110703675513_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000005_20211001110703675513_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000005_20211001110703675513_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000005_20211001110703675513_Diagnosis_Enddate .
+
+my:uid_000005_20211001110703675513_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1998-06-07" ;
+    sio:SIO_000300 "1998-06-07"^^xsd:date .
+
+my:uid_000005_20211001110703675513_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Male" ;
+    sio:SIO_000300 "Male"^^xsd:string ;
+    sio:SIO_000628 my:uid_000005_20211001110703675513_Sex_Attribute .
+
+my:uid_000005_20211001110703675513_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000005_20211001110703675513_Sex_Output .
+
+my:uid_000006_20211001110703675523_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1979-03-05"^^xsd:date ;
+    sio:SIO_000628 my:uid_000006_20211001110703675523_Birthdate_Attribute .
+
+my:uid_000006_20211001110703675523_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000006_20211001110703675523_Birthdate_Output .
+
+my:uid_000006_20211001110703675523_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1991-03-05" ;
+    sio:SIO_000300 "1991-03-05"^^xsd:date .
+
+my:uid_000006_20211001110703675523_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000006_20211001110703675523_Diagnosis_Attribute .
+
+my:uid_000006_20211001110703675523_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000006_20211001110703675523_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000006_20211001110703675523_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000006_20211001110703675523_Diagnosis_Enddate .
+
+my:uid_000006_20211001110703675523_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1991-03-05" ;
+    sio:SIO_000300 "1991-03-05"^^xsd:date .
+
+my:uid_000006_20211001110703675523_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Female" ;
+    sio:SIO_000300 "Female"^^xsd:string ;
+    sio:SIO_000628 my:uid_000006_20211001110703675523_Sex_Attribute .
+
+my:uid_000006_20211001110703675523_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000006_20211001110703675523_Sex_Output .
+
+my:uid_000007_20211001110703675534_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1991-02-12"^^xsd:date ;
+    sio:SIO_000628 my:uid_000007_20211001110703675534_Birthdate_Attribute .
+
+my:uid_000007_20211001110703675534_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000007_20211001110703675534_Birthdate_Output .
+
+my:uid_000007_20211001110703675534_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1996-02-12" ;
+    sio:SIO_000300 "1996-02-12"^^xsd:date .
+
+my:uid_000007_20211001110703675534_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000007_20211001110703675534_Diagnosis_Attribute .
+
+my:uid_000007_20211001110703675534_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000007_20211001110703675534_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000007_20211001110703675534_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000007_20211001110703675534_Diagnosis_Enddate .
+
+my:uid_000007_20211001110703675534_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1996-02-12" ;
+    sio:SIO_000300 "1996-02-12"^^xsd:date .
+
+my:uid_000007_20211001110703675534_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Female" ;
+    sio:SIO_000300 "Female"^^xsd:string ;
+    sio:SIO_000628 my:uid_000007_20211001110703675534_Sex_Attribute .
+
+my:uid_000007_20211001110703675534_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000007_20211001110703675534_Sex_Output .
+
+my:uid_000008_20211001110703675544_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1995-06-08"^^xsd:date ;
+    sio:SIO_000628 my:uid_000008_20211001110703675544_Birthdate_Attribute .
+
+my:uid_000008_20211001110703675544_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000008_20211001110703675544_Birthdate_Output .
+
+my:uid_000008_20211001110703675544_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1999-06-08" ;
+    sio:SIO_000300 "1999-06-08"^^xsd:date .
+
+my:uid_000008_20211001110703675544_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000008_20211001110703675544_Diagnosis_Attribute .
+
+my:uid_000008_20211001110703675544_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000008_20211001110703675544_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000008_20211001110703675544_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000008_20211001110703675544_Diagnosis_Enddate .
+
+my:uid_000008_20211001110703675544_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1999-06-08" ;
+    sio:SIO_000300 "1999-06-08"^^xsd:date .
+
+my:uid_000008_20211001110703675544_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Male" ;
+    sio:SIO_000300 "Male"^^xsd:string ;
+    sio:SIO_000628 my:uid_000008_20211001110703675544_Sex_Attribute .
+
+my:uid_000008_20211001110703675544_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000008_20211001110703675544_Sex_Output .
+
+my:uid_000009_20211001110703675555_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1998-05-30"^^xsd:date ;
+    sio:SIO_000628 my:uid_000009_20211001110703675555_Birthdate_Attribute .
+
+my:uid_000009_20211001110703675555_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000009_20211001110703675555_Birthdate_Output .
+
+my:uid_000009_20211001110703675555_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 2001-05-30" ;
+    sio:SIO_000300 "2001-05-30"^^xsd:date .
+
+my:uid_000009_20211001110703675555_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000009_20211001110703675555_Diagnosis_Attribute .
+
+my:uid_000009_20211001110703675555_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000009_20211001110703675555_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000009_20211001110703675555_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000009_20211001110703675555_Diagnosis_Enddate .
+
+my:uid_000009_20211001110703675555_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 2001-05-30" ;
+    sio:SIO_000300 "2001-05-30"^^xsd:date .
+
+my:uid_000009_20211001110703675555_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Female" ;
+    sio:SIO_000300 "Female"^^xsd:string ;
+    sio:SIO_000628 my:uid_000009_20211001110703675555_Sex_Attribute .
+
+my:uid_000009_20211001110703675555_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000009_20211001110703675555_Sex_Output .
+
+my:uid_000010_20211001110703675565_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1996-08-07"^^xsd:date ;
+    sio:SIO_000628 my:uid_000010_20211001110703675565_Birthdate_Attribute .
+
+my:uid_000010_20211001110703675565_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000010_20211001110703675565_Birthdate_Output .
+
+my:uid_000010_20211001110703675565_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1996-08-08" ;
+    sio:SIO_000300 "1996-08-08"^^xsd:date .
+
+my:uid_000010_20211001110703675565_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000010_20211001110703675565_Diagnosis_Attribute .
+
+my:uid_000010_20211001110703675565_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000010_20211001110703675565_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000010_20211001110703675565_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000010_20211001110703675565_Diagnosis_Enddate .
+
+my:uid_000010_20211001110703675565_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1996-08-08" ;
+    sio:SIO_000300 "1996-08-08"^^xsd:date .
+
+my:uid_000010_20211001110703675565_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Male" ;
+    sio:SIO_000300 "Male"^^xsd:string ;
+    sio:SIO_000628 my:uid_000010_20211001110703675565_Sex_Attribute .
+
+my:uid_000010_20211001110703675565_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000010_20211001110703675565_Sex_Output .
+
+my:uid_000011_20211001110703675575_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1979-04-06"^^xsd:date ;
+    sio:SIO_000628 my:uid_000011_20211001110703675575_Birthdate_Attribute .
+
+my:uid_000011_20211001110703675575_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000011_20211001110703675575_Birthdate_Output .
+
+my:uid_000011_20211001110703675575_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1992-04-06" ;
+    sio:SIO_000300 "1992-04-06"^^xsd:date .
+
+my:uid_000011_20211001110703675575_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000011_20211001110703675575_Diagnosis_Attribute .
+
+my:uid_000011_20211001110703675575_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000011_20211001110703675575_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000011_20211001110703675575_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000011_20211001110703675575_Diagnosis_Enddate .
+
+my:uid_000011_20211001110703675575_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1992-04-06" ;
+    sio:SIO_000300 "1992-04-06"^^xsd:date .
+
+my:uid_000011_20211001110703675575_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Male" ;
+    sio:SIO_000300 "Male"^^xsd:string ;
+    sio:SIO_000628 my:uid_000011_20211001110703675575_Sex_Attribute .
+
+my:uid_000011_20211001110703675575_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000011_20211001110703675575_Sex_Output .
+
+my:uid_000012_20211001110703675585_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1990-05-03"^^xsd:date ;
+    sio:SIO_000628 my:uid_000012_20211001110703675585_Birthdate_Attribute .
+
+my:uid_000012_20211001110703675585_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000012_20211001110703675585_Birthdate_Output .
+
+my:uid_000012_20211001110703675585_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1996-05-03" ;
+    sio:SIO_000300 "1996-05-03"^^xsd:date .
+
+my:uid_000012_20211001110703675585_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000012_20211001110703675585_Diagnosis_Attribute .
+
+my:uid_000012_20211001110703675585_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000012_20211001110703675585_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000012_20211001110703675585_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000012_20211001110703675585_Diagnosis_Enddate .
+
+my:uid_000012_20211001110703675585_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1996-05-03" ;
+    sio:SIO_000300 "1996-05-03"^^xsd:date .
+
+my:uid_000012_20211001110703675585_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Male" ;
+    sio:SIO_000300 "Male"^^xsd:string ;
+    sio:SIO_000628 my:uid_000012_20211001110703675585_Sex_Attribute .
+
+my:uid_000012_20211001110703675585_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000012_20211001110703675585_Sex_Output .
+
+my:uid_000013_20211001110703675596_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1994-05-09"^^xsd:date ;
+    sio:SIO_000628 my:uid_000013_20211001110703675596_Birthdate_Attribute .
+
+my:uid_000013_20211001110703675596_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000013_20211001110703675596_Birthdate_Output .
+
+my:uid_000013_20211001110703675596_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1998-05-09" ;
+    sio:SIO_000300 "1998-05-09"^^xsd:date .
+
+my:uid_000013_20211001110703675596_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000013_20211001110703675596_Diagnosis_Attribute .
+
+my:uid_000013_20211001110703675596_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000013_20211001110703675596_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000013_20211001110703675596_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000013_20211001110703675596_Diagnosis_Enddate .
+
+my:uid_000013_20211001110703675596_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1998-05-09" ;
+    sio:SIO_000300 "1998-05-09"^^xsd:date .
+
+my:uid_000013_20211001110703675596_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Undeterminated" ;
+    sio:SIO_000300 "Undeterminated"^^xsd:string ;
+    sio:SIO_000628 my:uid_000013_20211001110703675596_Sex_Attribute .
+
+my:uid_000013_20211001110703675596_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000013_20211001110703675596_Sex_Output .
+
+my:uid_000014_20211001110703675606_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1997-05-07"^^xsd:date ;
+    sio:SIO_000628 my:uid_000014_20211001110703675606_Birthdate_Attribute .
+
+my:uid_000014_20211001110703675606_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000014_20211001110703675606_Birthdate_Output .
+
+my:uid_000014_20211001110703675606_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 2002-05-07" ;
+    sio:SIO_000300 "2002-05-07"^^xsd:date .
+
+my:uid_000014_20211001110703675606_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000014_20211001110703675606_Diagnosis_Attribute .
+
+my:uid_000014_20211001110703675606_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000014_20211001110703675606_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000014_20211001110703675606_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000014_20211001110703675606_Diagnosis_Enddate .
+
+my:uid_000014_20211001110703675606_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 2002-05-07" ;
+    sio:SIO_000300 "2002-05-07"^^xsd:date .
+
+my:uid_000014_20211001110703675606_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Female" ;
+    sio:SIO_000300 "Female"^^xsd:string ;
+    sio:SIO_000628 my:uid_000014_20211001110703675606_Sex_Attribute .
+
+my:uid_000014_20211001110703675606_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000014_20211001110703675606_Sex_Output .
+
+my:uid_000015_20211001110703675616_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1989-12-12"^^xsd:date ;
+    sio:SIO_000628 my:uid_000015_20211001110703675616_Birthdate_Attribute .
+
+my:uid_000015_20211001110703675616_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000015_20211001110703675616_Birthdate_Output .
+
+my:uid_000015_20211001110703675616_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1996-12-12" ;
+    sio:SIO_000300 "1996-12-12"^^xsd:date .
+
+my:uid_000015_20211001110703675616_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000015_20211001110703675616_Diagnosis_Attribute .
+
+my:uid_000015_20211001110703675616_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000015_20211001110703675616_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000015_20211001110703675616_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000015_20211001110703675616_Diagnosis_Enddate .
+
+my:uid_000015_20211001110703675616_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1996-12-12" ;
+    sio:SIO_000300 "1996-12-12"^^xsd:date .
+
+my:uid_000015_20211001110703675616_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Male" ;
+    sio:SIO_000300 "Male"^^xsd:string ;
+    sio:SIO_000628 my:uid_000015_20211001110703675616_Sex_Attribute .
+
+my:uid_000015_20211001110703675616_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000015_20211001110703675616_Sex_Output .
+
+my:uid_000016_20211001110703675627_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1997-02-18"^^xsd:date ;
+    sio:SIO_000628 my:uid_000016_20211001110703675627_Birthdate_Attribute .
+
+my:uid_000016_20211001110703675627_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000016_20211001110703675627_Birthdate_Output .
+
+my:uid_000016_20211001110703675627_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 2002-02-18" ;
+    sio:SIO_000300 "2002-02-18"^^xsd:date .
+
+my:uid_000016_20211001110703675627_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000016_20211001110703675627_Diagnosis_Attribute .
+
+my:uid_000016_20211001110703675627_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000016_20211001110703675627_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000016_20211001110703675627_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000016_20211001110703675627_Diagnosis_Enddate .
+
+my:uid_000016_20211001110703675627_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 2002-02-18" ;
+    sio:SIO_000300 "2002-02-18"^^xsd:date .
+
+my:uid_000016_20211001110703675627_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Female" ;
+    sio:SIO_000300 "Female"^^xsd:string ;
+    sio:SIO_000628 my:uid_000016_20211001110703675627_Sex_Attribute .
+
+my:uid_000016_20211001110703675627_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000016_20211001110703675627_Sex_Output .
+
+my:uid_000017_20211001110703675637_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1988-04-17"^^xsd:date ;
+    sio:SIO_000628 my:uid_000017_20211001110703675637_Birthdate_Attribute .
+
+my:uid_000017_20211001110703675637_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000017_20211001110703675637_Birthdate_Output .
+
+my:uid_000017_20211001110703675637_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 2002-02-18" ;
+    sio:SIO_000300 "2002-02-18"^^xsd:date .
+
+my:uid_000017_20211001110703675637_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000017_20211001110703675637_Diagnosis_Attribute .
+
+my:uid_000017_20211001110703675637_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000017_20211001110703675637_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000017_20211001110703675637_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000017_20211001110703675637_Diagnosis_Enddate .
+
+my:uid_000017_20211001110703675637_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 2002-02-18" ;
+    sio:SIO_000300 "2002-02-18"^^xsd:date .
+
+my:uid_000017_20211001110703675637_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Male" ;
+    sio:SIO_000300 "Male"^^xsd:string ;
+    sio:SIO_000628 my:uid_000017_20211001110703675637_Sex_Attribute .
+
+my:uid_000017_20211001110703675637_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000017_20211001110703675637_Sex_Output .
+
+my:uid_000018_20211001110703675647_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1999-06-29"^^xsd:date ;
+    sio:SIO_000628 my:uid_000018_20211001110703675647_Birthdate_Attribute .
+
+my:uid_000018_20211001110703675647_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000018_20211001110703675647_Birthdate_Output .
+
+my:uid_000018_20211001110703675647_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 1999-04-17" ;
+    sio:SIO_000300 "1999-04-17"^^xsd:date .
+
+my:uid_000018_20211001110703675647_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000018_20211001110703675647_Diagnosis_Attribute .
+
+my:uid_000018_20211001110703675647_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000018_20211001110703675647_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000018_20211001110703675647_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000018_20211001110703675647_Diagnosis_Enddate .
+
+my:uid_000018_20211001110703675647_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 1999-04-17" ;
+    sio:SIO_000300 "1999-04-17"^^xsd:date .
+
+my:uid_000018_20211001110703675647_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Male" ;
+    sio:SIO_000300 "Male"^^xsd:string ;
+    sio:SIO_000628 my:uid_000018_20211001110703675647_Sex_Attribute .
+
+my:uid_000018_20211001110703675647_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000018_20211001110703675647_Sex_Output .
+
+my:uid_000019_20211001110703675657_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1999-05-17"^^xsd:date ;
+    sio:SIO_000628 my:uid_000019_20211001110703675657_Birthdate_Attribute .
+
+my:uid_000019_20211001110703675657_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000019_20211001110703675657_Birthdate_Output .
+
+my:uid_000019_20211001110703675657_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 2002-06-29" ;
+    sio:SIO_000300 "2002-06-29"^^xsd:date .
+
+my:uid_000019_20211001110703675657_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments."^^xsd:string ;
+    sio:SIO_000628 my:uid_000019_20211001110703675657_Diagnosis_Attribute .
+
+my:uid_000019_20211001110703675657_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000019_20211001110703675657_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000019_20211001110703675657_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000019_20211001110703675657_Diagnosis_Enddate .
+
+my:uid_000019_20211001110703675657_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 2002-06-29" ;
+    sio:SIO_000300 "2002-06-29"^^xsd:date .
+
+my:uid_000019_20211001110703675657_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Male" ;
+    sio:SIO_000300 "Male"^^xsd:string ;
+    sio:SIO_000628 my:uid_000019_20211001110703675657_Sex_Attribute .
+
+my:uid_000019_20211001110703675657_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000019_20211001110703675657_Sex_Output .
+
+my:uid_000020_20211001110703675667_Birthdate_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Birth date" ;
+    sio:SIO_000300 "1998-05-05"^^xsd:date ;
+    sio:SIO_000628 my:uid_000020_20211001110703675667_Birthdate_Attribute .
+
+my:uid_000020_20211001110703675667_Birthdate_Process a sio:SIO_000006 ;
+    rdfs:label "Process: age measuring process" ;
+    sio:SIO_000229 my:uid_000020_20211001110703675667_Birthdate_Output .
+
+my:uid_000020_20211001110703675667_Diagnosis_Enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 2003-05-17" ;
+    sio:SIO_000300 "2003-05-17"^^xsd:date .
+
+my:uid_000020_20211001110703675667_Diagnosis_Output a sio:SIO_000015,
+        sio:SIO_001003 ;
+    rdfs:label "Output type: Diagnosis" ;
+    sio:SIO_000300 "comments"^^xsd:string ;
+    sio:SIO_000628 my:uid_000020_20211001110703675667_Diagnosis_Attribute .
+
+my:uid_000020_20211001110703675667_Diagnosis_Process a sio:SIO_000006,
+        sio:SIO_001001 ;
+    rdfs:label "Process: Medical diagnosis" ;
+    sio:SIO_000229 my:uid_000020_20211001110703675667_Diagnosis_Output ;
+    sio:SIO_000680 my:uid_000020_20211001110703675667_Diagnosis_Startdate ;
+    sio:SIO_000681 my:uid_000020_20211001110703675667_Diagnosis_Enddate .
+
+my:uid_000020_20211001110703675667_Diagnosis_Startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 2003-05-17" ;
+    sio:SIO_000300 "2003-05-17"^^xsd:date .
+
+my:uid_000020_20211001110703675667_Sex_Output a sio:SIO_000015 ;
+    rdfs:label "Output type: Female" ;
+    sio:SIO_000300 "Female"^^xsd:string ;
+    sio:SIO_000628 my:uid_000020_20211001110703675667_Sex_Attribute .
+
+my:uid_000020_20211001110703675667_Sex_Process a sio:SIO_000006 ;
+    rdfs:label "Process: sex measuring process" ;
+    sio:SIO_000229 my:uid_000020_20211001110703675667_Sex_Output .
+
+my:uid_000001_20211001110703675410_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000001_20211001110703675410_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000001_20211001110703675410_Birthdate_Process .
+
+my:uid_000001_20211001110703675410_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1398> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000001_20211001110703675410_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000001_20211001110703675410_Diagnosis_Process .
+
+my:uid_000001_20211001110703675410_Sex_Attribute a obo:NCIT_C16576,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Female" .
+
+my:uid_000001_20211001110703675410_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000001_20211001110703675410_Sex_Process .
+
+my:uid_000002_20211001110703675473_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000002_20211001110703675473_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000002_20211001110703675473_Birthdate_Process .
+
+my:uid_000002_20211001110703675473_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1398> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000002_20211001110703675473_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000002_20211001110703675473_Diagnosis_Process .
+
+my:uid_000002_20211001110703675473_Sex_Attribute a obo:NCIT_C16576,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Female" .
+
+my:uid_000002_20211001110703675473_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000002_20211001110703675473_Sex_Process .
+
+my:uid_000003_20211001110703675490_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000003_20211001110703675490_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000003_20211001110703675490_Birthdate_Process .
+
+my:uid_000003_20211001110703675490_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1398> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000003_20211001110703675490_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000003_20211001110703675490_Diagnosis_Process .
+
+my:uid_000003_20211001110703675490_Sex_Attribute a obo:NCIT_C16576,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Female" .
+
+my:uid_000003_20211001110703675490_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000003_20211001110703675490_Sex_Process .
+
+my:uid_000004_20211001110703675502_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000004_20211001110703675502_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000004_20211001110703675502_Birthdate_Process .
+
+my:uid_000004_20211001110703675502_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1398> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000004_20211001110703675502_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000004_20211001110703675502_Diagnosis_Process .
+
+my:uid_000004_20211001110703675502_Sex_Attribute a obo:NCIT_C20197,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Male" .
+
+my:uid_000004_20211001110703675502_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000004_20211001110703675502_Sex_Process .
+
+my:uid_000005_20211001110703675513_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000005_20211001110703675513_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000005_20211001110703675513_Birthdate_Process .
+
+my:uid_000005_20211001110703675513_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1398> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000005_20211001110703675513_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000005_20211001110703675513_Diagnosis_Process .
+
+my:uid_000005_20211001110703675513_Sex_Attribute a obo:NCIT_C20197,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Male" .
+
+my:uid_000005_20211001110703675513_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000005_20211001110703675513_Sex_Process .
+
+my:uid_000006_20211001110703675523_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000006_20211001110703675523_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000006_20211001110703675523_Birthdate_Process .
+
+my:uid_000006_20211001110703675523_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1398> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000006_20211001110703675523_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000006_20211001110703675523_Diagnosis_Process .
+
+my:uid_000006_20211001110703675523_Sex_Attribute a obo:NCIT_C16576,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Female" .
+
+my:uid_000006_20211001110703675523_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000006_20211001110703675523_Sex_Process .
+
+my:uid_000007_20211001110703675534_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000007_20211001110703675534_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000007_20211001110703675534_Birthdate_Process .
+
+my:uid_000007_20211001110703675534_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1399> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000007_20211001110703675534_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000007_20211001110703675534_Diagnosis_Process .
+
+my:uid_000007_20211001110703675534_Sex_Attribute a obo:NCIT_C16576,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Female" .
+
+my:uid_000007_20211001110703675534_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000007_20211001110703675534_Sex_Process .
+
+my:uid_000008_20211001110703675544_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000008_20211001110703675544_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000008_20211001110703675544_Birthdate_Process .
+
+my:uid_000008_20211001110703675544_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1400> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000008_20211001110703675544_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000008_20211001110703675544_Diagnosis_Process .
+
+my:uid_000008_20211001110703675544_Sex_Attribute a obo:NCIT_C20197,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Male" .
+
+my:uid_000008_20211001110703675544_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000008_20211001110703675544_Sex_Process .
+
+my:uid_000009_20211001110703675555_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000009_20211001110703675555_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000009_20211001110703675555_Birthdate_Process .
+
+my:uid_000009_20211001110703675555_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1401> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000009_20211001110703675555_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000009_20211001110703675555_Diagnosis_Process .
+
+my:uid_000009_20211001110703675555_Sex_Attribute a obo:NCIT_C16576,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Female" .
+
+my:uid_000009_20211001110703675555_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000009_20211001110703675555_Sex_Process .
+
+my:uid_000010_20211001110703675565_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000010_20211001110703675565_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000010_20211001110703675565_Birthdate_Process .
+
+my:uid_000010_20211001110703675565_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1402> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000010_20211001110703675565_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000010_20211001110703675565_Diagnosis_Process .
+
+my:uid_000010_20211001110703675565_Sex_Attribute a obo:NCIT_C20197,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Male" .
+
+my:uid_000010_20211001110703675565_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000010_20211001110703675565_Sex_Process .
+
+my:uid_000011_20211001110703675575_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000011_20211001110703675575_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000011_20211001110703675575_Birthdate_Process .
+
+my:uid_000011_20211001110703675575_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1403> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000011_20211001110703675575_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000011_20211001110703675575_Diagnosis_Process .
+
+my:uid_000011_20211001110703675575_Sex_Attribute a obo:NCIT_C20197,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Male" .
+
+my:uid_000011_20211001110703675575_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000011_20211001110703675575_Sex_Process .
+
+my:uid_000012_20211001110703675585_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000012_20211001110703675585_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000012_20211001110703675585_Birthdate_Process .
+
+my:uid_000012_20211001110703675585_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1404> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000012_20211001110703675585_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000012_20211001110703675585_Diagnosis_Process .
+
+my:uid_000012_20211001110703675585_Sex_Attribute a obo:NCIT_C20197,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Male" .
+
+my:uid_000012_20211001110703675585_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000012_20211001110703675585_Sex_Process .
+
+my:uid_000013_20211001110703675596_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000013_20211001110703675596_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000013_20211001110703675596_Birthdate_Process .
+
+my:uid_000013_20211001110703675596_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1405> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000013_20211001110703675596_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000013_20211001110703675596_Diagnosis_Process .
+
+my:uid_000013_20211001110703675596_Sex_Attribute a obo:NCIT_C124294,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Undeterminated" .
+
+my:uid_000013_20211001110703675596_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000013_20211001110703675596_Sex_Process .
+
+my:uid_000014_20211001110703675606_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000014_20211001110703675606_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000014_20211001110703675606_Birthdate_Process .
+
+my:uid_000014_20211001110703675606_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1406> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000014_20211001110703675606_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000014_20211001110703675606_Diagnosis_Process .
+
+my:uid_000014_20211001110703675606_Sex_Attribute a obo:NCIT_C16576,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Female" .
+
+my:uid_000014_20211001110703675606_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000014_20211001110703675606_Sex_Process .
+
+my:uid_000015_20211001110703675616_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000015_20211001110703675616_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000015_20211001110703675616_Birthdate_Process .
+
+my:uid_000015_20211001110703675616_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1407> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000015_20211001110703675616_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000015_20211001110703675616_Diagnosis_Process .
+
+my:uid_000015_20211001110703675616_Sex_Attribute a obo:NCIT_C20197,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Male" .
+
+my:uid_000015_20211001110703675616_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000015_20211001110703675616_Sex_Process .
+
+my:uid_000016_20211001110703675627_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000016_20211001110703675627_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000016_20211001110703675627_Birthdate_Process .
+
+my:uid_000016_20211001110703675627_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1408> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000016_20211001110703675627_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000016_20211001110703675627_Diagnosis_Process .
+
+my:uid_000016_20211001110703675627_Sex_Attribute a obo:NCIT_C16576,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Female" .
+
+my:uid_000016_20211001110703675627_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000016_20211001110703675627_Sex_Process .
+
+my:uid_000017_20211001110703675637_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000017_20211001110703675637_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000017_20211001110703675637_Birthdate_Process .
+
+my:uid_000017_20211001110703675637_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1408> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000017_20211001110703675637_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000017_20211001110703675637_Diagnosis_Process .
+
+my:uid_000017_20211001110703675637_Sex_Attribute a obo:NCIT_C20197,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Male" .
+
+my:uid_000017_20211001110703675637_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000017_20211001110703675637_Sex_Process .
+
+my:uid_000018_20211001110703675647_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000018_20211001110703675647_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000018_20211001110703675647_Birthdate_Process .
+
+my:uid_000018_20211001110703675647_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1409> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000018_20211001110703675647_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000018_20211001110703675647_Diagnosis_Process .
+
+my:uid_000018_20211001110703675647_Sex_Attribute a obo:NCIT_C20197,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Male" .
+
+my:uid_000018_20211001110703675647_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000018_20211001110703675647_Sex_Process .
+
+my:uid_000019_20211001110703675657_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000019_20211001110703675657_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000019_20211001110703675657_Birthdate_Process .
+
+my:uid_000019_20211001110703675657_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1410> ;
+    rdfs:label "Attribute type: comments." .
+
+my:uid_000019_20211001110703675657_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000019_20211001110703675657_Diagnosis_Process .
+
+my:uid_000019_20211001110703675657_Sex_Attribute a obo:NCIT_C20197,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Male" .
+
+my:uid_000019_20211001110703675657_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000019_20211001110703675657_Sex_Process .
+
+my:uid_000020_20211001110703675667_Birthdate_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Birth date" .
+
+my:uid_000020_20211001110703675667_Birthdate_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for age assessment" ;
+    sio:SIO_000356 my:uid_000020_20211001110703675667_Birthdate_Process .
+
+my:uid_000020_20211001110703675667_Diagnosis_Attribute a sio:SIO_000614,
+        <http://www.orpha.net/ORDO/Orphanet_1411> ;
+    rdfs:label "Attribute type: comments" .
+
+my:uid_000020_20211001110703675667_Diagnosis_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Diagnosis patient" ;
+    sio:SIO_000356 my:uid_000020_20211001110703675667_Diagnosis_Process .
+
+my:uid_000020_20211001110703675667_Sex_Attribute a obo:NCIT_C16576,
+        obo:NCIT_C28421,
+        sio:SIO_000614 ;
+    rdfs:label "Attribute type: Female" .
+
+my:uid_000020_20211001110703675667_Sex_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient for gender assessment" ;
+    sio:SIO_000356 my:uid_000020_20211001110703675667_Sex_Process .
+

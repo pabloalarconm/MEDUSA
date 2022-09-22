@@ -1,0 +1,154 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix linkml: <https://w3id.org/linkml/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/ejp-rd/> a owl:Ontology ;
+    rdfs:label "ejp" ;
+    IAO:0000700 <http://purl.org/ejp-rd//Attribute>,
+        <http://purl.org/ejp-rd//Entity>,
+        <http://purl.org/ejp-rd//Identifier>,
+        <http://purl.org/ejp-rd//InformationContentEntity>,
+        <http://purl.org/ejp-rd//Process>,
+        <http://purl.org/ejp-rd//Role> ;
+    linkml:generation_date "2022-09-06T16:11:09" ;
+    linkml:metamodel_version "1.7.0" ;
+    linkml:source_file "personal_information.yaml" ;
+    linkml:source_file_date "2022-09-06T16:11:04" ;
+    linkml:source_file_size 2633 .
+
+<http://purl.org/ejp-rd//BirthdateAttribute> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "BirthdateAttribute" ;
+    rdfs:subClassOf <http://purl.org/ejp-rd//Attribute> ;
+    skos:exactMatch obo:NCIT_C68615 .
+
+<http://purl.org/ejp-rd//PatientRole> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "PatientRole" ;
+    rdfs:subClassOf <http://purl.org/ejp-rd//Role> ;
+    skos:exactMatch obo:OBI_0000093 .
+
+<http://purl.org/ejp-rd//SexAttribute> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "SexAttribute" ;
+    rdfs:subClassOf <http://purl.org/ejp-rd//Attribute> ;
+    skos:exactMatch obo:NCIT_C68615 .
+
+linkml:SubsetDefinition a owl:Class ;
+    rdfs:label "subset_definition" .
+
+linkml:TypeDefinition a owl:Class ;
+    rdfs:label "type_definition" .
+
+linkml:topValue a owl:DatatypeProperty ;
+    rdfs:label "value" .
+
+<http://purl.org/ejp-rd//Entity> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Entity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.org/ejp-rd//Attribute> ;
+            owl:onProperty sio:SIO_000008 ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.org/ejp-rd//Role> ;
+            owl:onProperty sio:SIO_000228 ] ;
+    skos:exactMatch sio:SIO_000498 .
+
+<http://purl.org/ejp-rd//Identifier> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Identifier" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.org/ejp-rd//Role> ;
+            owl:onProperty sio:SIO_000020 ] ;
+    skos:exactMatch sio:SIO_000115 .
+
+sio:SIO_000008 a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "has_attribute" ;
+    rdfs:range <http://purl.org/ejp-rd//Attribute> ;
+    skos:definition "has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type." ;
+    skos:exactMatch sio:SIO_000008 .
+
+sio:SIO_000020 a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "denotes" ;
+    rdfs:range <http://purl.org/ejp-rd//Role> ;
+    skos:definition "denotes is a relation between an entity and what it is a sign or indication of, or what specifically means." ;
+    skos:exactMatch sio:SIO_000020 .
+
+sio:SIO_000228 a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "has_role" ;
+    rdfs:range <http://purl.org/ejp-rd//Role> ;
+    skos:definition "has role is a relation between an entity and a role that it bears." ;
+    skos:exactMatch sio:SIO_000228 .
+
+sio:SIO_000229 a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "has_output" ;
+    rdfs:range <http://purl.org/ejp-rd//InformationContentEntity> ;
+    skos:definition "has output is a relation between an process and an entity, where the entity is present at the end of the process." ;
+    skos:exactMatch sio:SIO_000229 .
+
+sio:SIO_000356 a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "is_realized_in" ;
+    rdfs:range <http://purl.org/ejp-rd//Process> ;
+    skos:definition "the role of a patient is realized in medical examination" ;
+    skos:exactMatch sio:SIO_000356 .
+
+sio:SIO_000628 a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "refers_to" ;
+    rdfs:range <http://purl.org/ejp-rd//Attribute> ;
+    skos:definition "refers to is a relation between one entity and the entity that it makes reference to." ;
+    skos:exactMatch sio:SIO_000628 .
+
+<http://purl.org/ejp-rd//InformationContentEntity> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "InformationContentEntity" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.org/ejp-rd//Attribute> ;
+            owl:onProperty sio:SIO_000628 ] ;
+    skos:exactMatch sio:SIO_000015 .
+
+<http://purl.org/ejp-rd//Process> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Process" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.org/ejp-rd//InformationContentEntity> ;
+            owl:onProperty sio:SIO_000229 ] ;
+    skos:exactMatch sio:SIO_000006 .
+
+<http://purl.org/ejp-rd//Role> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Role" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <http://purl.org/ejp-rd//Process> ;
+            owl:onProperty sio:SIO_000356 ] ;
+    skos:exactMatch sio:SIO_000016 .
+
+linkml:SlotDefinition a owl:Class ;
+    rdfs:label "slot_definition" .
+
+<http://purl.org/ejp-rd//Attribute> a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Attribute" ;
+    skos:exactMatch sio:SIO_000614 .
+
+linkml:ClassDefinition a owl:Class ;
+    rdfs:label "class_definition" .
+
+
+

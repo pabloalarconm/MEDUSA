@@ -1,0 +1,87 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX this: <http://my_example.com/>
+SELECT (count(DISTINCT ?id) as ?count)
+WHERE {
+
+    # Static:
+    ?id a sio:SIO_000115 .
+	?entity a sio:SIO_000498 .
+    ?sexrole a sio:SIO_000016 .
+	?sexrole a obo:OBI_0000093 .
+    ?id sio:SIO_000020 ?sexrole .
+	?entity sio:SIO_000228 ?sexrole .
+    ?entity sio:SIO_000008 ?sexattribute .
+
+    # Non-static:
+    ?sexattribute a obo:NCIT_C28421 .
+ 	?sexattribute a ?sexuri .
+    FILTER (?sexuri = obo:NCIT_C16576) .  # FILTER (?sexuri != sio:SIO_000614 && ?sexuri != obo:NCIT_C28421) . 
+}
+
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX this: <http://my_example.com/>
+SELECT (count(DISTINCT ?id) as ?count)
+WHERE {
+    
+    ?id a sio:SIO_000115 .
+	?entity a sio:SIO_000498 .
+
+
+    ?diagnosis_role a sio:SIO_000016 .
+	?diagnosis_role a obo:OBI_0000093 .
+    ?id sio:SIO_000020 ?diagnosis_role .
+	?entity sio:SIO_000228 ?diagnosis_role .
+    ?entity sio:SIO_000008 ?diagnosis_attribute .
+
+    ?attribute a ?diagnosis .
+    FILTER (?diagnosis = <http://www.orpha.net/ORDO/Orphanet_1398>) .
+}
+
+
+################# both #########################
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX this: <http://my_example.com/>
+SELECT (count(DISTINCT ?id) as ?count)
+WHERE {
+
+    # Global:
+    ?id a sio:SIO_000115 .
+	?entity a sio:SIO_000498 .
+    
+    # Define Sex:
+    ?sexrole a sio:SIO_000016 .
+	?sexrole a obo:OBI_0000093 .
+    ?id sio:SIO_000020 ?sexrole .
+	?entity sio:SIO_000228 ?sexrole .
+    ?entity sio:SIO_000008 ?sexattribute .
+
+    ?sexattribute a obo:NCIT_C28421 .
+ 	?sexattribute a ?sexuri .
+    FILTER (?sexuri = obo:NCIT_C16576) .
+   
+    # Define diagnosis:
+    ?diagnosis_role a sio:SIO_000016 .
+	?diagnosis_role a obo:OBI_0000093 .
+    ?id sio:SIO_000020 ?diagnosis_role .
+	?entity sio:SIO_000228 ?diagnosis_role .
+    ?entity sio:SIO_000008 ?diagnosis_attribute .
+
+    ?diagnosis_attribute a ?diagnosis .
+    FILTER (?diagnosis = <http://www.orpha.net/ORDO/Orphanet_1398>) .
+}

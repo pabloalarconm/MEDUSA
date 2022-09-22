@@ -1,0 +1,51 @@
+[PrefixDeclaration]
+rdf:	http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:	http://www.w3.org/2000/01/rdf-schema#
+obo:	http://purl.obolibrary.org/obo/
+sio:	http://semanticscience.org/resource/
+xsd:	http://www.w3.org/2001/XMLSchema#
+this:	http://my_example.com/
+
+[MappingDeclaration] @collection [[
+mappingId	source_cde_test20220906171211983096
+target	this:{person_id}_ID sio:SIO_000020 this:{person_id}_Birthdate_Role ; sio:SIO_000020 this:{person_id}_Sex_Role ; a sio:SIO_000115 ; sio:SIO_000300 {person_id}^^xsd:string .
+source	SELECT person_id, make_date(year_of_birth,month_of_birth,day_of_birth) AS dob, gender_concept_id , "cde_sex"(gender_concept_id) AS sex FROM mytable
+
+mappingId	source_cde_test20220906171211983127
+target	this:{person_id}_Entity sio:SIO_000228 this:{person_id}_Birthdate_Role ; sio:SIO_000008 this:{person_id}_Birthdate_Attribute ; sio:SIO_000228 this:{person_id}_Sex_Role ; sio:SIO_000008 this:{person_id}_Sex_Attribute ; a sio:SIO_000498 .
+source	SELECT person_id, make_date(year_of_birth,month_of_birth,day_of_birth) AS dob, gender_concept_id , "cde_sex"(gender_concept_id) AS sex FROM mytable
+
+mappingId	source_cde_test20220906171211983137
+target	this:{person_id}_Birthdate_Role sio:SIO_000356 this:{person_id}_Birthdate_Process ; a sio:SIO_000016 ; a obo:OBI_0000093 .
+source	SELECT person_id, make_date(year_of_birth,month_of_birth,day_of_birth) AS dob, gender_concept_id , "cde_sex"(gender_concept_id) AS sex FROM mytable
+
+mappingId	source_cde_test20220906171211983144
+target	this:{person_id}_Birthdate_Process sio:SIO_000229 this:{person_id}_Birthdate_Output ; a sio:SIO_000006 .
+source	SELECT person_id, make_date(year_of_birth,month_of_birth,day_of_birth) AS dob, gender_concept_id , "cde_sex"(gender_concept_id) AS sex FROM mytable
+
+mappingId	source_cde_test20220906171211983150
+target	this:{person_id}_Birthdate_Output sio:SIO_000628 this:{person_id}_Birthdate_Attribute ; a sio:SIO_000015 ; sio:SIO_000300 {dob}^^xsd:date .
+source	SELECT person_id, make_date(year_of_birth,month_of_birth,day_of_birth) AS dob, gender_concept_id , "cde_sex"(gender_concept_id) AS sex FROM mytable
+
+mappingId	source_cde_test20220906171211983157
+target	this:{person_id}_Sex_Role sio:SIO_000356 this:{person_id}_Sex_Process ; a sio:SIO_000016 ; a obo:OBI_0000093 .
+source	SELECT person_id, make_date(year_of_birth,month_of_birth,day_of_birth) AS dob, gender_concept_id , "cde_sex"(gender_concept_id) AS sex FROM mytable
+
+mappingId	source_cde_test20220906171211983166
+target	this:{person_id}_Sex_Process sio:SIO_000229 this:{person_id}_Sex_Output ; a sio:SIO_000006 .
+source	SELECT person_id, make_date(year_of_birth,month_of_birth,day_of_birth) AS dob, gender_concept_id , "cde_sex"(gender_concept_id) AS sex FROM mytable
+
+mappingId	source_cde_test20220906171211983172
+target	this:{person_id}_Sex_Output sio:SIO_000628 this:{person_id}_Sex_Attribute ; a sio:SIO_000015 .
+source	SELECT person_id, make_date(year_of_birth,month_of_birth,day_of_birth) AS dob, gender_concept_id , "cde_sex"(gender_concept_id) AS sex FROM mytable
+
+mappingId	source_cde_test20220906171211983178
+target	this:{person_id}_Birthdate_Attribute a sio:SIO_000614 ; a obo:NCIT_C68615 .
+source	SELECT person_id, make_date(year_of_birth,month_of_birth,day_of_birth) AS dob, gender_concept_id , "cde_sex"(gender_concept_id) AS sex FROM mytable
+
+mappingId	source_cde_test20220906171211983183
+target	this:{person_id}_Sex_Attribute a sio:SIO_000614 ; a <{sex}> ; a obo:NCIT_C28421 .
+source	SELECT person_id, make_date(year_of_birth,month_of_birth,day_of_birth) AS dob, gender_concept_id , "cde_sex"(gender_concept_id) AS sex FROM mytable
+
+]]
+

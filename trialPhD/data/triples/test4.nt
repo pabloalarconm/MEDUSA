@@ -1,0 +1,7 @@
+<http://example.org/data/id_test_1_000001_1234567891#Entity> <http://semanticscience.org/resource/has-role> <http://example.org/data/id_test_1_000001_1234567891#Role>.
+<http://example.org/data/id_test_1_000001_1234567891#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498>.
+<http://example.org/data/id_test_1_000001_1234567891#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/Case>.
+<http://example.org/data/id_test_1_000001_1234567891#ID> <http://semanticscience.org/resource/denotes> <http://example.org/data/id_test_1_000001_1234567891#Role>.
+<http://example.org/data/id_test_1_000001_1234567891#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115>.
+<http://example.org/data/id_test_1_000001_1234567891#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/biolink/vocab/ID>.
+<http://example.org/data/id_test_1_000001_1234567891#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093>.

@@ -4,18 +4,18 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-my:uid_000001_20220315095719275176_Entity a sio:SIO_000498 ;
+my:uid_000001_Entity a sio:SIO_000498 ;
     sio:SIO_000008 <https://identifiers.org/HGNC:12698>,
         <https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/>,
         <https://www.omim.org/entry/192977> ;
     sio:SIO_000228 my:uid_000001_20220315095719275176_Genetic_Role .
 
-my:uid_000001_20220315095719275176_ID a sio:SIO_000115 ;
+my:uid_000001_ID a sio:SIO_000115 ;
     sio:SIO_000020 my:uid_000001_20220315095719275176_Genetic_Role ;
     sio:SIO_000300 "uid_000001"^^xsd:string .
 
-my:uid_000001_20220315095719275176_HGNC_Output a sio:SIO_000015,
-        sio:SIO_001381 ;
+my:uid_000001_20220315095719275176_HGNC_Output a <http://edamontology.org/data_2298>,
+        sio:SIO_000015 ;
     rdfs:label "Output type: HGNC genome sequence variant" ;
     sio:SIO_000300 "https://identifiers.org/HGNC:12698"^^xsd:string ;
     sio:SIO_000628 <https://identifiers.org/HGNC:12698> .
@@ -36,8 +36,8 @@ my:uid_000001_20220315095719275176_HGVS_Process a obo:NCIT_C15709,
     rdfs:label "Process: HGVS genetic testing" ;
     sio:SIO_000229 my:uid_000001_20220315095719275176_HGVS_Output .
 
-my:uid_000001_20220315095719275176_OMIM_Output a sio:SIO_000015,
-        sio:SIO_001381 ;
+my:uid_000001_20220315095719275176_OMIM_Output a <http://edamontology.org/data_1153>,
+        sio:SIO_000015 ;
     rdfs:label "Output type: OMIM genome sequence variant" ;
     sio:SIO_000300 "https://www.omim.org/entry/192977"^^xsd:string ;
     sio:SIO_000628 <https://www.omim.org/entry/192977> .
@@ -54,18 +54,15 @@ my:uid_000001_20220315095719275176_Genetic_Role a obo:OBI_0000093,
         my:uid_000001_20220315095719275176_HGVS_Process,
         my:uid_000001_20220315095719275176_OMIM_Process .
 
-<https://identifiers.org/HGNC:12698> a <http://edamontology.org/data_2298>,
-        sio:SIO_000015,
+<https://identifiers.org/HGNC:12698> a obo:NCIT_C17938,
         sio:SIO_000614 ;
     rdfs:label "Attribute type: https://identifiers.org/HGNC:12698" .
 
-<https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> a obo:NCIT_C171178,
-        sio:SIO_000015,
+<https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> a obo:NCIT_C17938,
         sio:SIO_000614 ;
     rdfs:label "Attribute type: NM_004006.3:c.4375C>T" .
 
-<https://www.omim.org/entry/192977> a <http://edamontology.org/data_1153>,
-        sio:SIO_000015,
+<https://www.omim.org/entry/192977> a obo:NCIT_C17938,
         sio:SIO_000614 ;
     rdfs:label "Attribute type: https://www.omim.org/entry/192977" .
 

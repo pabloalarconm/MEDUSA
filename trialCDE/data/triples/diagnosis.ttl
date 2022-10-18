@@ -4,11 +4,11 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-my:uid_000007_20220315095719272811_Entity a sio:SIO_000498 ;
+my:uid_000007_Entity a sio:SIO_000498 ;
     sio:SIO_000008 my:uid_000007_20220315095719272811_Diagnosis_Attribute ;
     sio:SIO_000228 my:uid_000007_20220315095719272811_Diagnosis_Role .
 
-my:uid_000007_20220315095719272811_ID a sio:SIO_000115 ;
+my:uid_000007_ID a sio:SIO_000115 ;
     sio:SIO_000020 my:uid_000007_20220315095719272811_Diagnosis_Role ;
     sio:SIO_000300 "uid_000007"^^xsd:string .
 
@@ -16,14 +16,14 @@ my:uid_000007_20220315095719272811_Diagnosis_Enddate a sio:SIO_000032 ;
     rdfs:label "Enddate: 1996-02-12" ;
     sio:SIO_000300 "1996-02-12"^^xsd:date .
 
-my:uid_000007_20220315095719272811_Diagnosis_Output a sio:SIO_000015,
-        sio:SIO_001003 ;
+my:uid_000007_20220315095719272811_Diagnosis_Output a obo:NCIT_C103159,
+        sio:SIO_000015 ;
     rdfs:label "Output type: Diagnosis" ;
     sio:SIO_000300 "rare non-syndromic central nervous system malformation"^^xsd:string ;
     sio:SIO_000628 my:uid_000007_20220315095719272811_Diagnosis_Attribute .
 
-my:uid_000007_20220315095719272811_Diagnosis_Process a sio:SIO_000006,
-        sio:SIO_001001 ;
+my:uid_000007_20220315095719272811_Diagnosis_Process a obo:NCIT_C15220,
+        sio:SIO_000006 ;
     rdfs:label "Process: Medical diagnosis" ;
     sio:SIO_000229 my:uid_000007_20220315095719272811_Diagnosis_Output ;
     sio:SIO_000680 my:uid_000007_20220315095719272811_Diagnosis_Startdate ;
@@ -33,7 +33,8 @@ my:uid_000007_20220315095719272811_Diagnosis_Startdate a sio:SIO_000031 ;
     rdfs:label "Startdate: 1996-02-12" ;
     sio:SIO_000300 "1996-02-12"^^xsd:date .
 
-my:uid_000007_20220315095719272811_Diagnosis_Attribute a sio:SIO_000614,
+my:uid_000007_20220315095719272811_Diagnosis_Attribute a obo:NCIT_C25482,
+        sio:SIO_000614,
         <http://www.orpha.net/ORDO/Orphanet_1399> ;
     rdfs:label "Attribute type: rare non-syndromic central nervous system malformation" .
 

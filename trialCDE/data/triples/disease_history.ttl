@@ -4,13 +4,13 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-my:uid_000008_20220315095719448723_Entity a sio:SIO_000498 ;
+my:uid_000008_Entity a sio:SIO_000498 ;
     sio:SIO_000008 my:uid_000008_20220315095719448723_Diagnosis_date_Attribute,
         my:uid_000008_20220315095719448723_Symptom_onset_Attribute ;
     sio:SIO_000228 my:uid_000008_20220315095719448723_Diagnosis_date_Role,
         my:uid_000008_20220315095719448723_Symptom_onset_Role .
 
-my:uid_000008_20220315095719448723_ID a sio:SIO_000115 ;
+my:uid_000008_ID a sio:SIO_000115 ;
     sio:SIO_000020 my:uid_000008_20220315095719448723_Diagnosis_date_Role,
         my:uid_000008_20220315095719448723_Symptom_onset_Role ;
     sio:SIO_000300 "uid_000008"^^xsd:string .
@@ -21,8 +21,8 @@ my:uid_000008_20220315095719448723_Diagnosis_date_Output a obo:NCIT_C25164,
     sio:SIO_000300 "1999-06-08"^^xsd:date ;
     sio:SIO_000628 my:uid_000008_20220315095719448723_Diagnosis_date_Attribute .
 
-my:uid_000008_20220315095719448723_Diagnosis_date_Process a sio:SIO_000006,
-        sio:SIO_001052 ;
+my:uid_000008_20220315095719448723_Diagnosis_date_Process a obo:NCIT_C142470,
+        sio:SIO_000006 ;
     rdfs:label "Process: Diagnosis date recording process" ;
     sio:SIO_000229 my:uid_000008_20220315095719448723_Diagnosis_date_Output .
 
@@ -32,8 +32,8 @@ my:uid_000008_20220315095719448723_Symptom_onset_Output a obo:NCIT_C25164,
     sio:SIO_000300 "1998-06-08"^^xsd:date ;
     sio:SIO_000628 my:uid_000008_20220315095719448723_Symptom_onset_Attribute .
 
-my:uid_000008_20220315095719448723_Symptom_onset_Process a sio:SIO_000006,
-        sio:SIO_001052 ;
+my:uid_000008_20220315095719448723_Symptom_onset_Process a obo:NCIT_C142470,
+        sio:SIO_000006 ;
     rdfs:label "Process: Symptom onset date recording process" ;
     sio:SIO_000229 my:uid_000008_20220315095719448723_Symptom_onset_Output .
 

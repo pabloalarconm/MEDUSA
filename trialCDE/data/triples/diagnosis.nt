@@ -1,30 +1,31 @@
-<http://example.org/data/uid_000007_20220315095719272811_Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498>.
-<http://example.org/data/uid_000007_20220315095719272811_Entity> <http://semanticscience.org/resource/SIO_000008> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute>.
-<http://example.org/data/uid_000007_20220315095719272811_Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute type: rare non-syndromic central nervous system malformation".
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.orpha.net/ORDO/Orphanet_1399>.
+<http://example.org/data/uid_000007_ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115>.
+<http://example.org/data/uid_000007_ID> <http://semanticscience.org/resource/SIO_000300> "uid_000007"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/uid_000007_ID> <http://semanticscience.org/resource/SIO_000020> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: Medical diagnosis".
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C15220>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://semanticscience.org/resource/SIO_000681> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Enddate>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://semanticscience.org/resource/SIO_000680> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate> <http://www.w3.org/2000/01/rdf-schema#label> "Startdate: 1996-02-12".
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate> <http://semanticscience.org/resource/SIO_000300> "1996-02-12"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000031>.
 <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093>.
 <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process>.
 <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016>.
 <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role: Diagnosis patient".
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Enddate> <http://www.w3.org/2000/01/rdf-schema#label> "Enddate: 1996-02-12".
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.orpha.net/ORDO/Orphanet_1399>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute type: rare non-syndromic central nervous system malformation".
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C25482>.
 <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Enddate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000032>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Enddate> <http://www.w3.org/2000/01/rdf-schema#label> "Enddate: 1996-02-12".
 <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Enddate> <http://semanticscience.org/resource/SIO_000300> "1996-02-12"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000031>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate> <http://semanticscience.org/resource/SIO_000300> "1996-02-12"^^<http://www.w3.org/2001/XMLSchema#date>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate> <http://www.w3.org/2000/01/rdf-schema#label> "Startdate: 1996-02-12".
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output type: Diagnosis".
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output> <http://semanticscience.org/resource/SIO_000300> "rare non-syndromic central nervous system malformation"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_001003>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/uid_000007_Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498>.
+<http://example.org/data/uid_000007_Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role>.
+<http://example.org/data/uid_000007_Entity> <http://semanticscience.org/resource/SIO_000008> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute>.
 <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute>.
-<http://example.org/data/uid_000007_20220315095719272811_ID> <http://semanticscience.org/resource/SIO_000020> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role>.
-<http://example.org/data/uid_000007_20220315095719272811_ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115>.
-<http://example.org/data/uid_000007_20220315095719272811_ID> <http://semanticscience.org/resource/SIO_000300> "uid_000007"^^<http://www.w3.org/2001/XMLSchema#string>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_001001>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: Medical diagnosis".
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://semanticscience.org/resource/SIO_000681> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Enddate>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://semanticscience.org/resource/SIO_000680> <http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate>.
-<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output type: Diagnosis".
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C103159>.
+<http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output> <http://semanticscience.org/resource/SIO_000300> "rare non-syndromic central nervous system malformation"^^<http://www.w3.org/2001/XMLSchema#string>.

@@ -10,36 +10,37 @@
 # edgespacing: 40
 # layout: auto
 # connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasvalue", "label": "sio:has value" }
-# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "foaf_type", "label": "foaf:type" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "rdf_type", "label": "rdf:type" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_denotes", "label": "sio:denotes" }
 # connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasstarttime", "label": "sio:has start time" }
 # connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_refersto", "label": "sio:refers to" }
-# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_has_quality", "label": "sio:has_quality" }
 # connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasoutput", "label": "sio:has output" }
 # connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_isrealizedin", "label": "sio:is realized in" }
+# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_has_attribute", "label": "sio:has_attribute" }
 # connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasendtime", "label": "sio:has end time" }
-# connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_denotes", "label": "sio:denotes" }
 # connect: {"to": "id", "invert": true, "style":"curved=0;endArrow=blockThin;endFill=1;", "from": "sio_hasrole", "label": "sio:has role" }
-id,name,fill,stroke,shape,sio_hasvalue,foaf_type,sio_hasstarttime,sio_refersto,sio_has_quality,sio_hasoutput,sio_isrealizedin,sio_hasendtime,sio_denotes,sio_hasrole
-http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate,Startdate: 1996-02-12,#FFE6CC,#000000,rhombus,"NA","NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process","NA","NA","NA","NA","NA","NA","NA"
+id,name,fill,stroke,shape,sio_hasvalue,rdf_type,sio_denotes,sio_hasstarttime,sio_refersto,sio_hasoutput,sio_isrealizedin,sio_has_attribute,sio_hasendtime,sio_hasrole
+http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate,Startdate: 1996-02-12,#FFE6CC,#000000,rhombus,"NA","NA","NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process","NA","NA","NA","NA","NA","NA"
 1996-02-12,1996-02-12,#DAE8FC,#000000,ellipse,"http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Enddate,http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate","NA","NA","NA","NA","NA","NA","NA","NA","NA"
 http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output,Output type: Diagnosis,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process","NA","NA","NA","NA"
 http://semanticscience.org/resource/SIO_000015,sio:information content entity,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output","NA","NA","NA","NA","NA","NA","NA","NA"
 http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process,Process: Medical diagnosis,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role","NA","NA","NA"
-http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute,Attribute type: rare non-syndromic central nervous system malformation,#FFE6CC,#000000,rhombus,"NA","NA","NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output","http://example.org/data/uid_000007_20220315095719272811_Entity","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000007_ID,uid_000007_ID,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role,Role: Diagnosis patient,#FFE6CC,#000000,rhombus,"NA","NA","http://example.org/data/uid_000007_ID","NA","NA","NA","NA","NA","NA","http://example.org/data/uid_000007_Entity"
+http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute,Attribute type: rare non-syndromic central nervous system malformation,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output","NA","NA","http://example.org/data/uid_000007_Entity","NA","NA"
 http://semanticscience.org/resource/SIO_000614,sio:attribute,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute","NA","NA","NA","NA","NA","NA","NA","NA"
-http://example.org/data/uid_000007_20220315095719272811_Entity,uid_000007_20220315095719272811_Entity,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role,Role: Diagnosis patient,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719272811_ID","http://example.org/data/uid_000007_20220315095719272811_Entity"
 http://semanticscience.org/resource/SIO_000016,sio:role,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000115,sio:identifier,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_ID","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C103159,obo:Data Collection,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000007_Entity,uid_000007_Entity,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C25482,obo:Diagnostic,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute","NA","NA","NA","NA","NA","NA","NA","NA"
+http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Enddate,Enddate: 1996-02-12,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process","NA"
 http://purl.obolibrary.org/obo/OBI_0000093,obo:patient role,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Role","NA","NA","NA","NA","NA","NA","NA","NA"
-http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Enddate,Enddate: 1996-02-12,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process","NA","NA"
-http://semanticscience.org/resource/SIO_001001,sio:medical diagnosis,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process","NA","NA","NA","NA","NA","NA","NA","NA"
-http://example.org/data/uid_000007_20220315095719272811_ID,uid_000007_20220315095719272811_ID,#FFE6CC,#000000,rhombus,"NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
+http://semanticscience.org/resource/SIO_000498,sio:person,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_Entity","NA","NA","NA","NA","NA","NA","NA","NA"
+uid_000007,uid_000007,#DAE8FC,#000000,ellipse,"http://example.org/data/uid_000007_ID","NA","NA","NA","NA","NA","NA","NA","NA","NA"
 http://www.orpha.net/ORDO/Orphanet_1399,ordo:obsolete_Richards-Rundle syndrome,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Attribute","NA","NA","NA","NA","NA","NA","NA","NA"
 http://semanticscience.org/resource/SIO_000006,sio:process,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process","NA","NA","NA","NA","NA","NA","NA","NA"
 http://semanticscience.org/resource/SIO_000031,sio:start date,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Startdate","NA","NA","NA","NA","NA","NA","NA","NA"
-http://semanticscience.org/resource/SIO_000115,sio:identifier,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_ID","NA","NA","NA","NA","NA","NA","NA","NA"
 rare non-syndromic central nervous system malformation,rare non-syndromic central nervous system malformation,#DAE8FC,#000000,ellipse,"http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-uid_000007,uid_000007,#DAE8FC,#000000,ellipse,"http://example.org/data/uid_000007_20220315095719272811_ID","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-http://semanticscience.org/resource/SIO_001003,sio:diagnostic opinion,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Output","NA","NA","NA","NA","NA","NA","NA","NA"
 http://semanticscience.org/resource/SIO_000032,sio:end date,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Enddate","NA","NA","NA","NA","NA","NA","NA","NA"
-http://semanticscience.org/resource/SIO_000498,sio:person,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Entity","NA","NA","NA","NA","NA","NA","NA","NA"
+http://purl.obolibrary.org/obo/NCIT_C15220,obo:Diagnosis,#d5e8d4,#000000,rounded,"NA","http://example.org/data/uid_000007_20220315095719272811_Diagnosis_Process","NA","NA","NA","NA","NA","NA","NA","NA"

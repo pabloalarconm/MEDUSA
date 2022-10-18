@@ -1,5 +1,5 @@
 mapping:
-  20220607133253188140_source_cde_test:
+  20220930154437521436_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -15,8 +15,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220607133253188158_source_cde_test:
+    subjects: this:$(pid)_ID
+  20220930154437521454_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -40,8 +40,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220607133253188164_source_cde_test:
+    subjects: this:$(pid)_Entity
+  20220930154437521460_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -62,7 +62,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Role
-  20220607133253188171_source_cde_test:
+  20220930154437521466_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -99,7 +99,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Process
-  20220607133253188177_source_cde_test:
+  20220930154437521471_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -120,7 +120,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Output
-  20220607133253188183_source_cde_test:
+  20220930154437521476_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -145,7 +145,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotype_Input
-  20220607133253188188_source_cde_test:
+  20220930154437521482_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -170,7 +170,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Genotype_Input
-  20220607133253188193_source_cde_test:
+  20220930154437521486_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -187,7 +187,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Startdate
-  20220607133253188198_source_cde_test:
+  20220930154437521490_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -204,7 +204,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Enddate
-  20220607133253188202_source_cde_test:
+  20220930154437521494_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -221,7 +221,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Undiagnosed_Attribute
-  20220607133253188208_source_cde_test:
+  20220930154437521499_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -238,7 +238,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotype_Attribute
-  20220607133253188213_source_cde_test:
+  20220930154437521503_source_cde_test:
     predicateobject:
     - objects:
         type: iri

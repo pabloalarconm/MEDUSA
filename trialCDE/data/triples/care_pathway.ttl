@@ -4,10 +4,10 @@
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-my:uid_000007_20220315095719280566_Entity a sio:SIO_000498 ;
+my:uid_000007_Entity a sio:SIO_000498 ;
     sio:SIO_000228 my:uid_000007_20220315095719280566_Care_pathway_Role .
 
-my:uid_000007_20220315095719280566_ID a sio:SIO_000115 ;
+my:uid_000007_ID a sio:SIO_000115 ;
     sio:SIO_000020 my:uid_000007_20220315095719280566_Care_pathway_Role ;
     sio:SIO_000300 "uid_000007"^^xsd:string .
 
@@ -16,7 +16,6 @@ my:uid_000007_20220315095719280566_Care_pathway_Enddate a sio:SIO_000032 ;
     sio:SIO_000300 "1991-02-12"^^xsd:date .
 
 my:uid_000007_20220315095719280566_Care_pathway_Process a obo:NCIT_C159705,
-        obo:NCIT_C16205,
         sio:SIO_000006 ;
     rdfs:label "Process: First contact with specialized center" ;
     sio:SIO_000680 my:uid_000007_20220315095719280566_Care_pathway_Startdate ;

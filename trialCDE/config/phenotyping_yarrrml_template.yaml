@@ -1,5 +1,5 @@
 mapping:
-  20220607133252352761_source_cde_test:
+  20220930162953980424_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -15,8 +15,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220607133252352778_source_cde_test:
+    subjects: this:$(pid)_ID
+  20220930162953980440_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -32,8 +32,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220607133252352784_source_cde_test:
+    subjects: this:$(pid)_Entity
+  20220930162953980446_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -54,7 +54,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotypic_Role
-  20220607133252352792_source_cde_test:
+  20220930162953980456_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -74,15 +74,7 @@ mapping:
       predicate: rdf:type
     - objects:
         type: iri
-        value: obo:OBI_0001546
-      predicate: rdf:type
-    - objects:
-        type: iri
-        value: obo:NCIT_C16205
-      predicate: rdf:type
-    - objects:
-        type: iri
-        value: obo:NCIT_C18020
+        value: obo:NCIT_C25305
       predicate: rdf:type
     - objects:
         datatype: xsd:string
@@ -91,7 +83,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotypic_Process
-  20220607133252352798_source_cde_test:
+  20220930162953980461_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -103,7 +95,7 @@ mapping:
       predicate: rdf:type
     - objects:
         type: iri
-        value: obo:NCIT_C102741
+        value: obo:NCIT_C125204
       predicate: rdf:type
     - objects:
         datatype: xsd:string
@@ -112,7 +104,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotypic_Output
-  20220607133252352802_source_cde_test:
+  20220930162953980466_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -129,7 +121,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotypic_Startdate
-  20220607133252352808_source_cde_test:
+  20220930162953980471_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -146,7 +138,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Phenotypic_Enddate
-  20220607133252352812_source_cde_test:
+  20220930162953980476_source_cde_test:
     predicateobject:
     - objects:
         type: iri

@@ -1,5 +1,5 @@
 mapping:
-  20220607133251516305_source_cde_test:
+  20220930170137859259_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -15,8 +15,8 @@ mapping:
       predicate: sio:SIO_000300
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_ID
-  20220607133251516321_source_cde_test:
+    subjects: this:$(pid)_ID
+  20220930170137859275_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -40,8 +40,8 @@ mapping:
       predicate: rdf:type
     sources:
     - source_cde_test
-    subjects: this:$(pid)_$(uniqid)_Entity
-  20220607133251516328_source_cde_test:
+    subjects: this:$(pid)_Entity
+  20220930170137859282_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -70,7 +70,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_Genetic_Role
-  20220607133251516334_source_cde_test:
+  20220930170137859287_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -91,7 +91,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_HGVS_Process
-  20220607133251516340_source_cde_test:
+  20220930170137859293_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -116,7 +116,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_HGVS_Output
-  20220607133251516346_source_cde_test:
+  20220930170137859297_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -137,7 +137,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_OMIM_Process
-  20220607133251516352_source_cde_test:
+  20220930170137859302_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -149,7 +149,7 @@ mapping:
       predicate: rdf:type
     - objects:
         type: iri
-        value: sio:SIO_001381
+        value: edam:data_1153
       predicate: rdf:type
     - objects:
         datatype: xsd:string
@@ -162,7 +162,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_OMIM_Output
-  20220607133251516356_source_cde_test:
+  20220930170137859307_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -183,7 +183,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_HGNC_Process
-  20220607133251516363_source_cde_test:
+  20220930170137859312_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -195,7 +195,7 @@ mapping:
       predicate: rdf:type
     - objects:
         type: iri
-        value: sio:SIO_001381
+        value: edam:data_2298
       predicate: rdf:type
     - objects:
         datatype: xsd:string
@@ -208,7 +208,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: this:$(pid)_$(uniqid)_HGNC_Output
-  20220607133251516368_source_cde_test:
+  20220930170137859317_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -216,11 +216,7 @@ mapping:
       predicate: rdf:type
     - objects:
         type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    - objects:
-        type: iri
-        value: obo:NCIT_C171178
+        value: obo:NCIT_C17938
       predicate: rdf:type
     - objects:
         datatype: xsd:string
@@ -229,7 +225,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: $(clinvar_uri)
-  20220607133251516374_source_cde_test:
+  20220930170137859321_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -237,11 +233,7 @@ mapping:
       predicate: rdf:type
     - objects:
         type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    - objects:
-        type: iri
-        value: edam:data_1153
+        value: obo:NCIT_C17938
       predicate: rdf:type
     - objects:
         datatype: xsd:string
@@ -250,7 +242,7 @@ mapping:
     sources:
     - source_cde_test
     subjects: $(omim_uri)
-  20220607133251516379_source_cde_test:
+  20220930170137859325_source_cde_test:
     predicateobject:
     - objects:
         type: iri
@@ -258,11 +250,7 @@ mapping:
       predicate: rdf:type
     - objects:
         type: iri
-        value: sio:SIO_000015
-      predicate: rdf:type
-    - objects:
-        type: iri
-        value: edam:data_2298
+        value: obo:NCIT_C17938
       predicate: rdf:type
     - objects:
         datatype: xsd:string

@@ -1,0 +1,47 @@
+Birth_date:
+  columns:
+    pid: pat_id
+    valueOutput: birthdate
+
+Sex:
+  columns:
+    pid: pat_id
+    valueAttributeIRI: sex_uri
+    valueOutput: sex
+
+Care_pathway:
+  columns:
+    pid: pat_id
+    valueOutput: first_visit_date
+
+Diagnosis:
+  columns:
+    pid: pat_id
+    valueAttributeIRI: diagnosis
+
+Date_of_diagnosis:
+  columns:
+    pid: pat_id
+    valueOutput: diagnosis_date
+    valueAttributeIRI: onset_diagnosis
+
+Onset_of_symptoms:
+  columns:
+    pid: pat_id
+    valueAttributeIRI: onset_symptom
+    valueOutput: first_symptoms_date
+
+Phenotype:
+  columns:
+    pid: pat_id
+    valueAttributeIRI: dia_ce_sle_vasculitis_uri
+    valueOutput: dia_ce_sle_vasculitis
+
+
+Consent:
+  columns:
+    pid: pat_id
+    valueOutput: consent_clinical
+    outputURI: consent_clinical_uri
+    startdate: informed_consent_date
+    enddate: informed_consent_date

@@ -1,0 +1,174 @@
+mapping:
+  20220930170935225998_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Disability_Role
+      predicate: sio:SIO_000020
+    - objects:
+        type: iri
+        value: sio:SIO_000115
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: $(pid)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_ID
+  20220930170935226013_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Disability_Role
+      predicate: sio:SIO_000228
+    - objects:
+        type: iri
+        value: sio:SIO_000498
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_Entity
+  20220930170935226019_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Disability_Process
+      predicate: sio:SIO_000356
+    - objects:
+        type: iri
+        value: sio:SIO_000016
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:OBI_0000093
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Role: Patient'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Disability_Role
+  20220930170935226028_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Disability_Startdate
+      predicate: sio:SIO_000680
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Disability_Enddate
+      predicate: sio:SIO_000681
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Disability_Output
+      predicate: sio:SIO_000229
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Disability_Input
+      predicate: sio:SIO_000230
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C20993
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: $(test_uri)
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Process: $(test_name)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Disability_Process
+  20220930170935226033_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000031
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Startdate: $(test_date)'
+      predicate: rdfs:label
+    - objects:
+        datatype: xsd:date
+        value: $(test_date)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Disability_Startdate
+  20220930170935226038_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000032
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Enddate: $(test_date)'
+      predicate: rdfs:label
+    - objects:
+        datatype: xsd:date
+        value: $(test_date)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Disability_Enddate
+  20220930170935226043_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C103159
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: Disability score'
+      predicate: rdfs:label
+    - objects:
+        datatype: xsd:string
+        value: $(score)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Disability_Output
+  20220930170935226048_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C17048
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Input type: Questionnaire'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Disability_Input
+prefixes:
+  obo: http://purl.obolibrary.org/obo/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sio: http://semanticscience.org/resource/
+  this: '|||BASE|||'
+  xsd: http://www.w3.org/2001/XMLSchema#
+sources:
+  source_cde_test:
+    access: '|||DATA|||'
+    iterator: $
+    referenceFormulation: '|||FORMULATION|||'
+

@@ -1,0 +1,2 @@
+model,processURI,outputURI,attributeURI,valueAttributeIRI,valueOutput,datatype,uniqid,enddate,pid,chronoid,startdate
+Birth_date,http://purl.obolibrary.org/obo/NCIT_C142470,http://www.ebi.ac.uk/efo/EFO_0006921,http://purl.obolibrary.org/obo/NCIT_C68615,,2010-10,xsd:date,123456978,2002-10-11,500-0001,c123456,2002-10-10

@@ -1,0 +1,50 @@
+<http://example.org/data/uid_000001_20220315095719275176_Genetic_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role: Genetic diagnosis patient".
+<http://example.org/data/uid_000001_20220315095719275176_Genetic_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/uid_000001_20220315095719275176_HGNC_Process>.
+<http://example.org/data/uid_000001_20220315095719275176_Genetic_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/uid_000001_20220315095719275176_OMIM_Process>.
+<http://example.org/data/uid_000001_20220315095719275176_Genetic_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093>.
+<http://example.org/data/uid_000001_20220315095719275176_Genetic_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/uid_000001_20220315095719275176_HGVS_Process>.
+<http://example.org/data/uid_000001_20220315095719275176_Genetic_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016>.
+<http://example.org/data/uid_000001_20220315095719275176_HGVS_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.org/data/uid_000001_20220315095719275176_HGVS_Output>.
+<http://example.org/data/uid_000001_20220315095719275176_HGVS_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
+<http://example.org/data/uid_000001_20220315095719275176_HGVS_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: HGVS genetic testing".
+<http://example.org/data/uid_000001_20220315095719275176_HGVS_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C15709>.
+<http://example.org/data/uid_000001_20220315095719275176_HGNC_Output> <http://semanticscience.org/resource/SIO_000628> <https://identifiers.org/HGNC:12698>.
+<http://example.org/data/uid_000001_20220315095719275176_HGNC_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://edamontology.org/data_2298>.
+<http://example.org/data/uid_000001_20220315095719275176_HGNC_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/uid_000001_20220315095719275176_HGNC_Output> <http://semanticscience.org/resource/SIO_000300> "https://identifiers.org/HGNC:12698"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/uid_000001_20220315095719275176_HGNC_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output type: HGNC genome sequence variant".
+<http://example.org/data/uid_000001_ID> <http://semanticscience.org/resource/SIO_000300> "uid_000001"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/uid_000001_ID> <http://semanticscience.org/resource/SIO_000020> <http://example.org/data/uid_000001_20220315095719275176_Genetic_Role>.
+<http://example.org/data/uid_000001_ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115>.
+<https://www.omim.org/entry/192977> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C17938>.
+<https://www.omim.org/entry/192977> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
+<https://www.omim.org/entry/192977> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute type: https://www.omim.org/entry/192977".
+<http://example.org/data/uid_000001_20220315095719275176_OMIM_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output type: OMIM genome sequence variant".
+<http://example.org/data/uid_000001_20220315095719275176_OMIM_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://edamontology.org/data_1153>.
+<http://example.org/data/uid_000001_20220315095719275176_OMIM_Output> <http://semanticscience.org/resource/SIO_000628> <https://www.omim.org/entry/192977>.
+<http://example.org/data/uid_000001_20220315095719275176_OMIM_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/uid_000001_20220315095719275176_OMIM_Output> <http://semanticscience.org/resource/SIO_000300> "https://www.omim.org/entry/192977"^^<http://www.w3.org/2001/XMLSchema#string>.
+<https://identifiers.org/HGNC:12698> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute type: https://identifiers.org/HGNC:12698".
+<https://identifiers.org/HGNC:12698> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
+<https://identifiers.org/HGNC:12698> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C17938>.
+<https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute type: NM_004006.3:c.4375C>T".
+<https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
+<https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C17938>.
+<http://example.org/data/uid_000001_20220315095719275176_HGVS_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_001388>.
+<http://example.org/data/uid_000001_20220315095719275176_HGVS_Output> <http://semanticscience.org/resource/SIO_000300> "NM_004006.3:c.4375C>T"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/uid_000001_20220315095719275176_HGVS_Output> <http://semanticscience.org/resource/SIO_000628> <https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/>.
+<http://example.org/data/uid_000001_20220315095719275176_HGVS_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output type: HGVS measurement value".
+<http://example.org/data/uid_000001_20220315095719275176_HGVS_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/uid_000001_20220315095719275176_HGNC_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: HGNC genetic testing".
+<http://example.org/data/uid_000001_20220315095719275176_HGNC_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.org/data/uid_000001_20220315095719275176_HGNC_Output>.
+<http://example.org/data/uid_000001_20220315095719275176_HGNC_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C15709>.
+<http://example.org/data/uid_000001_20220315095719275176_HGNC_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
+<http://example.org/data/uid_000001_20220315095719275176_OMIM_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C15709>.
+<http://example.org/data/uid_000001_20220315095719275176_OMIM_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.
+<http://example.org/data/uid_000001_20220315095719275176_OMIM_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.org/data/uid_000001_20220315095719275176_OMIM_Output>.
+<http://example.org/data/uid_000001_20220315095719275176_OMIM_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process: OMIM genetic testing".
+<http://example.org/data/uid_000001_Entity> <http://semanticscience.org/resource/SIO_000008> <https://www.omim.org/entry/192977>.
+<http://example.org/data/uid_000001_Entity> <http://semanticscience.org/resource/SIO_000008> <https://www.ncbi.nlm.nih.gov/clinvar/variation/597052/>.
+<http://example.org/data/uid_000001_Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498>.
+<http://example.org/data/uid_000001_Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/uid_000001_20220315095719275176_Genetic_Role>.
+<http://example.org/data/uid_000001_Entity> <http://semanticscience.org/resource/SIO_000008> <https://identifiers.org/HGNC:12698>.

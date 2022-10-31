@@ -1,0 +1,233 @@
+mapping:
+  20220930165517568516_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Birthdate_Role
+      predicate: sio:SIO_000020
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Sex_Role
+      predicate: sio:SIO_000020
+    - objects:
+        type: iri
+        value: sio:SIO_000115
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: $(pid)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_ID
+  20220930165517568534_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Birthdate_Role
+      predicate: sio:SIO_000228
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Birthdate_Attribute
+      predicate: sio:SIO_000008
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Sex_Role
+      predicate: sio:SIO_000228
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Sex_Attribute
+      predicate: sio:SIO_000008
+    - objects:
+        type: iri
+        value: sio:SIO_000498
+      predicate: rdf:type
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_Entity
+  20220930165517568541_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Birthdate_Process
+      predicate: sio:SIO_000356
+    - objects:
+        type: iri
+        value: sio:SIO_000016
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:OBI_0000093
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Role: Patient for age assessment'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Birthdate_Role
+  20220930165517568546_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Birthdate_Output
+      predicate: sio:SIO_000229
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C142470
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Process: age measuring process'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Birthdate_Process
+  20220930165517568552_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Birthdate_Attribute
+      predicate: sio:SIO_000628
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: efo:EFO_0006921
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: Birth date'
+      predicate: rdfs:label
+    - objects:
+        datatype: xsd:date
+        value: $(birthdate)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Birthdate_Output
+  20220930165517568557_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Sex_Process
+      predicate: sio:SIO_000356
+    - objects:
+        type: iri
+        value: sio:SIO_000016
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:OBI_0000093
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Role: Patient for gender assessment'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Sex_Role
+  20220930165517568563_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Sex_Output
+      predicate: sio:SIO_000229
+    - objects:
+        type: iri
+        value: sio:SIO_000006
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C142470
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Process: sex measuring process'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Sex_Process
+  20220930165517568569_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: this:$(pid)_$(uniqid)_Sex_Attribute
+      predicate: sio:SIO_000628
+    - objects:
+        type: iri
+        value: sio:SIO_000015
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C103159
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Output type: $(sexLabel)'
+      predicate: rdfs:label
+    - objects:
+        datatype: xsd:string
+        value: $(sexLabel)
+      predicate: sio:SIO_000300
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Sex_Output
+  20220930165517568574_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C68615
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: Birth date'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Birthdate_Attribute
+  20220930165517568579_source_cde_test:
+    predicateobject:
+    - objects:
+        type: iri
+        value: sio:SIO_000614
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: $(sexURI)
+      predicate: rdf:type
+    - objects:
+        type: iri
+        value: obo:NCIT_C28421
+      predicate: rdf:type
+    - objects:
+        datatype: xsd:string
+        value: 'Attribute type: $(sexLabel)'
+      predicate: rdfs:label
+    sources:
+    - source_cde_test
+    subjects: this:$(pid)_$(uniqid)_Sex_Attribute
+prefixes:
+  efo: http://www.ebi.ac.uk/efo/
+  obo: http://purl.obolibrary.org/obo/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sio: http://semanticscience.org/resource/
+  this: '|||BASE|||'
+  xsd: http://www.w3.org/2001/XMLSchema#
+sources:
+  source_cde_test:
+    access: '|||DATA|||'
+    iterator: $
+    referenceFormulation: '|||FORMULATION|||'
+

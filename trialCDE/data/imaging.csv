@@ -1,2 +1,0 @@
-pid,uniqid,processURI,processLabel,protocolURI,protocolLabel,target,target_label,imageID,date,comments
-12345,20220315095719447429,http://purl.obolibrary.org/obo/NCIT_C38093,Tomography,https://dx.doi.org/10.17504/protocols.io.pooqjdfh,My tomo Method,http://purl.obolibrary.org/obo/NCIT_C33252,palmar region,local:imaging:11jswietu,2019-02-28,some comments here

@@ -1,0 +1,2 @@
+pid,uniqid,processURI,processLabel,protocolURI,protocolLabel,material_tested,material_tested_label,target,target_label,value,unitURI,unitLabel,date,comments
+12345,20220315095719282201,http://purl.obolibrary.org/obo/NCIT_C48937,Quantitation,https://dx.doi.org/10.17504/protocols.io.yy3fxyn,LUMC 2021 Haemioglobin Smythe et al.,http://purl.obolibrary.org/obo/NCIT_C12434,blood,http://purl.obolibrary.org/obo/NCIT_C16676,hemoglobin,13,http://purl.obolibrary.org/obo/UO_0000208,grams per decilitre,2019-02-28,blood collected early morning

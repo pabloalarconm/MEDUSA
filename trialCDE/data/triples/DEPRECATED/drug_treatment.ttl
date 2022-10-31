@@ -1,0 +1,71 @@
+@prefix my: <http://example.org/data/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+my:id_000007_20220315095719196666_Entity a sio:SIO_000498 ;
+    sio:SIO_000228 my:id_000007_20220315095719196666_Treatment_role .
+
+my:id_000007_20220315095719196666_ID a sio:SIO_000115 ;
+    sio:SIO_000020 my:id_000007_20220315095719196666_Treatment_role ;
+    sio:SIO_000300 "id_000007"^^xsd:string .
+
+<https://www.whocc.no/atc_ddd_index/?code=L01XC02> a obo:NCIT_C1702,
+        obo:NCIT_C177929 ;
+    rdfs:label "Drug component: rituximab" ;
+    sio:SIO_000313 my:id_000007_20220315095719196666_Drug .
+
+my:id_000007_20220315095719196666_Administration_input a obo:NCIT_C38288,
+        sio:SIO_000015 ;
+    rdfs:label "Route of administration: Oral Route of Administration" .
+
+my:id_000007_20220315095719196666_Dose a obo:NCIT_C25488 ;
+    rdfs:label "Dose" ;
+    sio:SIO_000221 my:id_000007_20220315095719196666_Unit ;
+    sio:SIO_000900 my:id_000007_20220315095719196666_Frequency .
+
+my:id_000007_20220315095719196666_Drug_intake_process a obo:NCIT_C25538 ;
+    rdfs:label "Process: Drug intake" ;
+    sio:CHEMINF_000047 my:id_000007_20220315095719196666_Prescription_output ;
+    sio:SIO_000139 my:id_000007_20220315095719196666_Drug ;
+    sio:SIO_000230 my:id_000007_20220315095719196666_Administration_input ;
+    sio:SIO_000680 my:id_000007_20220315095719196666_Treatment_startdate ;
+    sio:SIO_000681 my:id_000007_20220315095719196666_Treatment_enddate .
+
+my:id_000007_20220315095719196666_Drug_prescription_process a obo:NCIT_C111077 ;
+    rdfs:label "Process: Drug prescription" ;
+    sio:SIO_000229 my:id_000007_20220315095719196666_Prescription_output .
+
+my:id_000007_20220315095719196666_Frequency a obo:NCIT_C66968 ;
+    rdfs:label "Frequency: per day" ;
+    sio:SIO_000300 1 .
+
+my:id_000007_20220315095719196666_Treatment_enddate a sio:SIO_000032 ;
+    rdfs:label "Enddate: 2021-08-08" ;
+    sio:SIO_000300 "2021-08-08"^^xsd:date .
+
+my:id_000007_20220315095719196666_Treatment_startdate a sio:SIO_000031 ;
+    rdfs:label "Startdate: 2019-04-05" ;
+    sio:SIO_000300 "2019-04-05"^^xsd:date .
+
+my:id_000007_20220315095719196666_Unit a obo:UO_0000022 ;
+    rdfs:label "Unit: miligram" .
+
+my:id_000007_20220315095719196666_Prescription_output a obo:NCIT_C28180,
+        sio:SIO_000015 ;
+    rdfs:label "Prescription" ;
+    sio:SIO_000628 my:id_000007_20220315095719196666_Dose,
+        my:id_000007_20220315095719196666_Drug ;
+    rdfs:comment "comments"^^xsd:string .
+
+my:id_000007_20220315095719196666_Treatment_role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Role: Patient" ;
+    sio:SIO_000356 my:id_000007_20220315095719196666_Drug_intake_process,
+        my:id_000007_20220315095719196666_Drug_prescription_process .
+
+my:id_000007_20220315095719196666_Drug a sio:SIO_010038 ;
+    rdfs:label "Drug" ;
+    sio:SIO_000300 "60.0"^^xsd:float .
+

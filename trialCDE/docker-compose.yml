@@ -10,7 +10,7 @@ services:
             - ./data:/data
 
     rdfizer:
-        image: markw/sdmrdfizer_ejp:0.3.0
+        image: markw/sdmrdfizer_ejp:0.5.0
         container_name: rdfizer
         ports:
             - "4000:4000"

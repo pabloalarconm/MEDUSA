@@ -1,0 +1,537 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#"
+     xml:base="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology-based conceptual model defining use case flash card statements</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000081 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000081">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">role of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#demonstrates_high_level_goal -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#demonstrates_high_level_goal">
+        <rdfs:domain rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Use_case"/>
+        <rdfs:range rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#High_level_goal"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demonstrates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#has__reported_development_status -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#has__reported_development_status">
+        <owl:inverseOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#is_reported_development_status_of"/>
+        <rdfs:domain rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Use_case"/>
+        <rdfs:range rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Overall_status_assessment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has reported development status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#has_contextual_goal_statement -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#has_contextual_goal_statement">
+        <rdfs:domain rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Use_case"/>
+        <rdfs:range rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#ContextualGoal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contextual goal maps to &apos;such that I can&apos; in &apos;As a (person with) &lt;role type&gt;, I would like to &lt;specific goal&gt; such that I can &lt;contextual goal&gt;
+
+equivalent to 
+use case has contextual goal</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">such that I can</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#has_specific_goal_statement -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#has_specific_goal_statement">
+        <rdfs:domain rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#EJPRD_VP_user"/>
+        <rdfs:range rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#SpecificGoal"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific goal maps to &apos;would like to&apos; in &apos;As a (person with) &lt;role type&gt;, I would like to &lt;specific goal&gt; such that I can &lt;contextual goal&gt;
+
+equivalent to 
+user has specific goal</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">would like to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#has_user_role -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#has_user_role">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#user_role_of"/>
+        <rdfs:domain rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#EJPRD_VP_user"/>
+        <rdfs:range rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:label>has user role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#is_reported_development_status_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#is_reported_development_status_of">
+        <rdfs:domain rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Overall_status_assessment"/>
+        <rdfs:range rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Use_case"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#use-case_involves_specific-goal -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#use-case_involves_specific-goal">
+        <rdfs:domain rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Use_case"/>
+        <rdfs:range rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#SpecificGoal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#use-case_of_user -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#use-case_of_user">
+        <rdfs:domain rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Use_case"/>
+        <rdfs:range rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#EJPRD_VP_user"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#user_role_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#user_role_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+        <rdfs:domain rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:range rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#EJPRD_VP_user"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#uses_VP -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#uses_VP">
+        <rdfs:domain rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#EJPRD_VP_user"/>
+        <rdfs:range rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Virtual_platform_interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000129 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/STATO_0000129">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:label>Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Application_developer_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Application_developer_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Application developer role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_doing_research -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_doing_research">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#EJPRD_VP_user"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#has_user_role"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_doing_research_role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Clinician doing research</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_doing_research_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_doing_research_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_role"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinician doing research role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinician role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_tending_to_patients_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_tending_to_patients_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_role"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinician tending to patients role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#ContextualGoal -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#ContextualGoal">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The contextual goal, as in &apos;As a (person with) &lt;UserRole&gt;, I would like to &lt;SpecificGoal&gt;, such that I can &lt;ContextualGoal&gt;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual goal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Data_officer_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Data_officer_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who has the role of governing access to data on behalf of an organisation (the data controller or processor).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data officer role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Data_scientist_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Data_scientist_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data scientist role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Data_steward_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Data_steward_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data steward role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#EJPRD_VP_user -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#EJPRD_VP_user">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#uses_VP"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Virtual_platform_interface"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User of an EJP RD VP interface. The class is expected to be a subclass of &apos;Person&apos;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EJPRD VP user</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#FAIR_data_steward_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#FAIR_data_steward_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Data_steward_role"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAIR data steward role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#High_level_goal -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#High_level_goal">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High level goal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Machine_learning_expert_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Machine_learning_expert_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Someone who knows how to develop machine learning strategies</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML expert role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Overall_status_assessment -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Overall_status_assessment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#is_reported_development_status_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Use_case"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instances of this class denote the reported status of development of a use case, i.e. a single information artefact.. E.g. &apos;Pending development&apos; denotes that development of a use case has not commenced yet.
+
+Envisioned are
+- Pending development
+- Ready for development
+- Under development
+- Working prototype available
+- Functional</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Development status report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Patient_registry_data_steward_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Patient_registry_data_steward_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Data_steward_role"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patient registry data steward role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Patient_registry_manager_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Patient_registry_manager_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role for persons involved in managing a registry in the sense of decision making. The role is not intended for technical developers or data managers.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patient registry manager role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Patient_representative_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Patient_representative_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patient representative role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Policy_person_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Policy_person_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person involved in making, advocating, or adopting policies</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Policy person role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Reported_development_is_Working_prototype_available -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Reported_development_is_Working_prototype_available">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Overall_status_assessment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Working prototype available</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Reported_development_status_is_Functional -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Reported_development_status_is_Functional">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Overall_status_assessment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Functional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Reported_development_status_is_Pending_development -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Reported_development_status_is_Pending_development">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Overall_status_assessment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pending development</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Reported_development_status_is_Ready_for_development -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Reported_development_status_is_Ready_for_development">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Overall_status_assessment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ready for development</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Reported_development_status_is_Under_development -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Reported_development_status_is_Under_development">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Overall_status_assessment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Under development</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#SpecificGoal -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#SpecificGoal">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specific goal of a user, as in &apos;As a (person with) &lt;UserRole&gt;, I would like to &lt;SpecificGoal&gt;, such that I can &lt;ContextualGoal&gt;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specific goal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Use_case -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Use_case">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#has__reported_development_status"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Overall_status_assessment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#use-case_involves_specific-goal"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#SpecificGoal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#use-case_of_user"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#EJPRD_VP_user"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The type of user role, as in &apos;As a (person with) &lt;UserRole&gt;, I would like to &lt;SpecificGoal&gt;, such that I can &lt;ContextualGoal&gt;.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#VP_developer_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#VP_developer_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#UserRole"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Role for developers contributing to VP components, VP wide components and/or components to be applied &apos;at source&apos;</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EJPRD VP developer role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Virtual_platform_interface -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Virtual_platform_interface">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Each instance of a VP interface is some interface for some user with some type of user role, i.e. multiple interfaces may exist for multiple types of users. The interface can be some entity giving access to all component parts of the VP or to some component part of the VP.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VP interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#ePAG_role -->
+
+    <owl:Class rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#ePAG_role">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Patient_representative_role"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">European Patient Advocacy Group advocate</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ePAG role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#AI_and_Learning -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#AI_and_Learning">
+        <rdf:type rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#High_level_goal"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI &amp; learning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Awareness_and_branding -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Awareness_and_branding">
+        <rdf:type rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#High_level_goal"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Awareness &amp; branding</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#adaptivity -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#adaptivity">
+        <rdf:type rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#High_level_goal"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adaptivity</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

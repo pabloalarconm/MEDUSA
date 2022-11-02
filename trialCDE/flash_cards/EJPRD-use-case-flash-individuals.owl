@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#"
+     xml:base="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ejprd-usecase-flash="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#">
+    <owl:Ontology rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals">
+        <owl:imports rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Use case flash card statements</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#A_reported_development_status_is_Under_development -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#A_reported_development_status_is_Under_development">
+        <rdf:type rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Reported_development_status_is_Under_development"/>
+        <obo:STATO_0000129 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50% (Phase II started - under development)</obo:STATO_0000129>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Under development status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#Franz -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#Franz">
+        <rdf:type rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_doing_research"/>
+        <ejprd-usecase-flash:has_specific_goal_statement rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#flashgoal_fbe4f162_09ac_4b72_91c0_8e1e76c69e7f"/>
+        <ejprd-usecase-flash:has_user_role rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#clinician_doing_research_role"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Franz</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#clinical_researcher_case_Franz_1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#clinical_researcher_case_Franz_1">
+        <rdf:type rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Use_case"/>
+        <ejprd-usecase-flash:has__reported_development_status rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#A_reported_development_status_is_Under_development"/>
+        <ejprd-usecase-flash:has_contextual_goal_statement rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#contextual_goal_Franz_in_clinical_researcher_role"/>
+        <ejprd-usecase-flash:use-case_involves_specific-goal rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#flashgoal_fbe4f162_09ac_4b72_91c0_8e1e76c69e7f"/>
+        <ejprd-usecase-flash:use-case_of_user rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#Franz"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As a clinical reearcher I would like to have effortless access to all the power of the Virtual Platform (all the data and all the computational functions) via a user-friendly user interface that is visually appealing and safeguards me from illegal or unethical use</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#clinician_doing_research_role -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#clinician_doing_research_role">
+        <rdf:type rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#Clinician_doing_research_role"/>
+        <ejprd-usecase-flash:user_role_of rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#Franz"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a clinician doing research role</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#contextual_goal_Franz_in_clinical_researcher_role -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#contextual_goal_Franz_in_clinical_researcher_role">
+        <rdf:type rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#ContextualGoal"/>
+        <obo:STATO_0000129 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">have nights with blissful dreams</obo:STATO_0000129>
+        <rdfs:label xml:lang="en">contextual goal Franz in clinical researcher role</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#flashgoal_fbe4f162_09ac_4b72_91c0_8e1e76c69e7f -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash-individuals#flashgoal_fbe4f162_09ac_4b72_91c0_8e1e76c69e7f">
+        <rdf:type rdf:resource="http://purl.org/ejp-rd/ontologies/2022/6/ejprd-usecase-flash#SpecificGoal"/>
+        <obo:STATO_0000129 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">have effortless access to all the power of the Virtual Platform (all the data and all the computational functions) via a user-friendly user interface that is visually appealing and safeguards me from illegal or unethical use</obo:STATO_0000129>
+        <rdfs:label xml:lang="en">specific goal Franz in clinical researcher role</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

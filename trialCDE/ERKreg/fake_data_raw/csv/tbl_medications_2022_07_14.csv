@@ -1,0 +1,14 @@
+uid;pat_id;center_id;creator;cr_date;editor;edit_date;sub_reg;med_id;med_atc;med_start;med_stop;med_single_dose;med_dose_unit;med_frequency;med_interval;med_route;med_weight;ae_id
+82;500-0003;500;;7/13/2021;admin_lecornec;7/13/2021;CYS;53;G04BX16;4/12/2012;3/12/2013;50;mg;1;w;po;15;
+83;500-0003;500;;7/13/2021;admin_lecornec;7/15/2021;CYS;50;Unknow;11/9/2015;3/12/2019;10;iu;2;d;po;30;73
+146;500-0003;500;;7/15/2021;admin_lecornec;7/15/2021;CYS;50;Unknow;3/13/2019;;5;iu;2;d;po;30;
+173;500-0009;500;;7/27/2021;admin_lecornec;7/27/2021;CYS;53;G04BX16;12/12/2016;;10;mg;2;d;po;28;
+464;500-0014;500;admin_lecornec;12/21/2021;admin_lecornec;1/21/2022;CYS;49;B05CB04;12/12/2019;5/12/2020;12;mg;1;m;po;23;82
+466;500-0014;500;admin_lecornec;1/21/2022;admin_lecornec;1/21/2022;CYS;49;B05CB04;5/13/2020;;10;mg;1;m;po;23;
+9;500-0001;500;;2021-06-15;admin_lecornec;2021-06-21;SLE;6;C09CA06;2021-03-01;2021-05-01;;;;;;;
+10;500-0001;500;;2021-06-15;admin_bernd;2021-06-15;SLE;41;L01XC02;2021-04-01;2021-05-01;60;mg;1;d;po;40;
+11;500-0001;500;;2021-06-15;admin_bernd;2021-06-15;SLE;41;L01XC02;2021-05-02;;70;mg;1;d;po;40;
+45;500-0001;500;admin_lecornec;2021-07-08;admin_lecornec;2021-07-08;SLE;27;C09CA01;2021-07-06;;45;mg;1;w;po;45;
+48;500-0006;500;admin_lecornec;2021-07-08;admin_lecornec;2021-07-08;SLE;31;C02DC01;1999-03-12;2008-01-09;;;;;;;
+49;500-0006;500;admin_lecornec;2021-07-08;admin_lecornec;2021-07-08;SLE;12;L01AA01;2004-11-09;;10;mg;1;d;po;65;
+47;500-0006;500;admin_lecornec;2021-07-08;admin_lecornec;2021-07-08;SLE;41;L01XC02;2013-04-21;;10;mg;1;d;po;67;

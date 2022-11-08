@@ -1,0 +1,4 @@
+uid,pat_id,center_id,cr_date,edit_date,sub_reg,diet_id,diet_id,diet_id,diet_start,diet_stop,amount_suggested,unit,unit_uri,process_label,process_uri,route_label,route_uri
+7,500-0003,500,23/06/21,15/07/21,CYS,1,http://snomed.info/id/439071000124106,Fuild intaken diet,23/06/21,,2500,milliliter,http://purl.obolibrary.org/obo/UO_0000098,Special Diet Therapy,http://purl.obolibrary.org/obo/NCIT_C15383,Oral Route of Administration,http://purl.obolibrary.org/obo/NCIT_C38288
+8,500-0003,500,23/06/21,23/06/21,CYS,4,http://purl.obolibrary.org/obo/NCIT_C16164,"Low Fat, High Fiber Diet",23/06/21,,,,,Special Diet Therapy,http://purl.obolibrary.org/obo/NCIT_C15383,Oral Route of Administration,http://purl.obolibrary.org/obo/NCIT_C38288
+9,500-0003,500,23/06/21,23/06/21,CYS,5,5,5,23/06/21,,,,,Special Diet Therapy,http://purl.obolibrary.org/obo/NCIT_C15383,Oral Route of Administration,http://purl.obolibrary.org/obo/NCIT_C38288

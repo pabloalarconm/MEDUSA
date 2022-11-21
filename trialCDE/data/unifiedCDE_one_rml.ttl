@@ -18,7 +18,7 @@
 :rules_000 a void:Dataset.
 :source_000 a rml:LogicalSource;
     rdfs:label "source_cde_test";
-    rml:source "/data/unifiedCDE.csv";
+    rml:source "/data/unifiedCDE_one.csv";
     rml:iterator "$";
     rml:referenceFormulation ql:CSV.
 :rules_000 void:exampleResource :map_20221117151426432657_source_cde_test_000.

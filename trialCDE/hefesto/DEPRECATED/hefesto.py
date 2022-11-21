@@ -76,7 +76,7 @@ class Hefesto():
 
 # trial
 
-trial = Hefesto('/home/pabloalarconm/Desktop/EJP/MEDUSA/trialCDE/trial_hefesto.csv')
+trial = Hefesto('/home/pabloalarconm/Desktop/EJP/MEDUSA/trialCDE/hefesto/DEPRECATED/trial_hefesto.csv')
 trial.get_uri("output1","sio")
 trial.get_label("output2")
 trial.replace_inf("output1", "information content entity","information content procedure")

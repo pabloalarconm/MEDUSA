@@ -1,0 +1,45 @@
+@prefix my: <http://example.org/data/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+my:500-0001_Entity a sio:SIO_000498 ;
+    rdfs:label "Person"^^xsd:string ;
+    sio:SIO_000008 my:500-0001_123456978_Attribute ;
+    sio:SIO_000228 my:500-0001_123456978_Role .
+
+my:500-0001_ID a sio:SIO_000115 ;
+    rdfs:label "Identifier"^^xsd:string ;
+    sio:SIO_000020 my:500-0001_123456978_Role ;
+    sio:SIO_000300 "500-0001"^^xsd:string .
+
+my:500-0001_123456978_Enddate a sio:SIO_000032 ;
+    rdfs:label "Birth_date enddate: 2002-10-11"^^xsd:string ;
+    sio:SIO_000300 "2002-10-11"^^xsd:date .
+
+my:500-0001_123456978_Output a sio:SIO_000015,
+        <http://www.ebi.ac.uk/efo/EFO_0006921> ;
+    rdfs:label "Birth_date measurement output"^^xsd:string ;
+    sio:SIO_000628 my:500-0001_123456978_Attribute .
+
+my:500-0001_123456978_Process a obo:NCIT_C142470,
+        sio:SIO_000006 ;
+    rdfs:label "Birth_date measurement process"^^xsd:string ;
+    sio:SIO_000229 my:500-0001_123456978_Output ;
+    sio:SIO_000680 my:500-0001_123456978_Startdate ;
+    sio:SIO_000681 my:500-0001_123456978_Enddate .
+
+my:500-0001_123456978_Startdate a sio:SIO_000031 ;
+    rdfs:label "Birth_date startdate: 2002-10-10"^^xsd:string ;
+    sio:SIO_000300 "2002-10-10"^^xsd:date .
+
+my:500-0001_123456978_Attribute a obo:NCIT_C68615,
+        sio:SIO_000614 ;
+    rdfs:label "Birth_date attribute"^^xsd:string .
+
+my:500-0001_123456978_Role a obo:OBI_0000093,
+        sio:SIO_000016 ;
+    rdfs:label "Patient role"^^xsd:string ;
+    sio:SIO_000356 my:500-0001_123456978_Process .
+

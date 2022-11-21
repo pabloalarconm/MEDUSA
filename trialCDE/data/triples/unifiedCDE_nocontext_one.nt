@@ -1,0 +1,31 @@
+<http://example.org/data/500-0001_123456978_Attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Birth_date attribute"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/500-0001_123456978_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C68615>.
+<http://example.org/data/500-0001_123456978_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000614>.
+<http://example.org/data/500-0001_ID> <http://semanticscience.org/resource/SIO_000020> <http://example.org/data/500-0001_123456978_Role>.
+<http://example.org/data/500-0001_ID> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/500-0001_ID> <http://semanticscience.org/resource/SIO_000300> "500-0001"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/500-0001_ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000115>.
+<http://example.org/data/500-0001_123456978_Enddate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000032>.
+<http://example.org/data/500-0001_123456978_Enddate> <http://www.w3.org/2000/01/rdf-schema#label> "Birth_date enddate: 2002-10-11"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/500-0001_123456978_Enddate> <http://semanticscience.org/resource/SIO_000300> "2002-10-11"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/data/500-0001_Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Person"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/500-0001_123456978_Startdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000031>.
+<http://example.org/data/500-0001_123456978_Startdate> <http://semanticscience.org/resource/SIO_000300> "2002-10-10"^^<http://www.w3.org/2001/XMLSchema#date>.
+<http://example.org/data/500-0001_123456978_Startdate> <http://www.w3.org/2000/01/rdf-schema#label> "Birth_date startdate: 2002-10-10"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/500-0001_123456978_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000016>.
+<http://example.org/data/500-0001_123456978_Role> <http://www.w3.org/2000/01/rdf-schema#label> "Patient role"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/500-0001_123456978_Role> <http://semanticscience.org/resource/SIO_000356> <http://example.org/data/500-0001_123456978_Process>.
+<http://example.org/data/500-0001_123456978_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/OBI_0000093>.
+<http://example.org/data/500-0001_Entity> <http://semanticscience.org/resource/SIO_000008> <http://example.org/data/500-0001_123456978_Attribute>.
+<http://example.org/data/500-0001_Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000498>.
+<http://example.org/data/500-0001_Entity> <http://semanticscience.org/resource/SIO_000228> <http://example.org/data/500-0001_123456978_Role>.
+<http://example.org/data/500-0001_123456978_Output> <http://semanticscience.org/resource/SIO_000628> <http://example.org/data/500-0001_123456978_Attribute>.
+<http://example.org/data/500-0001_123456978_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000015>.
+<http://example.org/data/500-0001_123456978_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ebi.ac.uk/efo/EFO_0006921>.
+<http://example.org/data/500-0001_123456978_Output> <http://www.w3.org/2000/01/rdf-schema#label> "Birth_date measurement output"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/500-0001_123456978_Process> <http://semanticscience.org/resource/SIO_000229> <http://example.org/data/500-0001_123456978_Output>.
+<http://example.org/data/500-0001_123456978_Process> <http://semanticscience.org/resource/SIO_000680> <http://example.org/data/500-0001_123456978_Startdate>.
+<http://example.org/data/500-0001_123456978_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/NCIT_C142470>.
+<http://example.org/data/500-0001_123456978_Process> <http://www.w3.org/2000/01/rdf-schema#label> "Birth_date measurement process"^^<http://www.w3.org/2001/XMLSchema#string>.
+<http://example.org/data/500-0001_123456978_Process> <http://semanticscience.org/resource/SIO_000681> <http://example.org/data/500-0001_123456978_Enddate>.
+<http://example.org/data/500-0001_123456978_Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semanticscience.org/resource/SIO_000006>.

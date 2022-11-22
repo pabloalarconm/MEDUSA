@@ -1,0 +1,30 @@
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ordo: <http://www.orpha.net/ORDO/>
+
+
+
+SELECT distinct ?id ?entity ?role ?process ?output ?attribute
+WHERE {
+    
+######### BASIC CORE STRUCTURE ##########
+#########################################
+    
+    
+?id sio:SIO_000020 ?role ;
+        a sio:SIO_000115 .
+?entity sio:SIO_000228 ?role ;
+        sio:SIO_000008 ?attribute ;
+        a sio:SIO_000498 .
+?role sio:SIO_000356 ?process ;
+          a sio:SIO_000016 .
+?process sio:SIO_000229  ?output ;
+        a sio:SIO_000006 .
+?output sio:SIO_000628 ?attribute ;
+        a sio:SIO_000015 .
+?attribute a sio:SIO_000614 .
+
+
+
+}

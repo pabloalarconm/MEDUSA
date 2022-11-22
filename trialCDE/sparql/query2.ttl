@@ -1,0 +1,38 @@
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ordo: <http://www.orpha.net/ORDO/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT distinct ?process_label ?outputURI ?value
+WHERE {
+######### EXTENDED CORE STRUCTURE ##########
+############################################        
+?id sio:SIO_000020 ?role ; a sio:SIO_000115 .
+?entity sio:SIO_000228 ?role ; 
+	sio:SIO_000008 ?attribute ;
+	a sio:SIO_000498 .
+?role sio:SIO_000356 ?process ;
+	a sio:SIO_000016 .
+    ?process sio:SIO_000229 ?output ;
+	a sio:SIO_000006 , ?processURI ;
+	rdfs:label ?process_label ;
+	sio:SIO_000680 ?startdate ;
+	sio:SIO_000681 ?enddate .
+
+?output sio:SIO_000628 ?attribute ;
+	a sio:SIO_000015 , ?outputURI ;
+	rdfs:label ?output_label ;
+	sio:SIO_000300 ?value.
+?attribute a sio:SIO_000614 , ?attributeURI .
+?startdate a sio:SIO_000031 ;
+	sio:SIO_000300 ?value_startdate .
+?enddate a sio:SIO_000032 ;
+	sio:SIO_000300 ?value_enddate .
+# Filters to avoid dupluicate SIO responses:    
+FILTER (?processURI != sio:SIO_000006) .
+FILTER (?outputURI != sio:SIO_000015) .
+FILTER (?attributeURI != sio:SIO_000614) .
+
+}
+
